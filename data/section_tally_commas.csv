@@ -1,0 +1,4779 @@
+﻿"WR      1100 1215 REXT 320 (Class)
+F       0800 0915 REXT 119 (Lab)
+F       0930 1045 REXT 119 (Lab)"
+WF      1530 1645 JAMES 3091A (Class)
+"WF      1230 1345 VCTRIA 306 (Class)
+W       1700 1815 REXT 141 (Class)
+W       1830 1945 REXT 141 (Class)"
+WF      1230 1345 ROBSON 312 (Class)
+WF      1230 1345 BUSN 303 (Class)
+WF      1230 1345 301HGH 216 (Class)
+WF      1100 1215 SCIENC 218 (Class)
+WF      1100 1215 ROBSON 312 (Class)
+"WF      1100 1215 ROBSON 310 (Lecture)
+R       1530 1645 SCIENC 232 (Lab)
+R       1700 1815 SCIENC 232 (Lab)"
+WF      1100 1215 BUSN 303 (Class)
+WF      1100 1215 BUSN 221 (Class)
+WF      1100 1215 BUSN 103 (Class)
+WF      1100 1215 BUNCE 104 (Class)
+WF      0930 1045 ROBSON 325 (Class)
+"WF      0930 1045 ROBSON 324 (Lecture)
+R       1100 1215 SCIENC 232 (Lab)
+R       1230 1345 SCIENC 232 (Lab)"
+WF      0930 1045 JAMES 3114 (Class)
+WF      0930 1045 BUSN 303 (Class)
+WF      0930 1045 BUSN 221 (Class)
+WF      0800 0915 WILSON 207 (Class)
+"WF      0800 0915 SCIENC 151 (Lecture)
+R       0800 0915 SCIENC 336 (Lab)
+R       0930 1045 SCIENC 336 (Lab)"
+WF      0800 0915 ROBSON 325 (Class)
+WF      0800 0915 BUSN 103 (Class)
+W       2000 2115 WILSON 164 (Class)
+"W       2000 2115 SCIENC 254 (Class)
+W       2130 2245 SCIENC 254 (Class)
+   "
+"W       2000 2115 ROBSON 102 (Class)
+W       2130 2245 ROBSON 102 (Class)"
+"W       2000 2115 JAMES 2096 (Class)
+W       2130 2245 JAMES 2096 (Class)"
+"W       2000 2115 JAMES 1019 (Class)
+W       2130 2245 JAMES 1019 (Class)"
+W       2000 2050 WILSON 156 (Class)
+W       1945 2215 JAMES 2100 (Class)
+W       1945 2215 JAMES 2099 (Class)
+W       1945 2215 JAMES 1119 (Class)
+W       1900 2040 REXT 321 (Class)
+W       1900 2040 JAMES 1081 (Class)
+W       1830 2010 JAMES 2110 (Class)
+"W       1830 1945 WINANS 113 (Class)
+W       2000 2115 WINANS 113 (Class)"
+"W       1830 1945 WINANS 112 (Class)
+W       2000 2115 WINANS 112 (Class)"
+"W       1830 1945 WINANS 111 (Class)
+W       2000 2115 WINANS 111 (Class)"
+"W       1830 1945 WILSON 207 (Class)
+W       2000 2115 WILSON 207 (Class)"
+W       1830 1945 WILSON 107 (Class)
+"W       1830 1945 WILSON 105 (Class)
+W       2000 2115 WILSON 105 (Class)"
+"W       1830 1945 WILSON 105 (Class)
+W       2000 2115 WILSON 105 (Class)"
+"W       1830 1945 VCTRIA 306 (Class)
+W       2000 2115 VCTRIA 306 (Class)
+F       0800 0915 REXT 141 (Class)
+F       0930 1045 REXT 141 (Class)"
+"W       1830 1945 VCTRIA 204 (Class)
+W       2000 2115 VCTRIA 204 (Class)"
+"W       1830 1945 SCIENC 128 (Class)
+W       2000 2115 SCIENC 128 (Class)"
+"W       1830 1945 SAVITZ 341 (Class)
+W       2000 2115 SAVITZ 341 (Class)"
+"W       1830 1945 ROWAN 117 (Class)
+W       2000 2115 ROWAN 117 (Class)"
+"W       1830 1945 ROWAN 117 (Class)
+W       2000 2115 ROWAN 117 (Class)"
+"W       1830 1945 ROBSON 325 (Class)
+W       2000 2115 ROBSON 325 (Class)"
+"W       1830 1945 ROBSON 323 (Class)
+W       2000 2115 ROBSON 323 (Class)"
+"W       1830 1945 ROBSON 311 (Class)
+W       2000 2115 ROBSON 311 (Class)"
+"W       1830 1945 ROBSON 308 (Class)
+W       2000 2115 ROBSON 308 (Class)"
+"W       1830 1945 ROBSON 306 (Class)
+W       2000 2115 ROBSON 306 (Class)"
+"W       1830 1945 ROBSON 224 (Class)
+W       2000 2115 ROBSON 224 (Class)"
+"W       1830 1945 ROBSON 212 (Class)
+W       2000 2115 ROBSON 212 (Class)"
+"W       1830 1945 ROBSON 212 (Class)
+W       2000 2115 ROBSON 212 (Class)"
+"W       1830 1945 ROBSON 207 (Class)
+W       2000 2115 ROBSON 207 (Class)"
+"W       1830 1945 ROBSON 201A (Class)
+W       2000 2115 ROBSON 201A (Class)"
+"W       1830 1945 REXT 320 (Class)
+W       2000 2115 REXT 320 (Class)"
+"W       1830 1945 REXT 320 (Class)
+W       2000 2115 REXT 320 (Class)"
+"W       1830 1945 REXT 319 (Class)
+W       2000 2115 REXT 319 (Class)"
+"W       1830 1945 LBRARY 578 (Class)
+W       2000 2115 LBRARY 578 (Class)"
+"W       1830 1945 LBRARY 525 (Class)
+W       2000 2115 LBRARY 525 (Class)"
+"W       1830 1945 LBRARY 401 (Class)
+W       2000 2115 LBRARY 401 (Class)"
+"W       1830 1945 JAMES 2101 (Class)
+W       2000 2115 ROBSON 201B (Class)"
+"W       1830 1945 JAMES 2095 (Class)
+W       2000 2115 JAMES 2095 (Class)"
+"W       1830 1945 JAMES 1115 (Class)
+W       2000 2115 JAMES 1115 (Class)"
+"W       1830 1945 HAWTHN 204 (Class)
+W       2000 2115 HAWTHN 204 (Class)"
+"W       1830 1945 ENTPRZ 517 (Class)
+W       2000 2115 ENTPRZ 517 (Class)"
+"W       1830 1945 ENTPRZ 514 (Class)
+W       2000 2115 ENTPRZ 514 (Class)"
+"W       1830 1945 ENTPRZ 409 (Class)
+W       2000 2115 ENTPRZ 409 (Class)"
+"W       1830 1945 BUSN 303 (Class)
+W       2000 2115 BUSN 303 (Class)"
+"W       1830 1945 BUSN 301 (Class)
+W       2000 2115 BUSN 301 (Class)"
+"W       1830 1945 BUSN 235 (Class)
+W       2000 2115 BUSN 235 (Class)"
+"W       1830 1945 BUSN 233 (Class)
+W       2000 2115 BUSN 233 (Class)"
+"W       1830 1945 BUSN 227 (Class)
+W       2000 2115 BUSN 227 (Class)"
+"W       1830 1945 BUSN 225 (Class)
+W       2000 2115 BUSN 225 (Class)"
+"W       1830 1945 BUSN 223 (Class)
+W       2000 2115 BUSN 223 (Class)"
+"W       1830 1945 BUSN 221 (Class)
+W       2000 2115 BUSN 221 (Class)"
+"W       1830 1945 BUSN 208 (Class)
+W       2000 2115 BUSN 208 (Class)"
+"W       1830 1945 BUSN 204 (Class)
+W       2000 2115 BUSN 204 (Class)"
+"W       1830 1945 BUSN 201 (Class)
+W       2000 2115 BUSN 201 (Class)"
+"W       1830 1945 BUSN 131 (Class)
+W       2000 2115 BUSN 131 (Class)"
+"W       1830 1945 BUSN 121 (Class)
+W       2000 2115 BUSN 121 (Class)"
+"W       1830 1945 BUSN 107 (Class)
+W       2000 2115 BUSN 107 (Class)"
+"W       1830 1945 BUSN 103 (Class)
+W       2000 2115 BUSN 103 (Class)"
+"W       1830 1945 BUSN 101 (Class)
+W       2000 2115 BUSN 101 (Class)"
+"W       1830 1945 BOZ 166 (Class)
+W       2000 2115 BOZ 166 (Class)"
+"W       1830 1945 BOZ 147 (Class)
+W       2000 2115 BOZ 147 (Class)"
+"W       1830 1945 BOZ 147 (Class)
+W       2000 2115 BOZ 147 (Class)"
+"W       1830 1945 BOZ 132 (Class)
+W       2000 2115 BOZ 132 (Class)"
+"W       1830 1945 301HGH 326 (Class)
+W       2000 2115 301HGH 326 (Class)"
+"W       1830 1945 301HGH 216 (Class)
+W       2000 2115 301HGH 216 (Class)"
+"W       1830 1945 301HGH 215 (Class)
+W       2000 2115 301HGH 215 (Class)"
+W       1700 1930 JAMES 2100 (Class)
+W       1700 1930 JAMES 2098 (Class)
+W       1700 1930 JAMES 1119 (Class)
+"W       1700 1900 JAMES 2104 (Class)
+   "
+W       1700 1840 WILSON 206 (Class)
+W       1700 1840 JAMES 1081 (Class)
+"W       1700 1815 WILSON 212 (Class)
+W       1830 1945 WILSON 212 (Class)"
+"W       1700 1815 WILSON 212 (Class)
+W       1830 1945 WILSON 212 (Class)"
+"W       1700 1815 WILSON 205 (Class)
+W       1830 1945 WILSON 205 (Class)"
+W       1700 1815 WILSON 114 (Class)
+"W       1700 1815 WESTBY 111 (Class)
+W       1830 1945 WESTBY 111 (Class)"
+"W       1700 1815 WESTBY 111 (Class)
+W       1830 1945 WESTBY 111 (Class)"
+"W       1700 1815 VCTRIA 302 (Class)
+W       1830 1945 VCTRIA 302 (Class)"
+"W       1700 1815 SCIENC 254 (Class)
+W       1830 1945 SCIENC 254 (Class)"
+"W       1700 1815 SAVITZ 321 (Class)
+W       1830 1945 SAVITZ 321 (Class)"
+"W       1700 1815 SAVITZ 217 (Class)
+W       1830 1945 SAVITZ 217 (Class)"
+"W       1700 1815 ROWAN 146 (Class)
+W       1830 1945 ROWAN 146 (Class)"
+"W       1700 1815 ROBSON 201B (Class)
+W       1830 1945 ROBSON 201B (Class)"
+"W       1700 1815 REXT 107 (Class)
+W       1830 1945 REXT 107 (Class)"
+"W       1700 1815 LBRARY 403 (Class)
+W       1830 1945 LBRARY 403 (Class)"
+"W       1700 1815 LBRARY 226 (Class)
+W       1830 1945 LBRARY 226 (Class)"
+"W       1700 1815 LBRARY 126 (Class)
+W       1830 1945 LBRARY 126 (Class)"
+"W       1700 1815 JAMES 3091B (Class)
+W       1830 1945 JAMES 3091B (Class)"
+"W       1700 1815 JAMES 2103 (Class)
+W       1830 1945 JAMES 2103 (Class)"
+"W       1700 1815 JAMES 2097 (Class)
+W       1830 1945 JAMES 2097 (Class)"
+"W       1700 1815 JAMES 2096 (Class)
+W       1830 1945 JAMES 2096 (Class)"
+"W       1700 1815 JAMES 2094 (Class)
+W       1830 1945 JAMES 2094 (Class)"
+"W       1700 1815 JAMES 1146 (Class)
+W       1830 1945 JAMES 1146 (Class)"
+"W       1700 1815 JAMES 1112 (Class)
+W       1830 1945 JAMES 1112 (Class)"
+"W       1700 1815 JAMES 1056 (Class)
+W       1830 1945 JAMES 1056 (Class)"
+"W       1700 1815 JAMES 1019 (Class)
+W       1830 1945 JAMES 1019 (Class)"
+"W       1700 1815 ENTPRZ 506 (Class)
+W       1830 1945 ENTPRZ 506 (Class)"
+W       1700 1815 BUSN 303 (Class)
+W       1700 1815 BUSN 131 (Class)
+W       1700 1815 BUSN 121 (Class)
+W       1700 1815 BUSN 104 (Class)
+W       1700 1815 BUNCE TOHILL (Class)
+W       1700 1815 BUNCE 159 (Class)
+"W       1700 1815 301HGH 305 (Class)
+W       1830 1945 301HGH 305 (Class)"
+W       1700 1750 WILSON 156 (Class)
+W       1530 1645 VCTRIA 300 (Class)
+"W       1530 1645 ROBSON 311 (Class)
+W       1700 1815 ROBSON 311 (Class)"
+W       1530 1645 ROBSON 121 (Class)
+"W       1530 1645 REXT 319 (Class)
+W       1700 1815 REXT 319 (Class)"
+"W       1530 1645 REXT 319 (Class)
+W       1700 1815 REXT 319 (Class)"
+"W       1530 1645 JAMES 1115 (Class)
+W       1700 1815 JAMES 1115 (Class)"
+"W       1530 1645 HAWTHN 204 (Class)
+W       1700 1815 HAWTHN 204 (Class)"
+"W       1530 1645 BUSN 227 (Class)
+W       1700 1815 BUSN 227 (Class)"
+"W       1530 1645 BUNCE 107 (Class)
+W       1700 1815 BUNCE 107 (Class)"
+"W       1530 1645 BOZ 166 (Class)
+W       1700 1815 BOZ 166 (Class)"
+"W       1530 1645 BOZ 132 (Class)
+W       1700 1815 BOZ 132 (Class)"
+"W       1530 1645 BOZ 112 (Class)
+W       1700 1815 BOZ 112 (Class)"
+"W       1530 1645 BOZ 112 (Class)
+W       1700 1815 BOZ 112 (Class)"
+"W       1530 1645 301HGH 216 (Class)
+W       1700 1815 301HGH 216 (Class)"
+W       1400 1540 BUNCE 156 (Class)
+"W       1400 1515 WINANS 111 (Class)
+W       1530 1645 WINANS 111 (Class)"
+W       1400 1515 WILSON 101 (Class)
+"W       1400 1515 WESTBY 206 (Class)
+W       1530 1645 WESTBY 206 (Class)"
+W       1400 1515 SCIENC 324 (Class)
+W       1400 1515 SCIENC 324 (Class)
+W       1400 1515 SCIENC 324 (Class)
+"W       1400 1515 REXT 320 (Class)
+F       1100 1215 REXT 320 (Class)"
+"W       1400 1515 REXT 319 (Class)
+F       1230 1345 REXT 320 (Class)"
+"W       1400 1515 LBRARY 525 (Class)
+W       1530 1645 LBRARY 525 (Class)"
+W       1400 1450 JAMES 3091B (Class)
+"W       1230 1345 VCTRIA 302 (Class)
+W       1400 1515 VCTRIA 302 (Class)"
+"W       1230 1345 VCTRIA 200 (Class)
+W       1400 1515 VCTRIA 200 (Class)"
+"W       1230 1345 VCTRIA 200 (Class)
+W       1400 1515 VCTRIA 200 (Class)"
+"W       1230 1345 SAVITZ 321 (Class)
+W       1400 1515 SAVITZ 321 (Class)"
+"W       1230 1345 ROBSON 101A (Class)
+F       1230 1345 ROBSON 224 (Class)"
+"W       1230 1345 LBRARY 403 (Class)
+W       1400 1515 LBRARY 403 (Class)"
+"W       1230 1345 JAMES 1112 (Class)
+W       1400 1515 JAMES 1112 (Class)"
+"W       1230 1345 JAMES 1081 (Class)
+W       1400 1515 JAMES 1081 (Class)"
+"W       1230 1345 JAMES 1020 (Class)
+W       1400 1515 JAMES 1020 (Class)"
+"W       1230 1345 BUNCE 107 (Class)
+W       1400 1515 BUNCE 107 (Class)"
+"W       1230 1345 BOZ 166 (Class)
+W       1400 1515 BOZ 166 (Class)"
+"W       1230 1345 BOZ 147 (Class)
+W       1400 1515 BOZ 147 (Class)"
+"W       1230 1345 BOZ 132 (Class)
+W       1400 1515 BOZ 132 (Class)"
+W       1230 1320 WILSON 101 (Class)
+W       1230 1320 JAMES 3091B (Class)
+W       1230 1320 JAMES 2110 (Class)
+W       1100 1240 JAMES 3112 (Class)
+W       1100 1240 JAMES 3102 (Class)
+W       1100 1240 JAMES 3099 (Class)
+"W       1100 1215 WHITNY CL-202 (Class)
+W       1230 1345 WHITNY CL-202 (Class)"
+"W       1100 1215 WESTBY 206 (Class)
+W       1230 1345 WESTBY 206 (Class)"
+"W       1100 1215 ROWAN 146 (Class)
+W       1230 1345 ROWAN 146 (Class)"
+"W       1100 1215 ROBSON 302 (Class)
+W       1230 1345 ROBSON 302 (Class)"
+"W       1100 1215 LBRARY 126 (Class)
+W       1230 1345 LBRARY 126 (Class)"
+"W       1100 1215 JAMES 3117 (Class)
+W       1230 1345 ESBY 103G (Class)"
+"W       1100 1215 JAMES 2103 (Class)
+W       1230 1345 JAMES 2103 (Class)"
+W       0930 1110 BOZ 132 (Class)
+W       0930 1045 WILSON 101 (Class)
+"W       0930 1045 SCIENC 341 (Class)
+W       1100 1215 SCIENC 341 (Class)
+W       1230 1345 SCIENC 341 (Class)"
+"W       0930 1045 SAVITZ 321 (Class)
+W       1100 1215 SAVITZ 321 (Class)"
+"W       0930 1045 ROWAN 117 (Class)
+F       1100 1215 BUSN 121 (Class)"
+"W       0930 1045 JAMES 2100 (Class)
+F       0930 1045 JAMES 1081 (Class)"
+"W       0930 1045 BUNCE 107 (Class)
+W       1100 1215 BUNCE 107 (Class)"
+"W       0930 1045 BOZ 166 (Class)
+W       1100 1215 BOZ 166 (Class)"
+"W       0930 1045 BOZ 147 (Class)
+W       1100 1215 BOZ 147 (Class)"
+"W       0800 1600   (Class)
+W       1700 1815 JAMES 3102 (Class)
+W       1830 1945 JAMES 3102 (Class)"
+"W       0800 1330   (Class)
+R       1400 1515 JAMES 2095 (Class)
+R       1530 1645 JAMES 2095 (Class)"
+"W       0800 1330   (Class)
+R       1400 1515 JAMES 1112 (Class)
+R       1530 1645 JAMES 1112 (Class)"
+W       0800 0940 JAMES 3102 (Class)
+"W       0800 0915 WILSON 212 (Class)
+W       0930 1045 WILSON 212 (Class)"
+"W       0800 0915 SCIENC 126 (Class)
+W       0930 1045 SCIENC 126 (Class)
+F       0800 0915 ROWAN 117 (Class)
+F       0930 1045 ROWAN 117 (Class)"
+W       0800 0915 SAVITZ 321 (Class)
+"W       0800 0915 ROWAN 146 (Class)
+W       0930 1045 ROWAN 146 (Class)"
+"W       0800 0915 LBRARY 126 (Class)
+W       0930 1045 LBRARY 126 (Class)"
+"W       0800 0915 JAMES 2100 (Class)
+F       0800 0915 JAMES 1081 (Class)"
+"TW      1530 1645 ROWAN 117 (Class)
+W       1830 1945 REXT 118 (Lab)
+W       2000 2115 REXT 118 (Lab)"
+"TW      1530 1645 ROWAN 117 (Class)
+R       1830 1945 REXT 118 (Lab)
+R       2000 2115 REXT 118 (Lab)"
+"TW      1100 1215 SCIENC 252 (Lecture)
+R       1100 1215 SCIENC 252 (Lab)
+R       1230 1345 SCIENC 252 (Lab)"
+TRF     1530 1645 ROBSON 101B (Class)
+TRF     1230 1345 ROBSON 324 (Class)
+TRF     1230 1345 ROBSON 227 (Class)
+TRF     1230 1345 ROBSON 101B (Class)
+TRF     1100 1215 ROBSON 324 (Class)
+TRF     1100 1215 ROBSON 227 (Class)
+TRF     1100 1215 ROBSON 101B (Class)
+TRF     1100 1215 JAMES 3091A (Class)
+TRF     0930 1045 ROBSON 101B (Class)
+TRF     0930 1045 JAMES 3091A (Class)
+TRF     0800 0915 ROBSON 324 (Class)
+TRF     0800 0915 ROBSON 101B (Class)
+TR      2000 2115 WILSON 214 (Class)
+TR      2000 2115 WILSON 114 (Class)
+TR      2000 2115 VCTRIA 302 (Class)
+TR      2000 2115 VCTRIA 204 (Class)
+TR      2000 2115 MEMORL 001 (Class)
+TR      2000 2115 ENTPRZ 417 (Class)
+TR      2000 2115 BUNCE TOHILL (Class)
+TR      2000 2115 BUNCE 131 (Class)
+TR      1855 2035 ROBSON 324 (Class)
+TR      1855 2035 ROBSON 227 (Class)
+TR      1855 2035 JAMES 3091A (Class)
+TR      1830 1945 WILSON 213 (Class)
+TR      1830 1945 WILSON 206 (Class)
+TR      1830 1945 WILSON 206 (Class)
+TR      1830 1945 WILSON 203 (Class)
+TR      1830 1945 WILSON 164 (Class)
+TR      1830 1945 WILSON 114 (Class)
+"TR      1830 1945 WESTBY 219 (Class)
+TR      2000 2115 WESTBY 219 (Class)"
+"TR      1830 1945 WESTBY 218 (Class)
+TR      2000 2115 WESTBY 218 (Class)"
+TR      1830 1945 VCTRIA 301 (Class)
+TR      1830 1945 VCTRIA 204 (Class)
+TR      1830 1945 VCTRIA 200 (Class)
+"TR      1830 1945 SCIENC 239 (Class)
+TR      2000 2115 SCIENC 239 (Class)"
+"TR      1830 1945 SCIENC 234 (Class)
+TR      2000 2115 SCIENC 234 (Class)"
+"TR      1830 1945 SCIENC 232 (Class)
+TR      2000 2115 SCIENC 232 (Class)"
+"TR      1830 1945 SCIENC 218 (Class)
+TR      2000 2115 SCIENC 218 (Class)"
+"TR      1830 1945 SCIENC 204 (Class)
+TR      2000 2115 SCIENC 204 (Class)"
+"TR      1830 1945 SCIENC 149 (Class)
+TR      2000 2115 SCIENC 149 (Class)"
+"TR      1830 1945 ROBSON 312 (Class)
+TR      2000 2115 ROBSON 312 (Class)"
+TR      1830 1945 ROBSON 310 (Class)
+"TR      1830 1945 REXT 340 (Class)
+W       1530 1645 REXT 339 (Class)
+W       1700 1815 REXT 339 (Class)"
+TR      1830 1945 MEMORL 101 (Class)
+TR      1830 1945 JAMES 2110 (Class)
+TR      1830 1945 JAMES 2101 (Class)
+TR      1830 1945 HAWTHN 104 (Class)
+TR      1830 1945 ENTPRZ 514 (Class)
+TR      1830 1945 ENTPRZ 417 (Class)
+TR      1830 1945 ENTPRZ 409 (Class)
+TR      1830 1945 ENTPRZ 406 (Class)
+TR      1830 1945 BUNCE TOHILL (Class)
+TR      1830 1945 BUNCE 131 (Class)
+TR      1830 1945 BUNCE 109 (Class)
+TR      1700 1840 ROBSON 324 (Class)
+TR      1700 1840 ROBSON 227 (Class)
+TR      1700 1840 ROBSON 101B (Class)
+TR      1700 1840 ROBSON 101A (Class)
+TR      1700 1840 JAMES 3091A (Class)
+TR      1700 1815 WINANS 113 (Class)
+TR      1700 1815 WINANS 112 (Class)
+TR      1700 1815 WILSON 213 (Class)
+TR      1700 1815 WILSON 212 (Class)
+TR      1700 1815 WILSON 212 (Class)
+TR      1700 1815 WILSON 206 (Class)
+TR      1700 1815 WILSON 203 (Class)
+TR      1700 1815 WILSON 164 (Class)
+TR      1700 1815 WILSON 156 (Class)
+TR      1700 1815 WILSON 153 (Class)
+TR      1700 1815 WILSON 109 (Class)
+TR      1700 1815 WILSON 108 (Class)
+TR      1700 1815 WILSON 105 (Class)
+"TR      1700 1815 WESTBY 205 (Class)
+TR      1830 1945 WESTBY 205 (Class)"
+"TR      1700 1815 WESTBY 205 (Class)
+TR      1830 1945 WESTBY 205 (Class)"
+"TR      1700 1815 WESTBY 201 (Class)
+TR      1830 1945 WESTBY 201 (Class)"
+"TR      1700 1815 WESTBY 104 (Class)
+TR      1830 1945 WESTBY 104 (Class)"
+"TR      1700 1815 WESTBY 102 (Class)
+TR      1830 1945 WESTBY 102 (Class)"
+"TR      1700 1815 WESTBY 100 (Class)
+TR      1830 1945 WESTBY 100 (Class)"
+"TR      1700 1815 WESTBY 100 (Class)
+TR      1830 1945 WESTBY 100 (Class)"
+TR      1700 1815 VCTRIA 306 (Class)
+TR      1700 1815 VCTRIA 301 (Class)
+TR      1700 1815 VCTRIA 300 (Class)
+TR      1700 1815 VCTRIA 204 (Class)
+TR      1700 1815 VCTRIA 201 (Class)
+TR      1700 1815 VCTRIA 200 (Class)
+"TR      1700 1815 SCIENC 324 (Lecture)
+W       1530 1645 SCIENC 334 (Lab)
+W       1700 1815 SCIENC 334 (Lab)"
+"TR      1700 1815 SCIENC 324 (Lecture)
+W       1530 1645 SCIENC 332 (Lab)
+W       1700 1815 SCIENC 332 (Lab)"
+"TR      1700 1815 SCIENC 252 (Class)
+TR      1830 1945 SCIENC 252 (Class)"
+"TR      1700 1815 SCIENC 241 (Class)
+TR      1830 1945 SCIENC 241 (Class)"
+TR      1700 1815 SCIENC 220 (Class)
+TR      1700 1815 SCIENC 218 (Class)
+TR      1700 1815 SCIENC 218 (Class)
+"TR      1700 1815 SCIENC 144 (Class)
+TR      1830 1945 SCIENC 144 (Class)"
+TR      1700 1815 SCIENC 128 (Class)
+TR      1700 1815 ROBSON 325 (Class)
+TR      1700 1815 ROBSON 323 (Class)
+TR      1700 1815 ROBSON 310 (Class)
+TR      1700 1815 ROBSON 308 (Class)
+TR      1700 1815 ROBSON 224 (Class)
+TR      1700 1815 ROBSON 211 (Class)
+TR      1700 1815 ROBSON 205 (Class)
+TR      1700 1815 ROBSON 202 (Class)
+TR      1700 1815 ROBSON 201B (Class)
+TR      1700 1815 ROBSON 201A (Class)
+TR      1700 1815 ROBSON 121 (Class)
+TR      1700 1815 ROBSON 103 (Class)
+"TR      1700 1815 REXT 340 (Class)
+F       0800 0915 REXT 340 (Class)
+F       0930 1045 REXT 340 (Class)"
+TR      1700 1815 REXT 321 (Class)
+TR      1700 1815 MEMORL 101 (Class)
+TR      1700 1815 MEMORL 001 (Class)
+TR      1700 1815 LBRARY 525 (Class)
+TR      1700 1815 LBRARY 226 (Class)
+TR      1700 1815 JAMES 3117 (Class)
+TR      1700 1815 JAMES 2113 (Class)
+TR      1700 1815 JAMES 2105 (Class)
+TR      1700 1815 JAMES 2102 (Class)
+TR      1700 1815 JAMES 2101 (Class)
+TR      1700 1815 HAWTHN 204 (Class)
+TR      1700 1815 HAWTHN 104 (Class)
+TR      1700 1815 ENTPRZ 514 (Class)
+TR      1700 1815 ENTPRZ 509 (Class)
+TR      1700 1815 ENTPRZ 417 (Class)
+TR      1700 1815 ENTPRZ 414 (Class)
+TR      1700 1815 ENTPRZ 409 (Class)
+TR      1700 1815 ENTPRZ 406 (Class)
+TR      1700 1815 BUSN 235 (Class)
+TR      1700 1815 BUSN 227 (Class)
+TR      1700 1815 BUSN 227 (Class)
+TR      1700 1815 BUSN 225 (Class)
+TR      1700 1815 BUSN 223 (Class)
+TR      1700 1815 BUSN 208 (Class)
+TR      1700 1815 BUSN 204 (Class)
+TR      1700 1815 BUSN 201 (Class)
+TR      1700 1815 BUSN 121 (Class)
+TR      1700 1815 BUSN 107 (Class)
+TR      1700 1815 BUSN 107 (Class)
+TR      1700 1815 BUSN 103 (Class)
+TR      1700 1815 BUSN 101 (Class)
+TR      1700 1815 BUNCE TOHILL (Class)
+TR      1700 1815 BUNCE TOHILL (Class)
+TR      1700 1815 BUNCE TOHILL (Class)
+TR      1700 1815 BUNCE 156 (Class)
+TR      1700 1815 BUNCE 121 (Class)
+TR      1700 1815 BUNCE 106 (Class)
+TR      1700 1815 BUNCE 104 (Class)
+TR      1700 1815 301HGH 216 (Class)
+TR      1700 1815 301HGH 215 (Class)
+TR      1530 1710 SCIENC 150 (Class)
+TR      1530 1645 WINANS 113 (Class)
+TR      1530 1645 WINANS 112 (Class)
+TR      1530 1645 WILSON 213 (Class)
+TR      1530 1645 WILSON 207 (Class)
+TR      1530 1645 WILSON 206 (Class)
+TR      1530 1645 WILSON 205 (Class)
+TR      1530 1645 WILSON 204 (Class)
+TR      1530 1645 WILSON 203 (Class)
+TR      1530 1645 WILSON 164 (Class)
+TR      1530 1645 WILSON 156 (Class)
+TR      1530 1645 WILSON 114 (Class)
+TR      1530 1645 WILSON 109 (Class)
+TR      1530 1645 WILSON 108 (Class)
+TR      1530 1645 WILSON 107 (Class)
+TR      1530 1645 WHITNY CL-202 (Class)
+TR      1530 1645 WHITNY CL-201 (Class)
+TR      1530 1645 WESTBY 111 (Class)
+TR      1530 1645 VCTRIA 306 (Class)
+TR      1530 1645 VCTRIA 301 (Class)
+TR      1530 1645 VCTRIA 300 (Class)
+TR      1530 1645 VCTRIA 201 (Class)
+TR      1530 1645 VCTRIA 200 (Class)
+TR      1530 1645 VCTRIA 200 (Class)
+"TR      1530 1645 SCIENC 252 (Lecture)
+W       1400 1515 SCIENC 252 (Lab)
+W       1530 1645 SCIENC 252 (Lab)"
+"TR      1530 1645 SCIENC 239 (Class)
+TR      1700 1815 SCIENC 239 (Class)"
+"TR      1530 1645 SCIENC 234 (Class)
+TR      1700 1815 SCIENC 234 (Class)"
+TR      1530 1645 SCIENC 229 (Class)
+TR      1530 1645 SCIENC 144 (Class)
+"TR      1530 1645 SCIENC 128 (Lecture)
+W       1530 1645 SCIENC 304 (Lab)
+W       1700 1815 SCIENC 304 (Lab)"
+TR      1530 1645 SAVITZ 341 (Class)
+TR      1530 1645 SAVITZ 217 (Class)
+TR      1530 1645 ROWAN 243 (Class)
+TR      1530 1645 ROBSON 325 (Class)
+TR      1530 1645 ROBSON 315L (Class)
+"TR      1530 1645 ROBSON 312 (Class)
+TR      1700 1815 ROBSON 312 (Class)"
+TR      1530 1645 ROBSON 310 (Class)
+TR      1530 1645 ROBSON 308 (Class)
+TR      1530 1645 ROBSON 227 (Class)
+TR      1530 1645 ROBSON 224 (Class)
+TR      1530 1645 ROBSON 212 (Class)
+TR      1530 1645 ROBSON 211 (Class)
+TR      1530 1645 ROBSON 205 (Class)
+TR      1530 1645 ROBSON 202 (Class)
+TR      1530 1645 ROBSON 201B (Class)
+TR      1530 1645 ROBSON 201A (Class)
+TR      1530 1645 ROBSON 105 (Class)
+TR      1530 1645 ROBSON 103 (Class)
+TR      1530 1645 ROBSON 102 (Class)
+TR      1530 1645 ROBSON 101A (Class)
+"TR      1530 1645 REXT 341 (Class)
+F       1100 1215 REXT 319 (Class)
+F       1230 1345 REXT 319 (Class)"
+"TR      1530 1645 REXT 340 (Class)
+F       1100 1215 REXT 340 (Class)
+F       1230 1345 REXT 340 (Class)"
+TR      1530 1645 REXT 321 (Class)
+"TR      1530 1645 REXT 320 (Class)
+TR      1700 1815 REXT 320 (Class)"
+TR      1530 1645 REXT 319 (Class)
+TR      1530 1645 REXT 319 (Class)
+"TR      1530 1645 REXT 107 (Class)
+R       1700 1815 REXT 107 (Class)"
+TR      1530 1645 MEMORL 101 (Class)
+TR      1530 1645 MEMORL 001 (Class)
+TR      1530 1645 LBRARY 578 (Class)
+TR      1530 1645 LBRARY 226 (Class)
+TR      1530 1645 JAMES 3117 (Class)
+TR      1530 1645 JAMES 3117 (Class)
+"TR      1530 1645 JAMES 3114 (Class)
+F       1530 1645 JAMES 2101 (Class)"
+TR      1530 1645 JAMES 2105 (Class)
+TR      1530 1645 JAMES 2103 (Class)
+TR      1530 1645 JAMES 2102 (Class)
+TR      1530 1645 JAMES 2101 (Class)
+TR      1530 1645 JAMES 2097 (Class)
+TR      1530 1645 JAMES 2096 (Class)
+TR      1530 1645 JAMES 1146 (Class)
+TR      1530 1645 JAMES 1056 (Class)
+TR      1530 1645 JAMES 1019 (Class)
+TR      1530 1645 HAWTHN 104 (Class)
+TR      1530 1645 ENTPRZ 517 (Class)
+TR      1530 1645 ENTPRZ 514 (Class)
+TR      1530 1645 ENTPRZ 506 (Class)
+TR      1530 1645 ENTPRZ 414 (Class)
+TR      1530 1645 ENTPRZ 409 (Class)
+TR      1530 1645 ENTPRZ 406 (Class)
+TR      1530 1645 BUSN 303 (Class)
+TR      1530 1645 BUSN 235 (Class)
+TR      1530 1645 BUSN 233 (Class)
+TR      1530 1645 BUSN 227 (Class)
+TR      1530 1645 BUSN 225 (Class)
+TR      1530 1645 BUSN 223 (Class)
+TR      1530 1645 BUSN 221 (Class)
+TR      1530 1645 BUSN 204 (Class)
+TR      1530 1645 BUSN 201 (Class)
+TR      1530 1645 BUSN 131 (Class)
+TR      1530 1645 BUSN 121 (Class)
+TR      1530 1645 BUSN 107 (Class)
+TR      1530 1645 BUSN 103 (Class)
+TR      1530 1645 BUSN 101 (Class)
+TR      1530 1645 BUNCE 205 (Class)
+TR      1530 1645 BUNCE 159 (Class)
+TR      1530 1645 BUNCE 156 (Class)
+TR      1530 1645 BUNCE 109 (Class)
+TR      1530 1645 BUNCE 106 (Class)
+TR      1530 1645 BUNCE 105 (Class)
+TR      1530 1645 BUNCE 104 (Class)
+TR      1530 1645 301HGH 305 (Class)
+TR      1530 1645 301HGH 216 (Class)
+TR      1530 1645 301HGH 215 (Class)
+TR      1530 1620 JAMES 3099 (Class)
+TR      1400 1540 SCIENC 151 (Class)
+TR      1400 1515 WINANS 113 (Class)
+TR      1400 1515 WINANS 112 (Class)
+TR      1400 1515 WILSON 213 (Class)
+TR      1400 1515 WILSON 207 (Class)
+TR      1400 1515 WILSON 206 (Class)
+TR      1400 1515 WILSON 205 (Class)
+TR      1400 1515 WILSON 204 (Class)
+TR      1400 1515 WILSON 203 (Class)
+TR      1400 1515 WILSON 164 (Class)
+TR      1400 1515 WILSON 153 (Class)
+TR      1400 1515 WILSON 114 (Class)
+TR      1400 1515 WILSON 108 (Class)
+TR      1400 1515 WILSON 105 (Class)
+TR      1400 1515 WHITNY CL-202 (Class)
+TR      1400 1515 WHITNY CL-201 (Class)
+"TR      1400 1515 WESTBY 219 (Class)
+TR      1530 1645 WESTBY 219 (Class)"
+"TR      1400 1515 WESTBY 218 (Class)
+TR      1530 1645 WESTBY 218 (Class)"
+"TR      1400 1515 WESTBY 213 (Class)
+TR      1530 1645 WESTBY 213 (Class)"
+"TR      1400 1515 WESTBY 205 (Class)
+TR      1530 1645 WESTBY 205 (Class)"
+TR      1400 1515 WESTBY 111 (Class)
+"TR      1400 1515 WESTBY 104 (Class)
+TR      1530 1645 WESTBY 104 (Class)"
+"TR      1400 1515 WESTBY 102 (Class)
+TR      1530 1645 WESTBY 102 (Class)"
+"TR      1400 1515 VCTRIA 306 (Class)
+W       1700 1815 REXT 140 (Class)
+W       1830 1945 REXT 140 (Class)"
+TR      1400 1515 VCTRIA 301 (Class)
+TR      1400 1515 VCTRIA 300 (Class)
+TR      1400 1515 VCTRIA 201 (Class)
+TR      1400 1515 VCTRIA 200 (Class)
+TR      1400 1515 VCTRIA 200 (Class)
+TR      1400 1515 SCIENC 338 (Class)
+"TR      1400 1515 SCIENC 324 (Lecture)
+W       1400 1515 SCIENC 336 (Lab)
+W       1530 1645 SCIENC 336 (Lab)"
+"TR      1400 1515 SCIENC 220 (Class)
+TR      1530 1645 SCIENC 220 (Class)"
+"TR      1400 1515 SCIENC 204 (Class)
+TR      1530 1645 SCIENC 204 (Class)
+T       1100 1215 SCIENC 229 (Class)"
+"TR      1400 1515 SCIENC 204 (Class)
+TR      1530 1645 SCIENC 204 (Class)"
+"TR      1400 1515 SCIENC 149 (Class)
+TR      1530 1645 SCIENC 149 (Class)"
+TR      1400 1515 SCIENC 128 (Class)
+"TR      1400 1515 SCIENC 126 (Lecture)
+W       1400 1515 SCIENC 226 (Lab)
+W       1530 1645 SCIENC 226 (Lab)"
+"TR      1400 1515 SCIENC 126 (Lecture)
+F       1100 1215 SCIENC 226 (Lab)
+F       1230 1345 SCIENC 226 (Lab)"
+TR      1400 1515 SAVITZ 341 (Class)
+TR      1400 1515 SAVITZ 217 (Class)
+TR      1400 1515 ROBSON 325 (Class)
+TR      1400 1515 ROBSON 323 (Class)
+TR      1400 1515 ROBSON 312 (Class)
+TR      1400 1515 ROBSON 310 (Class)
+TR      1400 1515 ROBSON 308 (Class)
+TR      1400 1515 ROBSON 227 (Class)
+TR      1400 1515 ROBSON 224 (Class)
+TR      1400 1515 ROBSON 211 (Class)
+TR      1400 1515 ROBSON 205 (Class)
+TR      1400 1515 ROBSON 204 (Class)
+TR      1400 1515 ROBSON 201B (Class)
+TR      1400 1515 ROBSON 201A (Class)
+TR      1400 1515 ROBSON 121 (Class)
+TR      1400 1515 ROBSON 105 (Class)
+"TR      1400 1515 ROBSON 103 (Class)
+F         LBRARY 131"
+TR      1400 1515 ROBSON 102 (Class)
+TR      1400 1515 ROBSON 102 (Class)
+TR      1400 1515 ROBSON 101A (Class)
+TR      1400 1515 MEMORL 101 (Class)
+TR      1400 1515 MEMORL 001 (Class)
+TR      1400 1515 LBRARY 578 (Class)
+TR      1400 1515 LBRARY 226 (Class)
+TR      1400 1515 JAMES 3117 (Class)
+TR      1400 1515 JAMES 3099 (Class)
+TR      1400 1515 JAMES 2105 (Class)
+TR      1400 1515 JAMES 2104 (Class)
+TR      1400 1515 JAMES 2102 (Class)
+TR      1400 1515 JAMES 2100 (Class)
+TR      1400 1515 JAMES 2097 (Class)
+TR      1400 1515 JAMES 2096 (Class)
+TR      1400 1515 JAMES 2094 (Class)
+TR      1400 1515 JAMES 1146 (Class)
+TR      1400 1515 JAMES 1119 (Class)
+TR      1400 1515 JAMES 1115 (Class)
+TR      1400 1515 JAMES 1056 (Class)
+TR      1400 1515 JAMES 1020 (Class)
+TR      1400 1515 JAMES 1019 (Class)
+TR      1400 1515 HAWTHN 104 (Class)
+TR      1400 1515 ESBY 103G (Class)
+TR      1400 1515 ESBY 103E (Class)
+TR      1400 1515 ENTPRZ 517 (Class)
+TR      1400 1515 ENTPRZ 514 (Class)
+TR      1400 1515 ENTPRZ 509 (Class)
+TR      1400 1515 ENTPRZ 506 (Class)
+TR      1400 1515 ENTPRZ 417 (Class)
+TR      1400 1515 ENTPRZ 414 (Class)
+TR      1400 1515 ENTPRZ 409 (Class)
+TR      1400 1515 ENTPRZ 406 (Class)
+TR      1400 1515 BUSN 303 (Class)
+TR      1400 1515 BUSN 301 (Class)
+TR      1400 1515 BUSN 233 (Class)
+TR      1400 1515 BUSN 227 (Class)
+TR      1400 1515 BUSN 225 (Class)
+TR      1400 1515 BUSN 223 (Class)
+TR      1400 1515 BUSN 221 (Class)
+TR      1400 1515 BUSN 208 (Class)
+TR      1400 1515 BUSN 204 (Class)
+TR      1400 1515 BUSN 201 (Class)
+TR      1400 1515 BUSN 131 (Class)
+TR      1400 1515 BUSN 121 (Class)
+TR      1400 1515 BUSN 103 (Class)
+TR      1400 1515 BUSN 101 (Class)
+TR      1400 1515 BUNCE 332 (Class)
+TR      1400 1515 BUNCE 205 (Class)
+TR      1400 1515 BUNCE 159 (Class)
+TR      1400 1515 BUNCE 156 (Class)
+TR      1400 1515 BUNCE 131 (Class)
+TR      1400 1515 BUNCE 109 (Class)
+TR      1400 1515 BUNCE 106 (Class)
+TR      1400 1515 BUNCE 105 (Class)
+TR      1400 1515 BUNCE 104 (Class)
+"TR      1400 1515 BOZ 112 (Lecture)
+W       1830 1945 SCIENC 148 (Lab)
+W       2000 2115 SCIENC 148 (Lab)"
+"TR      1400 1515 BOZ 112 (Lecture)
+W       1530 1645 SCIENC 148 (Lab)
+W       1700 1815 SCIENC 148 (Lab)"
+"TR      1400 1515 BOZ 112 (Lecture)
+W       1230 1345 SCIENC 148 (Lab)
+W       1400 1515 SCIENC 148 (Lab)"
+TR      1400 1515 301HGH 305 (Class)
+TR      1400 1515 301HGH 216 (Class)
+TR      1400 1515 301HGH 215 (Class)
+TR      1400 1515 301HGH 205 (Class)
+TR      1400 1450 LBRARY 126 (Class)
+TR      1400 1450 JAMES 3102 (Class)
+TR      1230 1345 WINANS 113 (Class)
+TR      1230 1345 WINANS 112 (Class)
+TR      1230 1345 WILSON 213 (Class)
+TR      1230 1345 WILSON 212 (Class)
+TR      1230 1345 WILSON 207 (Class)
+TR      1230 1345 WILSON 206 (Class)
+TR      1230 1345 WILSON 205 (Class)
+TR      1230 1345 WILSON 204 (Class)
+TR      1230 1345 WILSON 203 (Class)
+"TR      1230 1345 WILSON 156 (Class)
+W       1830 1945 WILSON 156 (Class)"
+TR      1230 1345 WILSON 153 (Class)
+TR      1230 1345 WILSON 114 (Class)
+TR      1230 1345 WILSON 109 (Class)
+TR      1230 1345 WILSON 108 (Class)
+TR      1230 1345 WILSON 107 (Class)
+TR      1230 1345 WILSON 105 (Class)
+TR      1230 1345 WHITNY CL-202 (Class)
+TR      1230 1345 WHITNY CL-201 (Class)
+TR      1230 1345 WESTBY 111 (Class)
+TR      1230 1345 VCTRIA 302 (Class)
+TR      1230 1345 VCTRIA 301 (Class)
+TR      1230 1345 VCTRIA 300 (Class)
+"TR      1230 1345 VCTRIA 204 (Class)
+F       1100 1215 REXT 141 (Class)
+F       1230 1345 REXT 141 (Class)"
+TR      1230 1345 VCTRIA 201 (Class)
+TR      1230 1345 VCTRIA 200 (Class)
+TR      1230 1345 SCIENC 338 (Class)
+"TR      1230 1345 SCIENC 324 (Lecture)
+W       1230 1345 SCIENC 334 (Lab)
+W       1400 1515 SCIENC 334 (Lab)"
+"TR      1230 1345 SCIENC 324 (Lecture)
+W       1230 1345 SCIENC 332 (Lab)
+W       1400 1515 SCIENC 332 (Lab)"
+TR      1230 1345 SCIENC 254 (Class)
+"TR      1230 1345 SCIENC 239 (Class)
+TR      1400 1515 SCIENC 239 (Class)"
+"TR      1230 1345 SCIENC 234 (Class)
+TR      1400 1515 SCIENC 234 (Class)"
+"TR      1230 1345 SCIENC 151 (Lecture)
+W       1830 1945 SCIENC 220 (Lab)
+W       2000 2115 SCIENC 220 (Lab)"
+TR      1230 1345 SCIENC 128 (Class)
+"TR      1230 1345 SCIENC 126 (Lecture)
+W       1100 1215 SCIENC 336 (Lab)
+W       1230 1345 SCIENC 336 (Lab)"
+TR      1230 1345 SAVITZ 341 (Class)
+TR      1230 1345 SAVITZ 321 (Class)
+TR      1230 1345 SAVITZ 217 (Class)
+"TR      1230 1345 ROWAN 117 (Class)
+TR      1400 1515 ROWAN 117 (Class)"
+"TR      1230 1345 ROWAN 117 (Class)
+TR      1400 1515 ROWAN 117 (Class)"
+TR      1230 1345 ROBSON 325 (Class)
+TR      1230 1345 ROBSON 315L (Class)
+TR      1230 1345 ROBSON 312 (Class)
+TR      1230 1345 ROBSON 310 (Class)
+TR      1230 1345 ROBSON 308 (Class)
+TR      1230 1345 ROBSON 308 (Class)
+TR      1230 1345 ROBSON 305 (Class)
+TR      1230 1345 ROBSON 302 (Class)
+TR      1230 1345 ROBSON 224 (Class)
+TR      1230 1345 ROBSON 212 (Class)
+TR      1230 1345 ROBSON 205 (Class)
+TR      1230 1345 ROBSON 204 (Class)
+TR      1230 1345 ROBSON 201B (Class)
+TR      1230 1345 ROBSON 201A (Class)
+TR      1230 1345 ROBSON 121 (Class)
+TR      1230 1345 ROBSON 103 (Class)
+TR      1230 1345 ROBSON 102 (Class)
+TR      1230 1345 ROBSON 101A (Class)
+"TR      1230 1345 REXT 321 (Class)
+TR      1400 1515 REXT 321 (Class)"
+"TR      1230 1345 REXT 321 (Class)
+TR      1400 1515 REXT 321 (Class)"
+"TR      1230 1345 REXT 319 (Class)
+TR      1400 1515 REXT 319 (Class)"
+"TR      1230 1345 REXT 319 (Class)
+TR      1400 1515 REXT 319 (Class)"
+TR      1230 1345 MEMORL 101 (Class)
+TR      1230 1345 MEMORL 001 (Class)
+TR      1230 1345 LBRARY 578 (Class)
+TR      1230 1345 LBRARY 401 (Class)
+TR      1230 1345 LBRARY 226 (Class)
+TR      1230 1345 LBRARY 126 (Class)
+TR      1230 1345 JAMES 3117 (Class)
+TR      1230 1345 JAMES 3109 (Class)
+TR      1230 1345 JAMES 2105 (Class)
+TR      1230 1345 JAMES 2104 (Class)
+TR      1230 1345 JAMES 2102 (Class)
+TR      1230 1345 JAMES 2101 (Class)
+TR      1230 1345 JAMES 2099 (Class)
+TR      1230 1345 JAMES 2098 (Class)
+TR      1230 1345 JAMES 2097 (Class)
+TR      1230 1345 JAMES 2096 (Class)
+TR      1230 1345 JAMES 2095 (Class)
+TR      1230 1345 JAMES 2094 (Class)
+TR      1230 1345 JAMES 1146 (Class)
+TR      1230 1345 JAMES 1115 (Class)
+TR      1230 1345 JAMES 1056 (Class)
+TR      1230 1345 JAMES 1019 (Class)
+TR      1230 1345 HAWTHN 204 (Class)
+TR      1230 1345 HAWTHN 104 (Class)
+TR      1230 1345 ESBY 103E (Class)
+TR      1230 1345 ENTPRZ 517 (Class)
+TR      1230 1345 ENTPRZ 514 (Class)
+TR      1230 1345 ENTPRZ 509 (Class)
+TR      1230 1345 ENTPRZ 506 (Class)
+TR      1230 1345 ENTPRZ 417 (Class)
+TR      1230 1345 ENTPRZ 414 (Class)
+TR      1230 1345 ENTPRZ 409 (Class)
+TR      1230 1345 ENTPRZ 406 (Class)
+TR      1230 1345 BUSN 303 (Class)
+TR      1230 1345 BUSN 301 (Class)
+TR      1230 1345 BUSN 233 (Class)
+TR      1230 1345 BUSN 227 (Class)
+TR      1230 1345 BUSN 225 (Class)
+TR      1230 1345 BUSN 223 (Class)
+TR      1230 1345 BUSN 221 (Class)
+TR      1230 1345 BUSN 208 (Class)
+TR      1230 1345 BUSN 204 (Class)
+TR      1230 1345 BUSN 201 (Class)
+TR      1230 1345 BUSN 131 (Class)
+TR      1230 1345 BUSN 103 (Class)
+TR      1230 1345 BUSN 101 (Class)
+TR      1230 1345 BUNCE TOHILL (Class)
+TR      1230 1345 BUNCE 332 (Class)
+TR      1230 1345 BUNCE 205 (Class)
+TR      1230 1345 BUNCE 159 (Class)
+TR      1230 1345 BUNCE 156 (Class)
+TR      1230 1345 BUNCE 131 (Class)
+TR      1230 1345 BUNCE 109 (Class)
+TR      1230 1345 BUNCE 106 (Class)
+TR      1230 1345 BUNCE 105 (Class)
+TR      1230 1345 BUNCE 105 (Class)
+TR      1230 1345 BUNCE 104 (Class)
+"TR      1230 1345 BOZ 112 (Lecture)
+T       1830 1945 SCIENC 148 (Lab)
+T       2000 2115 SCIENC 148 (Lab)"
+TR      1230 1345 301HGH 305 (Class)
+TR      1230 1345 301HGH 215 (Class)
+TR      1230 1345 301HGH 205 (Class)
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+"TR      1230 1345   (Class)
+TR      1400 1515   (Class)"
+TR      1230 1320 WILSON 164 (Class)
+TR      1100 1215 WINANS 113 (Class)
+TR      1100 1215 WINANS 112 (Class)
+TR      1100 1215 WILSON 213 (Class)
+TR      1100 1215 WILSON 212 (Class)
+TR      1100 1215 WILSON 207 (Class)
+TR      1100 1215 WILSON 206 (Class)
+TR      1100 1215 WILSON 205 (Class)
+TR      1100 1215 WILSON 204 (Class)
+TR      1100 1215 WILSON 203 (Class)
+TR      1100 1215 WILSON 114 (Class)
+TR      1100 1215 WILSON 109 (Class)
+TR      1100 1215 WILSON 108 (Class)
+TR      1100 1215 WILSON 107 (Class)
+TR      1100 1215 WILSON 105 (Class)
+TR      1100 1215 WILSON 101 (Class)
+TR      1100 1215 WHITNY CL-202 (Class)
+TR      1100 1215 WHITNY CL-201 (Class)
+TR      1100 1215 WHITNY CL-201 (Class)
+TR      1100 1215 WHITNY CL-201 (Class)
+"TR      1100 1215 WESTBY 219 (Class)
+TR      1230 1345 WESTBY 219 (Class)"
+"TR      1100 1215 WESTBY 218 (Class)
+TR      1230 1345 WESTBY 218 (Class)"
+"TR      1100 1215 WESTBY 216 (Class)
+TR      1230 1345 WESTBY 216 (Class)"
+"TR      1100 1215 WESTBY 216 (Class)
+TR      1230 1345 WESTBY 216 (Class)"
+"TR      1100 1215 WESTBY 213 (Class)
+TR      1230 1345 WESTBY 213 (Class)"
+TR      1100 1215 WESTBY 111 (Class)
+TR      1100 1215 WESTBY 105 (Class)
+"TR      1100 1215 WESTBY 104 (Class)
+TR      1230 1345 WESTBY 104 (Class)"
+"TR      1100 1215 WESTBY 103 (Class)
+TR      1230 1345 WESTBY 103 (Class)"
+"TR      1100 1215 WESTBY 102 (Class)
+TR      1230 1345 WESTBY 102 (Class)"
+"TR      1100 1215 WESTBY 102 (Class)
+TR      1230 1345 WESTBY 102 (Class)"
+"TR      1100 1215 WESTBY 100 (Class)
+TR      1230 1345 WESTBY 100 (Class)"
+"TR      1100 1215 VCTRIA 306 (Class)
+W       1230 1345 REXT 241 (Class)
+W       1400 1515 REXT 241 (Class)"
+TR      1100 1215 VCTRIA 301 (Class)
+TR      1100 1215 VCTRIA 204 (Class)
+TR      1100 1215 VCTRIA 201 (Class)
+TR      1100 1215 VCTRIA 200 (Class)
+TR      1100 1215 SCIENC 338 (Class)
+"TR      1100 1215 SCIENC 324 (Lecture)
+F       1100 1215 SCIENC 334 (Lab)
+F       1230 1345 SCIENC 334 (Lab)"
+"TR      1100 1215 SCIENC 324 (Lecture)
+F       1100 1215 SCIENC 332 (Lab)
+F       1230 1345 SCIENC 332 (Lab)"
+TR      1100 1215 SCIENC 254 (Class)
+"TR      1100 1215 SCIENC 241 (Class)
+F       1100 1215 SCIENC 241 (Class)
+F       1230 1345 SCIENC 241 (Class)"
+TR      1100 1215 SCIENC 151 (Class)
+"TR      1100 1215 SCIENC 126 (Lecture)
+T       1830 1945 SCIENC 206 (Lab)
+T       2000 2115 SCIENC 206 (Lab)"
+"TR      1100 1215 SCIENC 126 (Lecture)
+R       1830 1945 SCIENC 206 (Lab)
+R       2000 2115 SCIENC 206 (Lab)"
+TR      1100 1215 SAVITZ 217 (Class)
+TR      1100 1215 ROBSON 325 (Class)
+TR      1100 1215 ROBSON 323 (Class)
+TR      1100 1215 ROBSON 315L (Class)
+TR      1100 1215 ROBSON 312 (Class)
+TR      1100 1215 ROBSON 305 (Class)
+TR      1100 1215 ROBSON 224 (Class)
+TR      1100 1215 ROBSON 212 (Class)
+TR      1100 1215 ROBSON 211 (Class)
+TR      1100 1215 ROBSON 205 (Class)
+TR      1100 1215 ROBSON 204 (Class)
+TR      1100 1215 ROBSON 202 (Class)
+TR      1100 1215 ROBSON 201B (Class)
+TR      1100 1215 ROBSON 201A (Class)
+TR      1100 1215 ROBSON 121 (Class)
+TR      1100 1215 ROBSON 105 (Class)
+TR      1100 1215 ROBSON 102 (Class)
+TR      1100 1215 ROBSON 101A (Class)
+TR      1100 1215 REXT 341 (Class)
+"TR      1100 1215 REXT 241 (Class)
+T       0930 1045 REXT 241 (Class)"
+"TR      1100 1215 REXT 240 (Class)
+T       0930 1045 REXT 240 (Class)"
+"TR      1100 1215 REXT 141 (Class)
+T       0930 1045 REXT 141 (Class)"
+"TR      1100 1215 REXT 107 (Class)
+T       0930 1045 REXT 107 (Class)
+F       1100 1215 ROWAN 117 (Class)
+F       1230 1345 ROWAN 117 (Class)"
+TR      1100 1215 MEMORL 101 (Class)
+TR      1100 1215 MEMORL 001 (Class)
+TR      1100 1215 LBRARY 578 (Class)
+TR      1100 1215 LBRARY 401 (Class)
+TR      1100 1215 LBRARY 226 (Class)
+TR      1100 1215 LBRARY 126 (Class)
+TR      1100 1215 JAMES 3117 (Class)
+"TR      1100 1215 JAMES 3114 (Lecture)
+W       1100 1215 SCIENC 226 (Lab)
+W       1230 1345 SCIENC 226 (Lab)"
+TR      1100 1215 JAMES 3109 (Class)
+TR      1100 1215 JAMES 2105 (Class)
+TR      1100 1215 JAMES 2104 (Class)
+TR      1100 1215 JAMES 2102 (Class)
+TR      1100 1215 JAMES 2101 (Class)
+"TR      1100 1215 JAMES 2099 (Class)
+F         LBRARY 131"
+TR      1100 1215 JAMES 2097 (Class)
+"TR      1100 1215 JAMES 2096 (Lecture)
+TR      1400 1515 JAMES 1053 (Lab)"
+TR      1100 1215 JAMES 2095 (Class)
+TR      1100 1215 JAMES 2094 (Class)
+"TR      1100 1215 JAMES 1146 (Lecture)
+R       0800 0915 JAMES 1053 (Lab)
+R       0930 1045 JAMES 1053 (Lab)"
+TR      1100 1215 JAMES 1115 (Class)
+TR      1100 1215 JAMES 1056 (Class)
+TR      1100 1215 JAMES 1020 (Class)
+TR      1100 1215 JAMES 1019 (Class)
+TR      1100 1215 HAWTHN 204 (Class)
+TR      1100 1215 HAWTHN 104 (Class)
+TR      1100 1215 ESBY 103G (Class)
+TR      1100 1215 ESBY 103E (Class)
+TR      1100 1215 ENTPRZ 517 (Class)
+TR      1100 1215 ENTPRZ 514 (Class)
+"TR      1100 1215 ENTPRZ 509 (Class)
+F       0930 1045 ENTPRZ 517 (Class)"
+TR      1100 1215 ENTPRZ 509 (Class)
+TR      1100 1215 ENTPRZ 506 (Class)
+TR      1100 1215 ENTPRZ 417 (Class)
+TR      1100 1215 ENTPRZ 414 (Class)
+TR      1100 1215 ENTPRZ 409 (Class)
+TR      1100 1215 ENTPRZ 406 (Class)
+TR      1100 1215 BUSN 303 (Class)
+TR      1100 1215 BUSN 301 (Class)
+TR      1100 1215 BUSN 235 (Class)
+TR      1100 1215 BUSN 233 (Class)
+TR      1100 1215 BUSN 227 (Class)
+TR      1100 1215 BUSN 225 (Class)
+TR      1100 1215 BUSN 223 (Class)
+TR      1100 1215 BUSN 221 (Class)
+TR      1100 1215 BUSN 208 (Class)
+TR      1100 1215 BUSN 204 (Class)
+TR      1100 1215 BUSN 201 (Class)
+TR      1100 1215 BUSN 131 (Class)
+TR      1100 1215 BUSN 121 (Class)
+TR      1100 1215 BUSN 107 (Class)
+TR      1100 1215 BUSN 103 (Class)
+TR      1100 1215 BUSN 101 (Class)
+TR      1100 1215 BUNCE 332 (Class)
+TR      1100 1215 BUNCE 205 (Class)
+TR      1100 1215 BUNCE 131 (Class)
+TR      1100 1215 BUNCE 109 (Class)
+TR      1100 1215 BUNCE 106 (Class)
+TR      1100 1215 BUNCE 105 (Class)
+TR      1100 1215 BUNCE 104 (Class)
+TR      1100 1215 301HGH 305 (Class)
+TR      1100 1215 301HGH 216 (Class)
+TR      1100 1215 301HGH 215 (Class)
+TR      1100 1215 301HGH 205 (Class)
+TR      1100 1150 BUNCE 156 (Class)
+TR      0930 1045 WINANS 113 (Class)
+TR      0930 1045 WINANS 112 (Class)
+TR      0930 1045 WILSON 213 (Class)
+TR      0930 1045 WILSON 212 (Class)
+TR      0930 1045 WILSON 207 (Class)
+TR      0930 1045 WILSON 205 (Class)
+TR      0930 1045 WILSON 204 (Class)
+TR      0930 1045 WILSON 203 (Class)
+TR      0930 1045 WILSON 164 (Class)
+TR      0930 1045 WILSON 153 (Class)
+TR      0930 1045 WILSON 109 (Class)
+TR      0930 1045 WILSON 108 (Class)
+"TR      0930 1045 WILSON 107 (Class)
+F       0800 1150 WILSON 107 (Class)"
+TR      0930 1045 WILSON 105 (Class)
+TR      0930 1045 WILSON 101 (Class)
+TR      0930 1045 WESTBY 111 (Class)
+"TR      0930 1045 WESTBY 105 (Lecture)
+R       1400 1515 WESTBY 105 (Lab)
+R       1530 1645 WESTBY 105 (Lab)"
+TR      0930 1045 VCTRIA 306 (Class)
+TR      0930 1045 VCTRIA 301 (Class)
+TR      0930 1045 VCTRIA 204 (Class)
+TR      0930 1045 VCTRIA 201 (Class)
+TR      0930 1045 VCTRIA 200 (Class)
+TR      0930 1045 SCIENC 338 (Class)
+"TR      0930 1045 SCIENC 324 (Lecture)
+W       0800 0915 SCIENC 336 (Lab)
+W       0930 1045 SCIENC 336 (Lab)"
+TR      0930 1045 SCIENC 254 (Class)
+"TR      0930 1045 SCIENC 206 (Class)
+TR      1100 1215 SCIENC 206 (Class)"
+"TR      0930 1045 SCIENC 151 (Lecture)
+W       0800 0915 SCIENC 134 (Lab)
+W       0930 1045 SCIENC 134 (Lab)"
+"TR      0930 1045 SCIENC 151 (Lecture)
+F       0800 0915 SCIENC 134 (Lab)
+F       0930 1045 SCIENC 134 (Lab)"
+TR      0930 1045 SAVITZ 341 (Class)
+TR      0930 1045 SAVITZ 217 (Class)
+TR      0930 1045 ROBSON 312 (Class)
+TR      0930 1045 ROBSON 310 (Class)
+TR      0930 1045 ROBSON 308 (Class)
+TR      0930 1045 ROBSON 306 (Class)
+TR      0930 1045 ROBSON 305 (Class)
+TR      0930 1045 ROBSON 227 (Class)
+TR      0930 1045 ROBSON 224 (Class)
+TR      0930 1045 ROBSON 212 (Class)
+TR      0930 1045 ROBSON 205 (Class)
+TR      0930 1045 ROBSON 202 (Class)
+TR      0930 1045 ROBSON 201B (Class)
+TR      0930 1045 ROBSON 201A (Class)
+TR      0930 1045 ROBSON 121 (Class)
+TR      0930 1045 ROBSON 105 (Class)
+TR      0930 1045 ROBSON 103 (Class)
+TR      0930 1045 ROBSON 102 (Class)
+TR      0930 1045 ROBSON 101A (Class)
+"TR      0930 1045 REXT 341 (Class)
+T       1700 1815 REXT 341 (Class)
+T       1830 1945 REXT 341 (Class)"
+"TR      0930 1045 REXT 340 (Class)
+W       1230 1345 REXT 340 (Class)
+W       1400 1515 REXT 340 (Class)"
+"TR      0930 1045 REXT 319 (Class)
+W       1230 1345 REXT 339 (Class)
+W       1400 1515 REXT 339 (Class)"
+TR      0930 1045 MEMORL 101 (Class)
+TR      0930 1045 MEMORL 001 (Class)
+TR      0930 1045 LBRARY 401 (Class)
+TR      0930 1045 LBRARY 226 (Class)
+TR      0930 1045 LBRARY 126 (Class)
+TR      0930 1045 JAMES 3117 (Class)
+"TR      0930 1045 JAMES 3114 (Class)
+F       0930 1045 JAMES 2101 (Class)"
+TR      0930 1045 JAMES 3109 (Class)
+TR      0930 1045 JAMES 3099 (Class)
+TR      0930 1045 JAMES 2105 (Class)
+TR      0930 1045 JAMES 2104 (Class)
+TR      0930 1045 JAMES 2102 (Class)
+TR      0930 1045 JAMES 2101 (Class)
+TR      0930 1045 JAMES 2099 (Class)
+TR      0930 1045 JAMES 2097 (Class)
+TR      0930 1045 JAMES 2096 (Class)
+TR      0930 1045 JAMES 2095 (Class)
+TR      0930 1045 JAMES 1146 (Class)
+TR      0930 1045 JAMES 1146 (Class)
+TR      0930 1045 JAMES 1115 (Class)
+TR      0930 1045 JAMES 1081 (Class)
+TR      0930 1045 JAMES 1056 (Class)
+TR      0930 1045 JAMES 1020 (Class)
+TR      0930 1045 JAMES 1019 (Class)
+TR      0930 1045 HAWTHN 104 (Class)
+TR      0930 1045 ENTPRZ 514 (Class)
+"TR      0930 1045 ENTPRZ 509 (Class)
+F       0930 1045 ENTPRZ 517 (Class)"
+TR      0930 1045 ENTPRZ 509 (Class)
+TR      0930 1045 ENTPRZ 506 (Class)
+TR      0930 1045 ENTPRZ 417 (Class)
+TR      0930 1045 ENTPRZ 414 (Class)
+TR      0930 1045 ENTPRZ 409 (Class)
+TR      0930 1045 ENTPRZ 406 (Class)
+TR      0930 1045 BUSN 303 (Class)
+TR      0930 1045 BUSN 301 (Class)
+TR      0930 1045 BUSN 235 (Class)
+TR      0930 1045 BUSN 233 (Class)
+TR      0930 1045 BUSN 227 (Class)
+TR      0930 1045 BUSN 225 (Class)
+TR      0930 1045 BUSN 223 (Class)
+TR      0930 1045 BUSN 204 (Class)
+"TR      0930 1045 BUSN 201 (Class)
+W       1400 1515 ROWAN 146 (Class)
+W       1530 1645 ROWAN 146 (Class)"
+TR      0930 1045 BUSN 131 (Class)
+TR      0930 1045 BUSN 121 (Class)
+TR      0930 1045 BUSN 121 (Class)
+TR      0930 1045 BUSN 107 (Class)
+TR      0930 1045 BUSN 101 (Class)
+TR      0930 1045 BUNCE 332 (Class)
+TR      0930 1045 BUNCE 159 (Class)
+TR      0930 1045 BUNCE 131 (Class)
+TR      0930 1045 BUNCE 109 (Class)
+TR      0930 1045 BUNCE 106 (Class)
+"TR      0930 1045 BOZ 112 (Lecture)
+W       1830 1945 SCIENC 144 (Lab)
+W       2000 2115 SCIENC 144 (Lab)"
+"TR      0930 1045 BOZ 112 (Lecture)
+W       1530 1645 SCIENC 144 (Lab)
+W       1700 1815 SCIENC 144 (Lab)"
+TR      0930 1045 301HGH 305 (Class)
+TR      0930 1045 301HGH 216 (Class)
+TR      0930 1045 301HGH 215 (Class)
+TR      0930 1045 301HGH 205 (Class)
+TR      0930 1020 JAMES 2103 (Class)
+TR      0930 1020 BUNCE 156 (Class)
+TR      0800 0915 WINANS 112 (Class)
+TR      0800 0915 WILSON 213 (Class)
+TR      0800 0915 WILSON 212 (Class)
+TR      0800 0915 WILSON 207 (Class)
+TR      0800 0915 WILSON 204 (Class)
+TR      0800 0915 WILSON 203 (Class)
+TR      0800 0915 WILSON 164 (Class)
+TR      0800 0915 WILSON 153 (Class)
+TR      0800 0915 WILSON 108 (Class)
+"TR      0800 0915 WILSON 107 (Class)
+F       0800 1150 WILSON 107 (Class)"
+TR      0800 0915 WILSON 105 (Class)
+TR      0800 0915 WILSON 101 (Class)
+"TR      0800 0915 WESTBY 219 (Class)
+TR      0930 1045 WESTBY 219 (Class)"
+"TR      0800 0915 WESTBY 218 (Class)
+TR      0930 1045 WESTBY 218 (Class)"
+"TR      0800 0915 WESTBY 216 (Class)
+TR      0930 1045 WESTBY 216 (Class)"
+"TR      0800 0915 WESTBY 216 (Class)
+TR      0930 1045 WESTBY 216 (Class)"
+"TR      0800 0915 WESTBY 213 (Class)
+TR      0930 1045 WESTBY 213 (Class)"
+"TR      0800 0915 WESTBY 206 (Class)
+TR      0930 1045 WESTBY 206 (Class)"
+"TR      0800 0915 WESTBY 104 (Class)
+TR      0930 1045 WESTBY 104 (Class)"
+"TR      0800 0915 WESTBY 103 (Class)
+TR      0930 1045 WESTBY 103 (Class)"
+TR      0800 0915 VCTRIA 302 (Class)
+"TR      0800 0915 VCTRIA 300 (Class)
+W       0800 0915 301HGH 305 (Class)"
+"TR      0800 0915 VCTRIA 204 (Class)
+F       1100 1215 REXT 140 (Class)
+F       1230 1345 REXT 140 (Class)"
+TR      0800 0915 VCTRIA 201 (Class)
+TR      0800 0915 VCTRIA 200 (Class)
+TR      0800 0915 SCIENC 338 (Class)
+TR      0800 0915 SCIENC 338 (Class)
+"TR      0800 0915 SCIENC 324 (Lecture)
+F       0800 0915 SCIENC 334 (Lab)
+F       0930 1045 SCIENC 334 (Lab)"
+"TR      0800 0915 SCIENC 324 (Lecture)
+F       0800 0915 SCIENC 332 (Lab)
+F       0930 1045 SCIENC 332 (Lab)"
+"TR      0800 0915 SCIENC 241 (Class)
+TR      0930 1045 SCIENC 241 (Class)"
+"TR      0800 0915 SCIENC 232 (Class)
+TR      0930 1045 SCIENC 232 (Class)"
+"TR      0800 0915 SCIENC 206 (Lecture)
+F       0800 0915 SCIENC 206 (Lab)
+F       0930 1045 SCIENC 206 (Lab)"
+"TR      0800 0915 SCIENC 204 (Class)
+TR      0930 1045 SCIENC 204 (Class)"
+"TR      0800 0915 SCIENC 150 (Class)
+F       1255 1345 SCIENC 150 (Class)"
+"TR      0800 0915 SCIENC 126 (Lecture)
+W       0800 0915 SCIENC 226 (Lab)
+W       0930 1045 SCIENC 226 (Lab)"
+"TR      0800 0915 SCIENC 126 (Lecture)
+F       0800 0915 SCIENC 226 (Lab)
+F       0930 1045 SCIENC 226 (Lab)"
+TR      0800 0915 SAVITZ 341 (Class)
+TR      0800 0915 ROBSON 312 (Class)
+TR      0800 0915 ROBSON 310 (Class)
+TR      0800 0915 ROBSON 306 (Class)
+TR      0800 0915 ROBSON 227 (Class)
+TR      0800 0915 ROBSON 211 (Class)
+TR      0800 0915 ROBSON 202 (Class)
+TR      0800 0915 ROBSON 201A (Class)
+TR      0800 0915 ROBSON 103 (Class)
+TR      0800 0915 REXT 341 (Class)
+"TR      0800 0915 REXT 340 (Class)
+W       0800 0915 REXT 340 (Class)
+W       0930 1045 REXT 340 (Class)"
+TR      0800 0915 REXT 321 (Class)
+"TR      0800 0915 REXT 320 (Class)
+R       0930 1045 REXT 320 (Class)"
+"TR      0800 0915 REXT 319 (Class)
+W       0800 0915 REXT 319 (Class)
+W       0930 1045 REXT 319 (Class)"
+"TR      0800 0915 REXT 241 (Class)
+R       0930 1045 REXT 241 (Class)"
+"TR      0800 0915 REXT 240 (Class)
+R       0930 1045 REXT 240 (Class)"
+"TR      0800 0915 REXT 141 (Class)
+R       0930 1045 REXT 141 (Class)"
+"TR      0800 0915 REXT 140 (Class)
+R       0930 1045 REXT 140 (Class)"
+"TR      0800 0915 REXT 107 (Class)
+R       0930 1045 REXT 107 (Class)"
+TR      0800 0915 LBRARY 226 (Class)
+"TR      0800 0915 JAMES 3114 (Class)
+F       0800 0915 JAMES 2101 (Class)"
+TR      0800 0915 JAMES 3109 (Class)
+TR      0800 0915 JAMES 3109 (Class)
+TR      0800 0915 JAMES 3091A (Class)
+TR      0800 0915 JAMES 2105 (Class)
+TR      0800 0915 JAMES 2101 (Class)
+TR      0800 0915 JAMES 1146 (Class)
+TR      0800 0915 JAMES 1056 (Class)
+TR      0800 0915 JAMES 1020 (Class)
+"TR      0800 0915 JAMES 1019 (Class)
+R       0916 1345   (Class)"
+TR      0800 0915 ENTPRZ 514 (Class)
+TR      0800 0915 ENTPRZ 414 (Class)
+TR      0800 0915 ENTPRZ 409 (Class)
+TR      0800 0915 BUSN 303 (Class)
+TR      0800 0915 BUSN 235 (Class)
+TR      0800 0915 BUSN 223 (Class)
+TR      0800 0915 BUSN 204 (Class)
+TR      0800 0915 BUSN 201 (Class)
+TR      0800 0915 BUSN 131 (Class)
+TR      0800 0915 BUSN 101 (Class)
+TR      0800 0915 BUNCE 109 (Class)
+TR      0800 0915 BUNCE 106 (Class)
+TR      0800 0915 301HGH 305 (Class)
+TR      0800 0850 BUNCE 156 (Class)
+TR      0735 0915 ROBSON 224 (Class)
+TF      1230 1345 ROBSON 323 (Class)
+TF      1230 1320 JAMES 2113 (Class)
+"TF      1100 1215 SCIENC 220 (Lecture)
+R       1100 1215 SCIENC 220 (Lab)
+R       1230 1345 SCIENC 220 (Lab)"
+TF      1100 1215 REXT 321 (Class)
+"TF      0930 1045 SCIENC 234 (Class)
+TF      1100 1215 SCIENC 234 (Class)"
+TF      0930 1045 ROBSON 323 (Class)
+"TF      0930 1045 JAMES 2113 (Class)
+TF      1100 1215 JAMES 2113 (Class)"
+"TF      0800 0915 SCIENC 220 (Lecture)
+R       0800 0915 SCIENC 220 (Lecture)
+R       0930 1045 SCIENC 220 (Lecture)"
+TF      0800 0915 SCIENC 128 (Class)
+TF      0800 0915 JAMES 2113 (Class)
+"T       2000 2115 JAMES 2096 (Lecture)
+T       2130 2245 JAMES 2096 (Lecture)
+W       1700 1815 JAMES 1053 (Lab)
+W       1830 1945 JAMES 1053 (Lab)"
+"T       2000 2115 JAMES 1146 (Class)
+T       2130 2245 JAMES 1146 (Class)"
+"T       2000 2115 JAMES 1056 (Class)
+T       2130 2245 JAMES 1056 (Class)"
+"T       2000 2115 JAMES 1019 (Class)
+T       2130 2245 JAMES 1019 (Class)"
+T       1945 2215 JAMES 3091B (Class)
+T       1945 2215 JAMES 2100 (Class)
+T       1945 2215 JAMES 2094 (Class)
+T       1945 2215 JAMES 1119 (Class)
+T       1945 2215 JAMES 1119 (Class)
+T       1945 2215 JAMES 1119 (Class)
+T       1830 2150 JAMES 2097 (Class)
+"T       1830 1945 WINANS 112 (Class)
+T       2000 2115 WINANS 112 (Class)"
+"T       1830 1945 WINANS 111 (Class)
+T       2000 2115 WINANS 111 (Class)"
+"T       1830 1945 WILSON 153 (Class)
+T       2000 2115 WILSON 153 (Class)"
+"T       1830 1945 WILSON 105 (Class)
+T       2000 2115 WILSON 105 (Class)"
+"T       1830 1945 VCTRIA 306 (Class)
+T       2000 2115 VCTRIA 306 (Class)"
+"T       1830 1945 VCTRIA 300 (Class)
+T       2000 2115 VCTRIA 300 (Class)"
+"T       1830 1945 VCTRIA 201 (Class)
+T       2000 2115 VCTRIA 201 (Class)"
+"T       1830 1945 SCIENC 338 (Class)
+T       2000 2115 SCIENC 338 (Class)"
+"T       1830 1945 SCIENC 338 (Class)
+T       2000 2115 SCIENC 338 (Class)"
+"T       1830 1945 SCIENC 334 (Lab)
+T       2000 2115 SCIENC 334 (Lab)
+R       1830 1945 SCIENC 324 (Lecture)
+R       2000 2115 SCIENC 324 (Lecture)"
+"T       1830 1945 SCIENC 332 (Lab)
+T       2000 2115 SCIENC 332 (Lab)
+R       1830 1945 SCIENC 324 (Lecture)
+R       2000 2115 SCIENC 324 (Lecture)"
+"T       1830 1945 SCIENC 324 (Lecture)
+T       2000 2115 SCIENC 324 (Lecture)
+R       1830 1945 SCIENC 326 (Lab)
+R       2000 2115 SCIENC 326 (Lab)"
+"T       1830 1945 SCIENC 324 (Lecture)
+T       2000 2115 SCIENC 324 (Lecture)
+R       1830 1945 SCIENC 322 (Lab)
+R       2000 2115 SCIENC 322 (Lab)"
+"T       1830 1945 SCIENC 314A (Lab)
+T       2000 2115 SCIENC 314A (Lab)
+R       1830 1945 SCIENC 314 (Lecture)
+R       2000 2115 SCIENC 314 (Lecture)"
+"T       1830 1945 SCIENC 254 (Class)
+T       2000 2115 SCIENC 254 (Class)"
+"T       1830 1945 SCIENC 151 (Lecture)
+T       2000 2115 SCIENC 151 (Lecture)
+R       1830 1945 SCIENC 336 (Lab)
+R       2000 2115 SCIENC 336 (Lab)"
+"T       1830 1945 SCIENC 151 (Lecture)
+T       2000 2115 SCIENC 151 (Lecture)
+R       1830 1945 SCIENC 334 (Lab)
+R       2000 2115 SCIENC 334 (Lab)"
+"T       1830 1945 SCIENC 128 (Class)
+T       2000 2115 SCIENC 128 (Class)"
+"T       1830 1945 SCIENC 128 (Class)
+T       2000 2115 SCIENC 128 (Class)"
+"T       1830 1945 SAVITZ 217 (Class)
+T       2000 2115 SAVITZ 217 (Class)"
+"T       1830 1945 ROWAN 117 (Class)
+T       2000 2115 ROWAN 117 (Class)"
+"T       1830 1945 ROWAN 117 (Class)
+T       2000 2115 ROWAN 117 (Class)"
+"T       1830 1945 ROBSON 325 (Class)
+T       2000 2115 ROBSON 325 (Class)
+R       1830 1945 ENTPRZ 414 (Class)
+R       2000 2115 ENTPRZ 414 (Class)"
+"T       1830 1945 ROBSON 323 (Class)
+T       2000 2115 ROBSON 323 (Class)"
+"T       1830 1945 ROBSON 315L (Class)
+T       2000 2115 ROBSON 315L (Class)"
+"T       1830 1945 ROBSON 311 (Class)
+T       2000 2115 ROBSON 311 (Class)"
+"T       1830 1945 ROBSON 308 (Class)
+R       1830 1945 VCTRIA 201 (Class)"
+"T       1830 1945 ROBSON 306 (Class)
+T       2000 2115 ROBSON 306 (Class)"
+"T       1830 1945 ROBSON 302 (Class)
+T       2000 2115 ROBSON 302 (Class)"
+"T       1830 1945 ROBSON 224 (Class)
+T       2000 2115 ROBSON 224 (Class)"
+"T       1830 1945 ROBSON 211 (Class)
+T       2000 2115 ROBSON 211 (Class)"
+"T       1830 1945 ROBSON 202 (Class)
+T       2000 2115 ROBSON 202 (Class)"
+"T       1830 1945 ROBSON 201B (Class)
+T       2000 2115 ROBSON 201B (Class)"
+"T       1830 1945 ROBSON 201A (Class)
+T       2000 2115 ROBSON 201A (Class)"
+"T       1830 1945 ROBSON 121 (Class)
+T       2000 2115 ROBSON 121 (Class)"
+"T       1830 1945 ROBSON 105 (Class)
+T       2000 2115 ROBSON 105 (Class)"
+"T       1830 1945 REXT 339 (Class)
+T       2000 2115 REXT 339 (Class)"
+"T       1830 1945 REXT 339 (Class)
+T       2000 2115 REXT 339 (Class)"
+"T       1830 1945 REXT 321 (Class)
+T       2000 2115 REXT 321 (Class)"
+"T       1830 1945 REXT 321 (Class)
+T       2000 2115 REXT 321 (Class)"
+"T       1830 1945 REXT 320 (Class)
+T       2000 2115 REXT 320 (Class)"
+"T       1830 1945 LBRARY 578 (Lecture)
+T       2000 2115 LBRARY 578 (Lecture)
+R       1830 1945 JAMES 2113 (Lab)
+R       2000 2115 JAMES 2113 (Lab)"
+"T       1830 1945 LBRARY 226 (Class)
+T       2000 2115 LBRARY 226 (Class)"
+"T       1830 1945 LBRARY 126 (Class)
+T       2000 2115 LBRARY 126 (Class)"
+"T       1830 1945 JAMES 3114 (Class)
+T       2000 2115 JAMES 3114 (Class)"
+"T       1830 1945 JAMES 2113 (Lab)
+T       2000 2115 JAMES 2113 (Lab)
+R       1830 1945 BUSN 101 (Lecture)
+R       2000 2115 BUSN 101 (Lecture)"
+"T       1830 1945 JAMES 2102 (Class)
+T       2000 2115 JAMES 2102 (Class)"
+"T       1830 1945 HAWTHN 204 (Class)
+T       2000 2115 HAWTHN 204 (Class)"
+"T       1830 1945 ENTPRZ 509 (Class)
+T       2000 2115 ENTPRZ 509 (Class)"
+"T       1830 1945 ENTPRZ 414 (Class)
+T       2000 2115 ENTPRZ 414 (Class)"
+"T       1830 1945 BUSN 303 (Class)
+T       2000 2115 BUSN 303 (Class)"
+"T       1830 1945 BUSN 301 (Class)
+T       2000 2115 BUSN 301 (Class)"
+"T       1830 1945 BUSN 235 (Class)
+T       2000 2115 BUSN 235 (Class)"
+"T       1830 1945 BUSN 233 (Class)
+T       2000 2115 BUSN 233 (Class)"
+"T       1830 1945 BUSN 227 (Class)
+T       2000 2115 BUSN 227 (Class)"
+"T       1830 1945 BUSN 225 (Class)
+T       2000 2115 BUSN 225 (Class)"
+"T       1830 1945 BUSN 223 (Class)
+T       2000 2115 BUSN 223 (Class)"
+"T       1830 1945 BUSN 221 (Class)
+T       2000 2115 BUSN 221 (Class)"
+"T       1830 1945 BUSN 208 (Class)
+T       2000 2115 BUSN 208 (Class)"
+"T       1830 1945 BUSN 204 (Class)
+T       2000 2115 BUSN 204 (Class)"
+"T       1830 1945 BUSN 201 (Class)
+T       2000 2115 BUSN 201 (Class)"
+"T       1830 1945 BUSN 131 (Class)
+T       2000 2115 BUSN 131 (Class)"
+"T       1830 1945 BUSN 121 (Class)
+T       2000 2115 BUSN 121 (Class)"
+"T       1830 1945 BUSN 107 (Class)
+T       2000 2115 BUSN 107 (Class)"
+"T       1830 1945 BUSN 103 (Class)
+T       2000 2115 BUSN 103 (Class)"
+"T       1830 1945 BUSN 101 (Class)
+T       2000 2115 BUSN 101 (Class)"
+"T       1830 1945 BUNCE 156 (Class)
+T       2000 2115 BUNCE 156 (Class)"
+"T       1830 1945 BUNCE 106 (Class)
+T       2000 2115 BUNCE 106 (Class)"
+"T       1830 1945 BOZ 166 (Class)
+T       2000 2115 BOZ 166 (Class)"
+"T       1830 1945 BOZ 147 (Class)
+T       2000 2115 BOZ 147 (Class)"
+"T       1830 1945 BOZ 132 (Class)
+T       2000 2115 BOZ 132 (Class)"
+"T       1830 1945 BOZ 112 (Class)
+T       2000 2115 BOZ 112 (Class)"
+"T       1830 1945 BOZ 112 (Class)
+T       2000 2115 BOZ 112 (Class)"
+"T       1830 1945 301HGH 216 (Class)
+T       2000 2115 301HGH 216 (Class)"
+"T       1830 1945 301HGH 215 (Class)
+T       2000 2115 301HGH 215 (Class)"
+"T       1830 1945 301HGH 205 (Class)
+T       2000 2115 301HGH 205 (Class)"
+T       1700 1930 JAMES 3109 (Class)
+T       1700 1930 JAMES 2104 (Class)
+T       1700 1930 JAMES 2100 (Class)
+T       1700 1930 JAMES 2099 (Class)
+T       1700 1930 JAMES 2098 (Class)
+T       1700 1930 JAMES 2094 (Class)
+T       1700 1930 JAMES 1119 (Class)
+T       1700 1930 JAMES  (Class)
+T       1700 1900 JAMES 2103 (Class)
+T       1700 1840 WESTBY 209 (Class)
+"T       1700 1815 WILSON 207 (Class)
+T       1830 1945 WILSON 207 (Class)"
+"T       1700 1815 WILSON 107 (Class)
+T       1830 1945 WILSON 107 (Class)"
+"T       1700 1815 WHITNY CL-202 (Class)
+T       1830 1945 WHITNY CL-202 (Class)"
+"T       1700 1815 WHITNY CL-201 (Class)
+T       1830 1945 WHITNY CL-201 (Class)"
+"T       1700 1815 WESTBY 104C (Class)
+T       1830 1945 WESTBY 104C (Class)"
+"T       1700 1815 VCTRIA 302 (Class)
+T       1830 1945 VCTRIA 302 (Class)"
+T       1700 1815 SCIENC 338 (Class)
+T       1700 1815 SCIENC 314 (Class)
+"T       1700 1815 SAVITZ 341 (Class)
+T       1830 1945 SAVITZ 341 (Class)"
+"T       1700 1815 SAVITZ 321 (Class)
+T       1830 1945 SAVITZ 321 (Class)"
+"T       1700 1815 ROWAN 243 (Class)
+T       1830 1945 ROWAN 243 (Class)"
+"T       1700 1815 ROWAN 243 (Class)
+T       1830 1945 ROWAN 243 (Class)"
+"T       1700 1815 ROBSON 216A (Class)
+T       1830 1945 ROBSON 216A (Class)"
+"T       1700 1815 ROBSON 212 (Class)
+T       1830 1945 ROBSON 212 (Class)"
+"T       1700 1815 ROBSON 204 (Class)
+T       1830 1945 ROBSON 204 (Class)"
+"T       1700 1815 ROBSON 116A (Class)
+T       1830 1945 ROBSON 116A (Class)"
+"T       1700 1815 ROBSON 102 (Class)
+T       1830 1945 ROBSON 102 (Class)"
+"T       1700 1815 REXT 319 (Class)
+T       1830 1945 REXT 319 (Class)"
+"T       1700 1815 REXT 319 (Class)
+T       1830 1945 REXT 319 (Class)"
+"T       1700 1815 REXT 107 (Class)
+T       1830 1945 REXT 107 (Class)"
+"T       1700 1815 REXT 107 (Class)
+T       1830 1945 REXT 107 (Class)"
+"T       1700 1815 LBRARY 403 (Class)
+T       1830 1945 LBRARY 403 (Class)"
+"T       1700 1815 LBRARY 401 (Class)
+T       1830 1945 LBRARY 401 (Class)"
+"T       1700 1815 JAMES 3112 (Class)
+T       1830 1945 JAMES 3112 (Class)"
+"T       1700 1815 JAMES 3099 (Class)
+T       1830 1945 JAMES 3099 (Class)"
+T       1700 1815 JAMES 2097 (Class)
+"T       1700 1815 JAMES 2096 (Class)
+T       1830 1945 JAMES 2096 (Class)"
+"T       1700 1815 JAMES 2047 (Class)
+T       1830 1945 JAMES 2047 (Class)"
+"T       1700 1815 JAMES 1115 (Class)
+T       1830 1945 JAMES 1115 (Class)"
+"T       1700 1815 JAMES 1112 (Class)
+T       1830 1945 JAMES 1112 (Class)"
+"T       1700 1815 JAMES 1112 (Class)
+T       1830 1945 JAMES 1112 (Class)"
+"T       1700 1815 JAMES 1081 (Class)
+T       1830 1945 JAMES 1081 (Class)"
+"T       1700 1815 JAMES 1056 (Class)
+T       1830 1945 JAMES 1056 (Class)"
+"T       1700 1815 JAMES 1019 (Class)
+T       1830 1945 JAMES 1019 (Class)"
+"T       1700 1815 ENTPRZ 517 (Class)
+T       1830 1945 ENTPRZ 517 (Class)"
+"T       1700 1815 ENTPRZ 506 (Class)
+T       1830 1945 ENTPRZ 506 (Class)"
+"T       1700 1815 BUSN 233 (Class)
+R       1700 1815 BUSN 221 (Class)"
+"T       1700 1815 BUSN 221 (Class)
+R       1700 1815 BUSN 233 (Class)"
+T       1700 1815 BUSN 131 (Class)
+"T       1700 1815 BUNCE 105 (Class)
+T       1830 1945 BUNCE 105 (Class)"
+"T       1700 1815 301HGH 326 (Class)
+T       1830 1945 301HGH 326 (Class)"
+"T       1700 1815 301HGH 305 (Class)
+T       1830 1945 301HGH 305 (Class)"
+T       1700 1750 JAMES 2110 (Class)
+T       1530 1645 ROBSON 121 (Class)
+"T       1530 1645 LBRARY 126 (Class)
+T       1700 1815 LBRARY 126 (Class)"
+"T       1530 1645 BUNCE 107 (Class)
+T       1700 1815 BUNCE 107 (Class)"
+"T       1530 1645 BOZ 132 (Class)
+T       1700 1815 BOZ 132 (Class)"
+"T       1530 1645 301HGH 205 (Class)
+T       1700 1815 301HGH 205 (Class)"
+T       1400 1540 JAMES 3112 (Class)
+T       1400 1540 JAMES 3091B (Class)
+"T       1400 1515 WINANS 111 (Class)
+T       1530 1645 WINANS 111 (Class)"
+"T       1400 1515 WILSON 212 (Class)
+T       1530 1645 WILSON 212 (Class)"
+"T       1400 1515 WESTBY 104C (Class)
+T       1530 1645 WESTBY 104C (Class)"
+"T       1400 1515 VCTRIA 302 (Class)
+T       1530 1645 VCTRIA 302 (Class)"
+"T       1400 1515 SCIENC 304 (Class)
+T       1530 1645 SCIENC 304 (Class)
+T       1700 1815 SCIENC 304 (Class)"
+"T       1400 1515 SCIENC 254 (Class)
+T       1530 1645 SCIENC 254 (Class)"
+"T       1400 1515 SCIENC 252 (Class)
+R       1400 1515 SCIENC 254 (Class)"
+"T       1400 1515 ROBSON 311 (Class)
+T       1530 1645 ROBSON 311 (Class)"
+"T       1400 1515 ROBSON 305 (Class)
+T       1530 1645 ROBSON 305 (Class)"
+"T       1400 1515 LBRARY 403 (Class)
+T       1530 1645 LBRARY 403 (Class)"
+"T       1400 1515 JAMES 2099 (Class)
+T       1530 1645 JAMES 2099 (Class)"
+"T       1400 1515 JAMES 1112 (Class)
+T       1530 1645 JAMES 1112 (Class)"
+"T       1400 1515 JAMES 1081 (Class)
+T       1530 1645 JAMES 1081 (Class)"
+"T       1400 1515 BUSN 235 (Class)
+R       1400 1515 BUSN 107 (Class)"
+T       1400 1450 WILSON 101 (Class)
+T       1400 1450 JAMES 2110 (Class)
+"T       1230 1515   (Class)
+R       1100 1215 JAMES 3091B (Class)
+R       1230 1345 JAMES 3091B (Class)"
+T       1230 1345 WILSON 101 (Class)
+"T       1230 1345 SCIENC 341 (Lab)
+T       1400 1515 SCIENC 341 (Lab)
+WF      0930 1045 SCIENC 128 (Lecture)"
+"T       1230 1345 ROBSON 211 (Lecture)
+W       1230 1345 JAMES 2108 (Lab)"
+"T       1230 1345 ROBSON 211 (Lecture)
+W       0930 1045 JAMES 2108 (Lab)"
+"T       1230 1345 JAMES 2103 (Class)
+T       1400 1515 JAMES 2103 (Class)"
+"T       1230 1345 BUSN 235 (Class)
+R       1230 1345 BUSN 107 (Class)"
+"T       1230 1345 BUSN 235 (Class)
+R       1230 1345 BUSN 107 (Class)"
+"T       1230 1345 BUSN 107 (Class)
+R       1230 1345 BUSN 235 (Class)"
+"T       1230 1345 BUNCE 107 (Class)
+T       1400 1515 BUNCE 107 (Class)"
+"T       1230 1345 BOZ 166 (Class)
+T       1400 1515 BOZ 166 (Class)"
+"T       1230 1345 BOZ 147 (Class)
+T       1400 1515 BOZ 147 (Class)"
+"T       1230 1345 BOZ 132 (Class)
+T       1400 1515 BOZ 132 (Class)"
+T       1230 1320 JAMES 2110 (Class)
+T       1200 1430 JAMES  (Class)
+T       1200 1430 JAMES  (Class)
+T       1100 1240 JAMES 3099 (Class)
+T       1100 1240 JAMES 1112 (Class)
+"T       1100 1215 WINANS 111 (Class)
+T       1230 1345 WINANS 111 (Class)"
+T       1100 1215 WILSON 164 (Class)
+T       1100 1215 WILSON 156 (Class)
+"T       1100 1215 SCIENC 326 (Lab)
+T       1230 1345 SCIENC 326 (Lab)
+WF      1100 1215 SCIENC 324 (Lecture)"
+"T       1100 1215 SCIENC 322 (Lab)
+T       1230 1345 SCIENC 322 (Lab)
+WF      1100 1215 SCIENC 324 (Lecture)"
+"T       1100 1215 ROBSON 311 (Class)
+T       1230 1345 ROBSON 311 (Class)"
+"T       1100 1215 REXT 320 (Class)
+W       0930 1045 REXT 320 (Class)"
+"T       1100 1215 LBRARY 403 (Class)
+T       1230 1345 LBRARY 403 (Class)"
+"T       1100 1215 JAMES 3102 (Class)
+T       1230 1345 JAMES 3102 (Class)
+R       1230 1515   (Class)"
+"T       1100 1215 JAMES 1081 (Class)
+T       1230 1345 JAMES 1081 (Class)
+W       1130 1530   (Class)"
+"T       1100 1215 ESBY 111 (Class)
+T       1230 1345 ESBY 111 (Class)"
+T       1100 1150 WILSON 214 (Class)
+T       1100 1150 JAMES 3112 (Class)
+T       1100 1150 JAMES 2103 (Class)
+"T       1000 1200 JAMES 2100 (Class)
+R       0830 1230 NEWMAN  (Class)"
+T       0955 1045 WHITNY CL-201 (Class)
+T       0930 1045 WHITNY CL-202 (Class)
+"T       0930 1045 VCTRIA 302 (Class)
+T       1100 1215 VCTRIA 302 (Class)"
+"T       0930 1045 VCTRIA 300 (Class)
+T       1100 1215 VCTRIA 300 (Class)"
+"T       0930 1045 SCIENC 341 (Lab)
+T       1100 1215 SCIENC 341 (Lab)
+WF      0930 1045 SCIENC 128 (Lecture)"
+"T       0930 1045 SCIENC 220 (Class)
+R       0930 1045 SCIENC 252 (Class)"
+T       0930 1045 SCIENC 128 (Class)
+"T       0930 1045 SAVITZ 321 (Class)
+T       1100 1215 SAVITZ 321 (Class)"
+"T       0930 1045 ROWAN 243 (Class)
+R       0930 1045 ROWAN 243 (Class)
+R       1100 1215 ROWAN 243 (Class)
+F       1100 1215 ROWAN 146 (Class)
+F       1230 1345 ROWAN 146 (Class)"
+"T       0930 1045 ROBSON 302 (Lecture)
+T       1100 1215 ROBSON 302 (Lecture)
+W       0800 0915 ROBSON 302 (Lab)
+W       0930 1045 ROBSON 302 (Lab)"
+"T       0930 1045 ROBSON 211 (Lecture)
+R       1230 1345 JAMES 2108 (Lab)"
+"T       0930 1045 ROBSON 211 (Lecture)
+R       0930 1045 JAMES 2108 (Lab)"
+"T       0930 1045 REXT 321 (Class)
+W       1100 1215 REXT 321 (Class)"
+"T       0930 1045 REXT 320 (Class)
+R       0930 1045 BUSN 221 (Class)"
+T       0930 1045 REXT 140 (Class)
+"T       0930 1045 LBRARY 525 (Class)
+T       1100 1215 LBRARY 525 (Class)"
+"T       0930 1045 JAMES 3091B (Class)
+T       1100 1215 JAMES 3091B (Class)"
+"T       0930 1045 JAMES 2110 (Class)
+T       1100 1215 JAMES 2110 (Class)"
+"T       0930 1045 JAMES 2108 (Class)
+R       0930 1045 WILSON 206 (Class)"
+"T       0930 1045 BUSN 221 (Class)
+F       0930 1045 REXT 321 (Class)"
+"T       0930 1045 BUSN 221 (Class)
+F       0930 1045 REXT 321 (Class)"
+"T       0930 1045 BUSN 221 (Class)
+F       0930 1045 REXT 321 (Class)"
+T       0930 1045 BUSN 208 (Class)
+"T       0930 1045 BUNCE 107 (Class)
+T       1100 1215 BUNCE 107 (Class)"
+"T       0930 1045 BOZ 166 (Class)
+T       1100 1215 BOZ 166 (Class)"
+"T       0930 1045 BOZ 147 (Class)
+T       1100 1215 BOZ 147 (Class)"
+T       0930 1020 WILSON 214 (Class)
+"T       0800 1600   (Class)
+T       1700 1815 JAMES 3102 (Class)
+T       1830 1945 JAMES 3102 (Class)"
+"T       0800 1200   (Class)
+WF      1230 1345 JAMES 2095 (Class)"
+"T       0800 1120   (Class)
+R       0800 0915 JAMES 3091B (Class)
+R       0930 1045 JAMES 3091B (Class)"
+"T       0800 1000 ROBSON 308 (Class)
+R       0830 1230 NEWMAN  (Class)"
+"T       0800 1000 JAMES 2100 (Class)
+R       0830 1230 NEWMAN  (Class)"
+T       0800 0940 WHITNY CL-201 (Class)
+T       0800 0915 WILSON 156 (Class)
+"T       0800 0915 SCIENC 336 (Lab)
+T       0930 1045 SCIENC 336 (Lab)
+WF      0800 0915 SCIENC 151 (Lecture)"
+"T       0800 0915 SCIENC 326 (Lab)
+T       0930 1045 SCIENC 326 (Lab)
+WF      0930 1045 SCIENC 324 (Lecture)"
+"T       0800 0915 SCIENC 322 (Lab)
+T       0930 1045 SCIENC 322 (Lab)
+WF      0930 1045 SCIENC 324 (Lecture)"
+T       0800 0915 SAVITZ 321 (Class)
+"T       0800 0915 LBRARY 578 (Class)
+T       0930 1045 LBRARY 578 (Class)"
+"T       0800 0915 JAMES 3102 (Class)
+T       0930 1045 JAMES 3102 (Class)
+R       0800 1120   (Class)"
+"T       0800 0915 BUSN 221 (Class)
+F       0800 0915 REXT 321 (Class)"
+"T       0800 0915 BUSN 221 (Class)
+F       0800 0915 REXT 321 (Class)"
+"T       0800 0915 BUSN 221 (Class)
+F       0800 0915 REXT 321 (Class)"
+"T       0800 0915 BUSN 103 (Class)
+T       0930 1045 BUSN 103 (Class)"
+"T       0800 0915   (Class)
+T       0930 1045   (Class)"
+T       0800 0850 WILSON 214 (Class)
+S       2130 2245 BUNCE TOHILL (Class)
+S       1700 2020 BUNCE 159 (Class)
+S       0930 1430 JAMES 1112 (Class)
+"S       0930 1045 WESTBY 216 (Class)
+S       1100 1215 WESTBY 216 (Class)
+S       1230 1345 WESTBY 216 (Class)
+S       1400 1515 WESTBY 216 (Class)"
+"S       0930 1045 WESTBY 216 (Class)
+S       1100 1215 WESTBY 216 (Class)
+S       1230 1345 WESTBY 216 (Class)
+S       1400 1515 WESTBY 216 (Class)"
+S       0900 1500 JAMES 1119 (Class)
+"R       2000 2115 JAMES 2101 (Class)
+R       2130 2245 JAMES 2101 (Class)"
+"R       2000 2115 JAMES 2096 (Class)
+R       2130 2245 JAMES 2096 (Class)"
+"R       2000 2115 JAMES 1146 (Class)
+R       2130 2245 JAMES 1146 (Class)"
+"R       2000 2115 JAMES 1056 (Class)
+R       2130 2245 JAMES 1056 (Class)"
+R       1945 2215 JAMES 2100 (Class)
+"R       1830 1945 WINANS 113 (Class)
+R       2000 2115 WINANS 113 (Class)"
+"R       1830 1945 WINANS 112 (Class)
+R       2000 2115 WINANS 112 (Class)"
+"R       1830 1945 WINANS 111 (Class)
+R       2000 2115 WINANS 111 (Class)"
+"R       1830 1945 WILSON 207 (Class)
+R       2000 2115 WILSON 207 (Class)"
+R       1830 1945 WILSON 153 (Class)
+"R       1830 1945 VCTRIA 306 (Class)
+R       2000 2115 VCTRIA 306 (Class)
+F       0800 0915 REXT 240 (Class)
+F       0930 1045 REXT 240 (Class)"
+"R       1830 1945 VCTRIA 300 (Class)
+R       2000 2115 VCTRIA 300 (Class)"
+"R       1830 1945 SCIENC 150 (Class)
+R       2000 2115 SCIENC 150 (Class)"
+"R       1830 1945 SCIENC 128 (Class)
+R       2000 2115 SCIENC 128 (Class)"
+"R       1830 1945 SCIENC 128 (Class)
+R       2000 2115 SCIENC 128 (Class)"
+"R       1830 1945 ROWAN 243 (Class)
+R       2000 2115 ROWAN 243 (Class)"
+"R       1830 1945 ROWAN 243 (Class)
+R       2000 2115 ROWAN 243 (Class)"
+"R       1830 1945 ROBSON 325 (Class)
+R       2000 2115 ROBSON 325 (Class)"
+"R       1830 1945 ROBSON 323 (Class)
+R       2000 2115 ROBSON 323 (Class)"
+"R       1830 1945 ROBSON 311 (Class)
+R       2000 2115 ROBSON 311 (Class)"
+"R       1830 1945 ROBSON 311 (Class)
+R       2000 2115 ROBSON 311 (Class)"
+"R       1830 1945 ROBSON 308 (Class)
+R       2000 2115 ROBSON 308 (Class)"
+"R       1830 1945 ROBSON 306 (Class)
+R       2000 2115 ROBSON 306 (Class)"
+"R       1830 1945 ROBSON 302 (Class)
+R       2000 2115 ROBSON 302 (Class)"
+"R       1830 1945 ROBSON 224 (Class)
+R       2000 2115 ROBSON 224 (Class)"
+"R       1830 1945 ROBSON 211 (Class)
+R       2000 2115 ROBSON 211 (Class)"
+"R       1830 1945 ROBSON 207 (Class)
+R       2000 2115 ROBSON 207 (Class)"
+"R       1830 1945 ROBSON 201B (Class)
+R       2000 2115 ROBSON 201B (Class)"
+"R       1830 1945 ROBSON 201A (Class)
+R       2000 2115 ROBSON 201A (Class)"
+"R       1830 1945 ROBSON 121 (Class)
+R       2000 2115 ROBSON 121 (Class)"
+"R       1830 1945 ROBSON 105 (Class)
+R       2000 2115 ROBSON 105 (Class)"
+"R       1830 1945 ROBSON 102 (Class)
+R       2000 2115 ROBSON 102 (Class)"
+"R       1830 1945 REXT 321 (Class)
+R       2000 2115 REXT 321 (Class)"
+"R       1830 1945 REXT 321 (Class)
+R       2000 2115 REXT 321 (Class)"
+"R       1830 1945 REXT 320 (Class)
+R       2000 2115 REXT 320 (Class)"
+"R       1830 1945 REXT 107 (Class)
+R       2000 2115 REXT 107 (Class)"
+"R       1830 1945 REXT 107 (Class)
+R       2000 2115 REXT 107 (Class)"
+"R       1830 1945 LBRARY 578 (Class)
+R       2000 2115 LBRARY 578 (Class)"
+"R       1830 1945 LBRARY 126 (Class)
+R       2000 2115 LBRARY 126 (Class)"
+"R       1830 1945 JAMES 2102 (Class)
+R       2000 2115 JAMES 2102 (Class)"
+"R       1830 1945 JAMES 2097 (Class)
+R       2000 2115 JAMES 2097 (Class)"
+"R       1830 1945 JAMES 2095 (Class)
+R       2000 2115 JAMES 2095 (Class)"
+"R       1830 1945 JAMES 1115 (Class)
+R       2000 2115 JAMES 1115 (Class)"
+"R       1830 1945 JAMES 1112 (Class)
+R       2000 2115 JAMES 1112 (Class)"
+"R       1830 1945 HAWTHN 204 (Class)
+R       2000 2115 HAWTHN 204 (Class)"
+"R       1830 1945 ENTPRZ 517 (Class)
+R       2000 2115 ENTPRZ 517 (Class)"
+"R       1830 1945 BUSN 303 (Class)
+R       2000 2115 BUSN 303 (Class)"
+"R       1830 1945 BUSN 301 (Class)
+R       2000 2115 BUSN 301 (Class)"
+"R       1830 1945 BUSN 235 (Class)
+R       2000 2115 BUSN 235 (Class)"
+"R       1830 1945 BUSN 233 (Class)
+R       2000 2115 BUSN 233 (Class)"
+"R       1830 1945 BUSN 227 (Class)
+R       2000 2115 BUSN 227 (Class)"
+"R       1830 1945 BUSN 225 (Class)
+R       2000 2115 BUSN 225 (Class)"
+"R       1830 1945 BUSN 223 (Class)
+R       2000 2115 BUSN 223 (Class)"
+"R       1830 1945 BUSN 221 (Class)
+R       2000 2115 BUSN 221 (Class)"
+"R       1830 1945 BUSN 204 (Class)
+R       2000 2115 BUSN 204 (Class)"
+"R       1830 1945 BUSN 201 (Class)
+R       2000 2115 BUSN 201 (Class)"
+"R       1830 1945 BUSN 131 (Class)
+R       2000 2115 BUSN 131 (Class)"
+"R       1830 1945 BUSN 121 (Class)
+R       2000 2115 BUSN 121 (Class)"
+"R       1830 1945 BUSN 107 (Class)
+R       2000 2115 BUSN 107 (Class)"
+"R       1830 1945 BUSN 103 (Class)
+R       2000 2115 BUSN 103 (Class)"
+"R       1830 1945 BUNCE 332 (Class)
+R       2000 2115 BUNCE 332 (Class)"
+"R       1830 1945 BUNCE 156 (Class)
+R       2000 2115 BUNCE 156 (Class)"
+"R       1830 1945 BUNCE 107 (Class)
+R       2000 2115 BUNCE 107 (Class)"
+"R       1830 1945 BUNCE 106 (Class)
+R       2000 2115 BUNCE 106 (Class)"
+"R       1830 1945 BOZ 132 (Class)
+R       2000 2115 BOZ 132 (Class)"
+"R       1830 1945 301HGH 216 (Class)
+R       2000 2115 301HGH 216 (Class)"
+"R       1830 1945 301HGH 205 (Class)
+R       2000 2115 301HGH 205 (Class)"
+R       1700 1930 JAMES 2104 (Class)
+R       1700 1930 JAMES 2100 (Class)
+R       1700 1930 JAMES 2098 (Class)
+R       1700 1930 JAMES 2094 (Class)
+R       1700 1900 JAMES 3102 (Class)
+R       1700 1840 JAMES 3099 (Class)
+"R       1700 1815 WILSON 107 (Class)
+R       1830 1945 WILSON 107 (Class)"
+"R       1700 1815 VCTRIA 302 (Class)
+R       1830 1945 VCTRIA 302 (Class)"
+R       1700 1815 SCIENC 338 (Class)
+"R       1700 1815 SCIENC 254 (Class)
+R       1830 1945 SCIENC 254 (Class)"
+"R       1700 1815 SAVITZ 341 (Class)
+R       1830 1945 SAVITZ 341 (Class)"
+"R       1700 1815 SAVITZ 341 (Class)
+R       1830 1945 SAVITZ 341 (Class)"
+"R       1700 1815 SAVITZ 321 (Class)
+R       1830 1945 SAVITZ 321 (Class)"
+"R       1700 1815 SAVITZ 217 (Class)
+R       1830 1945 SAVITZ 217 (Class)"
+"R       1700 1815 ROBSON 216A (Class)
+R       1830 1945 ROBSON 216A (Class)"
+"R       1700 1815 ROBSON 216A (Class)
+R       1830 1945 ROBSON 216A (Class)"
+"R       1700 1815 ROBSON 212 (Class)
+R       1830 1945 ROBSON 212 (Class)"
+"R       1700 1815 ROBSON 204 (Class)
+R       1830 1945 ROBSON 204 (Class)"
+R       1700 1815 ROBSON 102 (Class)
+"R       1700 1815 REXT 341 (Class)
+R       1830 1945 REXT 341 (Class)"
+"R       1700 1815 REXT 341 (Class)
+R       1830 1945 REXT 341 (Class)"
+"R       1700 1815 REXT 319 (Class)
+R       1830 1945 REXT 319 (Class)"
+"R       1700 1815 REXT 319 (Class)
+R       1830 1945 REXT 319 (Class)"
+"R       1700 1815 LBRARY 403 (Class)
+R       1830 1945 LBRARY 403 (Class)"
+"R       1700 1815 JAMES 3114 (Class)
+R       1830 1945 JAMES 3114 (Class)"
+"R       1700 1815 JAMES 3112 (Class)
+R       1830 1945 JAMES 3112 (Class)"
+"R       1700 1815 JAMES 2096 (Class)
+R       1830 1945 JAMES 2096 (Class)"
+"R       1700 1815 JAMES 1146 (Class)
+R       1830 1945 JAMES 1146 (Class)"
+"R       1700 1815 JAMES 1056 (Class)
+R       1830 1945 JAMES 1056 (Class)"
+"R       1700 1815 JAMES 1019 (Class)
+R       1830 1945 JAMES 1019 (Class)"
+"R       1700 1815 ENTPRZ 506 (Class)
+R       1830 1945 ENTPRZ 506 (Class)"
+R       1700 1750 WILSON 205 (Class)
+R       1530 1750 BUNCE 131 (Class)
+"R       1530 1645 ROBSON 306 (Class)
+R       1700 1815 ROBSON 306 (Class)"
+R       1530 1645 ROBSON 121 (Class)
+R       1530 1645 JAMES 2100 (Class)
+"R       1530 1645 JAMES 1115 (Class)
+R       1700 1815 JAMES 1115 (Class)"
+"R       1530 1645 BOZ 166 (Class)
+R       1700 1815 BOZ 166 (Class)"
+"R       1530 1645 BOZ 147 (Class)
+R       1700 1815 BOZ 147 (Class)"
+"R       1530 1645 BOZ 112 (Class)
+R       1700 1815 BOZ 112 (Class)"
+"R       1530 1645 301HGH 326 (Class)
+R       1700 1815 301HGH 326 (Class)"
+"R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)
+R       1500 1730 JAMES 2099 (Class)"
+R       1400 1540 JAMES 3112 (Class)
+R       1400 1540 JAMES 3091B (Class)
+"R       1400 1515 VCTRIA 302 (Class)
+R       1530 1645 VCTRIA 302 (Class)"
+"R       1400 1515 SAVITZ 321 (Class)
+R       1530 1645 SAVITZ 321 (Class)"
+"R       1400 1515 ROBSON 311 (Class)
+R       1530 1645 ROBSON 311 (Class)"
+"R       1400 1515 LBRARY 525 (Class)
+R       1530 1645 LBRARY 525 (Class)"
+R       1400 1450 WILSON 107 (Class)
+"R       1230 1345 WINANS 111 (Class)
+R       1400 1515 WINANS 111 (Class)"
+"R       1230 1345 ROBSON 202 (Class)
+R       1400 1515 ROBSON 202 (Class)"
+"R       1230 1345 BUNCE 107 (Class)
+R       1400 1515 BUNCE 107 (Class)"
+"R       1230 1345 BOZ 166 (Class)
+R       1400 1515 BOZ 166 (Class)"
+"R       1230 1345 BOZ 132 (Class)
+R       1400 1515 BOZ 132 (Class)"
+R       1230 1320 JAMES 3112 (Class)
+R       1200 1430 JAMES  (Class)
+R       1200 1430 JAMES  (Class)
+R       1100 1240 JAMES 3099 (Class)
+R       1100 1240 JAMES 1112 (Class)
+R       1100 1215 WILSON 164 (Class)
+"R       1100 1215 WESTBY 206 (Class)
+R       1230 1345 WESTBY 206 (Class)"
+R       1100 1215 VCTRIA 300 (Class)
+"R       1100 1215 ROBSON 306 (Class)
+R       1230 1345 ROBSON 306 (Class)"
+"R       1100 1215 LBRARY 403 (Class)
+R       1230 1345 LBRARY 403 (Class)"
+"R       1100 1215 JAMES 2103 (Class)
+R       1230 1345 JAMES 2103 (Class)"
+R       1100 1215 JAMES 2098 (Class)
+"R       1100 1215 JAMES 1081 (Class)
+R       1230 1345 JAMES 1081 (Class)"
+R       1100 1150 WILSON 214 (Class)
+R       0930 1110 BOZ 132 (Class)
+"R       0930 1045 VCTRIA 302 (Class)
+R       1100 1215 VCTRIA 302 (Class)"
+R       0930 1045 VCTRIA 300 (Class)
+"R       0930 1045 SCIENC 341 (Class)
+R       1100 1215 SCIENC 341 (Class)
+R       1230 1345 SCIENC 341 (Class)"
+"R       0930 1045 SCIENC 304 (Class)
+R       1100 1215 SCIENC 304 (Class)
+R       1230 1345 SCIENC 304 (Class)"
+R       0930 1045 SCIENC 128 (Class)
+"R       0930 1045 SAVITZ 321 (Class)
+R       1100 1215 SAVITZ 321 (Class)"
+"R       0930 1045 ROBSON 323 (Class)
+F       0930 1045 ROBSON 211 (Class)"
+"R       0930 1045 ROBSON 311 (Class)
+R       1100 1215 ROBSON 311 (Class)"
+"R       0930 1045 ROBSON 308 (Class)
+R       1100 1215 ROBSON 308 (Class)"
+"R       0930 1045 ROBSON 302 (Class)
+R       1100 1215 ROBSON 302 (Class)"
+"R       0930 1045 JAMES 2110 (Class)
+R       1100 1215 JAMES 2110 (Class)"
+"R       0930 1045 JAMES 2100 (Class)
+R       1100 1215 JAMES 2100 (Class)"
+R       0930 1045 JAMES 2098 (Class)
+R       0930 1045 BUNCE 105 (Class)
+R       0930 1045 BUNCE 104 (Class)
+"R       0930 1045 BOZ 166 (Class)
+R       1100 1215 BOZ 166 (Class)"
+"R       0930 1045 BOZ 147 (Class)
+R       1100 1215 BOZ 147 (Class)"
+R       0930 1020 WILSON 214 (Class)
+R       0800 0940 JAMES 3112 (Class)
+"R       0800 0915 ROBSON 315L (Class)
+R       0930 1045 ROBSON 315L (Class)"
+R       0800 0850 WILSON 214 (Class)
+"R       0700 0800 SAVITZ 321 (Class)
+R       0830 1230 NEWMAN  (Class)"
+MWR     1530 1645 ROBSON 207 (Class)
+MWF     1530 1645 ROBSON 227 (Class)
+MWF     1530 1645 ROBSON 101A (Class)
+MWF     1530 1645 JAMES 3114 (Class)
+MWF     1230 1345 ROBSON 310 (Class)
+MWF     1230 1345 JAMES 3114 (Class)
+MWF     1230 1345 JAMES 2101 (Class)
+MWF     1100 1215 JAMES 3114 (Class)
+MWF     1100 1215 JAMES 2101 (Class)
+MWF     1035 1215 SCIENC 144 (Class)
+MWF     0930 1045 ROBSON 310 (Class)
+MWF     0930 1045 ROBSON 227 (Class)
+MWF     0930 1045 ROBSON 101A (Class)
+MWF     0800 0940 SCIENC 144 (Class)
+MWF     0800 0915 ROBSON 310 (Class)
+MWF     0800 0915 ROBSON 227 (Class)
+MWF     0800 0915 ROBSON 101A (Class)
+MWF     0800 0915 JAMES 3114 (Class)
+MWF     0800 0907 SCIENC 150 (Class)
+MW      2000 2140 BUNCE TOHILL (Class)
+MW      2000 2115 WILSON 214 (Class)
+MW      2000 2115 WILSON 203 (Class)
+MW      2000 2115 VCTRIA 302 (Class)
+MW      2000 2115 VCTRIA 300 (Class)
+MW      2000 2115 VCTRIA 201 (Class)
+MW      1855 2035 JAMES 3091A (Class)
+MW      1830 1945 WILSON 213 (Class)
+MW      1830 1945 WILSON 203 (Class)
+MW      1830 1945 WILSON 108 (Class)
+MW      1830 1945 VCTRIA 300 (Class)
+MW      1830 1945 VCTRIA 201 (Class)
+MW      1830 1945 SCIENC 341 (Class)
+MW      1830 1945 SCIENC 341 (Class)
+"MW      1830 1945 SCIENC 252 (Class)
+MW      2000 2115 SCIENC 252 (Class)"
+"MW      1830 1945 SCIENC 241 (Class)
+MW      2000 2115 SCIENC 241 (Class)"
+"MW      1830 1945 SCIENC 239 (Class)
+MW      2000 2115 SCIENC 239 (Class)"
+"MW      1830 1945 SCIENC 234 (Class)
+MW      2000 2115 SCIENC 234 (Class)"
+"MW      1830 1945 SCIENC 232 (Class)
+MW      2000 2115 SCIENC 232 (Class)"
+"MW      1830 1945 SCIENC 206 (Class)
+MW      2000 2115 SCIENC 206 (Class)"
+"MW      1830 1945 SCIENC 204 (Class)
+MW      2000 2115 SCIENC 204 (Class)"
+"MW      1830 1945 SCIENC 150 (Class)
+MW      2000 2115 SCIENC 150 (Class)"
+"MW      1830 1945 SCIENC 126 (Lecture)
+T       0800 0915 SCIENC 226 (Lab)
+T       0930 1045 SCIENC 226 (Lab)"
+"MW      1830 1945 SCIENC 126 (Lecture)
+R       0800 0915 SCIENC 226 (Lab)
+R       0930 1045 SCIENC 226 (Lab)"
+MW      1830 1945 ROBSON 324 (Class)
+"MW      1830 1945 ROBSON 312 (Class)
+MW      2000 2115 ROBSON 312 (Class)"
+MW      1830 1945 ROBSON 310 (Class)
+MW      1830 1945 ROBSON 305 (Class)
+MW      1830 1945 ROBSON 204 (Class)
+MW      1830 1945 ROBSON 103 (Class)
+MW      1830 1945 ROBSON 102 (Class)
+"MW      1830 1945 REXT 241 (Class)
+W       1700 1815 REXT 241 (Class)"
+"MW      1830 1945 REXT 240 (Class)
+W       1700 1815 REXT 240 (Class)"
+MW      1830 1945 MEMORL 101 (Class)
+MW      1830 1945 MEMORL 001 (Class)
+MW      1830 1945 JAMES 3117 (Class)
+MW      1830 1945 HAWTHN 104 (Class)
+MW      1830 1945 BUNCE TOHILL (Class)
+MW      1830 1945 BUNCE 159 (Class)
+MW      1830 1945 BUNCE 131 (Class)
+MW      1830 1945 BUNCE 109 (Class)
+MW      1830 1945 BUNCE 106 (Class)
+MW      1830 1945 BUNCE 105 (Class)
+"MW      1830 1945 301HGH 205 (Class)
+MW      2000 2115 301HGH 205 (Class)"
+MW      1830 1920 WILSON 214 (Class)
+MW      1700 1840 ROBSON 227 (Class)
+MW      1700 1840 ROBSON 101B (Class)
+MW      1700 1840 ROBSON 101A (Class)
+MW      1700 1840 JAMES 3114 (Class)
+MW      1700 1840 JAMES 3091A (Class)
+MW      1700 1840 JAMES 2102 (Class)
+MW      1700 1815 WINANS 113 (Class)
+MW      1700 1815 WINANS 112 (Class)
+MW      1700 1815 WILSON 213 (Class)
+MW      1700 1815 WILSON 207 (Class)
+MW      1700 1815 WILSON 204 (Class)
+MW      1700 1815 WILSON 203 (Class)
+MW      1700 1815 WILSON 109 (Class)
+MW      1700 1815 WILSON 108 (Class)
+MW      1700 1815 WILSON 105 (Class)
+"MW      1700 1815 WHITNY CL-201 (Class)
+MW      1830 1945 WHITNY CL-201 (Class)"
+"MW      1700 1815 WHITNY CL-201 (Class)
+MW      1830 1945 WHITNY CL-201 (Class)"
+"MW      1700 1815 WESTBY 219 (Class)
+MW      1830 1945 WESTBY 219 (Class)"
+"MW      1700 1815 WESTBY 218 (Class)
+MW      1830 1945 WESTBY 218 (Class)"
+"MW      1700 1815 WESTBY 206 (Class)
+MW      1830 1945 WESTBY 206 (Class)"
+"MW      1700 1815 WESTBY 104 (Class)
+MW      1830 1945 WESTBY 104 (Class)"
+"MW      1700 1815 WESTBY 100 (Class)
+MW      1830 1945 WESTBY 100 (Class)"
+MW      1700 1815 VCTRIA 306 (Class)
+MW      1700 1815 VCTRIA 300 (Class)
+MW      1700 1815 VCTRIA 204 (Class)
+MW      1700 1815 VCTRIA 200 (Class)
+MW      1700 1815 SCIENC 338 (Class)
+MW      1700 1815 SCIENC 338 (Class)
+"MW      1700 1815 SCIENC 324 (Lecture)
+R       1530 1645 SCIENC 326 (Lab)
+R       1700 1815 SCIENC 326 (Lab)"
+"MW      1700 1815 SCIENC 324 (Lecture)
+R       1530 1645 SCIENC 322 (Lab)
+R       1700 1815 SCIENC 322 (Lab)"
+"MW      1700 1815 SCIENC 151 (Lecture)
+R       1830 1945 SCIENC 138 (Lab)
+R       2000 2115 SCIENC 138 (Lab)"
+"MW      1700 1815 SCIENC 151 (Lecture)
+R       1530 1645 SCIENC 138 (Lab)
+R       1700 1815 SCIENC 138 (Lab)"
+"MW      1700 1815 SCIENC 126 (Lecture)
+T       1700 1815 SCIENC 226 (Lab)
+T       1830 1945 SCIENC 226 (Lab)"
+"MW      1700 1815 SCIENC 126 (Lecture)
+R       1700 1815 SCIENC 226 (Lab)
+R       1830 1945 SCIENC 226 (Lab)"
+MW      1700 1815 ROBSON 325 (Class)
+MW      1700 1815 ROBSON 324 (Class)
+MW      1700 1815 ROBSON 323 (Class)
+MW      1700 1815 ROBSON 323 (Class)
+MW      1700 1815 ROBSON 308 (Class)
+MW      1700 1815 ROBSON 305 (Class)
+MW      1700 1815 ROBSON 212 (Class)
+MW      1700 1815 ROBSON 211 (Class)
+MW      1700 1815 ROBSON 205 (Class)
+MW      1700 1815 ROBSON 204 (Class)
+MW      1700 1815 ROBSON 202 (Class)
+MW      1700 1815 ROBSON 201A (Class)
+MW      1700 1815 ROBSON 121 (Class)
+MW      1700 1815 ROBSON 103 (Class)
+MW      1700 1815 ROBSON 102 (Class)
+MW      1700 1815 REXT 321 (Class)
+MW      1700 1815 MEMORL 101 (Class)
+MW      1700 1815 MEMORL 001 (Class)
+MW      1700 1815 LBRARY 578 (Class)
+MW      1700 1815 LBRARY 401 (Class)
+MW      1700 1815 JAMES 3117 (Class)
+MW      1700 1815 JAMES 2113 (Class)
+MW      1700 1815 JAMES 2101 (Class)
+MW      1700 1815 JAMES 2095 (Class)
+MW      1700 1815 HAWTHN 104 (Class)
+MW      1700 1815 ENTPRZ 514 (Class)
+MW      1700 1815 ENTPRZ 509 (Class)
+MW      1700 1815 ENTPRZ 417 (Class)
+MW      1700 1815 ENTPRZ 414 (Class)
+MW      1700 1815 ENTPRZ 409 (Class)
+MW      1700 1815 ENTPRZ 406 (Class)
+MW      1700 1815 BUSN 301 (Class)
+MW      1700 1815 BUSN 235 (Class)
+MW      1700 1815 BUSN 233 (Class)
+MW      1700 1815 BUSN 225 (Class)
+MW      1700 1815 BUSN 223 (Class)
+MW      1700 1815 BUSN 208 (Class)
+MW      1700 1815 BUSN 204 (Class)
+MW      1700 1815 BUSN 201 (Class)
+MW      1700 1815 BUSN 107 (Class)
+MW      1700 1815 BUSN 101 (Class)
+MW      1700 1815 BUNCE 205 (Class)
+MW      1700 1815 BUNCE 106 (Class)
+MW      1700 1815 BUNCE 105 (Class)
+MW      1700 1815 BUNCE 104 (Class)
+MW      1700 1750 JAMES 3099 (Class)
+MW      1600 1800 JAMES 1082 (Class)
+MW      1600 1800 JAMES 1082 (Class)
+"MW      1600 1800   (Class)
+MW      1815 1930 JAMES 2099 (Class)"
+"MW      1600 1800   (Class)
+MW      1815 1930 JAMES 2047 (Class)"
+MW      1530 1645 WINANS 113 (Class)
+MW      1530 1645 WILSON 213 (Class)
+MW      1530 1645 WILSON 212 (Class)
+MW      1530 1645 WILSON 207 (Class)
+MW      1530 1645 WILSON 206 (Class)
+MW      1530 1645 WILSON 205 (Class)
+MW      1530 1645 WILSON 204 (Class)
+MW      1530 1645 WILSON 203 (Class)
+MW      1530 1645 WILSON 164 (Class)
+MW      1530 1645 WILSON 114 (Class)
+MW      1530 1645 WILSON 109 (Class)
+MW      1530 1645 WILSON 107 (Class)
+MW      1530 1645 VCTRIA 306 (Class)
+MW      1530 1645 VCTRIA 302 (Class)
+MW      1530 1645 VCTRIA 204 (Class)
+MW      1530 1645 VCTRIA 201 (Class)
+"MW      1530 1645 SCIENC 341 (Lecture)
+R       1530 1645 SCIENC 314A (Lab)
+R       1700 1815 SCIENC 314A (Lab)"
+MW      1530 1645 SCIENC 338 (Class)
+MW      1530 1645 SCIENC 338 (Class)
+"MW      1530 1645 SCIENC 324 (Lecture)
+R       1530 1645 SCIENC 336 (Lab)
+R       1700 1815 SCIENC 336 (Lab)"
+"MW      1530 1645 SCIENC 324 (Lecture)
+R       1530 1645 SCIENC 334 (Lab)
+R       1700 1815 SCIENC 334 (Lab)"
+MW      1530 1645 SCIENC 254 (Class)
+"MW      1530 1645 SCIENC 241 (Class)
+MW      1700 1815 SCIENC 241 (Class)"
+"MW      1530 1645 SCIENC 239 (Class)
+MW      1700 1815 SCIENC 239 (Class)"
+"MW      1530 1645 SCIENC 234 (Class)
+MW      1700 1815 SCIENC 234 (Class)"
+"MW      1530 1645 SCIENC 232 (Class)
+MW      1700 1815 SCIENC 232 (Class)"
+"MW      1530 1645 SCIENC 151 (Lecture)
+T       1830 1945 SCIENC 138 (Lab)
+T       2000 2115 SCIENC 138 (Lab)"
+"MW      1530 1645 SCIENC 151 (Lecture)
+T       1530 1645 SCIENC 138 (Lab)
+T       1700 1815 SCIENC 138 (Lab)"
+"MW      1530 1645 SCIENC 149 (Class)
+MW      1700 1815 SCIENC 149 (Class)"
+"MW      1530 1645 SCIENC 126 (Lecture)
+T       1100 1215 SCIENC 226 (Lab)
+T       1230 1345 SCIENC 226 (Lab)"
+"MW      1530 1645 SCIENC 126 (Lecture)
+R       1100 1215 SCIENC 226 (Lab)
+R       1230 1345 SCIENC 226 (Lab)"
+MW      1530 1645 SAVITZ 341 (Class)
+MW      1530 1645 SAVITZ 217 (Class)
+MW      1530 1645 ROBSON 323 (Class)
+MW      1530 1645 ROBSON 308 (Class)
+MW      1530 1645 ROBSON 306 (Class)
+MW      1530 1645 ROBSON 305 (Class)
+MW      1530 1645 ROBSON 302 (Class)
+MW      1530 1645 ROBSON 224 (Class)
+MW      1530 1645 ROBSON 212 (Class)
+MW      1530 1645 ROBSON 211 (Class)
+MW      1530 1645 ROBSON 204 (Class)
+MW      1530 1645 ROBSON 202 (Class)
+MW      1530 1645 ROBSON 201B (Class)
+MW      1530 1645 ROBSON 201A (Class)
+MW      1530 1645 ROBSON 105 (Class)
+MW      1530 1645 ROBSON 103 (Class)
+MW      1530 1645 ROBSON 102 (Class)
+"MW      1530 1645 REXT 338 (Class)
+R       1530 1645 REXT 338 (Class)
+R       1700 1815 REXT 338 (Class)"
+MW      1530 1645 REXT 321 (Class)
+"MW      1530 1645 REXT 107 (Class)
+W       1400 1515 REXT 107 (Class)
+F       1100 1215 ROWAN 117 (Class)
+F       1230 1345 ROWAN 117 (Class)"
+MW      1530 1645 MEMORL 101 (Class)
+MW      1530 1645 MEMORL 001 (Class)
+MW      1530 1645 LBRARY 578 (Class)
+MW      1530 1645 LBRARY 401 (Class)
+MW      1530 1645 LBRARY 226 (Class)
+MW      1530 1645 JAMES 3117 (Class)
+MW      1530 1645 JAMES 2110 (Class)
+MW      1530 1645 JAMES 2105 (Class)
+MW      1530 1645 JAMES 2103 (Class)
+MW      1530 1645 JAMES 2102 (Class)
+MW      1530 1645 JAMES 2101 (Class)
+MW      1530 1645 JAMES 2100 (Class)
+MW      1530 1645 JAMES 2097 (Class)
+"MW      1530 1645 JAMES 2096 (Lecture)
+R       1700 1815 JAMES 1053 (Lab)
+R       1830 1945 JAMES 1053 (Lab)"
+MW      1530 1645 JAMES 1146 (Class)
+MW      1530 1645 JAMES 1056 (Class)
+MW      1530 1645 JAMES 1019 (Class)
+MW      1530 1645 HAWTHN 104 (Class)
+MW      1530 1645 ENTPRZ 517 (Class)
+MW      1530 1645 ENTPRZ 514 (Class)
+MW      1530 1645 ENTPRZ 509 (Class)
+MW      1530 1645 ENTPRZ 506 (Class)
+MW      1530 1645 ENTPRZ 414 (Class)
+MW      1530 1645 ENTPRZ 409 (Class)
+MW      1530 1645 ENTPRZ 406 (Class)
+MW      1530 1645 BUSN 303 (Class)
+MW      1530 1645 BUSN 301 (Class)
+MW      1530 1645 BUSN 235 (Class)
+MW      1530 1645 BUSN 233 (Class)
+MW      1530 1645 BUSN 225 (Class)
+MW      1530 1645 BUSN 223 (Class)
+MW      1530 1645 BUSN 221 (Class)
+MW      1530 1645 BUSN 208 (Class)
+MW      1530 1645 BUSN 204 (Class)
+MW      1530 1645 BUSN 201 (Class)
+MW      1530 1645 BUSN 131 (Class)
+MW      1530 1645 BUSN 121 (Class)
+MW      1530 1645 BUSN 107 (Class)
+MW      1530 1645 BUSN 101 (Class)
+MW      1530 1645 BUNCE 205 (Class)
+MW      1530 1645 BUNCE 131 (Class)
+MW      1530 1645 BUNCE 109 (Class)
+MW      1530 1645 BUNCE 106 (Class)
+MW      1530 1645 BUNCE 105 (Class)
+MW      1530 1645 BUNCE 104 (Class)
+MW      1530 1645 301HGH 305 (Class)
+MW      1530 1645 301HGH 215 (Class)
+"MW      1530 1645 301HGH 205 (Class)
+MW      1700 1815 301HGH 205 (Class)"
+MW      1530 1641 WILSON 105 (Class)
+"MW      1430 1545 JAMES 1082 (Class)
+MW      1600 1800 JAMES 1082 (Class)"
+MW      1400 1515 WINANS 113 (Class)
+MW      1400 1515 WINANS 112 (Class)
+MW      1400 1515 WILSON 213 (Class)
+MW      1400 1515 WILSON 212 (Class)
+MW      1400 1515 WILSON 207 (Class)
+MW      1400 1515 WILSON 206 (Class)
+MW      1400 1515 WILSON 205 (Class)
+MW      1400 1515 WILSON 204 (Class)
+MW      1400 1515 WILSON 203 (Class)
+MW      1400 1515 WILSON 164 (Class)
+MW      1400 1515 WILSON 114 (Class)
+MW      1400 1515 WILSON 109 (Class)
+MW      1400 1515 WILSON 108 (Class)
+MW      1400 1515 WILSON 105 (Class)
+MW      1400 1515 WHITNY CL-202 (Class)
+MW      1400 1515 WHITNY CL-201 (Class)
+"MW      1400 1515 WESTBY 218 (Class)
+MW      1530 1645 WESTBY 218 (Class)"
+"MW      1400 1515 WESTBY 213 (Class)
+MW      1530 1645 WESTBY 213 (Class)"
+"MW      1400 1515 WESTBY 205 (Class)
+MW      1530 1645 WESTBY 205 (Class)"
+"MW      1400 1515 WESTBY 201 (Class)
+MW      1530 1645 WESTBY 201 (Class)"
+MW      1400 1515 WESTBY 111 (Class)
+"MW      1400 1515 WESTBY 104 (Class)
+MW      1530 1645 WESTBY 104 (Class)"
+"MW      1400 1515 WESTBY 103 (Class)
+MW      1530 1645 WESTBY 103 (Class)"
+MW      1400 1515 VCTRIA 306 (Class)
+MW      1400 1515 VCTRIA 301 (Class)
+MW      1400 1515 VCTRIA 300 (Class)
+MW      1400 1515 VCTRIA 204 (Class)
+MW      1400 1515 VCTRIA 201 (Class)
+MW      1400 1515 SCIENC 338 (Class)
+MW      1400 1515 SCIENC 254 (Class)
+"MW      1400 1515 SCIENC 220 (Class)
+MW      1530 1645 SCIENC 220 (Class)"
+"MW      1400 1515 SCIENC 204 (Class)
+MW      1530 1645 SCIENC 204 (Class)"
+MW      1400 1515 SCIENC 150 (Class)
+MW      1400 1515 SCIENC 128 (Class)
+"MW      1400 1515 SCIENC 126 (Lecture)
+T       1400 1515 SCIENC 226 (Lab)
+T       1530 1645 SCIENC 226 (Lab)"
+"MW      1400 1515 SCIENC 126 (Lecture)
+R       1400 1515 SCIENC 226 (Lab)
+R       1530 1645 SCIENC 226 (Lab)"
+MW      1400 1515 SAVITZ 341 (Class)
+MW      1400 1515 SAVITZ 217 (Class)
+MW      1400 1515 ROBSON 325 (Class)
+"MW      1400 1515 ROBSON 323 (Lecture)
+T       1400 1515 JAMES 2113 (Lab)
+T       1530 1645 JAMES 2113 (Lab)"
+MW      1400 1515 ROBSON 315L (Class)
+MW      1400 1515 ROBSON 308 (Class)
+MW      1400 1515 ROBSON 306 (Class)
+MW      1400 1515 ROBSON 305 (Class)
+MW      1400 1515 ROBSON 302 (Class)
+MW      1400 1515 ROBSON 227 (Class)
+MW      1400 1515 ROBSON 224 (Class)
+MW      1400 1515 ROBSON 212 (Class)
+MW      1400 1515 ROBSON 211 (Class)
+MW      1400 1515 ROBSON 207 (Class)
+MW      1400 1515 ROBSON 205 (Class)
+MW      1400 1515 ROBSON 204 (Class)
+MW      1400 1515 ROBSON 202 (Class)
+MW      1400 1515 ROBSON 201B (Class)
+MW      1400 1515 ROBSON 201A (Class)
+MW      1400 1515 ROBSON 121 (Class)
+MW      1400 1515 ROBSON 105 (Class)
+MW      1400 1515 ROBSON 103 (Class)
+MW      1400 1515 ROBSON 102 (Class)
+MW      1400 1515 ROBSON 101B (Class)
+MW      1400 1515 ROBSON 101A (Class)
+"MW      1400 1515 REXT 338 (Class)
+R       0930 1045 REXT 338 (Class)
+R       1100 1215 REXT 338 (Class)"
+MW      1400 1515 REXT 321 (Class)
+MW      1400 1515 MEMORL 101 (Class)
+MW      1400 1515 MEMORL 001 (Class)
+MW      1400 1515 LBRARY 578 (Class)
+MW      1400 1515 LBRARY 401 (Class)
+MW      1400 1515 LBRARY 226 (Class)
+MW      1400 1515 LBRARY 126 (Class)
+MW      1400 1515 JAMES 3117 (Class)
+MW      1400 1515 JAMES 3114 (Class)
+MW      1400 1515 JAMES 3102 (Class)
+MW      1400 1515 JAMES 2110 (Class)
+MW      1400 1515 JAMES 2105 (Class)
+MW      1400 1515 JAMES 2104 (Class)
+MW      1400 1515 JAMES 2103 (Class)
+MW      1400 1515 JAMES 2102 (Class)
+MW      1400 1515 JAMES 2101 (Class)
+MW      1400 1515 JAMES 2100 (Class)
+MW      1400 1515 JAMES 2097 (Class)
+MW      1400 1515 JAMES 2096 (Class)
+MW      1400 1515 JAMES 1146 (Class)
+MW      1400 1515 JAMES 1115 (Class)
+MW      1400 1515 JAMES 1056 (Class)
+MW      1400 1515 JAMES 1019 (Class)
+MW      1400 1515 HAWTHN 204 (Class)
+MW      1400 1515 ESBY 111 (Class)
+MW      1400 1515 ENTPRZ 517 (Class)
+MW      1400 1515 ENTPRZ 514 (Class)
+MW      1400 1515 ENTPRZ 509 (Class)
+MW      1400 1515 ENTPRZ 417 (Class)
+MW      1400 1515 ENTPRZ 414 (Class)
+MW      1400 1515 ENTPRZ 409 (Class)
+MW      1400 1515 BUSN 303 (Class)
+MW      1400 1515 BUSN 301 (Class)
+MW      1400 1515 BUSN 235 (Class)
+MW      1400 1515 BUSN 233 (Class)
+MW      1400 1515 BUSN 227 (Class)
+MW      1400 1515 BUSN 225 (Class)
+MW      1400 1515 BUSN 223 (Class)
+MW      1400 1515 BUSN 221 (Class)
+MW      1400 1515 BUSN 208 (Class)
+MW      1400 1515 BUSN 204 (Class)
+MW      1400 1515 BUSN 201 (Class)
+MW      1400 1515 BUSN 131 (Class)
+MW      1400 1515 BUSN 121 (Class)
+MW      1400 1515 BUSN 107 (Class)
+MW      1400 1515 BUSN 103 (Class)
+MW      1400 1515 BUSN 101 (Class)
+MW      1400 1515 BUNCE 332 (Class)
+MW      1400 1515 BUNCE 205 (Class)
+MW      1400 1515 BUNCE 159 (Class)
+MW      1400 1515 BUNCE 121 (Class)
+MW      1400 1515 BUNCE 109 (Class)
+MW      1400 1515 BUNCE 106 (Class)
+MW      1400 1515 BUNCE 104 (Class)
+"MW      1400 1515 BOZ 112 (Lecture)
+W       1830 1945 SCIENC 138 (Lab)
+W       2000 2115 SCIENC 138 (Lab)"
+"MW      1400 1515 BOZ 112 (Lecture)
+R       1830 1945 SCIENC 134 (Lab)
+R       2000 2115 SCIENC 134 (Lab)"
+"MW      1400 1515 BOZ 112 (Lecture)
+R       1530 1645 SCIENC 134 (Lab)
+R       1700 1815 SCIENC 134 (Lab)"
+"MW      1400 1515 BOZ 112 (Lecture)
+F       1530 1645 SCIENC 134 (Lab)
+F       1700 1815 SCIENC 134 (Lab)"
+MW      1400 1515 301HGH 305 (Class)
+MW      1400 1515 301HGH 215 (Class)
+MW      1400 1515 301HGH 205 (Class)
+MW      1400 1450 ROBSON 312 (Class)
+MW      1230 1345 WINANS 113 (Class)
+MW      1230 1345 WINANS 112 (Class)
+MW      1230 1345 WINANS 112 (Class)
+MW      1230 1345 WINANS 112 (Class)
+MW      1230 1345 WINANS 111 (Class)
+MW      1230 1345 WILSON 213 (Class)
+MW      1230 1345 WILSON 212 (Class)
+MW      1230 1345 WILSON 207 (Class)
+MW      1230 1345 WILSON 206 (Class)
+MW      1230 1345 WILSON 205 (Class)
+MW      1230 1345 WILSON 204 (Class)
+MW      1230 1345 WILSON 203 (Class)
+MW      1230 1345 WILSON 114 (Class)
+MW      1230 1345 WILSON 109 (Class)
+MW      1230 1345 WILSON 108 (Class)
+MW      1230 1345 WILSON 107 (Class)
+MW      1230 1345 WHITNY CL-201 (Class)
+MW      1230 1345 WESTBY 109 (Class)
+"MW      1230 1345 WESTBY 105 (Lecture)
+W       1400 1515 WESTBY 105 (Lab)
+W       1530 1645 WESTBY 105 (Lab)"
+MW      1230 1345 VCTRIA 301 (Class)
+MW      1230 1345 VCTRIA 300 (Class)
+"MW      1230 1345 VCTRIA 204 (Class)
+F       1100 1215 REXT 240 (Class)
+F       1230 1345 REXT 240 (Class)"
+MW      1230 1345 VCTRIA 201 (Class)
+MW      1230 1345 SCIENC 338 (Class)
+"MW      1230 1345 SCIENC 324 (Lecture)
+T       1100 1215 SCIENC 336 (Lab)
+T       1230 1345 SCIENC 336 (Lab)"
+"MW      1230 1345 SCIENC 324 (Lecture)
+R       1100 1215 SCIENC 336 (Lab)
+R       1230 1345 SCIENC 336 (Lab)"
+MW      1230 1345 SCIENC 254 (Class)
+"MW      1230 1345 SCIENC 234 (Class)
+MW      1400 1515 SCIENC 234 (Class)"
+"MW      1230 1345 SCIENC 232 (Class)
+MW      1400 1515 SCIENC 232 (Class)"
+MW      1230 1345 SCIENC 229 (Class)
+MW      1230 1345 SCIENC 150 (Class)
+"MW      1230 1345 SCIENC 138 (Lecture)
+R       1100 1215 SCIENC 138 (Lab)
+R       1230 1345 SCIENC 138 (Lab)"
+"MW      1230 1345 SCIENC 126 (Lecture)
+W       1830 1945 SCIENC 218 (Lab)
+W       2000 2115 SCIENC 218 (Lab)"
+"MW      1230 1345 SCIENC 126 (Lecture)
+M       1830 1945 SCIENC 218 (Lab)
+M       2000 2115 SCIENC 218 (Lab)"
+MW      1230 1345 SAVITZ 341 (Class)
+MW      1230 1345 SAVITZ 217 (Class)
+MW      1230 1345 ROBSON 325 (Class)
+MW      1230 1345 ROBSON 324 (Class)
+MW      1230 1345 ROBSON 323 (Class)
+MW      1230 1345 ROBSON 315L (Class)
+MW      1230 1345 ROBSON 308 (Class)
+MW      1230 1345 ROBSON 306 (Class)
+MW      1230 1345 ROBSON 227 (Class)
+MW      1230 1345 ROBSON 224 (Class)
+MW      1230 1345 ROBSON 212 (Class)
+MW      1230 1345 ROBSON 211 (Class)
+MW      1230 1345 ROBSON 205 (Class)
+MW      1230 1345 ROBSON 204 (Class)
+MW      1230 1345 ROBSON 202 (Class)
+MW      1230 1345 ROBSON 201B (Class)
+MW      1230 1345 ROBSON 201A (Class)
+MW      1230 1345 ROBSON 121 (Class)
+MW      1230 1345 ROBSON 105 (Class)
+MW      1230 1345 ROBSON 103 (Class)
+MW      1230 1345 ROBSON 102 (Class)
+MW      1230 1345 ROBSON 101B (Class)
+MW      1230 1345 REXT 341 (Class)
+MW      1230 1345 REXT 341 (Class)
+"MW      1230 1345 REXT 338 (Class)
+T       1530 1645 REXT 338 (Class)
+T       1700 1815 REXT 338 (Class)"
+MW      1230 1345 REXT 321 (Class)
+"MW      1230 1345 REXT 219 (Class)
+MW      1400 1515 REXT 219 (Class)"
+"MW      1230 1345 REXT 219 (Class)
+MW      1400 1515 REXT 219 (Class)"
+MW      1230 1345 MEMORL 101 (Class)
+MW      1230 1345 MEMORL 001 (Class)
+MW      1230 1345 LBRARY 578 (Class)
+MW      1230 1345 LBRARY 401 (Class)
+MW      1230 1345 LBRARY 226 (Class)
+MW      1230 1345 JAMES 3117 (Class)
+"MW      1230 1345 JAMES 2113 (Lecture)
+R       1400 1515 JAMES 2113 (Lab)
+R       1530 1645 JAMES 2113 (Lab)"
+MW      1230 1345 JAMES 2105 (Class)
+MW      1230 1345 JAMES 2104 (Class)
+MW      1230 1345 JAMES 2102 (Class)
+MW      1230 1345 JAMES 2100 (Class)
+MW      1230 1345 JAMES 2098 (Class)
+MW      1230 1345 JAMES 2097 (Class)
+MW      1230 1345 JAMES 2096 (Class)
+MW      1230 1345 JAMES 1146 (Class)
+MW      1230 1345 JAMES 1115 (Class)
+MW      1230 1345 JAMES 1056 (Class)
+"MW      1230 1345 JAMES 1053 (Lab)
+TR      0800 0915 JAMES 2096 (Lecture)"
+MW      1230 1345 JAMES 1019 (Class)
+MW      1230 1345 HAWTHN 104 (Class)
+MW      1230 1345 ESBY 111 (Class)
+MW      1230 1345 ESBY 103E (Class)
+MW      1230 1345 ENTPRZ 517 (Class)
+MW      1230 1345 ENTPRZ 514 (Class)
+MW      1230 1345 ENTPRZ 506 (Class)
+MW      1230 1345 ENTPRZ 417 (Class)
+MW      1230 1345 ENTPRZ 414 (Class)
+MW      1230 1345 ENTPRZ 409 (Class)
+MW      1230 1345 ENTPRZ 406 (Class)
+MW      1230 1345 BUSN 301 (Class)
+MW      1230 1345 BUSN 235 (Class)
+MW      1230 1345 BUSN 233 (Class)
+MW      1230 1345 BUSN 227 (Class)
+MW      1230 1345 BUSN 225 (Class)
+MW      1230 1345 BUSN 223 (Class)
+MW      1230 1345 BUSN 208 (Class)
+MW      1230 1345 BUSN 204 (Class)
+MW      1230 1345 BUSN 201 (Class)
+MW      1230 1345 BUSN 131 (Class)
+MW      1230 1345 BUSN 121 (Class)
+MW      1230 1345 BUSN 107 (Class)
+MW      1230 1345 BUSN 103 (Class)
+MW      1230 1345 BUSN 101 (Class)
+MW      1230 1345 BUNCE TOHILL (Class)
+MW      1230 1345 BUNCE 156 (Class)
+MW      1230 1345 BUNCE 131 (Class)
+MW      1230 1345 BUNCE 109 (Class)
+MW      1230 1345 BUNCE 106 (Class)
+MW      1230 1345 BUNCE 105 (Class)
+MW      1230 1345 BUNCE 104 (Class)
+"MW      1230 1345 BOZ 112 (Lecture)
+T       1830 1945 SCIENC 134 (Lab)
+T       2000 2115 SCIENC 134 (Lab)"
+"MW      1230 1345 BOZ 112 (Lecture)
+T       1530 1645 SCIENC 134 (Lab)
+T       1700 1815 SCIENC 134 (Lab)"
+"MW      1230 1345 BOZ 112 (Lecture)
+M       1830 1945 SCIENC 138 (Lab)
+M       2000 2115 SCIENC 138 (Lab)"
+"MW      1230 1345 BOZ 112 (Lecture)
+F       1100 1215 SCIENC 134 (Lab)
+F       1230 1345 SCIENC 134 (Lab)"
+MW      1230 1345 301HGH 305 (Class)
+MW      1230 1345 301HGH 215 (Class)
+MW      1230 1345 301HGH 205 (Class)
+MW      1230 1320 WILSON 164 (Class)
+MW      1100 1215 WINANS 113 (Class)
+MW      1100 1215 WINANS 112 (Class)
+MW      1100 1215 WILSON 215 (Class)
+"MW      1100 1215 WILSON 213 (Class)
+F       1100 1150 WILSON 213 (Class)"
+MW      1100 1215 WILSON 212 (Class)
+MW      1100 1215 WILSON 207 (Class)
+"MW      1100 1215 WILSON 206 (Class)
+F       1100 1150 WILSON 206 (Class)"
+MW      1100 1215 WILSON 205 (Class)
+MW      1100 1215 WILSON 204 (Class)
+MW      1100 1215 WILSON 203 (Class)
+"MW      1100 1215 WILSON 164 (Class)
+F       1100 1150 WILSON 164 (Class)"
+"MW      1100 1215 WILSON 156 (Class)
+F       1100 1150 WILSON 108 (Class)"
+MW      1100 1215 WILSON 153 (Class)
+MW      1100 1215 WILSON 114 (Class)
+MW      1100 1215 WILSON 109 (Class)
+MW      1100 1215 WILSON 108 (Class)
+MW      1100 1215 WILSON 107 (Class)
+MW      1100 1215 WILSON 105 (Class)
+"MW      1100 1215 WESTBY 219 (Class)
+MW      1230 1345 WESTBY 219 (Class)"
+"MW      1100 1215 WESTBY 218 (Class)
+MW      1230 1345 WESTBY 218 (Class)"
+"MW      1100 1215 WESTBY 216 (Class)
+MW      1230 1345 WESTBY 216 (Class)"
+"MW      1100 1215 WESTBY 213 (Class)
+MW      1230 1345 WESTBY 213 (Class)"
+"MW      1100 1215 WESTBY 205 (Class)
+MW      1230 1345 WESTBY 205 (Class)"
+"MW      1100 1215 WESTBY 201 (Class)
+MW      1230 1345 WESTBY 201 (Class)"
+MW      1100 1215 WESTBY 111 (Class)
+"MW      1100 1215 WESTBY 109 (Lecture)
+M       1400 1515 WESTBY 109 (Lab)
+M       1530 1645 WESTBY 109 (Lab)"
+"MW      1100 1215 WESTBY 104 (Class)
+MW      1230 1345 WESTBY 104 (Class)"
+"MW      1100 1215 WESTBY 103 (Class)
+MW      1230 1345 WESTBY 103 (Class)"
+"MW      1100 1215 WESTBY 103 (Class)
+MW      1230 1345 WESTBY 103 (Class)"
+"MW      1100 1215 WESTBY 102 (Class)
+MW      1230 1345 WESTBY 102 (Class)"
+"MW      1100 1215 WESTBY 100 (Class)
+MW      1230 1345 WESTBY 100 (Class)"
+"MW      1100 1215 VCTRIA 306 (Class)
+F       0800 0915 REXT 140 (Class)
+F       0930 1045 REXT 140 (Class)"
+MW      1100 1215 VCTRIA 302 (Class)
+MW      1100 1215 VCTRIA 300 (Class)
+"MW      1100 1215 VCTRIA 204 (Class)
+W       1230 1345 REXT 141 (Class)
+W       1400 1515 REXT 141 (Class)"
+MW      1100 1215 VCTRIA 201 (Class)
+MW      1100 1215 SCIENC 338 (Class)
+MW      1100 1215 SCIENC 254 (Class)
+"MW      1100 1215 SCIENC 239 (Lecture)
+R       0930 1045 SCIENC 239 (Lab)
+R       1100 1215 SCIENC 239 (Lab)"
+"MW      1100 1215 SCIENC 206 (Lecture)
+F       1100 1215 SCIENC 206 (Lab)
+F       1230 1345 SCIENC 206 (Lab)"
+"MW      1100 1215 SCIENC 204 (Class)
+MW      1230 1345 SCIENC 204 (Class)"
+"MW      1100 1215 SCIENC 151 (Lecture)
+T       1100 1215 SCIENC 144 (Lab)
+T       1230 1345 SCIENC 144 (Lab)"
+"MW      1100 1215 SCIENC 151 (Lecture)
+R       1100 1215 SCIENC 144 (Lab)
+R       1230 1345 SCIENC 144 (Lab)"
+"MW      1100 1215 SCIENC 148 (Lecture)
+R       0930 1045 SCIENC 150 (Lab)
+R       1100 1215 SCIENC 150 (Lab)"
+"MW      1100 1215 SCIENC 134 (Lecture)
+T       1100 1215 SCIENC 134 (Lab)
+T       1230 1345 SCIENC 134 (Lab)"
+MW      1100 1215 SAVITZ 341 (Class)
+MW      1100 1215 SAVITZ 217 (Class)
+MW      1100 1215 ROBSON 324 (Class)
+MW      1100 1215 ROBSON 323 (Class)
+MW      1100 1215 ROBSON 311 (Class)
+MW      1100 1215 ROBSON 308 (Class)
+MW      1100 1215 ROBSON 306 (Class)
+MW      1100 1215 ROBSON 227 (Class)
+MW      1100 1215 ROBSON 224 (Class)
+MW      1100 1215 ROBSON 211 (Class)
+MW      1100 1215 ROBSON 207 (Class)
+MW      1100 1215 ROBSON 205 (Class)
+MW      1100 1215 ROBSON 202 (Class)
+MW      1100 1215 ROBSON 201B (Class)
+"MW      1100 1215 ROBSON 201A (Class)
+F       1100 1215 ROBSON 101A (Class)"
+"MW      1100 1215 ROBSON 103 (Class)
+F         LBRARY 131"
+MW      1100 1215 ROBSON 102 (Class)
+MW      1100 1215 ROBSON 101B (Class)
+MW      1100 1215 ROBSON 101A (Class)
+"MW      1100 1215 REXT 241 (Class)
+M       0930 1045 REXT 241 (Class)"
+"MW      1100 1215 REXT 240 (Class)
+M       0930 1045 REXT 240 (Class)"
+"MW      1100 1215 REXT 141 (Class)
+M       0930 1045 REXT 141 (Class)"
+"MW      1100 1215 REXT 140 (Class)
+M       0930 1045 REXT 140 (Class)"
+"MW      1100 1215 REXT 107 (Class)
+W       1230 1345 REXT 107 (Class)
+F       0930 1045 REXT 107 (Class)"
+MW      1100 1215 MEMORL 101 (Class)
+MW      1100 1215 MEMORL 001 (Class)
+MW      1100 1215 LBRARY 578 (Class)
+MW      1100 1215 LBRARY 401 (Class)
+MW      1100 1215 LBRARY 226 (Class)
+"MW      1100 1215 JAMES 3091A (Class)
+F       1100 1215 JAMES 2102 (Class)"
+MW      1100 1215 JAMES 2105 (Class)
+MW      1100 1215 JAMES 2104 (Class)
+MW      1100 1215 JAMES 2102 (Class)
+MW      1100 1215 JAMES 2098 (Class)
+MW      1100 1215 JAMES 2097 (Class)
+MW      1100 1215 JAMES 2096 (Class)
+MW      1100 1215 JAMES 1146 (Class)
+MW      1100 1215 JAMES 1119 (Class)
+MW      1100 1215 JAMES 1115 (Class)
+MW      1100 1215 JAMES 1082 (Class)
+MW      1100 1215 JAMES 1056 (Class)
+MW      1100 1215 JAMES 1020 (Class)
+MW      1100 1215 JAMES 1019 (Class)
+MW      1100 1215 HAWTHN 204 (Class)
+MW      1100 1215 HAWTHN 104 (Class)
+MW      1100 1215 ESBY 111 (Class)
+MW      1100 1215 ESBY 103E (Class)
+MW      1100 1215 ENTPRZ 517 (Class)
+"MW      1100 1215 ENTPRZ 509 (Class)
+R       0930 1045 ROWAN 117 (Class)
+R       1100 1215 ROWAN 117 (Class)"
+MW      1100 1215 ENTPRZ 506 (Class)
+MW      1100 1215 ENTPRZ 417 (Class)
+MW      1100 1215 ENTPRZ 414 (Class)
+MW      1100 1215 ENTPRZ 409 (Class)
+MW      1100 1215 ENTPRZ 406 (Class)
+MW      1100 1215 BUSN 301 (Class)
+MW      1100 1215 BUSN 227 (Class)
+MW      1100 1215 BUSN 225 (Class)
+MW      1100 1215 BUSN 223 (Class)
+MW      1100 1215 BUSN 208 (Class)
+MW      1100 1215 BUSN 204 (Class)
+MW      1100 1215 BUSN 201 (Class)
+MW      1100 1215 BUSN 131 (Class)
+MW      1100 1215 BUNCE 332 (Class)
+MW      1100 1215 BUNCE 159 (Class)
+MW      1100 1215 BUNCE 159 (Class)
+MW      1100 1215 BUNCE 156 (Class)
+MW      1100 1215 BUNCE 131 (Class)
+MW      1100 1215 BUNCE 109 (Class)
+MW      1100 1215 BUNCE 106 (Class)
+MW      1100 1215 BUNCE 105 (Class)
+MW      1100 1215 BUNCE 105 (Class)
+MW      1100 1215 BOZ 112 (Class)
+MW      1100 1215 BOZ 112 (Class)
+MW      1100 1215 301HGH 305 (Class)
+MW      1100 1215 301HGH 216 (Class)
+MW      1100 1215 301HGH 215 (Class)
+MW      1100 1215 301HGH 205 (Class)
+"MW      1100 1215   (Class)
+F       1100 1150   (Class)"
+MW      1100 1150 JAMES 2100 (Class)
+MW      0930 1045 WINANS 113 (Class)
+MW      0930 1045 WINANS 112 (Class)
+MW      0930 1045 WINANS 111 (Class)
+"MW      0930 1045 WILSON 213 (Class)
+F       0930 1020 WILSON 213 (Class)"
+MW      0930 1045 WILSON 207 (Class)
+MW      0930 1045 WILSON 205 (Class)
+MW      0930 1045 WILSON 204 (Class)
+MW      0930 1045 WILSON 203 (Class)
+"MW      0930 1045 WILSON 164 (Class)
+F       0930 1020 WILSON 164 (Class)"
+MW      0930 1045 WILSON 156 (Class)
+MW      0930 1045 WILSON 153 (Class)
+MW      0930 1045 WILSON 114 (Class)
+MW      0930 1045 WILSON 109 (Class)
+MW      0930 1045 WILSON 105 (Class)
+MW      0930 1045 WHITNY CL-202 (Class)
+MW      0930 1045 WESTBY 111 (Class)
+"MW      0930 1045 WESTBY 109 (Lecture)
+W       1400 1515 WESTBY 109 (Lab)
+W       1530 1645 WESTBY 109 (Lab)"
+MW      0930 1045 VCTRIA 306 (Class)
+MW      0930 1045 VCTRIA 302 (Class)
+MW      0930 1045 VCTRIA 301 (Class)
+MW      0930 1045 VCTRIA 300 (Class)
+"MW      0930 1045 VCTRIA 204 (Class)
+W       1230 1345 REXT 140 (Class)
+W       1400 1515 REXT 140 (Class)"
+MW      0930 1045 VCTRIA 200 (Class)
+"MW      0930 1045 SCIENC 254 (Class)
+W       0800 0915 SCIENC 254 (Class)
+F       1100 1215 SCIENC 254 (Class)"
+"MW      0930 1045 SCIENC 239 (Lecture)
+F       0930 1045 SCIENC 239 (Lab)
+F       1100 1215 SCIENC 239 (Lab)"
+"MW      0930 1045 SCIENC 234 (Class)
+MW      1100 1215 SCIENC 234 (Class)"
+"MW      0930 1045 SCIENC 151 (Lecture)
+F       1530 1645 SCIENC 148 (Lab)
+F       1700 1815 SCIENC 148 (Lab)"
+"MW      0930 1045 SCIENC 151 (Lecture)
+F       1100 1215 SCIENC 148 (Lab)
+F       1230 1345 SCIENC 148 (Lab)"
+MW      0930 1045 SCIENC 150 (Class)
+"MW      0930 1045 SCIENC 148 (Lecture)
+F       0930 1045 SCIENC 150 (Lab)
+F       1100 1215 SCIENC 150 (Lab)"
+MW      0930 1045 SAVITZ 341 (Class)
+MW      0930 1045 SAVITZ 217 (Class)
+MW      0930 1045 ROBSON 323 (Class)
+MW      0930 1045 ROBSON 312 (Class)
+MW      0930 1045 ROBSON 308 (Class)
+MW      0930 1045 ROBSON 306 (Class)
+MW      0930 1045 ROBSON 305 (Class)
+MW      0930 1045 ROBSON 224 (Class)
+MW      0930 1045 ROBSON 212 (Class)
+MW      0930 1045 ROBSON 211 (Class)
+MW      0930 1045 ROBSON 207 (Class)
+MW      0930 1045 ROBSON 205 (Class)
+MW      0930 1045 ROBSON 204 (Class)
+MW      0930 1045 ROBSON 204 (Class)
+MW      0930 1045 ROBSON 202 (Class)
+MW      0930 1045 ROBSON 201B (Class)
+MW      0930 1045 ROBSON 201A (Class)
+MW      0930 1045 ROBSON 105 (Class)
+"MW      0930 1045 ROBSON 103 (Class)
+R         LBRARY 131"
+MW      0930 1045 ROBSON 102 (Class)
+MW      0930 1045 ROBSON 101B (Class)
+"MW      0930 1045 REXT 341 (Class)
+W       1530 1645 REXT 340 (Class)
+W       1700 1815 REXT 340 (Class)"
+"MW      0930 1045 REXT 339 (Class)
+T       1530 1645 REXT 339 (Class)
+T       1700 1815 REXT 339 (Class)"
+"MW      0930 1045 REXT 338 (Class)
+T       0930 1045 REXT 338 (Class)
+T       1100 1215 REXT 338 (Class)"
+MW      0930 1045 REXT 321 (Class)
+"MW      0930 1045 REXT 107 (Class)
+F       1100 1215 REXT 107 (Class)
+F       1230 1345 REXT 107 (Class)"
+MW      0930 1045 MEMORL 101 (Class)
+MW      0930 1045 MEMORL 001 (Class)
+MW      0930 1045 LBRARY 578 (Class)
+MW      0930 1045 LBRARY 401 (Class)
+MW      0930 1045 LBRARY 226 (Class)
+MW      0930 1045 JAMES 3117 (Class)
+MW      0930 1045 JAMES 3099 (Class)
+"MW      0930 1045 JAMES 2113 (Lecture)
+R       1100 1215 JAMES 2113 (Lab)
+R       1230 1345 JAMES 2113 (Lab)"
+MW      0930 1045 JAMES 2110 (Class)
+MW      0930 1045 JAMES 2105 (Class)
+MW      0930 1045 JAMES 2104 (Class)
+MW      0930 1045 JAMES 2103 (Class)
+MW      0930 1045 JAMES 2101 (Class)
+MW      0930 1045 JAMES 2099 (Class)
+MW      0930 1045 JAMES 2098 (Class)
+MW      0930 1045 JAMES 2097 (Class)
+MW      0930 1045 JAMES 2096 (Class)
+MW      0930 1045 JAMES 2094 (Class)
+"MW      0930 1045 JAMES 1146 (Lecture)
+T       0800 0915 JAMES 1053 (Lab)
+T       0930 1045 JAMES 1053 (Lab)"
+MW      0930 1045 JAMES 1119 (Class)
+MW      0930 1045 JAMES 1115 (Class)
+MW      0930 1045 JAMES 1112 (Class)
+MW      0930 1045 JAMES 1081 (Class)
+MW      0930 1045 JAMES 1056 (Class)
+MW      0930 1045 JAMES 1019 (Class)
+MW      0930 1045 HAWTHN 104 (Class)
+MW      0930 1045 ESBY 111 (Class)
+MW      0930 1045 ENTPRZ 517 (Class)
+MW      0930 1045 ENTPRZ 514 (Class)
+"MW      0930 1045 ENTPRZ 509 (Class)
+F       0930 1045 ENTPRZ 517 (Class)"
+MW      0930 1045 ENTPRZ 509 (Class)
+MW      0930 1045 ENTPRZ 506 (Class)
+MW      0930 1045 ENTPRZ 417 (Class)
+MW      0930 1045 ENTPRZ 414 (Class)
+MW      0930 1045 ENTPRZ 409 (Class)
+MW      0930 1045 ENTPRZ 406 (Class)
+MW      0930 1045 BUSN 301 (Class)
+MW      0930 1045 BUSN 235 (Class)
+MW      0930 1045 BUSN 233 (Class)
+MW      0930 1045 BUSN 227 (Class)
+MW      0930 1045 BUSN 225 (Class)
+MW      0930 1045 BUSN 223 (Class)
+MW      0930 1045 BUSN 208 (Class)
+MW      0930 1045 BUSN 204 (Class)
+MW      0930 1045 BUSN 201 (Class)
+MW      0930 1045 BUSN 131 (Class)
+MW      0930 1045 BUSN 121 (Class)
+MW      0930 1045 BUSN 107 (Class)
+MW      0930 1045 BUSN 103 (Class)
+MW      0930 1045 BUSN 101 (Class)
+MW      0930 1045 BUNCE 332 (Class)
+MW      0930 1045 BUNCE 205 (Class)
+MW      0930 1045 BUNCE 156 (Class)
+MW      0930 1045 BUNCE 109 (Class)
+MW      0930 1045 BUNCE 106 (Class)
+MW      0930 1045 BUNCE 105 (Class)
+MW      0930 1045 301HGH 215 (Class)
+MW      0930 1045 301HGH 205 (Class)
+MW      0930 1045   (Class)
+MW      0930 1045   (Class)
+MW      0930 1020 WILSON 206 (Class)
+MW      0905 1045 JAMES 2102 (Class)
+MW      0800 0915 WINANS 113 (Class)
+MW      0800 0915 WINANS 112 (Class)
+"MW      0800 0915 WILSON 213 (Class)
+F       0800 0850 WILSON 213 (Class)"
+"MW      0800 0915 WILSON 206 (Class)
+F       0800 0850 WILSON 206 (Class)"
+MW      0800 0915 WILSON 205 (Class)
+MW      0800 0915 WILSON 204 (Class)
+MW      0800 0915 WILSON 203 (Class)
+"MW      0800 0915 WILSON 164 (Class)
+F       0800 0850 WILSON 164 (Class)"
+"MW      0800 0915 WILSON 153 (Class)
+F       0800 0850 WILSON 153 (Class)"
+MW      0800 0915 WILSON 114 (Class)
+MW      0800 0915 WILSON 107 (Class)
+"MW      0800 0915 WESTBY 219 (Class)
+MW      0930 1045 WESTBY 219 (Class)"
+"MW      0800 0915 WESTBY 218 (Class)
+MW      0930 1045 WESTBY 218 (Class)"
+"MW      0800 0915 WESTBY 213 (Class)
+MW      0930 1045 WESTBY 213 (Class)"
+"MW      0800 0915 WESTBY 104 (Class)
+MW      0930 1045 WESTBY 104 (Class)"
+"MW      0800 0915 WESTBY 104 (Class)
+MW      0930 1045 WESTBY 104 (Class)"
+"MW      0800 0915 WESTBY 103 (Class)
+MW      0930 1045 WESTBY 103 (Class)"
+MW      0800 0915 VCTRIA 306 (Class)
+MW      0800 0915 VCTRIA 302 (Class)
+MW      0800 0915 VCTRIA 301 (Class)
+MW      0800 0915 VCTRIA 300 (Class)
+MW      0800 0915 VCTRIA 204 (Class)
+MW      0800 0915 VCTRIA 201 (Class)
+"MW      0800 0915 SCIENC 324 (Lecture)
+F       0800 0915 SCIENC 326 (Lab)
+F       0930 1045 SCIENC 326 (Lab)"
+"MW      0800 0915 SCIENC 324 (Lecture)
+F       0800 0915 SCIENC 322 (Lab)
+F       0930 1045 SCIENC 322 (Lab)"
+"MW      0800 0915 SCIENC 252 (Class)
+MW      0930 1045 SCIENC 252 (Class)"
+"MW      0800 0915 SCIENC 241 (Lecture)
+T       0800 0915 SCIENC 252 (Lab)
+T       0930 1045 SCIENC 252 (Lab)"
+"MW      0800 0915 SCIENC 220 (Class)
+MW      0930 1045 SCIENC 220 (Class)"
+"MW      0800 0915 SCIENC 206 (Class)
+MW      0930 1045 SCIENC 206 (Class)"
+MW      0800 0915 ROBSON 312 (Class)
+MW      0800 0915 ROBSON 308 (Class)
+MW      0800 0915 ROBSON 306 (Class)
+MW      0800 0915 ROBSON 224 (Class)
+MW      0800 0915 ROBSON 212 (Class)
+MW      0800 0915 ROBSON 211 (Class)
+MW      0800 0915 ROBSON 207 (Class)
+"MW      0800 0915 ROBSON 121 (Lecture)
+T       0800 0915 ROBSON 325 (Lab)
+T       0930 1045 ROBSON 325 (Lab)"
+"MW      0800 0915 ROBSON 121 (Lecture)
+R       0800 0915 ROBSON 325 (Lab)
+R       0930 1045 ROBSON 325 (Lab)"
+MW      0800 0915 ROBSON 102 (Class)
+MW      0800 0915 ROBSON 101B (Class)
+"MW      0800 0915 REXT 339 (Class)
+T       0930 1045 REXT 339 (Class)
+T       1100 1215 REXT 339 (Class)"
+"MW      0800 0915 REXT 320 (Class)
+T       0930 1045 REXT 119 (Lab)
+T       1100 1215 REXT 119 (Lab)"
+"MW      0800 0915 REXT 241 (Class)
+W       0930 1045 REXT 241 (Class)"
+"MW      0800 0915 REXT 240 (Class)
+W       0930 1045 REXT 240 (Class)"
+"MW      0800 0915 REXT 141 (Class)
+W       0930 1045 REXT 141 (Class)"
+"MW      0800 0915 REXT 140 (Class)
+W       0930 1045 REXT 140 (Class)"
+MW      0800 0915 LBRARY 578 (Class)
+MW      0800 0915 LBRARY 226 (Class)
+"MW      0800 0915 JAMES 3091A (Class)
+F       0800 0915 JAMES 2102 (Class)"
+"MW      0800 0915 JAMES 2113 (Lecture)
+R       0800 0915 JAMES 2113 (Lab)
+R       0930 1045 JAMES 2113 (Lab)"
+MW      0800 0915 JAMES 2105 (Class)
+MW      0800 0915 JAMES 2104 (Class)
+MW      0800 0915 JAMES 2103 (Class)
+MW      0800 0915 JAMES 2101 (Class)
+MW      0800 0915 JAMES 2097 (Class)
+MW      0800 0915 JAMES 2096 (Class)
+MW      0800 0915 JAMES 1146 (Class)
+MW      0800 0915 JAMES 1119 (Class)
+MW      0800 0915 JAMES 1115 (Class)
+MW      0800 0915 JAMES 1056 (Class)
+MW      0800 0915 JAMES 1019 (Class)
+MW      0800 0915 HAWTHN 104 (Class)
+MW      0800 0915 ENTPRZ 517 (Class)
+MW      0800 0915 ENTPRZ 417 (Class)
+MW      0800 0915 ENTPRZ 414 (Class)
+MW      0800 0915 ENTPRZ 406 (Class)
+MW      0800 0915 BUSN 221 (Class)
+MW      0800 0915 BUSN 208 (Class)
+MW      0800 0915 BUSN 204 (Class)
+MW      0800 0915 BUSN 201 (Class)
+MW      0800 0915 BUSN 131 (Class)
+MW      0800 0915 BUSN 107 (Class)
+MW      0800 0915 BUNCE 156 (Class)
+"MW      0800 0915 BOZ 112 (Lecture)
+T       1100 1215 SCIENC 138 (Lab)
+T       1230 1345 SCIENC 138 (Lab)"
+"MW      0800 0915 BOZ 112 (Lecture)
+T       0800 0915 SCIENC 138 (Lab)
+T       0930 1045 SCIENC 138 (Lab)"
+"MW      0800 0915 BOZ 112 (Lecture)
+R       1100 1215 SCIENC 134 (Lab)
+R       1230 1345 SCIENC 134 (Lab)"
+"MW      0800 0915 BOZ 112 (Lecture)
+R       0800 0915 SCIENC 134 (Lab)
+R       0930 1045 SCIENC 134 (Lab)"
+MW      0735 0915 ROBSON 324 (Class)
+MTWR    1530 1645 WILSON 153 (Class)
+MTR     1530 1645 ROBSON 324 (Class)
+MTR     1530 1645 JAMES 3091A (Class)
+MTR     1400 1515 ROBSON 324 (Class)
+MTR     1400 1515 JAMES 3091A (Class)
+MTR     1230 1345 JAMES 3091A (Class)
+MTR     1100 1215 ROBSON 310 (Class)
+"MT      1400 1515 SCIENC 218 (Lecture)
+R       1400 1515 SCIENC 218 (Lab)
+R       1530 1645 SCIENC 218 (Lab)"
+"MT      1230 1345 SCIENC 218 (Lecture)
+W       1400 1515 SCIENC 218 (Lab)
+W       1530 1645 SCIENC 218 (Lab)"
+"MT      1100 1215 SCIENC 218 (Lecture)
+R       0930 1045 SCIENC 218 (Lab)
+R       1100 1215 SCIENC 218 (Lab)"
+"MT      0800 0915 SCIENC 234 (Lecture)
+R       0800 0915 SCIENC 234 (Lab)
+R       0930 1045 SCIENC 234 (Lab)"
+"MT      0800 0915 SCIENC 218 (Lecture)
+W       0800 0915 SCIENC 218 (Lab)
+W       0930 1045 SCIENC 218 (Lab)"
+"MR      1700 1815 SCIENC 206 (Lecture)
+W       1530 1645 SCIENC 206 (Lab)
+W       1700 1815 SCIENC 206 (Lab)"
+"MR      1400 1515 SCIENC 241 (Lecture)
+T       1400 1515 SCIENC 241 (Lab)
+T       1530 1645 SCIENC 241 (Lab)"
+"MR      1400 1515 SCIENC 206 (Class)
+MR      1530 1645 SCIENC 206 (Class)"
+"MR      1230 1345 SCIENC 206 (Lecture)
+W       1230 1345 SCIENC 206 (Lab)
+W       1400 1515 SCIENC 206 (Lab)"
+MR      1100 1215 REXT 321 (Class)
+MR      1100 1215 REXT 321 (Class)
+"MF      1530 1645 SCIENC 128 (Lecture)
+W       1530 1645 SCIENC 314A (Lab)
+W       1700 1815 SCIENC 314A (Lab)"
+MF      1530 1645 ROBSON 121 (Class)
+"MF      1400 1515 SCIENC 324 (Lecture)
+T       1400 1515 SCIENC 334 (Lab)
+T       1530 1645 SCIENC 334 (Lab)"
+"MF      1400 1515 SCIENC 324 (Lecture)
+T       1400 1515 SCIENC 332 (Lab)
+T       1530 1645 SCIENC 332 (Lab)"
+"MF      1100 1215 SCIENC 232 (Lecture)
+W       0930 1045 SCIENC 232 (Lab)
+W       1100 1215 SCIENC 232 (Lab)"
+"MF      1100 1215 SCIENC 128 (Lecture)
+W       1100 1215 SCIENC 314A (Lab)
+W       1230 1345 SCIENC 314A (Lab)"
+"MF      1100 1215 SCIENC 126 (Lecture)
+T       1100 1215 SCIENC 204 (Lab)
+T       1230 1345 SCIENC 204 (Lab)"
+MF      1100 1215 ROBSON 121 (Class)
+"MF      0930 1045 SCIENC 338 (Lecture)
+W       0930 1045 SCIENC 304 (Lab)
+W       1100 1215 SCIENC 304 (Lab)"
+"MF      0930 1045 SCIENC 241 (Lecture)
+W       0930 1045 SCIENC 241 (Lab)
+W       1100 1215 SCIENC 241 (Lab)"
+MF      0930 1045 ROBSON 121 (Class)
+"MF      0800 0915 SCIENC 204 (Class)
+MF      0930 1045 SCIENC 204 (Class)"
+M       2000 2115 WILSON 164 (Class)
+"M       2000 2115 LBRARY 401 (Class)
+M       2130 2245 LBRARY 401 (Class)"
+"M       2000 2115 LBRARY 401 (Class)
+M       2130 2245 LBRARY 401 (Class)"
+"M       2000 2115 JAMES 3117 (Class)
+M       2130 2245 JAMES 3117 (Class)"
+"M       2000 2115 JAMES 2102 (Class)
+M       2130 2245 JAMES 2102 (Class)"
+"M       2000 2115 JAMES 2097 (Class)
+M       2130 2245 JAMES 2097 (Class)"
+"M       2000 2115 JAMES 2096 (Lecture)
+M       2130 2245 JAMES 2096 (Lecture)
+T       2000 2115 JAMES 1053 (Lab)
+T       2130 2245 JAMES 1053 (Lab)"
+"M       2000 2115 JAMES 1146 (Class)
+M       2130 2245 JAMES 1146 (Class)"
+"M       2000 2115 JAMES 1056 (Class)
+M       2130 2245 JAMES 1056 (Class)"
+"M       2000 2115 JAMES 1019 (Class)
+M       2130 2245 JAMES 1019 (Class)"
+M       1945 2215 JAMES 2104 (Class)
+M       1945 2215 JAMES 1119 (Class)
+M       1945 2215 JAMES 1081 (Class)
+M       1945 2215 JAMES 1081 (Class)
+M       1945 2215 JAMES 1081 (Class)
+M       1945 2215 JAMES 1081 (Class)
+"M       1900 2130 WILSON 156 (Class)
+W       1230 1345 WILSON 156 (Class)"
+M       1830 2010 JAMES 2110 (Class)
+"M       1830 1945 WINANS 113 (Class)
+M       2000 2115 WINANS 113 (Class)"
+"M       1830 1945 WINANS 112 (Class)
+M       2000 2115 WINANS 112 (Class)"
+"M       1830 1945 WILSON 207 (Class)
+M       2000 2115 WILSON 207 (Class)"
+"M       1830 1945 WILSON 205 (Class)
+M       2000 2115 WILSON 205 (Class)"
+"M       1830 1945 WILSON 205 (Class)
+M       2000 2115 WILSON 205 (Class)"
+"M       1830 1945 WILSON 204 (Class)
+M       2000 2115 WILSON 204 (Class)"
+"M       1830 1945 WILSON 153 (Class)
+W       1700 1900 WILSON 153 (Class)"
+"M       1830 1945 WILSON 109 (Class)
+M       2000 2115 WILSON 109 (Class)"
+"M       1830 1945 VCTRIA 306 (Class)
+M       2000 2115 VCTRIA 306 (Class)"
+"M       1830 1945 VCTRIA 204 (Class)
+M       2000 2115 VCTRIA 204 (Class)"
+"M       1830 1945 VCTRIA 200 (Class)
+M       2000 2115 VCTRIA 200 (Class)"
+"M       1830 1945 SCIENC 338 (Lecture)
+M       2000 2115 SCIENC 338 (Lecture)
+W       1830 1945 SCIENC 314A (Lab)
+W       2000 2115 SCIENC 314A (Lab)"
+"M       1830 1945 SCIENC 336 (Lab)
+M       2000 2115 SCIENC 336 (Lab)
+W       1830 1945 SCIENC 324 (Lecture)
+W       2000 2115 SCIENC 324 (Lecture)"
+"M       1830 1945 SCIENC 334 (Lab)
+M       2000 2115 SCIENC 334 (Lab)
+W       1830 1945 SCIENC 324 (Lecture)
+W       2000 2115 SCIENC 324 (Lecture)"
+"M       1830 1945 SCIENC 324 (Lecture)
+M       2000 2115 SCIENC 324 (Lecture)
+W       1830 1945 SCIENC 336 (Lab)
+W       2000 2115 SCIENC 336 (Lab)"
+"M       1830 1945 SCIENC 324 (Lecture)
+M       2000 2115 SCIENC 324 (Lecture)
+W       1830 1945 SCIENC 334 (Lab)
+W       2000 2115 SCIENC 334 (Lab)"
+"M       1830 1945 SCIENC 314A (Lab)
+M       2000 2115 SCIENC 314A (Lab)
+W       1830 1945 SCIENC 338 (Lecture)
+W       2000 2115 SCIENC 338 (Lecture)"
+"M       1830 1945 SCIENC 220 (Lab)
+M       2000 2115 SCIENC 220 (Lab)
+TR      1230 1345 SCIENC 151 (Lecture)"
+"M       1830 1945 SCIENC 151 (Lecture)
+M       2000 2115 SCIENC 151 (Lecture)
+W       1830 1945 SCIENC 326 (Lab)
+W       2000 2115 SCIENC 326 (Lab)"
+"M       1830 1945 SCIENC 151 (Lecture)
+M       2000 2115 SCIENC 151 (Lecture)
+W       1830 1945 SCIENC 322 (Lab)
+W       2000 2115 SCIENC 322 (Lab)"
+"M       1830 1945 SCIENC 149 (Class)
+M       2000 2115 SCIENC 149 (Class)"
+"M       1830 1945 SCIENC 148 (Lab)
+M       2000 2115 SCIENC 148 (Lab)
+TR      1230 1345 BOZ 112 (Lecture)"
+"M       1830 1945 SCIENC 144 (Lab)
+M       2000 2115 SCIENC 144 (Lab)
+TR      0930 1045 BOZ 112 (Lecture)"
+"M       1830 1945 SAVITZ 341 (Class)
+M       2000 2115 SAVITZ 341 (Class)"
+"M       1830 1945 ROWAN 243 (Class)
+M       2000 2115 ROWAN 243 (Class)"
+"M       1830 1945 ROWAN 243 (Class)
+M       2000 2115 ROWAN 243 (Class)"
+"M       1830 1945 ROWAN 117 (Class)
+M       2000 2115 ROWAN 117 (Class)
+W       1830 1945 REXT 119 (Lab)
+W       2000 2115 REXT 119 (Lab)"
+"M       1830 1945 ROWAN 117 (Class)
+M       2000 2115 ROWAN 117 (Class)
+T       1830 1945 REXT 119 (Lab)
+T       2000 2115 REXT 119 (Lab)"
+"M       1830 1945 ROWAN 117 (Class)
+M       2000 2115 ROWAN 117 (Class)
+R       1830 1945 REXT 119 (Lab)
+R       2000 2115 REXT 119 (Lab)"
+"M       1830 1945 ROBSON 325 (Class)
+W       1830 1945 ROBSON 211 (Class)"
+"M       1830 1945 ROBSON 323 (Class)
+M       2000 2115 ROBSON 323 (Class)"
+"M       1830 1945 ROBSON 315L (Class)
+M       2000 2115 ROBSON 315L (Class)"
+"M       1830 1945 ROBSON 308 (Class)
+M       2000 2115 ROBSON 308 (Class)"
+"M       1830 1945 ROBSON 224 (Class)
+M       2000 2115 ROBSON 224 (Class)"
+"M       1830 1945 ROBSON 216A (Class)
+M       2000 2115 ROBSON 216A (Class)"
+"M       1830 1945 ROBSON 212 (Class)
+W       1830 1945 BUNCE 156 (Class)"
+"M       1830 1945 ROBSON 211 (Class)
+M       2000 2115 ROBSON 211 (Class)"
+"M       1830 1945 ROBSON 202 (Class)
+M       2000 2115 ROBSON 202 (Class)"
+"M       1830 1945 ROBSON 201A (Class)
+M       2000 2115 ROBSON 201A (Class)"
+"M       1830 1945 ROBSON 121 (Class)
+M       2000 2115 ROBSON 121 (Class)"
+"M       1830 1945 ROBSON 105 (Class)
+M       2000 2115 ROBSON 105 (Class)"
+"M       1830 1945 REXT 321 (Class)
+M       2000 2115 REXT 321 (Class)"
+"M       1830 1945 REXT 320 (Class)
+M       2000 2115 REXT 320 (Class)"
+"M       1830 1945 REXT 320 (Class)
+M       2000 2115 REXT 320 (Class)"
+"M       1830 1945 REXT 107 (Class)
+M       2000 2115 REXT 107 (Class)
+R       1700 1815 BUSN 303 (Class)"
+"M       1830 1945 REXT 107 (Class)
+M       2000 2115 REXT 107 (Class)
+R       1700 1815 BUSN 303 (Class)"
+"M       1830 1945 LBRARY 578 (Class)
+M       2000 2115 LBRARY 578 (Class)"
+"M       1830 1945 LBRARY 525 (Class)
+M       2000 2115 LBRARY 525 (Class)"
+"M       1830 1945 LBRARY 403 (Class)
+M       2000 2115 LBRARY 403 (Class)"
+"M       1830 1945 JAMES 2113 (Lab)
+M       2000 2115 JAMES 2113 (Lab)
+W       1830 1945 ROBSON 121 (Lecture)
+W       2000 2115 ROBSON 121 (Lecture)"
+"M       1830 1945 JAMES 2101 (Lecture)
+M       2000 2115 JAMES 2101 (Lecture)
+W       1830 1945 SCIENC 304 (Lab)
+W       2000 2115 SCIENC 304 (Lab)"
+"M       1830 1945 JAMES 2095 (Class)
+M       2000 2115 JAMES 2095 (Class)"
+"M       1830 1945 JAMES 1115 (Class)
+M       2000 2115 JAMES 1115 (Class)"
+"M       1830 1945 JAMES 1082 (Class)
+M       2000 2115 JAMES 1082 (Class)"
+"M       1830 1945 HAWTHN 204 (Class)
+M       2000 2115 HAWTHN 204 (Class)"
+"M       1830 1945 ENTPRZ 517 (Class)
+M       2000 2115 ENTPRZ 517 (Class)"
+"M       1830 1945 ENTPRZ 509 (Class)
+M       2000 2115 ENTPRZ 509 (Class)"
+"M       1830 1945 ENTPRZ 414 (Class)
+M       2000 2115 ENTPRZ 414 (Class)"
+"M       1830 1945 ENTPRZ 409 (Lecture)
+M       2000 2115 ENTPRZ 409 (Lecture)
+W       1830 1945 JAMES 2113 (Lab)
+W       2000 2115 JAMES 2113 (Lab)"
+"M       1830 1945 BUSN 303 (Class)
+M       2000 2115 BUSN 303 (Class)"
+"M       1830 1945 BUSN 301 (Class)
+M       2000 2115 BUSN 301 (Class)"
+"M       1830 1945 BUSN 235 (Class)
+M       2000 2115 BUSN 235 (Class)"
+"M       1830 1945 BUSN 233 (Class)
+M       2000 2115 BUSN 233 (Class)"
+"M       1830 1945 BUSN 227 (Class)
+M       2000 2115 BUSN 227 (Class)"
+"M       1830 1945 BUSN 225 (Class)
+M       2000 2115 BUSN 225 (Class)"
+"M       1830 1945 BUSN 223 (Class)
+M       2000 2115 BUSN 223 (Class)"
+"M       1830 1945 BUSN 221 (Class)
+M       2000 2115 BUSN 221 (Class)"
+"M       1830 1945 BUSN 208 (Class)
+M       2000 2115 BUSN 208 (Class)"
+"M       1830 1945 BUSN 204 (Class)
+M       2000 2115 BUSN 204 (Class)"
+"M       1830 1945 BUSN 201 (Class)
+M       2000 2115 BUSN 201 (Class)"
+"M       1830 1945 BUSN 131 (Class)
+M       2000 2115 BUSN 131 (Class)"
+"M       1830 1945 BUSN 121 (Class)
+M       2000 2115 BUSN 121 (Class)"
+"M       1830 1945 BUSN 103 (Class)
+M       2000 2115 BUSN 103 (Class)"
+"M       1830 1945 BUSN 101 (Class)
+M       2000 2115 BUSN 101 (Class)"
+"M       1830 1945 BUSN 101 (Class)
+M       2000 2115 BUSN 101 (Class)"
+"M       1830 1945 BUNCE 156 (Class)
+M       2000 2115 BUNCE 156 (Class)
+W       1830 1945 ENTPRZ 414 (Class)
+W       2000 2115 ENTPRZ 414 (Class)"
+"M       1830 1945 BUNCE 107 (Class)
+M       2000 2115 BUNCE 107 (Class)"
+"M       1830 1945 BOZ 147 (Class)
+M       2000 2115 BOZ 147 (Class)"
+"M       1830 1945 BOZ 132 (Class)
+M       2000 2115 BOZ 132 (Class)"
+"M       1830 1945 301HGH 305 (Class)
+M       2000 2115 301HGH 305 (Class)"
+"M       1830 1945 301HGH 216 (Class)
+M       2000 2115 301HGH 216 (Class)"
+"M       1830 1945 301HGH 215 (Class)
+M       2000 2115 301HGH 215 (Class)"
+"M       1830 1945   (Class)
+M       2000 2115   (Class)"
+M       1700 1930 JAMES 3109 (Class)
+M       1700 1930 JAMES 2104 (Class)
+M       1700 1930 JAMES 2100 (Class)
+M       1700 1930 JAMES 1119 (Class)
+M       1700 1840 WILSON 206 (Class)
+M       1700 1840 JAMES 1081 (Class)
+"M       1700 1815 WINANS 111 (Class)
+M       1830 1945 WINANS 111 (Class)"
+"M       1700 1815 WILSON 212 (Class)
+M       1830 1945 WILSON 212 (Class)"
+"M       1700 1815 WILSON 107 (Class)
+M       1830 1945 WILSON 107 (Class)"
+M       1700 1815 WILSON 101 (Class)
+"M       1700 1815 WESTBY 111 (Class)
+M       1830 1945 WESTBY 111 (Class)"
+"M       1700 1815 WESTBY 111 (Class)
+M       1830 1945 WESTBY 111 (Class)"
+"M       1700 1815 WESTBY 111 (Class)
+M       1830 1945 WESTBY 111 (Class)"
+M       1700 1815 VCTRIA 504 (Class)
+"M       1700 1815 VCTRIA 302 (Class)
+M       1830 1945 VCTRIA 302 (Class)"
+"M       1700 1815 SCIENC 254 (Class)
+M       1830 1945 SCIENC 254 (Class)"
+"M       1700 1815 SCIENC 128 (Class)
+M       1830 1945 SCIENC 128 (Class)"
+"M       1700 1815 SAVITZ 321 (Class)
+M       1830 1945 SAVITZ 321 (Class)"
+"M       1700 1815 SAVITZ 217 (Class)
+M       1830 1945 SAVITZ 217 (Class)"
+"M       1700 1815 ROWAN 146 (Class)
+M       1830 1945 ROWAN 146 (Class)
+W       1230 1345 ROWAN 243 (Class)
+F       0930 1045 ROWAN 243 (Class)"
+"M       1700 1815 ROBSON 312 (Class)
+W       1700 1815 ROBSON 310 (Class)"
+"M       1700 1815 ROBSON 207 (Class)
+M       1830 1945 ROBSON 207 (Class)"
+"M       1700 1815 ROBSON 201B (Class)
+M       1830 1945 ROBSON 201B (Class)"
+"M       1700 1815 REXT 339 (Class)
+M       1830 1945 REXT 339 (Class)"
+"M       1700 1815 REXT 339 (Class)
+M       1830 1945 REXT 339 (Class)"
+"M       1700 1815 REXT 338 (Class)
+M       1830 1945 REXT 338 (Class)"
+"M       1700 1815 REXT 338 (Class)
+M       1830 1945 REXT 338 (Class)"
+"M       1700 1815 LBRARY 226 (Class)
+M       1830 1945 LBRARY 226 (Class)"
+"M       1700 1815 JAMES 3112 (Class)
+M       1830 1945 JAMES 3112 (Class)"
+"M       1700 1815 JAMES 2105 (Class)
+M       1830 1945 JAMES 2105 (Class)"
+"M       1700 1815 JAMES 2103 (Class)
+M       1830 1945 JAMES 2103 (Class)"
+"M       1700 1815 JAMES 2097 (Class)
+M       1830 1945 JAMES 2097 (Class)"
+"M       1700 1815 JAMES 2096 (Class)
+M       1830 1945 JAMES 2096 (Class)"
+"M       1700 1815 JAMES 1146 (Class)
+M       1830 1945 JAMES 1146 (Class)"
+"M       1700 1815 JAMES 1112 (Class)
+M       1830 1945 JAMES 1112 (Class)"
+"M       1700 1815 JAMES 1056 (Class)
+M       1830 1945 JAMES 1056 (Class)"
+"M       1700 1815 JAMES 1019 (Class)
+M       1830 1945 JAMES 1019 (Class)"
+"M       1700 1815 ENTPRZ 506 (Class)
+M       1830 1945 ENTPRZ 506 (Class)"
+M       1700 1815 BUNCE TOHILL (Class)
+M       1700 1815 BUNCE TOHILL (Class)
+M       1700 1815 BUNCE TOHILL (Class)
+"M       1530 1645 WILSON 156 (Class)
+T       1900 2100 WILSON 156 (Class)
+R       1530 1645 WILSON 001 (Class)"
+M       1530 1645 VCTRIA 300 (Class)
+"M       1530 1645 SCIENC 314A (Lab)
+M       1700 1815 SCIENC 314A (Lab)
+TR      1530 1645 SCIENC 338 (Lecture)"
+"M       1530 1645 SCIENC 226 (Lab)
+M       1700 1815 SCIENC 226 (Lab)
+TR      1230 1345 JAMES 3114 (Lecture)"
+"M       1530 1645 SCIENC 148 (Lab)
+M       1700 1815 SCIENC 148 (Lab)
+TR      1230 1345 BOZ 112 (Lecture)"
+"M       1530 1645 SCIENC 144 (Lab)
+M       1700 1815 SCIENC 144 (Lab)
+TR      0930 1045 BOZ 112 (Lecture)"
+"M       1530 1645 ROBSON 312 (Class)
+W       1530 1645 ROBSON 324 (Class)"
+"M       1530 1645 ROBSON 310 (Class)
+M       1700 1815 ROBSON 310 (Class)"
+"M       1530 1645 REXT 339 (Class)
+W       1530 1645 REXT 341 (Class)
+R       1530 1645 REXT 339 (Class)
+R       1700 1815 REXT 339 (Class)"
+"M       1530 1645 REXT 320 (Class)
+M       1700 1815 REXT 320 (Class)
+R       1530 1645 SCIENC 126 (Class)
+R       1700 1815 SCIENC 126 (Class)"
+M       1530 1645 REXT 319 (Class)
+"M       1530 1645 REXT 118 (Lab)
+M       1700 1815 REXT 118 (Lab)
+TW      1530 1645 ROWAN 117 (Class)"
+"M       1530 1645 LBRARY 403 (Class)
+M       1700 1815 LBRARY 403 (Class)"
+"M       1530 1645 JAMES 1115 (Class)
+M       1700 1815 JAMES 1115 (Class)"
+"M       1530 1645 HAWTHN 204 (Class)
+M       1700 1815 HAWTHN 204 (Class)"
+"M       1530 1645 BUNCE 107 (Class)
+M       1700 1815 BUNCE 107 (Class)
+W       1530 1645 REXT 320 (Class)
+W       1700 1815 REXT 320 (Class)"
+"M       1530 1645 BOZ 166 (Class)
+M       1700 1815 BOZ 166 (Class)"
+"M       1530 1645 BOZ 132 (Class)
+M       1700 1815 BOZ 132 (Class)"
+M       1400 1540 JAMES 3099 (Class)
+M       1400 1540 JAMES 3091B (Class)
+M       1400 1540 BUNCE 156 (Class)
+"M       1400 1515 WINANS 111 (Class)
+M       1530 1645 WINANS 111 (Class)"
+"M       1400 1515 SCIENC 336 (Lab)
+M       1530 1645 SCIENC 336 (Lab)
+TR      1400 1515 SCIENC 324 (Lecture)"
+"M       1400 1515 SCIENC 334 (Lab)
+M       1530 1645 SCIENC 334 (Lab)
+TR      1530 1645 SCIENC 324 (Lecture)"
+"M       1400 1515 SCIENC 332 (Lab)
+M       1530 1645 SCIENC 332 (Lab)
+TR      1530 1645 SCIENC 324 (Lecture)"
+"M       1400 1515 SAVITZ 321 (Class)
+M       1530 1645 SAVITZ 321 (Class)"
+"M       1400 1515 ROWAN 146 (Class)
+M       1530 1645 ROWAN 146 (Class)
+W       1100 1215 ROWAN 243 (Class)
+F       0800 0915 ROWAN 243 (Class)"
+"M       1400 1515 ROBSON 310 (Class)
+W       1400 1515 JAMES 3091A (Class)"
+M       1400 1515 REXT 319 (Class)
+"M       1400 1515 REXT 241 (Class)
+M       1530 1645 REXT 241 (Class)
+TR      1530 1645 VCTRIA 204 (Class)"
+"M       1400 1515 REXT 240 (Class)
+M       1530 1645 REXT 240 (Class)
+TR      1400 1515 VCTRIA 204 (Class)"
+"M       1400 1515 REXT 141 (Class)
+M       1530 1645 REXT 141 (Class)
+TR      1230 1345 VCTRIA 306 (Class)"
+"M       1400 1515 REXT 140 (Class)
+M       1530 1645 REXT 140 (Class)
+TR      0800 0915 VCTRIA 306 (Class)"
+"M       1400 1515 JAMES 1081 (Class)
+M       1530 1645 JAMES 1081 (Class)"
+M       1400 1450 WILSON 101 (Class)
+M       1230 1410 JAMES 1119 (Class)
+M       1230 1410 JAMES 1020 (Class)
+"M       1230 1345 WILSON 156 (Class)
+TR      1400 1515 WILSON 156 (Class)"
+M       1230 1345 WILSON 153 (Class)
+"M       1230 1345 VCTRIA 302 (Class)
+M       1400 1515 VCTRIA 302 (Class)"
+"M       1230 1345 SCIENC 226 (Lab)
+M       1400 1515 SCIENC 226 (Lab)
+TR      0930 1045 SCIENC 126 (Lecture)"
+"M       1230 1345 SCIENC 151 (Lecture)
+W       1230 1345 SCIENC 326 (Lab)
+W       1400 1515 SCIENC 326 (Lab)
+F       1230 1345 SCIENC 151 (Lecture)"
+"M       1230 1345 SCIENC 151 (Lecture)
+W       1230 1345 SCIENC 322 (Lab)
+W       1400 1515 SCIENC 322 (Lab)
+F       1230 1345 SCIENC 151 (Lecture)"
+"M       1230 1345 SCIENC 148 (Lab)
+M       1400 1515 SCIENC 148 (Lab)
+TR      1230 1345 BOZ 112 (Lecture)"
+"M       1230 1345 SCIENC 128 (Class)
+W       1230 1345 ROBSON 305 (Class)"
+"M       1230 1345 ROWAN 117 (Class)
+M       1400 1515 ROWAN 117 (Class)
+W       1100 1215 REXT 319 (Class)
+F       1230 1345 JAMES 2102 (Class)"
+"M       1230 1345 ROBSON 311 (Lecture)
+M       1400 1515 ROBSON 311 (Lecture)
+W       1230 1345 ROBSON 311 (Lab)
+W       1400 1515 ROBSON 311 (Lab)"
+"M       1230 1345 ROBSON 207 (Class)
+W       1230 1345 BUSN 221 (Class)"
+"M       1230 1345 ROBSON 101A (Class)
+WF      1230 1345 JAMES 3091A (Class)"
+"M       1230 1345 REXT 339 (Class)
+W       1230 1345 REXT 319 (Class)
+R       0930 1045 REXT 339 (Class)
+R       1100 1215 REXT 339 (Class)"
+"M       1230 1345 REXT 320 (Class)
+M       1400 1515 REXT 320 (Class)"
+M       1230 1345 REXT 319 (Class)
+"M       1230 1345 REXT 119 (Lab)
+M       1400 1515 REXT 119 (Lab)
+WR      1100 1215 REXT 320 (Class)"
+"M       1230 1345 REXT 107 (Class)
+M       1400 1515 REXT 107 (Class)
+W       0800 0915 REXT 107 (Class)"
+"M       1230 1345 LBRARY 403 (Class)
+M       1400 1515 LBRARY 403 (Class)"
+"M       1230 1345 BUNCE 107 (Class)
+M       1400 1515 BUNCE 107 (Class)"
+"M       1230 1345 BOZ 166 (Class)
+M       1400 1515 BOZ 166 (Class)"
+"M       1230 1345 BOZ 147 (Class)
+M       1400 1515 BOZ 147 (Class)"
+"M       1230 1345 BOZ 132 (Class)
+M       1400 1515 BOZ 132 (Class)"
+"M       1230 1345 301HGH 216 (Class)
+M       1400 1515 301HGH 216 (Class)"
+M       1230 1320 WILSON 101 (Class)
+M       1230 1320 BUSN 303 (Class)
+M       1100 1240 JAMES 3112 (Class)
+"M       1100 1215 SCIENC 341 (Lecture)
+T       1100 1215 SCIENC 314A (Lab)
+T       1230 1345 SCIENC 314A (Lab)
+R       1100 1215 SCIENC 314 (Lecture)"
+"M       1100 1215 SCIENC 336 (Lab)
+M       1230 1345 SCIENC 336 (Lab)
+TR      1230 1345 SCIENC 126 (Lecture)"
+"M       1100 1215 SCIENC 314A (Lab)
+M       1230 1345 SCIENC 314A (Lab)
+TR      1100 1215 SCIENC 128 (Lecture)"
+"M       1100 1215 ROWAN 243 (Class)
+W       0800 0915 ROWAN 243 (Class)
+W       0930 1045 ROWAN 243 (Class)
+F       0800 0915 ROWAN 146 (Class)
+F       0930 1045 ROWAN 146 (Class)"
+"M       1100 1215 ROWAN 146 (Class)
+M       1230 1345 ROWAN 146 (Class)
+TR      0800 0915 ROWAN 243 (Class)"
+M       1100 1215 REXT 341 (Class)
+"M       1100 1215 REXT 320 (Class)
+R       0930 1045 BUSN 208 (Class)"
+M       1100 1215 REXT 319 (Class)
+"M       1100 1215 JAMES 3117 (Class)
+M       1230 1345 ESBY 103G (Class)"
+"M       1100 1215 JAMES 3102 (Class)
+M       1230 1345 JAMES 3102 (Class)
+F       0800 1515   (Class)"
+"M       1100 1215 JAMES 3099 (Class)
+M       1230 1345 JAMES 3099 (Class)
+W       0800 1600   (Class)"
+"M       1100 1215 JAMES 3091B (Class)
+M       1230 1345 JAMES 3091B (Class)
+W       1230 1515   (Class)"
+"M       1100 1215 JAMES 2110 (Class)
+W       1100 1215 JAMES 3091B (Class)"
+"M       1100 1215 JAMES 2103 (Class)
+M       1230 1345 JAMES 2103 (Class)
+W       1130 1530   (Class)"
+"M       1100 1215 JAMES 1112 (Class)
+M       1230 1345 JAMES 1112 (Class)
+W       1130 1530   (Class)"
+"M       1100 1215 JAMES 1081 (Class)
+M       1230 1345 JAMES 1081 (Class)"
+"M       1100 1215 BUSN 121 (Class)
+R       1530 1645 ROWAN 117 (Class)
+R       1700 1815 ROWAN 117 (Class)"
+"M       1100 1215 BUSN 103 (Class)
+W       1230 1345 ROWAN 117 (Class)
+W       1400 1515 ROWAN 117 (Class)"
+"M       1100 1215 BUSN 101 (Class)
+R       1530 1645 BUSN 301 (Class)
+R       1700 1815 BUSN 301 (Class)"
+"M       1100 1215 BUNCE 205 (Class)
+M       1230 1345 BUNCE 205 (Class)"
+"M       1100 1215 BUNCE 140 (Class)
+M       1230 1345 BUNCE 140 (Class)"
+M       1100 1215   (Class)
+M       1100 1215   (Class)
+M       1100 1150 WILSON 101 (Class)
+"M       1100 1150 ROBSON 312 (Class)
+W       1100 1150 ROBSON 325 (Class)"
+M       1100 1150 BUSN 303 (Class)
+M       0930 1110 BOZ 132 (Class)
+"M       0930 1045 SCIENC 341 (Lecture)
+W       0930 1045 SCIENC 314 (Lecture)
+F       0930 1045 SCIENC 314A (Lab)
+F       1100 1215 SCIENC 314A (Lab)"
+"M       0930 1045 SCIENC 341 (Class)
+W       0930 1045 SCIENC 314 (Class)
+F       0930 1045 SCIENC 314A (Class)
+F       1100 1215 SCIENC 314A (Class)"
+"M       0930 1045 SCIENC 304 (Class)
+M       1100 1215 SCIENC 304 (Class)
+M       1230 1345 SCIENC 304 (Class)"
+"M       0930 1045 SAVITZ 321 (Class)
+M       1100 1215 SAVITZ 321 (Class)"
+"M       0930 1045 ROBSON 325 (Class)
+F       0930 1045 ROBSON 312 (Class)"
+"M       0930 1045 ROBSON 315L (Class)
+M       1100 1215 ROBSON 315L (Class)"
+"M       0930 1045 REXT 320 (Class)
+W       1230 1345 REXT 320 (Class)
+F       0800 0915 REXT 118 (Lab)
+F       0930 1045 REXT 118 (Lab)"
+"M       0930 1045 REXT 320 (Class)
+M       1230 1345 REXT 118 (Lab)
+M       1400 1515 REXT 118 (Lab)
+W       1230 1345 REXT 320 (Class)"
+M       0930 1045 REXT 319 (Class)
+"M       0930 1045 LBRARY 403 (Class)
+M       1100 1215 LBRARY 403 (Class)"
+"M       0930 1045 LBRARY 126 (Class)
+M       1100 1215 LBRARY 126 (Class)"
+"M       0930 1045 JAMES 3114 (Class)
+TR      0930 1045 JAMES 1112 (Class)"
+M       0930 1045 JAMES 1053 (Class)
+"M       0930 1045 BUSN 303 (Class)
+W       0930 1045 SCIENC 338 (Class)"
+"M       0930 1045 BUNCE 107 (Class)
+M       1100 1215 BUNCE 107 (Class)"
+"M       0930 1045 BUNCE 104 (Class)
+M       1100 1215 BUNCE 104 (Class)"
+"M       0930 1045 BOZ 166 (Class)
+M       1100 1215 BOZ 166 (Class)"
+"M       0930 1045 BOZ 147 (Class)
+M       1100 1215 BOZ 147 (Class)"
+M       0930 1020 WILSON 214 (Class)
+"M       0800 0915 WILSON 212 (Class)
+M       0930 1045 WILSON 212 (Class)"
+"M       0800 0915 SCIENC 336 (Lab)
+M       0930 1045 SCIENC 336 (Lab)
+TR      0930 1045 SCIENC 324 (Lecture)"
+"M       0800 0915 SCIENC 332 (Lab)
+M       0930 1045 SCIENC 332 (Lab)
+TR      0800 0915 SCIENC 314 (Lecture)"
+"M       0800 0915 SCIENC 314A (Lab)
+M       0930 1045 SCIENC 314A (Lab)
+WF      0800 0915 SCIENC 314 (Lecture)"
+"M       0800 0915 SCIENC 226 (Lab)
+M       0930 1045 SCIENC 226 (Lab)
+TR      0930 1045 SCIENC 126 (Lecture)"
+"M       0800 0915 SCIENC 128 (Class)
+M       0930 1045 SCIENC 128 (Class)"
+"M       0800 0915 SCIENC 126 (Class)
+M       0930 1045 SCIENC 126 (Class)
+F       0800 0915 ROWAN 117 (Class)
+F       0930 1045 ROWAN 117 (Class)"
+"M       0800 0915 ROWAN 146 (Class)
+M       0930 1045 ROWAN 146 (Class)
+T       1100 1215 ROWAN 243 (Class)
+R       0800 0915 BUSN 103 (Class)
+R       0930 1045 BUSN 103 (Class)"
+"M       0800 0915 REXT 321 (Class)
+R       0930 1045 REXT 321 (Class)"
+M       0800 0915 REXT 319 (Class)
+"M       0800 0915 JAMES 3102 (Class)
+M       0930 1045 JAMES 3102 (Class)
+W       0800 1515   (Class)"
+"M       0800 0915 JAMES 3091B (Class)
+M       0930 1045 JAMES 3091B (Class)
+W       0800 1120   (Class)"
+"M       0800 0915 JAMES 2100 (Class)
+M       0930 1045 ESBY 103E (Class)"
+M       0800 0850 WILSON 214 (Class)
+M       0800 0850 WILSON 156 (Class)
+M       0800 0850 WILSON 109 (Class)
+"F       1845 2045 JAMES 1019 (Class)
+F       1845 2045 JAMES 1019 (Class)
+   "
+F       1700 2020 BUNCE TOHILL (Class)
+"F       1530 1830 JAMES 1146 (Class)
+F       1530 1830 JAMES 1146 (Class)
+F       1530 1830 JAMES 1146 (Class)
+   "
+"F       1530 1730 JAMES 1056 (Class)
+F       1530 1730 JAMES 1056 (Class)
+F       1530 1730 JAMES 1056 (Class)
+   "
+"F       1530 1645 SCIENC 336 (Class)
+F       1700 1815 SCIENC 336 (Class)
+F       1830 1945 SCIENC 336 (Class)"
+F       1530 1645 SCIENC 324 (Class)
+F       1530 1645 SCIENC 254 (Class)
+"F       1530 1645 ROBSON 312 (Class)
+F       1700 1815 ROBSON 312 (Class)"
+F       1530 1645 REXT 319 (Class)
+F       1530 1645 MEMORL 001 (Class)
+F       1400 1515 SCIENC 341 (Class)
+F       1400 1515 SCIENC 341 (Class)
+F       1400 1515 SCIENC 341 (Class)
+"F       1400 1515 ROBSON 308 (Class)
+F       1530 1645 ROBSON 308 (Class)"
+"F       1230 1345 WILSON 113 (Class)
+F       1400 1515 WILSON 113 (Class)"
+"F       1230 1345 ROBSON 216A (Class)
+F       1400 1515 ROBSON 216A (Class)"
+F       1100 1240 JAMES 3102 (Class)
+F       1100 1240 JAMES 3099 (Class)
+"F       1100 1215 WINANS 112 (Class)
+F       1230 1345 WINANS 112 (Class)"
+"F       1100 1215 WILSON 156 (Class)
+F       1230 1345 WILSON 156 (Class)"
+"F       1100 1215 WILSON 153 (Class)
+F       1230 1345 WILSON 153 (Class)"
+"F       1100 1215 WESTBY 206 (Class)
+F       1230 1345 WESTBY 206 (Class)"
+"F       1100 1215 VCTRIA 300 (Class)
+F       1230 1345 VCTRIA 300 (Class)"
+"F       1100 1215 VCTRIA 204 (Class)
+F       1230 1345 VCTRIA 204 (Class)"
+"F       1100 1215 SAVITZ 321 (Class)
+F       1230 1345 SAVITZ 321 (Class)"
+"F       1100 1215 ROBSON 102 (Class)
+F       1230 1345 ROBSON 102 (Class)"
+"F       1100 1215 MEMORL 101 (Class)
+F       1230 1345 MEMORL 101 (Class)"
+"F       1100 1215 JAMES 3117 (Class)
+F       1230 1345 JAMES 3117 (Class)"
+"F       1100 1215 JAMES 3091B (Class)
+F       1230 1345 ESBY 103E (Class)"
+"F       1100 1215 JAMES 2105 (Class)
+F       1230 1345 JAMES 2105 (Class)"
+"F       1100 1215 JAMES 2104 (Class)
+F       1230 1345 JAMES 2104 (Class)"
+"F       1100 1215 JAMES 2098 (Class)
+F       1230 1345 JAMES 2098 (Class)"
+"F       1100 1215 JAMES 2096 (Class)
+F       1230 1345 JAMES 2096 (Class)"
+F       1100 1215 JAMES 2095 (Class)
+"F       1100 1215 JAMES 1146 (Class)
+F       1230 1345 JAMES 1146 (Class)"
+"F       1100 1215 JAMES 1115 (Class)
+F       1230 1345 JAMES 1115 (Class)"
+"F       1100 1215 JAMES 1112 (Class)
+F       1230 1345 JAMES 1112 (Class)"
+"F       1100 1215 JAMES 1112 (Class)
+F       1230 1345 JAMES 1112 (Class)"
+"F       1100 1215 JAMES 1112 (Class)
+F       1230 1345 JAMES 1112 (Class)"
+"F       1100 1215 JAMES 1082 (Class)
+F       1230 1345 JAMES 1082 (Class)"
+"F       1100 1215 JAMES 1082 (Class)
+F       1230 1345 JAMES 1082 (Class)"
+"F       1100 1215 JAMES 1081 (Class)
+F       1230 1345 JAMES 1081 (Class)"
+"F       1100 1215 JAMES 1056 (Class)
+F       1230 1345 JAMES 1056 (Class)"
+"F       1100 1215 HAWTHN 104 (Class)
+F       1230 1345 HAWTHN 104 (Class)"
+"F       1100 1215 ESBY 103G (Class)
+F       1230 1345 JAMES 3091B (Class)"
+"F       1100 1215 BUSN 233 (Class)
+F       1230 1345 BUSN 233 (Class)"
+"F       1100 1215 BUSN 227 (Class)
+F       1230 1345 BUSN 227 (Class)"
+"F       1100 1215 BUSN 225 (Class)
+F       1230 1345 BUSN 225 (Class)"
+"F       1100 1215 BUSN 107 (Class)
+F       1230 1345 BUSN 107 (Class)"
+"F       1100 1215 BUNCE 156 (Class)
+F       1230 1345 BUNCE 156 (Class)"
+"F       1100 1215 BUNCE 107 (Class)
+F       1230 1345 BUNCE 107 (Class)"
+"F       1100 1215 BUNCE 106 (Class)
+F       1230 1345 BUNCE 106 (Class)"
+"F       1100 1215 BUNCE 105 (Class)
+F       1230 1345 BUNCE 105 (Class)"
+"F       1100 1215 BOZ 166 (Class)
+F       1230 1345 BOZ 166 (Class)"
+"F       0930 1045 WINANS 113 (Class)
+F       1100 1215 WINANS 113 (Class)"
+"F       0930 1045 WILSON 207 (Class)
+F       1100 1215 WILSON 207 (Class)"
+"F       0930 1045 WILSON 113 (Class)
+F       1100 1215 WILSON 113 (Class)"
+"F       0930 1045 WHITNY CL-201 (Class)
+F       1100 1215 WHITNY CL-201 (Class)"
+"F       0930 1045 WHITNY CL-201 (Class)
+F       1100 1215 WHITNY CL-201 (Class)"
+"F       0930 1045 WESTBY 111 (Class)
+F       1100 1215 WESTBY 111 (Class)"
+"F       0930 1045 WESTBY 104 (Class)
+F       1100 1215 WESTBY 104 (Class)
+F       1230 1345 WESTBY 104 (Class)
+F       1400 1515 WESTBY 104 (Class)"
+"F       0930 1045 WESTBY 104 (Class)
+F       1100 1215 WESTBY 104 (Class)
+F       1230 1345 WESTBY 104 (Class)
+F       1400 1515 WESTBY 104 (Class)"
+"F       0930 1045 WESTBY 104 (Class)
+F       1100 1215 WESTBY 104 (Class)
+F       1230 1345 WESTBY 104 (Class)
+F       1400 1515 WESTBY 104 (Class)"
+"F       0930 1045 SCIENC 341 (Class)
+F       1100 1215 SCIENC 341 (Class)
+F       1230 1345 SCIENC 341 (Class)"
+"F       0930 1045 SCIENC 336 (Class)
+F       1100 1215 SCIENC 336 (Class)
+F       1230 1345 SCIENC 336 (Class)"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 154E"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 154E"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 109
+  SCIENC 110
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 109
+  SCIENC 110
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 105"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 104
+  SCIENC 108
+  SCIENC 109
+  SCIENC 113
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 104
+  SCIENC 108
+  SCIENC 109
+  SCIENC 113
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 104
+  SCIENC 108
+  SCIENC 109
+  SCIENC 113
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)
+  SCIENC 104
+  SCIENC 108
+  SCIENC 109
+  SCIENC 113
+  SCIENC 116"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)"
+"F       0930 1045 SCIENC 151 (Class)
+F       1100 1215 SCIENC 151 (Class)"
+"F       0930 1045 ROBSON 311 (Class)
+F       1100 1215 ROBSON 311 (Class)"
+"F       0930 1045 ROBSON 224 (Class)
+F       1100 1215 ROBSON 224 (Class)"
+"F       0930 1045 ROBSON 212 (Class)
+F       1100 1215 ROBSON 212 (Class)"
+"F       0930 1045 ROBSON 201A (Class)
+F       1100 1215 ROBSON 201A (Class)"
+"F       0930 1045 LBRARY 578 (Class)
+F       1100 1215 LBRARY 578 (Class)"
+F       0930 1045 JAMES 2105 (Class)
+"F       0930 1045 HAWTHN 204 (Class)
+F       1100 1215 HAWTHN 204 (Class)"
+F       0930 1045 BUSN 103 (Class)
+F       0930 1045 BUSN 101 (Class)
+"F       0930 1045 BOZ 132 (Class)
+F       1100 1215 BOZ 132 (Class)"
+"F       0930 1045 301HGH 215 (Class)
+F       1100 1215 301HGH 215 (Class)"
+F       0930 1020 WILSON 214 (Class)
+F       0800 1400 JAMES 2103 (Class)
+F       0800 1400 JAMES 2100 (Class)
+F       0800 0940 REXT 320 (Class)
+F       0800 0940 JAMES 3099 (Class)
+"F       0800 0915 WESTBY 219 (Class)
+F       0930 1045 WESTBY 219 (Class)
+F       1100 1215 WESTBY 219 (Class)
+F       1230 1345 WESTBY 219 (Class)"
+"F       0800 0915 WESTBY 218 (Class)
+F       0930 1045 WESTBY 218 (Class)
+F       1100 1215 WESTBY 218 (Class)
+F       1230 1345 WESTBY 218 (Class)"
+"F       0800 0915 WESTBY 218 (Class)
+F       0930 1045 WESTBY 218 (Class)
+F       1100 1215 WESTBY 218 (Class)
+F       1230 1345 WESTBY 218 (Class)"
+"F       0800 0915 VCTRIA 306 (Class)
+F       0930 1045 VCTRIA 306 (Class)"
+"F       0800 0915 VCTRIA 302 (Class)
+F       0930 1045 VCTRIA 302 (Class)"
+"F       0800 0915 VCTRIA 300 (Class)
+F       0930 1045 VCTRIA 300 (Class)"
+"F       0800 0915 VCTRIA 204 (Class)
+F       0930 1045 VCTRIA 204 (Class)"
+"F       0800 0915 SCIENC 254 (Class)
+F       0930 1045 SCIENC 254 (Class)"
+F       0800 0915 SAVITZ 321 (Class)
+"F       0800 0915 SAVITZ 217 (Class)
+F       0930 1045 SAVITZ 217 (Class)"
+"F       0800 0915 SAVITZ 217 (Class)
+F       0930 1045 SAVITZ 217 (Class)"
+"F       0800 0915 SAVITZ 217 (Class)
+F       0930 1045 SAVITZ 217 (Class)"
+"F       0800 0915 JAMES 3117 (Class)
+F       0930 1045 JAMES 3117 (Class)"
+"F       0800 0915 JAMES 3117 (Class)
+F       0930 1045 JAMES 3117 (Class)"
+"F       0800 0915 JAMES 3102 (Class)
+F       0930 1045 JAMES 3102 (Class)"
+F       0800 0915 JAMES 3091B (Class)
+"F       0800 0915 JAMES 2105 (Class)
+F       0930 1045 ESBY 103E (Class)"
+"F       0800 0915 JAMES 2104 (Class)
+F       0930 1045 JAMES 2104 (Class)"
+"F       0800 0915 JAMES 2097 (Class)
+F       0930 1045 JAMES 2097 (Class)"
+"F       0800 0915 JAMES 2096 (Class)
+F       0930 1045 JAMES 2096 (Class)"
+F       0800 0915 JAMES 2095 (Class)
+"F       0800 0915 JAMES 2047 (Class)
+F       0930 1045 JAMES 2047 (Class)"
+"F       0800 0915 JAMES 1146 (Class)
+F       0930 1045 JAMES 1146 (Class)"
+"F       0800 0915 JAMES 1115 (Class)
+F       0930 1045 JAMES 1115 (Class)"
+"F       0800 0915 JAMES 1112 (Class)
+F       0930 1045 JAMES 1112 (Class)"
+"F       0800 0915 JAMES 1112 (Class)
+F       0930 1045 JAMES 1112 (Class)"
+"F       0800 0915 JAMES 1020 (Class)
+F       0930 1045 JAMES 1020 (Class)"
+"F       0800 0915 HAWTHN 104 (Class)
+F       0930 1045 HAWTHN 104 (Class)"
+"F       0800 0915 BUSN 225 (Class)
+F       0930 1045 BUSN 225 (Class)"
+F       0800 0850 WILSON 214 (Class)
