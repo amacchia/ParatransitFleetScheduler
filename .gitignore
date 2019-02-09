@@ -1,0 +1,10 @@
+
+*.bin
+
+\.gradle/4\.8\.1/fileHashes/
+
+\.gradle/4\.8\.1/taskHistory/
+
+\.gradle/buildOutputCleanup/
+
+\.gradle/vcsWorkingDirs/
