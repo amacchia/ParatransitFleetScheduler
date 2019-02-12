@@ -1,2 +1,4 @@
 1/31/19: Our group met with Dr. Wang to discuss the project.
 2/1/19: Our group met to work on the project specification.
+2/8/19: Group meeting to discuss backend architecture. 
+2/9/19: Basic server infrastructure was set up.
