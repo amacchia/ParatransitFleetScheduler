@@ -4,3 +4,5 @@
 2/9/19: Basic server infrastructure was set up.
 2/12/19: Scheduled server processes were configured.
 2/16/19: Initial creation of ER Diagram
+2/21/19: Sprint Review with Dr. H and Dr. Wang
+2/22/19: Weekly group meeting
