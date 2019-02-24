@@ -6,3 +6,4 @@
 2/16/19: Initial creation of ER Diagram
 2/21/19: Sprint Review with Dr. H and Dr. Wang
 2/22/19: Weekly group meeting
+2/24/19: Online group meeting
