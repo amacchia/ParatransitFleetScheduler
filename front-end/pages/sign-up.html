@@ -6,22 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Paratransit Fleet Scheduler</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css" />
+    <link type="text/css" rel="stylesheet" href="../css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="../scripts/index.js"></script>
 </head>
 
 <body>
+    <h1 id="sign-up-form-title">Sign Up</h1>
+    <div id="sign-up-form">
+        <form action="./sign-up.php" method="POST">
+            <label for="fname" class="input-label">First Name</label>
+            <input type="text" name="fname" class="form-input"><br>
 
-    <form action="./sign-up.php" method="POST">
-        First name: <input type="text" name="fname"><br>
-        Last name: <input type="text" name="lname"><br>
-        Email: <input type="email" name="email"><br>
-        Password: <input type="password" name="pword"><br>
-        Service:
-        <input type="radio" name="service" value="driver">Driver
-        <input type="radio" name="service" value="passenger">Passenger <br>
-        <input type="submit" value="Sign Up">
-    </form>
+            <label for="lname" class="input-label">Last Name</label>
+            <input type="text" name="lname" class="form-input"><br>
+
+            <label for="email" class="input-label">Email</label>
+            <input type="email" name="email" class="form-input"><br>
+
+            <label for="pword" class="input-label">Password</label>
+            <input type="password" name="pword" class="form-input"><br>
+
+            <label for="service" class="input-label">Service</label>
+            <div class="rd-input">
+                <input type="radio" name="service" value="driver">Driver
+                <input type="radio" name="service" value="passenger">Passenger <br>
+            </div>
+
+            <input type="submit" value="Sign Up" id="sub-btn">
+            <p>Already a user? <a href="./login.html">Login</a></p>
+        </form>
+    </div>
 
 </body>
 
