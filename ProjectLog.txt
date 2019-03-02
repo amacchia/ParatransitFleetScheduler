@@ -3,7 +3,10 @@
 2/8/19: Group meeting to discuss backend architecture. 
 2/9/19: Basic server infrastructure was set up.
 2/12/19: Scheduled server processes were configured.
-2/16/19: Initial creation of ER Diagram
+2/16/19: Initial creation of ER Diagram - Ant
 2/21/19: Sprint Review with Dr. H and Dr. Wang
 2/22/19: Weekly group meeting
+2/23/19: Initial creation sign up page - Ant
 2/24/19: Online group meeting
+2/24/19: Initial creation login page - Ant
+3/2/19: Wrote initial draft of functionality and tech stack sections of design document - Ant
