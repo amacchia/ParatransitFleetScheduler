@@ -10,3 +10,4 @@
 2/24/19: Online group meeting
 2/24/19: Initial creation login page - Ant
 3/2/19: Wrote initial draft of functionality and tech stack sections of design document - Ant
+3/2/19: Added styling to sign up page - Ant
