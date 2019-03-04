@@ -49,7 +49,7 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $dbname = "sp";
+        $dbname = "rideshare";
 
         // Create connection
         $GLOBALS['conn'] = new mysqli($servername, $username, $password, $dbname);

@@ -12,9 +12,102 @@
 </head>
 
 <body>
+
+    <?php
+        // define variables and set to empty values
+        $fname = $lname = $email = $pword = $service = "";
+        $conn = null;
+    
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $fname = test_input($_POST["fname"]);
+            $lname = test_input($_POST["lname"]);
+            $email = test_input($_POST["email"]);
+            $pword = test_input($_POST["pword"]);
+            $service = test_input($_POST["service"]);
+    
+            if ($fname = "" || $lname = "" || $email = "" ||
+            $fname = "" || $fname = "") {
+                # code...
+            }
+    
+            echo "$fname  $lname <br>";
+            echo "$service";
+            create_connection();
+    
+            if ($service === "driver") {
+                insert_driver($fname, $lname, $email, $pword, $service);
+            } else {
+                insert_passenger($fname, $lname, $email, $pword, $service);
+            }
+        }
+    
+        function insert_driver($first_name, $last_name, $email, $pword, $service) {
+            echo "Driver";
+    
+            $hash = password_hash($pword, PASSWORD_DEFAULT);
+    
+            $sql = "INSERT INTO 
+                        Drivers (first_name, last_name, email, pword) 
+                    VALUES
+                        ('$first_name', '$last_name', '$email', '$hash')";
+    
+            if ($GLOBALS['conn']->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
+            }
+    
+            $GLOBALS['conn']->close();
+        }
+    
+        function insert_passenger($first_name, $last_name, $email, $pword, $service) {
+            echo "Passenger";
+    
+            $hash = password_hash($pword, PASSWORD_DEFAULT);
+    
+            $sql = "INSERT INTO 
+                        Passengers (first_name, last_name, email, pword) 
+                    VALUES
+                        ('$first_name', '$last_name', '$email', '$hash')";
+    
+            if ($GLOBALS['conn']->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
+            }
+    
+            $GLOBALS['conn']->close();
+        }
+    
+        function create_connection()
+        {
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "rideshare";
+    
+            // Create connection
+            $GLOBALS['conn'] = new mysqli($servername, $username, $password, $dbname);
+    
+            // Check connection
+            if ($GLOBALS['conn']->connect_error) {
+                die("Connection failed: " . $GLOBALS['conn']->connect_error);
+            } 
+            echo "Connected successfully";    
+        }
+    
+        function test_input($data) {
+            $data = trim($data);
+            $data = stripslashes($data);
+            $data = htmlspecialchars($data);
+            return $data;
+        }
+    ?>
+
+
     <h1 id="sign-up-form-title">Sign Up</h1>
     <div id="sign-up-form">
-        <form action="./sign-up.php" method="POST">
+        <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <label for="fname" class="input-label">First Name</label>
             <input type="text" name="fname" class="form-input"><br>
 
@@ -36,6 +129,10 @@
             <input type="submit" value="Sign Up" id="sub-btn">
             <p>Already a user? <a href="./login.html">Login</a></p>
         </form>
+    </div>
+
+    <div class="errorMsg">
+
     </div>
 
 </body>

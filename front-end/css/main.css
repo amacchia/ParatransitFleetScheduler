@@ -13,7 +13,8 @@ body {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 1%;
-    border: 3px black dashed; 
+    border: 3px goldenrod solid;
+    background-color: saddlebrown;
 }
 
 #sign-up-form-title{
@@ -50,4 +51,9 @@ body {
 .rd-input {
     text-align: left;
     margin-left: 12.5%;
+}
+
+.errorMsg {
+    text-align: center;
+    color: red;
 }
