@@ -128,6 +128,7 @@ public class MysqlConnection
 					routeArray[i][1] = rs.getString(2);
 					routeArray[i][2] = rs.getString(3);
 					routeArray[i][3] = rs.getString(4);
+					i++;
 				}
 			}
 			con.close();
