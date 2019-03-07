@@ -7,9 +7,12 @@
 2/21/19: Sprint Review with Dr. H and Dr. Wang
 2/22/19: Weekly group meeting
 2/23/19: Initial creation sign up page - Ant
+2/24/19: Created Location java class - Kieran
 2/24/19: Online group meeting
 2/24/19: Initial creation login page - Ant
 3/2/19: Wrote initial draft of functionality and tech stack sections of design document - Ant
 3/2/19: Added styling to sign up page - Ant
+3/3/19: Created MysqlConnection.java to connect to MySQL database - Kieran
+3/4/19: Modified MysqlConnection.java to easily pass information to create a Location object - Kieran
 3/5/19: Wes, Dan, Raymond- met and worked on a bulk of the design document
 
