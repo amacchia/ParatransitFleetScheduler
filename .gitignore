@@ -1,1 +1,3 @@
 \.gradle/
+.vscode/settings.json
+front-end/pages/.vscode/launch.json
