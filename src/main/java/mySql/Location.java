@@ -13,24 +13,16 @@ public class Location
 	//doubles to hold the coordinates and keep precision.
 	private double latitude;
 	private double longitude;
+	private int id;
 	
-//	private int id;  //Uncomment if we need to give a location an ID to link with passenger.
 	
 	//Constructor
-	public Location(double latitude, double longitude)
+	public Location(int id, double latitude, double longitude)
 	{
+		this.id = id;
 		this.latitude = latitude;
 		this.longitude = longitude;
 	}
-	
-	//Constructor with ID
-	//Uncomment if we need ID. Delete if not.
-//	public Location(int id, double latitude, double longitude)
-//	{
-//		this.id = id;
-//		this.latitude = latitude;
-//		this.longitude = longitude;
-//	}
 	
 	/* Helper method to comapreTo() method to 
 	 * calculate distance between two sets of coordinates.
@@ -51,5 +43,15 @@ public class Location
 	public double compareTo(Location coords)
 	{
 		return distance(longitude, latitude, coords.longitude, coords.latitude);
+	}
+	
+	public int getID()
+	{
+		return id;
+	}
+	
+	public String toString()
+	{
+		return "id: " + id + " lat: " + latitude + " long: " + longitude;
 	}
 }

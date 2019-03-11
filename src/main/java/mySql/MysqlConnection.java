@@ -37,10 +37,9 @@ public class MysqlConnection
 		this.userName = userName;
 		this.password = password;
 		
-		Scanner sc = new Scanner(System.in);  // Reading from System.in
 		System.out.println("Which dataset would you like to connect to? (case sensitive)");
+		Scanner sc = new Scanner(System.in);  // Reading from System.in
 		input = sc.next();
-		sc.close();
 		
 		connect(); //on instantiation automatically connect to database.
 	}
@@ -55,10 +54,14 @@ public class MysqlConnection
 			Class.forName(driver);
 			con = DriverManager.getConnection(url+db, userName, password);
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from " + input);
+			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
 			rs.last();				//sets rs to last row.
 			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
 			rs.beforeFirst();		//set rs back to beginning 
+//			ResultSetMetaData rsmd = rs.getMetaData();
+//			int col = rsmd.getColumnCount();
+//			System.out.println(col);			//could use to set column size with a variable
+												//instead of hard coding the amount of columns.
 			if(input.equals("location"))
 			{
 				locationArray = new String[rows][8];
