@@ -1,3 +1,4 @@
+import mySql.Ride;
 import java.util.ArrayList;
 import java.lang.Math;
 
