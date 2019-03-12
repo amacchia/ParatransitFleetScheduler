@@ -8,7 +8,8 @@ public class Cluster{
    public static ArrayList<ArrayList<Ride>> randomCluster(ArrayList<Ride> all_rides){
       ArrayList<ArrayList<Ride>> clusters = new ArrayList<ArrayList<Ride>>();
       ArrayList<Ride> cluster;
-      for(int i = 0; i < (all_rides.size() / 3); i++){//Populate clusters with one element so none are empty
+      int size = all_rides.size() / 3;
+      for(int i = 0; i < size; i++){//Populate clusters with one element so none are empty
          cluster = new ArrayList<Ride>();
          cluster.add(all_rides.get(0));
          clusters.add(cluster);

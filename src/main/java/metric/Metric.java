@@ -12,7 +12,6 @@ public class Metric {
 		for (ArrayList<Location> list : routes) {
 			double avgDistance = calculateAvgDistance(list);
 			avgDistances[indexForAvgDistances] = avgDistance;
-			System.out.println("avgDistance: " + avgDistance);
 			indexForAvgDistances++;
 		}
 		
@@ -20,7 +19,6 @@ public class Metric {
 		for (int i = 0; i < avgDistances.length; i++) {
 			sum += avgDistances[i];
 		}
-		System.out.println("Sum: " + sum);
 		return sum / routes.size(); // Avg distance of all routes
 	}
 	

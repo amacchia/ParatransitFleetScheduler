@@ -121,8 +121,11 @@ public class LocationTester
 		}
 		
       ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
+      System.out.println("cluster 1: " + clusters1.size()); //debug
       ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
+      System.out.println("cluster 2: " + clusters2.size());//debug
       ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
+      System.out.println("cluster 3: " + clusters3.size()); //debug
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -156,7 +159,7 @@ public class LocationTester
       System.out.println(rideClusters.size());
       for(int i = 0; i < rideClusters.size(); i++){
          locationClusters.add(new ArrayList<Location>());
-         for(int j = 0; j < rideClusters.get(i).size(); i++){
+         for(int j = 0; j < rideClusters.get(i).size(); j++){
             locationClusters.get(i).add(rideClusters.get(i).get(j).getOrig());
             locationClusters.get(i).add(rideClusters.get(i).get(j).getDest());
 
