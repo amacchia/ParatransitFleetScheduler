@@ -53,14 +53,14 @@ public class LocationTester
 		ArrayList<Ride> rideList = new ArrayList<Ride>();
 		for(int i = 0; i < rideArray.length; i++)
 		{
-//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
-//						new Location(i+1, getOrigLat(i), getOrigLong(i)),
-//						new Location(i+1, getDestLat(i), getDestLong(i)),
-//						null));
-			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]), 
-						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
-						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
+			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
+						new Location(i+1, getOrigLat(i), getOrigLong(i)),
+						new Location(i+1, getDestLat(i), getDestLong(i)),
 						null));
+//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]), 
+//						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
+//						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
+//						null));
 		}
 		return rideList;
 	}
@@ -75,11 +75,11 @@ public class LocationTester
 	}
 	private static double getDestLat(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
 	}
 	private static double getDestLong(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
 	}
 	public static void main(String[] args)
 	{
