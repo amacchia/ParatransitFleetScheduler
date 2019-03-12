@@ -3,6 +3,7 @@ import java.sql.Timestamp;
 import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
+import pathfinder.Methods;
 import mySql.Cluster;
 import metric.Metric;
 
@@ -98,6 +99,12 @@ public class LocationTester
 			{
 				System.out.println(bestclusters.get(i).get(j) +"\n");
 			}
+		}
+		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(bestclusters);
+		for(int i = 0; i < bestLocations.size(); i++)
+		{
+			Methods.pathfind(new Location(-1, 0, 0, true), bestLocations.get(i), new ArrayList<Location>(),
+					new ArrayList<Location>(), 2, 0);
 		}
 	}
 	

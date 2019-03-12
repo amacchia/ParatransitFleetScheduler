@@ -1,15 +1,16 @@
 package pathfinder;
-
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
+import java.util.ArrayList;
+import mySql.Location;
+
 import java.lang.Math;
 
 public class Methods {
 	
 	
-	public static void pathfind(Location starter, LinkedList<Location> points, ArrayList<Location> route, 
-			 LinkedList<Location> reserves, int cap, int pass)
+	public static void pathfind(Location starter, ArrayList<Location> points, ArrayList<Location> route, 
+			 ArrayList<Location> reserves, int cap, int pass)
 	{
 			if(points.isEmpty())										//Putting this first, as it's the exit of the recusion. If the points list
 				{
@@ -18,14 +19,14 @@ public class Methods {
 					return;
 				}
 			ArrayList<Location> rte = route;							//Stores route as it's being developed, array for easy printing later
-			LinkedList<Location> pts = points;							//Stores available locations for next in route, linked for easy removal
+			ArrayList<Location> pts = points;							//Stores available locations for next in route, linked for easy removal
 	//		Iterator<Location> iterator = pts.iterator();				//used to convert linked list pts into arraylist maths for distance later
 	//		ArrayList<Location> maths = new ArrayList<Location>();		
 	//		while (iterator.hasNext())													
 	//		{	
 	//			maths.add(iterator.next());								//conversion of pts into maths.
 	//		}
-			LinkedList<Location> reserve = reserves;					//Reserve list of destinations not able to be gone to. like destinations before thier corresponding origin has been met, or origins while the car is full
+			ArrayList<Location> reserve = reserves;					//Reserve list of destinations not able to be gone to. like destinations before thier corresponding origin has been met, or origins while the car is full
 			Location next = minDistance(starter, pts);
 			int idx = pts.indexOf(next);								//index of the next potential destination in the route
 
@@ -44,7 +45,7 @@ public class Methods {
 					{
 							pts.add(iterate.next());			//re-adds previously removed points back into avaiable points.
 					}
-					reserve = new LinkedList<Location>();		//clears out reserves after they are added
+					reserve = new ArrayList<Location>();		//clears out reserves after they are added
 					pathfind(next, pts, rte, reserve, cap, pass);		//Recursively calls method now with added passenger, and one less point available
 					return;
 				}
@@ -63,7 +64,7 @@ public class Methods {
 				while (iterates.hasNext())
 					{
 						Location test = iterates.next();
-						if((test.getName() == next.getName()) && test.isOrigin)			//getname on both to match them as origin-dest pair, is origin on next to see if it's not the destination
+						if((test.getID() == next.getID()) && test.isOrigin)			//getname on both to match them as origin-dest pair, is origin on next to see if it's not the destination
 						{
 							reserve.add(next);							//adds current point to reserve list, to be added after destination is reached
 							pts.remove(idx);							//removes point from current pool of valid next destinations
@@ -79,7 +80,7 @@ public class Methods {
 				{
 						pts.add(iterate.next());			//re-adds previously removed points back into avaiable points.
 				}
-				reserve = new LinkedList<Location>();		//clears out reserves after they are added
+				reserve = new ArrayList<Location>();		//clears out reserves after they are added
 				pass--;
 				pathfind(next, pts, rte, reserve, cap, pass);
 				return;
@@ -98,10 +99,10 @@ public class Methods {
 			Location test = iterate.next();
 			if(test.isOrigin)
 			{
-				result = result + ", "+ test.getName() + "O";
+				result = result + ", "+ test.getID() + "O";
 			}
 			else
-				result = result + ", "+ test.getName() + "D";
+				result = result + ", "+ test.getID() + "D";
 		}
 
 		return result;
@@ -109,10 +110,10 @@ public class Methods {
 
 
 
-	public static Location minDistance(Location start, LinkedList<Location> points)
+	public static Location minDistance(Location start, ArrayList<Location> points)
 	{
 		double min = 10000000;
-		LinkedList<Location> mini = new LinkedList<Location>();
+		ArrayList<Location> mini = new ArrayList<Location>();
 		Iterator<Location> iterator = points.iterator();
 		//int pointsidx = 0;		dont need to keep track of the size				//starts at 0 because start location isn't in list
 		int resultidx = 0;

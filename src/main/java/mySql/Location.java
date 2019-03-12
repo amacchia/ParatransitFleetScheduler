@@ -14,7 +14,7 @@ public class Location
 	private double latitude;
 	private double longitude;
 	private int id;
-	private boolean isOrigin;
+	public final boolean isOrigin;
 	
 	
 	//Constructor
