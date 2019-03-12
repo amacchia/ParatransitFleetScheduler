@@ -141,7 +141,6 @@ public class LocationTester
             bestclusters = clusters3;
          }
       }
-		ArrayList<ArrayList<Ride>> bestclusters;
 		for(int i = 0; i < bestclusters.size(); i++)
 		{
 			System.out.println("Cluster Number: " + i);
@@ -154,6 +153,7 @@ public class LocationTester
    
    public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
       ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
+      System.out.println(rideClusters.size());
       for(int i = 0; i < rideClusters.size(); i++){
          locationClusters.add(new ArrayList<Location>());
          for(int j = 0; j < rideClusters.get(i).size(); i++){

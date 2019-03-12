@@ -6,12 +6,13 @@ import mySql.Location;
 
 public class Metric {
 	
-	public double computeScore(ArrayList<ArrayList<Location>> routes) {
+	public static double computeScore(ArrayList<ArrayList<Location>> routes) {
 		double[] avgDistances = new double[routes.size()];
 		int indexForAvgDistances = 0;
 		for (ArrayList<Location> list : routes) {
 			double avgDistance = calculateAvgDistance(list);
 			avgDistances[indexForAvgDistances] = avgDistance;
+			System.out.println("avgDistance: " + avgDistance);
 			indexForAvgDistances++;
 		}
 		
@@ -19,12 +20,12 @@ public class Metric {
 		for (int i = 0; i < avgDistances.length; i++) {
 			sum += avgDistances[i];
 		}
-		
+		System.out.println("Sum: " + sum);
 		return sum / routes.size(); // Avg distance of all routes
 	}
 	
 	
-	private double calculateAvgDistance(ArrayList<Location> route) {
+	private static double calculateAvgDistance(ArrayList<Location> route) {
 		double distanceSum = 0;
 		for (int i = 0; i < route.size() - 1; i++) {
 			Location firstLocation = route.get(i);
