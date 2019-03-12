@@ -1,15 +1,15 @@
 package metric;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import mySql.Location;
 
 public class Metric {
 	
-	public double computeScore(List<List<Location>> routes) {
+	public double computeScore(ArrayList<ArrayList<Location>> routes) {
 		double[] avgDistances = new double[routes.size()];
 		int indexForAvgDistances = 0;
-		for (List<Location> list : routes) {
+		for (ArrayList<Location> list : routes) {
 			double avgDistance = calculateAvgDistance(list);
 			avgDistances[indexForAvgDistances] = avgDistance;
 			indexForAvgDistances++;
@@ -24,7 +24,7 @@ public class Metric {
 	}
 	
 	
-	private double calculateAvgDistance(List<Location> route) {
+	private double calculateAvgDistance(ArrayList<Location> route) {
 		double distanceSum = 0;
 		for (int i = 0; i < route.size() - 1; i++) {
 			Location firstLocation = route.get(i);
