@@ -14,14 +14,16 @@ public class Location
 	private double latitude;
 	private double longitude;
 	private int id;
+	private boolean isOrigin;
 	
 	
 	//Constructor
-	public Location(int id, double latitude, double longitude)
+	public Location(int id, double latitude, double longitude, boolean isOrigin)
 	{
 		this.id = id;
 		this.latitude = latitude;
 		this.longitude = longitude;
+		this.isOrigin = isOrigin;
 	}
 	
 	/* Helper method to comapreTo() method to 
@@ -48,6 +50,16 @@ public class Location
 	public int getID()
 	{
 		return id;
+	}
+	
+	public double getLat()
+	{
+		return latitude;
+	}
+	
+	public double getLong()
+	{
+		return longitude;
 	}
 	
 	public String toString()

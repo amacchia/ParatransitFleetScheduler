@@ -54,8 +54,8 @@ public class LocationTester
 		for(int i = 0; i < rideArray.length; i++)
 		{
 			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
-						new Location(i+1, getOrigLat(i), getOrigLong(i)),
-						new Location(i+1, getDestLat(i), getDestLong(i)),
+						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
+						new Location(i+1, getDestLat(i), getDestLong(i), false),
 						null));
 //			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]), 
 //						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
