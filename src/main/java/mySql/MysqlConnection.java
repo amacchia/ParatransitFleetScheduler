@@ -48,7 +48,7 @@ public class MysqlConnection
 	private void connect()
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
-							+ "\n--------------------------------");
+							+ "\n--------------------------------\n");
 		try
 		{	//Establish Connection
 			Class.forName(driver);

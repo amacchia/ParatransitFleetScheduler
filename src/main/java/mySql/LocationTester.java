@@ -48,84 +48,31 @@ public class LocationTester
 	static String[][] locationArray;
 	static String[][] rideArray;
 	
-	
-	public static ArrayList<Ride> populateRides() 
-	{
-		ArrayList<Ride> rideList = new ArrayList<Ride>();
-		for(int i = 0; i < rideArray.length; i++)
-		{
-			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
-						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
-						new Location(i+1, getDestLat(i), getDestLong(i), false),
-						null));
-//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]), 
-//						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
-//						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
-//						null));
-		}
-		return rideList;
-	}
-	
-	private static double getOrigLat(int i)
-	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
-	}
-	private static double getOrigLong(int i)
-	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
-	}
-	private static double getDestLat(int i)
-	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
-	}
-	private static double getDestLong(int i)
-	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
-	}
+
 	public static void main(String[] args)
 	{
+		//Make connection to database and the location dataset.
 		MysqlConnection locationCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "root");
 		
+		//create locationArray from information gathered from connection.
 		locationArray = locationCon.getLocationArray();
-//		int locationxID = Integer.parseInt(locationArray[0][0]);
-//		int locationyID = Integer.parseInt(locationArray[1][0]);
-//		
-//		Location x = new Location(locationxID, Double.parseDouble(locationArray[0][2]), Double.parseDouble(locationArray[0][3]));
-//		Location y = new Location(locationyID, Double.parseDouble(locationArray[1][2]), Double.parseDouble(locationArray[1][3]));
-//		double distance = x.compareTo(y);
-//		
-//		System.out.println("Distance between locationArray[0][] and locationArray[1][]: " + distance + " degrees");
 		
-		
-		
-		//Test Ride.java
-		System.out.println("\n\n");
+		// Connect to database again, but go to ride dataset
 		MysqlConnection rideCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "root");
-		
+		//create rideArray from information gathered from connection.
 		rideArray = rideCon.getRideArray();
-//		int rideID = Integer.parseInt(rideArray[0][0]);
-//		
-//		
-//		Ride ride1 = new Ride(rideID, );
-//		System.out.println(ride1.getTime()); //Test Timestamp has correct format
-//		
-//		//find which Location Objects links to 'ride1' pickUp and dropOff id's
-//		Location ride1Loc = getOriginLoc(rideArray[0][2]);
-//		System.out.println(ride1Loc.getID());
 		
+		//populate an ArrayList of rides.
 		ArrayList<Ride> rides = populateRides();
 		for(int i = 0; i < rides.size(); i++) {
 			System.out.println(rides.get(i));
 		}
 		
       ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
-      System.out.println("cluster 1: " + clusters1.size()); //debug
       ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
-      System.out.println("cluster 2: " + clusters2.size());//debug
       ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
-      System.out.println("cluster 3: " + clusters3.size()); //debug
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -153,6 +100,20 @@ public class LocationTester
 			}
 		}
 	}
+	
+	//Makes an ArrayList of rides.
+	public static ArrayList<Ride> populateRides() 
+	{
+		ArrayList<Ride> rideList = new ArrayList<Ride>();
+		for(int i = 0; i < rideArray.length; i++)
+		{
+			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
+						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
+						new Location(i+1, getDestLat(i), getDestLong(i), false),
+						null));
+		}
+		return rideList;
+	}
    
    public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
       ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
@@ -167,16 +128,42 @@ public class LocationTester
       }
       return locationClusters;
    }
+   
+   /*
+    * Uses indices from rideArray and locationArray to return
+    * the Latitude of the origin.
+    * 
+    */
+	private static double getOrigLat(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
+	}
 	
-//	private static Location getOriginLoc(String pickUp)
-//	{
-//		for(int i = 0; i < locationArray.length; i++)
-//		{
-//			if(locationArray[i][0] == pickUp) 
-//			{
-//				return new Location(Integer.parseInt(locationArray[i][0]), Double.parseDouble(locationArray[i][2]), Double.parseDouble(locationArray[i][3]));
-//			}
-//		}
-//		return null;
-//	}
+	/*
+	 * Uses indices from rideArray and locationArray to return
+     * the Longitude of the origin.
+	 */
+	private static double getOrigLong(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
+	}
+	
+	/*
+	 * Uses indices from rideArray and locationArray to return
+     * the Latitude of the destination.
+	 */
+	private static double getDestLat(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
+	}
+	
+	/*
+	 * Uses indices from rideArray and locationArray to return
+     * the Longitude of the destination.
+	 */
+	private static double getDestLong(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
+	}
+	
 }
