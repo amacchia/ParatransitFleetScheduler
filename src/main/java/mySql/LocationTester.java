@@ -1,10 +1,9 @@
 package mySql;
 import java.sql.Timestamp;
 import java.util.*;
-
 import org.springframework.boot.origin.Origin;
-
 import mySql.MysqlConnection;
+import mySql.Cluster;
 
 public class LocationTester 
 {
@@ -54,12 +53,33 @@ public class LocationTester
 		ArrayList<Ride> rideList = new ArrayList<Ride>();
 		for(int i = 0; i < rideArray.length; i++)
 		{
+//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
+//						new Location(i+1, getOrigLat(i), getOrigLong(i)),
+//						new Location(i+1, getDestLat(i), getDestLong(i)),
+//						null));
 			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]), 
 						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
 						new Location(i+1, Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]), Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3])),
 						null));
 		}
 		return rideList;
+	}
+	
+	private static double getOrigLat(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
+	}
+	private static double getOrigLong(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
+	}
+	private static double getDestLat(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
+	}
+	private static double getDestLong(int i)
+	{
+		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
 	}
 	public static void main(String[] args)
 	{
@@ -94,9 +114,19 @@ public class LocationTester
 //		Location ride1Loc = getOriginLoc(rideArray[0][2]);
 //		System.out.println(ride1Loc.getID());
 		
-		ArrayList<Ride> ride = populateRides();
-		for(int i = 0; i < ride.size(); i++) {
-			System.out.println(ride.get(i));
+		ArrayList<Ride> rides = populateRides();
+		for(int i = 0; i < rides.size(); i++) {
+			System.out.println(rides.get(i));
+		}
+		
+		ArrayList<ArrayList<Ride>> clusters = Cluster.randomCluster(rides);
+		for(int i = 0; i < clusters.size(); i++)
+		{
+			System.out.println("Cluster Number: " + i);
+			for(int j = 0; j < clusters.get(i).size(); j++)
+			{
+				System.out.println(clusters.get(i).get(j) +"\n");
+			}
 		}
 	}
 	

@@ -1,3 +1,4 @@
+package mySql;
 import mySql.Ride;
 import java.util.ArrayList;
 import java.lang.Math;
@@ -14,7 +15,7 @@ public class Cluster{
          all_rides.remove(0);
       }
       for(int i = 0; i < all_rides.size(); i++){//Randomly assign Rides into clusters
-         clusters.get((int) Math.random()*clusters.size()).add(all_rides.get(0));
+         clusters.get((int) (Math.random()*clusters.size())).add(all_rides.get(0));
          all_rides.remove(0);
       }
       return clusters;
