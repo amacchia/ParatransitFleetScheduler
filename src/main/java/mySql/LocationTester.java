@@ -4,6 +4,7 @@ import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
 import mySql.Cluster;
+import metric.Metric;
 
 public class LocationTester 
 {
@@ -119,16 +120,37 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-		ArrayList<ArrayList<Ride>> clusters = Cluster.randomCluster(rides);
-		for(int i = 0; i < clusters.size(); i++)
+      ArrayList<ArrayList<Ride>> clusters1 = new ArrayList<ArrayList<Ride>>();
+      ArrayList<ArrayList<Ride>> clusters2 = new ArrayList<ArrayList<Ride>>();
+      ArrayList<ArrayList<Ride>> clusters3 = new ArrayList<ArrayList<Ride>>();
+      double score1 = Metric.computeScore(toLocationArray(clusters1));
+      double score2 =  Metric.computeScore(toLocationArray(clusters2));
+      double score3 =  Metric.computeScore(toLocationArray(clusters3));
+      System.out.println("Score1, Score2, and Score3 for the clusters: "+ score1 + " " + score2 + " " + score3);
+      
+		ArrayList<ArrayList<Ride>> bestclusters = ;
+		for(int i = 0; i < bestclusters.size(); i++)
 		{
 			System.out.println("Cluster Number: " + i);
-			for(int j = 0; j < clusters.get(i).size(); j++)
+			for(int j = 0; j < bestclusters.get(i).size(); j++)
 			{
-				System.out.println(clusters.get(i).get(j) +"\n");
+				System.out.println(bestclusters.get(i).get(j) +"\n");
 			}
 		}
 	}
+   
+   public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
+      ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
+      for(int i = 0; i < rideClusters.size(); i++){
+         locationClusters.add(new ArrayList<Location>());
+         for(int j = 0; j < rideClusters.get(i).size(); i++){
+            locationClusters.get(i).add(rideClusters.get(i).get(j).getOrig());
+            locationClusters.get(i).add(rideClusters.get(i).get(j).getDest());
+
+         }
+      }
+      return locationClusters;
+   }
 	
 //	private static Location getOriginLoc(String pickUp)
 //	{
