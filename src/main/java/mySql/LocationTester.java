@@ -127,8 +127,21 @@ public class LocationTester
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
       System.out.println("Score1, Score2, and Score3 for the clusters: "+ score1 + " " + score2 + " " + score3);
-      
-		ArrayList<ArrayList<Ride>> bestclusters = ;
+      ArrayList<ArrayList<Ride>> bestclusters;
+      if(score1 > score2){
+         if(score1 > score3){
+            bestclusters = clusters1;
+         }else{
+            bestclusters = clusters3;
+         }
+      }else{
+         if(score2 > score3){
+            bestclusters = clusters2;
+         }else{
+            bestclusters = clusters3;
+         }
+      }
+		ArrayList<ArrayList<Ride>> bestclusters;
 		for(int i = 0; i < bestclusters.size(); i++)
 		{
 			System.out.println("Cluster Number: " + i);
