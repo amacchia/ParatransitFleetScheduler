@@ -120,9 +120,9 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-      ArrayList<ArrayList<Ride>> clusters1 = new ArrayList<ArrayList<Ride>>();
-      ArrayList<ArrayList<Ride>> clusters2 = new ArrayList<ArrayList<Ride>>();
-      ArrayList<ArrayList<Ride>> clusters3 = new ArrayList<ArrayList<Ride>>();
+      ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
+      ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
+      ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
