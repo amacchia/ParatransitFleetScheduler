@@ -57,80 +57,73 @@ public class MysqlConnection
 			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
 			rs.last();				//sets rs to last row.
 			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
-			rs.beforeFirst();		//set rs back to beginning 
-//			ResultSetMetaData rsmd = rs.getMetaData();
-//			int col = rsmd.getColumnCount();
-//			System.out.println(col);			//could use to set column size with a variable
+			rs.beforeFirst();
+			ResultSetMetaData rsmd = rs.getMetaData();
+			int col = rsmd.getColumnCount();
+			System.out.println(col);			//could use to set column size with a variable
 												//instead of hard coding the amount of columns.
 			if(input.equals("location"))
 			{
-				locationArray = new String[rows][8];
+				locationArray = new String[rows][col];
 				int i = 0;
 				while(rs.next())
-				{				
-					locationArray[i][0] = rs.getString(1);
-					locationArray[i][1] = rs.getString(2);
-					locationArray[i][2] = rs.getString(3);
-					locationArray[i][3] = rs.getString(4);
-					locationArray[i][4] = rs.getString(5);
-					locationArray[i][5] = rs.getString(6);
-					locationArray[i][6] = rs.getString(7);
-					locationArray[i][7] = rs.getString(8);
+				{
+					for(int j = 0; j < col; j++)
+					{
+						locationArray[i][j] = rs.getString(j+1);
+					}
 					i++;
 				}
 			}
 			else if(input.equals("driver"))
 			{
-				driverArray = new String[rows][4];
+				driverArray = new String[rows][col];
 				int i = 0;
 				while(rs.next())
 				{
-					driverArray[i][0] = rs.getString(1);
-					driverArray[i][1] = rs.getString(2);
-					driverArray[i][2] = rs.getString(3);
-					driverArray[i][3] = rs.getString(4);
+					for(int j = 0; j < col; j++)
+					{
+						driverArray[i][j] = rs.getString(j+1);
+					}
 					i++;
 				}
 			}
 			else if(input.equals("passenger"))
 			{
-				passengerArray = new String[rows][6];
+				passengerArray = new String[rows][col];
 				int i = 0;
 				while(rs.next())
 				{
-					passengerArray[i][0] = rs.getString(1);
-					passengerArray[i][1] = rs.getString(2);
-					passengerArray[i][2] = rs.getString(3);
-					passengerArray[i][3] = rs.getString(4);
-					passengerArray[i][4] = rs.getString(5);
-					passengerArray[i][5] = rs.getString(6);
+					for(int j = 0; j < col; j++)
+					{
+						passengerArray[i][j] = rs.getString(j+1);
+					}
 					i++;
 				}
 			}
 			else if(input.equals("ride"))
 			{
-				rideArray = new String[rows][5];
+				rideArray = new String[rows][col];
 				int i = 0;
 				while(rs.next())
 				{
-					rideArray[i][0] = rs.getString(1);
-					rideArray[i][1] = rs.getString(2);
-					rideArray[i][2] = rs.getString(3);
-					rideArray[i][3] = rs.getString(4);
-					rideArray[i][4] = rs.getString(5);
+					for(int j = 0; j < col; j++)
+					{
+						rideArray[i][j] = rs.getString(j+1);
+					}
 					i++;
 				}
 			}
 			else if(input.equals("route"))
 			{
-				routeArray = new String[rows][4];
+				routeArray = new String[rows][col];
 				int i = 0;
 				while(rs.next())
 				{
-					routeArray[i][0] = rs.getString(1);
-					routeArray[i][1] = rs.getString(2);
-					routeArray[i][2] = rs.getString(3);
-					routeArray[i][3] = rs.getString(4);
+					for(int j = 0; j < col; j++)
+					{
+						routeArray[i][j] = rs.getString(j+1);
+					}
 					i++;
 				}
 			}
