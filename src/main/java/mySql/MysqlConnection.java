@@ -153,28 +153,43 @@ public class MysqlConnection
 			con = DriverManager.getConnection(url+db, userName, password);
 			stmt = con.createStatement();
 			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
-			rs.last();				//sets rs to last row.
-			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
-			rs.beforeFirst();
+			
+			//Find number of columns in the table.
 			ResultSetMetaData rsmd = rs.getMetaData();
 			int col = rsmd.getColumnCount();
 			
-			mergeArray = new String[rows][col];
-			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+			//Add dates to range in query
 		    Date now = new Date();
-		    System.out.println("time now: " + dateFormat.format(now));
 		    Calendar cl = Calendar. getInstance();
 		    cl.add(Calendar.HOUR, 2);
-			Date limit = DateUtils.addHours(now, 2);
-			System.out.println("Two hours from now: " + dateFormat.format(limit));
+			Date limit = DateUtils.addHours(now, 2); //add two hours
+			
+			//Find the amount of rows that are within time range.
+			int rows = 0;
+			while(rs.next())
+			{
+				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
+				{
+					rows++;  //increment rows each time it finds time within range.
+				}
+			}
+			
+			//Give mergeArray the correct amount of rows/columns.
+			mergeArray = new String[rows][col];
+			rs.beforeFirst(); //Go to start of ResultSet.
+			
+			//add data into mergeArray if meets conditions.
 			int i = 0;
 			while(rs.next())
 			{
-				for(int j = 0; j < col; j++)
+				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
 				{
-					mergeArray[i][j] = rs.getString(j+1);
+					for(int j = 0; j < col; j++)
+					{
+						mergeArray[i][j] = rs.getString(j+1);
+					}
+					i++;
 				}
-				i++;
 			}
 		con.close();
 		}

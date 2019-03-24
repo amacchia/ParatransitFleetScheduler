@@ -78,7 +78,7 @@ public class LocationTester
 		}
 		
       ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
-      System.out.println(rides.size());
+      System.out.println(rides.size());  //check size of rides array.
       ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
       System.out.println(rides.size());
       ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
