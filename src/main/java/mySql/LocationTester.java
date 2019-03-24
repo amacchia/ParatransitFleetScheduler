@@ -1,5 +1,4 @@
 package mySql;
-import java.sql.Timestamp;
 import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
@@ -48,22 +47,29 @@ public class LocationTester
 	 */
 	static String[][] locationArray;
 	static String[][] rideArray;
+	static String[][] mergeArray;
 	
 
 	public static void main(String[] args)
 	{
 		//Make connection to database and the location dataset.
-		MysqlConnection locationCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
-				"com.mysql.cj.jdbc.Driver", "root", "root");
+//		MysqlConnection locationCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
+//				"com.mysql.cj.jdbc.Driver", "root", "root");
 		
 		//create locationArray from information gathered from connection.
-		locationArray = locationCon.getLocationArray();
+//		locationArray = locationCon.getLocationArray();
 		
 		// Connect to database again, but go to ride dataset
-		MysqlConnection rideCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
-				"com.mysql.cj.jdbc.Driver", "root", "root");
+//		MysqlConnection rideCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
+//				"com.mysql.cj.jdbc.Driver", "root", "root");
 		//create rideArray from information gathered from connection.
-		rideArray = rideCon.getRideArray();
+//		rideArray = rideCon.getRideArray();
+		
+				
+		MysqlConnection mergeCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
+				"com.mysql.cj.jdbc.Driver", "root", "root");
+		mergeArray = mergeCon.getMergeArray();
+		
 		
 		//populate an ArrayList of rides.
 		ArrayList<Ride> rides = populateRides();
@@ -72,8 +78,11 @@ public class LocationTester
 		}
 		
       ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
+      System.out.println(rides.size());
       ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
+      System.out.println(rides.size());
       ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
+      System.out.println(rides.size());
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -108,19 +117,34 @@ public class LocationTester
 		}
 	}
 	
-	//Makes an ArrayList of rides.
-	public static ArrayList<Ride> populateRides() 
+	public static ArrayList <Ride> populateRides()
 	{
 		ArrayList<Ride> rideList = new ArrayList<Ride>();
-		for(int i = 0; i < rideArray.length; i++)
+		for(int i = 0; i < mergeArray.length; i++)
 		{
-			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
-						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
-						new Location(i+1, getDestLat(i), getDestLong(i), false),
-						null));
+			rideList.add(new Ride(Integer.parseInt(mergeArray[i][0]),
+					new Location(i+1, getOrigLat(i), getOrigLong(i), true),
+					new Location(i+1, getDestLat(i), getDestLong(i), false),
+					null));
+					
 		}
 		return rideList;
 	}
+	
+//	//Makes an ArrayList of rides. Using connect()
+//	public static ArrayList<Ride> populateRides() 
+//	{
+//		ArrayList<Ride> rideList = new ArrayList<Ride>();
+//		for(int i = 0; i < rideArray.length; i++)
+//		{
+//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
+//						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
+//						new Location(i+1, getDestLat(i), getDestLong(i), false),
+//						null));
+//		}
+//		return rideList;
+//	}
+	
    
    public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
       ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
@@ -141,36 +165,59 @@ public class LocationTester
     * the Latitude of the origin.
     * 
     */
+//	private static double getOrigLat(int i)
+//	{
+//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
+//	}
+   
+	//using connectMerge()
 	private static double getOrigLat(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
+		return Double.parseDouble(mergeArray[i][2]);
 	}
 	
 	/*
 	 * Uses indices from rideArray and locationArray to return
      * the Longitude of the origin.
 	 */
+//	private static double getOrigLong(int i)
+//	{
+//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
+//	}
+	
+	//using connectMerge()
 	private static double getOrigLong(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
+		return Double.parseDouble(mergeArray[i][3]);
 	}
 	
 	/*
 	 * Uses indices from rideArray and locationArray to return
      * the Latitude of the destination.
 	 */
+//	private static double getDestLat(int i)
+//	{
+//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
+//	}
+//	
+//	/*
+//	 * Uses indices from rideArray and locationArray to return
+//     * the Longitude of the destination.
+//	 */
+//	private static double getDestLong(int i)
+//	{
+//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
+//	}
+	
+	//using connectMerge().
 	private static double getDestLat(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
+		return Double.parseDouble(mergeArray[i][5]);
 	}
-	
-	/*
-	 * Uses indices from rideArray and locationArray to return
-     * the Longitude of the destination.
-	 */
+	//using connectMerge().
 	private static double getDestLong(int i)
 	{
-		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
+		return Double.parseDouble(mergeArray[i][6]);
 	}
 	
 }

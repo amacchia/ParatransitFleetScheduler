@@ -1,6 +1,13 @@
 package mySql;
 import java.sql.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
+
+import org.apache.commons.lang3.time.DateUtils;
+import java.util.Calendar;
+import java.util.Date;
+
 
 /*
  * Connect to MySQL database and store information.
@@ -26,6 +33,7 @@ public class MysqlConnection
 	String[][] driverArray;
 	String[][] rideArray;
 	String[][] routeArray;
+	String[][] mergeArray;
 	
 	//Constructor
 	public MysqlConnection(String url, String db, String driver,
@@ -41,14 +49,104 @@ public class MysqlConnection
 		Scanner sc = new Scanner(System.in);  // Reading from System.in
 		input = sc.next();
 		
-		connect(); //on instantiation automatically connect to database.
+		//connect(); //on instantiation automatically connect to database.
+		connectMerge(); //test connection to merged table.
 	}
 	
 	//Connect to database and get information
-	private void connect()
+//	private void connect()
+//	{
+//		System.out.println("Establishing Connection with " + input + " in " + db
+//							+ "\n--------------------------------\n");
+//		try
+//		{	//Establish Connection
+//			Class.forName(driver);
+//			con = DriverManager.getConnection(url+db, userName, password);
+//			stmt = con.createStatement();
+//			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
+//			rs.last();				//sets rs to last row.
+//			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
+//			rs.beforeFirst();
+//			ResultSetMetaData rsmd = rs.getMetaData();
+//			int col = rsmd.getColumnCount();
+//			
+//			if(input.equals("location"))
+//			{
+//				locationArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						locationArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("driver"))
+//			{
+//				driverArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						driverArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("passenger"))
+//			{
+//				passengerArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						passengerArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("ride"))
+//			{
+//				rideArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						rideArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("route"))
+//			{
+//				routeArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						routeArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			con.close();
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e);  
+//		}
+//	}
+	
+	private void connectMerge()
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
-							+ "\n--------------------------------\n");
+				+ "\n--------------------------------\n");
 		try
 		{	//Establish Connection
 			Class.forName(driver);
@@ -60,85 +158,43 @@ public class MysqlConnection
 			rs.beforeFirst();
 			ResultSetMetaData rsmd = rs.getMetaData();
 			int col = rsmd.getColumnCount();
-			System.out.println(col);			//could use to set column size with a variable
-												//instead of hard coding the amount of columns.
-			if(input.equals("location"))
+			
+			mergeArray = new String[rows][col];
+			DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		    Date now = new Date();
+		    System.out.println("time now: " + dateFormat.format(now));
+		    Calendar cl = Calendar. getInstance();
+		    cl.add(Calendar.HOUR, 2);
+			Date limit = DateUtils.addHours(now, 2);
+			System.out.println("Two hours from now: " + dateFormat.format(limit));
+			int i = 0;
+			while(rs.next())
 			{
-				locationArray = new String[rows][col];
-				int i = 0;
-				while(rs.next())
+				for(int j = 0; j < col; j++)
 				{
-					for(int j = 0; j < col; j++)
-					{
-						locationArray[i][j] = rs.getString(j+1);
-					}
-					i++;
+					mergeArray[i][j] = rs.getString(j+1);
 				}
+				i++;
 			}
-			else if(input.equals("driver"))
-			{
-				driverArray = new String[rows][col];
-				int i = 0;
-				while(rs.next())
-				{
-					for(int j = 0; j < col; j++)
-					{
-						driverArray[i][j] = rs.getString(j+1);
-					}
-					i++;
-				}
-			}
-			else if(input.equals("passenger"))
-			{
-				passengerArray = new String[rows][col];
-				int i = 0;
-				while(rs.next())
-				{
-					for(int j = 0; j < col; j++)
-					{
-						passengerArray[i][j] = rs.getString(j+1);
-					}
-					i++;
-				}
-			}
-			else if(input.equals("ride"))
-			{
-				rideArray = new String[rows][col];
-				int i = 0;
-				while(rs.next())
-				{
-					for(int j = 0; j < col; j++)
-					{
-						rideArray[i][j] = rs.getString(j+1);
-					}
-					i++;
-				}
-			}
-			else if(input.equals("route"))
-			{
-				routeArray = new String[rows][col];
-				int i = 0;
-				while(rs.next())
-				{
-					for(int j = 0; j < col; j++)
-					{
-						routeArray[i][j] = rs.getString(j+1);
-					}
-					i++;
-				}
-			}
-			con.close();
+		con.close();
 		}
 		catch(Exception e)
 		{
 			System.out.println(e);  
 		}
+			
 	}
 	
 	//access information in locationArrayy[][]
 	public String[][] getLocationArray()
 	{
 		return locationArray;
+	}
+	
+	//access Info in mergeArray[][]
+	public String[][] getMergeArray()
+	{
+		return mergeArray;
 	}
 	
 	//access information in passengerArray[][]
@@ -164,4 +220,5 @@ public class MysqlConnection
 	{
 		return routeArray;
 	}
+	
 }

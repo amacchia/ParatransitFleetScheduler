@@ -1,5 +1,6 @@
 package mySql;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 
 /*
@@ -14,10 +15,10 @@ public class Ride
 	private int id;
 	private Location origin;
 	private Location dest;
-	private Timestamp pickUpTime;
+	private Date pickUpTime;
 	
 	//Constructor
-	public Ride(int id, Location origin, Location dest, Timestamp pickUpTime)
+	public Ride(int id, Location origin, Location dest, Date pickUpTime)
 	{
 		this.id = id;
 		this.origin = origin;
@@ -37,7 +38,7 @@ public class Ride
 		return dest;
 	}
 	
-	public Timestamp getTime() {
+	public Date getTime() {
 		return pickUpTime;
 	}
 	
