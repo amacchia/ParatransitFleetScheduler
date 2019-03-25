@@ -77,12 +77,9 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-      ArrayList<ArrayList<Ride>> clusters1 = Cluster.randomCluster(rides);
-      System.out.println(rides.size());  //check size of rides array.
-      ArrayList<ArrayList<Ride>> clusters2 = Cluster.randomCluster(rides);
-      System.out.println(rides.size());
-      ArrayList<ArrayList<Ride>> clusters3 = Cluster.randomCluster(rides);
-      System.out.println(rides.size());
+      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(3, rides);
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -129,6 +126,44 @@ public class LocationTester
 					
 		}
 		return rideList;
+	}	
+   
+   public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
+      ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
+      System.out.println(rideClusters.size());
+      for(int i = 0; i < rideClusters.size(); i++){
+         locationClusters.add(new ArrayList<Location>());
+         for(int j = 0; j < rideClusters.get(i).size(); j++){
+            locationClusters.get(i).add(rideClusters.get(i).get(j).getOrig());
+            locationClusters.get(i).add(rideClusters.get(i).get(j).getDest());
+
+         }
+      }
+      return locationClusters;
+   }
+   
+	//using connectMerge()
+	private static double getOrigLat(int i)
+	{
+		return Double.parseDouble(mergeArray[i][2]);
+	}
+	
+	//using connectMerge()
+	private static double getOrigLong(int i)
+	{
+		return Double.parseDouble(mergeArray[i][3]);
+	}
+	
+	//using connectMerge().
+	private static double getDestLat(int i)
+	{
+		return Double.parseDouble(mergeArray[i][5]);
+	}
+	
+	//using connectMerge().
+	private static double getDestLong(int i)
+	{
+		return Double.parseDouble(mergeArray[i][6]);
 	}
 	
 //	//Makes an ArrayList of rides. Using connect()
@@ -145,36 +180,15 @@ public class LocationTester
 //		return rideList;
 //	}
 	
-   
-   public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
-      ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
-      System.out.println(rideClusters.size());
-      for(int i = 0; i < rideClusters.size(); i++){
-         locationClusters.add(new ArrayList<Location>());
-         for(int j = 0; j < rideClusters.get(i).size(); j++){
-            locationClusters.get(i).add(rideClusters.get(i).get(j).getOrig());
-            locationClusters.get(i).add(rideClusters.get(i).get(j).getDest());
-
-         }
-      }
-      return locationClusters;
-   }
-   
-   /*
-    * Uses indices from rideArray and locationArray to return
-    * the Latitude of the origin.
-    * 
-    */
-//	private static double getOrigLat(int i)
-//	{
-//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
-//	}
-   
-	//using connectMerge()
-	private static double getOrigLat(int i)
-	{
-		return Double.parseDouble(mergeArray[i][2]);
-	}
+	   /*
+	    * Uses indices from rideArray and locationArray to return
+	    * the Latitude of the origin.
+	    * 
+	    */
+//		private static double getOrigLat(int i)
+//		{
+//			return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
+//		}	
 	
 	/*
 	 * Uses indices from rideArray and locationArray to return
@@ -184,12 +198,6 @@ public class LocationTester
 //	{
 //		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
 //	}
-	
-	//using connectMerge()
-	private static double getOrigLong(int i)
-	{
-		return Double.parseDouble(mergeArray[i][3]);
-	}
 	
 	/*
 	 * Uses indices from rideArray and locationArray to return
@@ -208,16 +216,5 @@ public class LocationTester
 //	{
 //		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
 //	}
-	
-	//using connectMerge().
-	private static double getDestLat(int i)
-	{
-		return Double.parseDouble(mergeArray[i][5]);
-	}
-	//using connectMerge().
-	private static double getDestLong(int i)
-	{
-		return Double.parseDouble(mergeArray[i][6]);
-	}
 	
 }

@@ -27,7 +27,7 @@ public class Cluster{
          k = all_rides.size();
       }
       ArrayList<ArrayList<Ride>> clusters = new ArrayList<ArrayList<Ride>>();
-      ArrayList<Ride> temp_copy = all_rides.clone();//Create a shallow copy to randomly pick and remove from
+      ArrayList<Ride> temp_copy = (ArrayList<Ride>) all_rides.clone();//Create a shallow copy to randomly pick and remove from
       int randomInt;
       for(int i = 0; i < k; i++){
          randomInt = (int) (Math.random()*temp_copy.size());
@@ -91,8 +91,8 @@ public class Cluster{
          clusters = temp_cluster;
       }
       //remove centroids from final list of clusters
-      for(ArrayList<Ride> cluster: clusters){
-         cluster.remove(0);
+      for(ArrayList<Ride> clust: clusters){
+         clust.remove(0);
       }
       return clusters;
    }
@@ -101,8 +101,8 @@ public class Cluster{
       //Returns the cluster which a ride should be assigned- positive if already located there and negative otherwise
       //returns 1 higher to account for 0
       int minimumDistLocation = 0;
-      int minimumDist = r.compareTo(centroids.get(0).get(0));
-      int currentDist;
+      double minimumDist = r.compareTo(centroids.get(0).get(0));
+      double currentDist;
       for(int i = 1; i < centroids.size(); i++){
          currentDist = r.compareTo(centroids.get(i).get(0));
          if(currentDist < minimumDist){//Update closest centroid in this case

@@ -153,41 +153,44 @@ public class MysqlConnection
 			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
 			
 			//Find number of columns in the table.
+			rs.last();  		//When using time frame, we can delete
+			int rows = rs.getRow();	//These 3 Lines 
+			rs.beforeFirst();		//And uncomment the others.
 			ResultSetMetaData rsmd = rs.getMetaData();
 			int col = rsmd.getColumnCount();
 			
-			//Add dates to range in query
-		    Date now = new Date();
-		    Calendar cl = Calendar. getInstance();
-		    cl.add(Calendar.HOUR, 2);
-			Date limit = DateUtils.addHours(now, 2); //add two hours
+//			//Add dates to range in query
+//		    Date now = new Date();
+//		    Calendar cl = Calendar. getInstance();
+//		    cl.add(Calendar.HOUR, 2);
+//			Date limit = DateUtils.addHours(now, 2); //add two hours
 			
 			//Find the amount of rows that are within time range.
-			int rows = 0;
-			while(rs.next())
-			{
-				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
-				{
-					rows++;  //increment rows each time it finds time within range.
-				}
-			}
+//			int rows = 0;
+//			while(rs.next())
+//			{
+//				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
+//				{
+//					rows++;  //increment rows each time it finds time within range.
+//				}
+//			}
 			
 			//Give mergeArray the correct amount of rows/columns.
 			mergeArray = new String[rows][col];
-			rs.beforeFirst(); //Go to start of ResultSet.
+//			rs.beforeFirst(); //Go to start of ResultSet.
 			
 			//add data into mergeArray if meets conditions.
 			int i = 0;
 			while(rs.next())
 			{
-				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
-				{
+//				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
+//				{
 					for(int j = 0; j < col; j++)
 					{
 						mergeArray[i][j] = rs.getString(j+1);
 					}
 					i++;
-				}
+//				}
 			}
 		con.close();
 		}
