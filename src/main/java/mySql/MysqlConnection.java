@@ -1,7 +1,5 @@
 package mySql;
 import java.sql.*;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
 import org.apache.commons.lang3.time.DateUtils;

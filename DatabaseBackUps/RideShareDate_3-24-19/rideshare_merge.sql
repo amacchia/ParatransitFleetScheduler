@@ -29,5 +29,5 @@ VIEW `merge` AS
         JOIN `location` `l` ON ((`r`.`originID` = `l`.`locationID`)))
         JOIN `location` `l2` ON ((`r`.`destinationID` = `l2`.`locationID`)))
     WHERE
-        ((`r`.`rideDate` >= '2019-03-24 08:00:00')
-            AND (`r`.`rideDate` <= '2019-03-25 08:45:00'))
+        ((`r`.`rideDate` >= '2019-03-25 08:00:00')
+            AND (`r`.`rideDate` <= '2019-03-26 08:00:00'))
