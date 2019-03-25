@@ -48,4 +48,9 @@ public class Ride
 		result += "origin " + origin + " destination " + dest;
 		return result;
 	}
+   
+   public double compareTo(Ride other){//4-dimensional Euclidean distance
+      return Math.sqrt(Math.pow((this.origin.getLat() - other.origin.getLat()), 2)+ Math.pow((this.origin.getLong() - other.origin.getLong()), 2) 
+      + Math.pow((this.dest.getLat() - other.dest.getLat()), 2) + Math.pow((this.dest.getLong() - other.dest.getLong()), 2));
+   }
 }
