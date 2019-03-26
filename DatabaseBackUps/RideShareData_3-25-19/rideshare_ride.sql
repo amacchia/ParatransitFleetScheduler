@@ -37,7 +37,7 @@ CREATE TABLE `ride` (
   CONSTRAINT `destinationID` FOREIGN KEY (`destinationID`) REFERENCES `location` (`locationID`),
   CONSTRAINT `orginID` FOREIGN KEY (`originID`) REFERENCES `location` (`locationID`),
   CONSTRAINT `userID` FOREIGN KEY (`userID`) REFERENCES `user` (`userID`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --

@@ -44,7 +44,7 @@ SET character_set_client = @saved_cs_client;
 /*!50001 SET @saved_col_connection     = @@collation_connection */;
 /*!50001 SET character_set_client      = utf8mb4 */;
 /*!50001 SET character_set_results     = utf8mb4 */;
-/*!50001 SET collation_connection      = utf8mb4_0900_ai_ci */;
+/*!50001 SET collation_connection      = utf8mb4_unicode_ci */;
 /*!50001 CREATE ALGORITHM=UNDEFINED */
 /*!50013 DEFINER=`root`@`localhost` SQL SECURITY DEFINER */
 /*!50001 VIEW `ridedetails` AS select `r`.`rideID` AS `rideID`,`r`.`rideDate` AS `rideDate`,`l`.`longitude` AS `originLatitude`,`l`.`latitude` AS `originLongitude`,concat(`l`.`streetAddress`,', ',`l`.`city`,', ',`l`.`state`,' ',`l`.`zipcode`) AS `originAddress`,`l2`.`longitude` AS `destinationLatitude`,`l2`.`latitude` AS `destinationLongitude`,concat(`l2`.`streetAddress`,', ',`l2`.`city`,', ',`l2`.`state`,' ',`l2`.`zipcode`) AS `destinationAddress` from ((`ride` `r` join `location` `l` on((`r`.`originID` = `l`.`locationID`))) join `location` `l2` on((`r`.`destinationID` = `l2`.`locationID`))) */;
