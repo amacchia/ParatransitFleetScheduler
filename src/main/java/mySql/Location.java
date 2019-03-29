@@ -14,7 +14,7 @@ public class Location
 	private double latitude;
 	private double longitude;
 	private int id;
-	public final boolean isOrigin;
+	public boolean isOrigin;
 	
 	
 	//Constructor
@@ -24,6 +24,12 @@ public class Location
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.isOrigin = isOrigin;
+	}
+	
+	public Location(double latitude, double longitude)
+	{
+		this.latitude = latitude;
+		this.longitude = longitude;
 	}
 	
 	/* Helper method to comapreTo() method to 

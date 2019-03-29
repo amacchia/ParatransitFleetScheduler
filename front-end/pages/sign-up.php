@@ -61,7 +61,7 @@
             $hash = password_hash($pword, PASSWORD_DEFAULT);
     
             $sql = "INSERT INTO 
-                        Drivers (first_name, last_name, email, pword) 
+                        Drivers (firstName, lastName, email, password) 
                     VALUES
                         ('$first_name', '$last_name', '$email', '$hash')";
     
@@ -80,7 +80,7 @@
             $hash = password_hash($pword, PASSWORD_DEFAULT);
     
             $sql = "INSERT INTO 
-                        Passengers (first_name, last_name, email, pword) 
+                        Passengers (firstName, lastName, email, password) 
                     VALUES
                         ('$first_name', '$last_name', '$email', '$hash')";
     
@@ -95,9 +95,13 @@
     
         function create_connection()
         {
-            $servername = "localhost";
+            // $servername = "localhost";
+            // $username = "root";
+            // $password = "";
+            // $dbname = "rideshare";
+            $servername = "http://ec2-3-81-8-187.compute-1.amazonaws.com/";
             $username = "root";
-            $password = "";
+            $password = "senproj19";
             $dbname = "rideshare";
     
             // Create connection

@@ -1,19 +1,18 @@
 package metric;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import mySql.Location;
 
 public class MetricTester {
 
 	public static void main(String[] args) {
-		List<List<Location>> routes = new ArrayList<>();
-		List<List<Location>> routes2 = new ArrayList<>();
+		ArrayList<ArrayList<Location>> routes = new ArrayList<>();
+		ArrayList<ArrayList<Location>> routes2 = new ArrayList<>();
 		
-		List<Location> r1 = new ArrayList<>();
-		List<Location> r2 = new ArrayList<>();
-		List<Location> r3 = new ArrayList<>();
+		ArrayList<Location> r1 = new ArrayList<>();
+		ArrayList<Location> r2 = new ArrayList<>();
+		ArrayList<Location> r3 = new ArrayList<>();
 		
 		Location l1 = new Location(32.37744722, 86.30083333);
 		Location l2 = new Location(34.74675833, 92.28861111);
@@ -44,12 +43,12 @@ public class MetricTester {
 		routes.add(r3);
 		
 		
-		Location lT1 = new Location(5.0, 3.0);
+		Location lT1 = new Location(1, 5.0, 3.0, true);
 		Location lT2 = new Location(10.0, 15.0);
 		Location lT3 = new Location(2.0, 8.0);
 		Location lT4 = new Location(20.0, 70.0);
-		List<Location> r4 = new ArrayList<>();
-		List<Location> r5 = new ArrayList<>();
+		ArrayList<Location> r4 = new ArrayList<>();
+		ArrayList<Location> r5 = new ArrayList<>();
 		r4.add(lT1);
 		r4.add(lT2);
 		r5.add(lT3);
@@ -57,9 +56,8 @@ public class MetricTester {
 		routes2.add(r4);
 		routes2.add(r5);
 		
-		Metric m = new Metric();
-		double metricScore = m.computeScore(routes);
-		double metricScore2 = m.computeScore(routes2);
+		double metricScore = Metric.computeScore(routes);
+		double metricScore2 = Metric.computeScore(routes2);
 		System.out.println(metricScore);
 		System.out.println(metricScore2);
 	}
