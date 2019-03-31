@@ -19,3 +19,4 @@
 3/10/19: Created Metric class - Ant
 3/23/19: Created passenger webpage - Ant
 3/25/19: Wes- Created and implemented k-means clustering algorithm
+3/31/19: Added header and footer and further worked on sign-up and login process - Ant
