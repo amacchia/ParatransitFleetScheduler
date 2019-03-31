@@ -3,7 +3,6 @@
         $originAddr = $originCity = $originZip = $originState =
         $destAddr = $destCity = $destZip = $destState =
         $date = $time = $errMsg = "";
-        $conn = null;
     
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (empty($_POST["origin-addr"])) {
@@ -92,25 +91,7 @@
                 echo $errMsg;
             }
         }
-            
-        function create_connection()
-        {
-            // $servername = "localhost";
-            // $password = "root";
-            $servername = "http://ec2-3-81-8-187.compute-1.amazonaws.com/";
-            $username = "root";
-            $password = "senproj19";
-            $dbname = "rideshare";
-    
-            // Create connection
-            $GLOBALS['conn'] = new mysqli($servername, $username, $password, $dbname);
-    
-            // Check connection
-            if ($GLOBALS['conn']->connect_error) {
-                die("Connection failed: " . $GLOBALS['conn']->connect_error);
-            }  
-        }
-    
+                
         function clean_input($data) {
             $data = trim($data);
             $data = stripslashes($data);
