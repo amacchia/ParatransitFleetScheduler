@@ -51,95 +51,7 @@ public class MysqlConnection
 		connectMerge(); //test connection to merged table.
 	}
 	
-	//Connect to database and get information
-//	private void connect()
-//	{
-//		System.out.println("Establishing Connection with " + input + " in " + db
-//							+ "\n--------------------------------\n");
-//		try
-//		{	//Establish Connection
-//			Class.forName(driver);
-//			con = DriverManager.getConnection(url+db, userName, password);
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
-//			rs.last();				//sets rs to last row.
-//			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
-//			rs.beforeFirst();
-//			ResultSetMetaData rsmd = rs.getMetaData();
-//			int col = rsmd.getColumnCount();
-//			
-//			if(input.equals("location"))
-//			{
-//				locationArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						locationArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("driver"))
-//			{
-//				driverArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						driverArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("passenger"))
-//			{
-//				passengerArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						passengerArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("ride"))
-//			{
-//				rideArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						rideArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("route"))
-//			{
-//				routeArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						routeArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			con.close();
-//		}
-//		catch(Exception e)
-//		{
-//			System.out.println(e);  
-//		}
-//	}
+
 	
 	private void connectMerge()
 	{
@@ -236,5 +148,95 @@ public class MysqlConnection
 	{
 		return routeArray;
 	}
+	
+	//Connect to database and get information
+//	private void connect()
+//	{
+//		System.out.println("Establishing Connection with " + input + " in " + db
+//							+ "\n--------------------------------\n");
+//		try
+//		{	//Establish Connection
+//			Class.forName(driver);
+//			con = DriverManager.getConnection(url+db, userName, password);
+//			stmt = con.createStatement();
+//			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
+//			rs.last();				//sets rs to last row.
+//			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
+//			rs.beforeFirst();
+//			ResultSetMetaData rsmd = rs.getMetaData();
+//			int col = rsmd.getColumnCount();
+//			
+//			if(input.equals("location"))
+//			{
+//				locationArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						locationArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("driver"))
+//			{
+//				driverArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						driverArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("passenger"))
+//			{
+//				passengerArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						passengerArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("ride"))
+//			{
+//				rideArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						rideArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			else if(input.equals("route"))
+//			{
+//				routeArray = new String[rows][col];
+//				int i = 0;
+//				while(rs.next())
+//				{
+//					for(int j = 0; j < col; j++)
+//					{
+//						routeArray[i][j] = rs.getString(j+1);
+//					}
+//					i++;
+//				}
+//			}
+//			con.close();
+//		}
+//		catch(Exception e)
+//		{
+//			System.out.println(e);  
+//		}
+//	}
 	
 }

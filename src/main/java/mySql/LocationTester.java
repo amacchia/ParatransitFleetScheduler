@@ -45,8 +45,8 @@ public class LocationTester
 	 * routeArray[x][1] --> driver_email
 	 * routeArray[x][2] --> location_id
 	 */
-	static String[][] locationArray;
-	static String[][] rideArray;
+	//static String[][] locationArray;
+	//static String[][] rideArray;
 	static String[][] mergeArray;
 	
 
@@ -77,9 +77,9 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(3, rides);
-      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(3, rides);
-      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(6, rides);
+      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(6, rides);
+      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(6, rides);
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -100,7 +100,7 @@ public class LocationTester
       }
 		for(int i = 0; i < bestclusters.size(); i++)
 		{
-			System.out.println("Cluster Number: " + i);
+			System.out.println("Cluster Number: " + i+1);
 			for(int j = 0; j < bestclusters.get(i).size(); j++)
 			{
 				System.out.println(bestclusters.get(i).get(j) +"\n");

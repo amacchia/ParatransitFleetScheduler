@@ -1,18 +1,19 @@
 package pathfinder;
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.ArrayList;
 import mySql.Location;
-
+import java.io.*;
 import java.lang.Math;
 
 public class Methods {
 	
-	
+
+
 	public static void pathfind(Location starter, ArrayList<Location> points, ArrayList<Location> route, 
 			 ArrayList<Location> reserves, int cap, int pass)
 	{
-			if(points.isEmpty())										//Putting this first, as it's the exit of the recusion. If the points list
+			
+			if(points.isEmpty())										//Putting this first, as it's the exit of the recursion. If the points list
 				{
 					String result = printroute(route);										//has no new points to go to, time to print the route.
 					System.out.println(result);

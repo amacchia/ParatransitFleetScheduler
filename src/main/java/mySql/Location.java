@@ -1,5 +1,6 @@
 package mySql;
 import static java.lang.Math.sqrt;
+import java.io.*;
 /*
  * Location Class
  * This class holds the Longitude and Latitude coordinates
@@ -8,8 +9,12 @@ import static java.lang.Math.sqrt;
  * @Kieran Walsh
  * 
  */
-public class Location 
+public class Location
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	//doubles to hold the coordinates and keep precision.
 	private double latitude;
 	private double longitude;
