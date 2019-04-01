@@ -1,14 +1,12 @@
 <?php
     // define variables and set to empty values
-    $email = $pword = $service = "";
-    $conn = null;
+    $email = $pword = $service = $errMsg = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $email = test_input($_POST["email"]);
-        $pword = test_input($_POST["pword"]);
-        $service = test_input($_POST["service"]);
 
-        create_connection();
+        $email = clean_input($_POST["email"]);
+        $pword = clean_input($_POST["pword"]);
+        $service = clean_input($_POST["service"]);
 
         $userExists;
         if ($service === "driver") {
@@ -16,55 +14,77 @@
         } else {
             $userExists = loginPassenger($email, $pword);
         }
-
+        echo $userExists;
         echo '<br>';
         if ($userExists) {
             echo 'User exists';
+            $_SESSION['userEmail'] = $email;
+            if ($service === "driver") {
+                header("Location: ./index1.php?page=driver");
+            } else {
+                header("Location: ./index1.php?page=passenger");
+            }
         } else {
-            echo 'User Not Found';
+            $errMsg = 'User Not Found';
         }
         $GLOBALS['conn']->close(); 
     }
 
     function loginDriver($email, $pword)
     {
-        $sql = "SELECT pword FROM Drivers WHERE email = '$email'";
-        $result = $GLOBALS['conn']->query($sql);
+        $sql = "SELECT password FROM driver WHERE email = '$email'";
         
-        $hash = mysqli_fetch_row($result)[0];
-        return password_verify($pword, $hash);
+        $result = $GLOBALS['conn']->query($sql);
+        if($result) {
+            $hash = mysqli_fetch_row($result)[0];
+            return password_verify($pword, $hash);
+        }
+        return false;
     }
 
     function loginPassenger($email, $pword)
     {
-        sql = "SELECT pword FROM Passengers WHERE email = '$email'";
+        $sql = "SELECT password FROM user WHERE email = '$email'";
         $result = $GLOBALS['conn']->query($sql);
-        
-        $hash = mysqli_fetch_row($result)[0];
-        return password_verify($pword, $hash);
+        if ($result) {
+            $hash = mysqli_fetch_row($result)[0];
+            return password_verify($pword, $hash);
+        }
+        return false;
     }
 
-    function create_connection()
-    {
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "rideshare";
-
-        // Create connection
-        $GLOBALS['conn'] = new mysqli($servername, $username, $password, $dbname);
-
-        // Check connection
-        if ($GLOBALS['conn']->connect_error) {
-            die("Connection failed: " . $GLOBALS['conn']->connect_error);
-        } 
-        echo "Connected successfully";    
-    }
-
-    function test_input($data) {
+    function clean_input($data) {
         $data = trim($data);
         $data = stripslashes($data);
         $data = htmlspecialchars($data);
         return $data;
     }
 ?>
+
+<h1 id="sign-up-form-title">Login</h1>
+<div id="sign-up-form">
+    <form method="POST" action="./index1.php?page=login">
+        <label for="email" class="input-label">Email</label>
+        <input type="email" name="email" class="form-input"><br>
+
+        <label for="pword" class="input-label">Password</label>
+        <input type="password" name="pword" class="form-input"><br>
+
+        <label for="service" class="input-label">Service</label>
+        <div class="rd-input">
+            <input type="radio" name="service" value="driver">Driver
+            <input type="radio" name="service" value="passenger">Passenger <br>
+        </div>
+
+        <input type="submit" value="Login" id="sub-btn">
+        <p>Not a user? <a href="./index1.php?page=sign-up">Sign Up</a></p>
+    </form>
+</div>
+
+<div class="errorMsg">
+<?php
+    if ($errMsg != "") {
+	    echo 'Error: ' . $errMsg;
+    }
+?>
+</div>

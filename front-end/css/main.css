@@ -3,7 +3,7 @@ body {
     height:100%;	
     margin:0;
     padding:0;
-    background-color: slategray;
+    background-color: #F5F5F5;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -13,8 +13,8 @@ body {
     text-align: center;
     padding-top: 3%;
     padding-bottom: 1%;
-    border: 3px goldenrod solid;
-    background-color: saddlebrown;
+    border: 3px #FFCC00 solid;
+    background-color: #57150B;
 }
 
 #sign-up-form-title{
@@ -46,6 +46,7 @@ body {
     font-size: larger;
     font-weight: bold;
     display: block;
+    color: #E0E0E0;
 }
 
 .rd-input {
@@ -56,4 +57,49 @@ body {
 .errorMsg {
     text-align: center;
     color: red;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 8%;
+    background: #424242;
+    color: #f1f1f1;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    vertical-align: center;
+    border-top: 3px #E0E0E0 solid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+header {
+    text-align: left;
+    border-bottom: 3px #E0E0E0 solid;
+}
+
+.header-container{
+    margin-left: 5%;
+}
+
+a:link {
+    color:#FFCC00;
+}
+
+a:visited {
+    color: #FFCC00;
 }
