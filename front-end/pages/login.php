@@ -20,6 +20,7 @@
             echo 'User exists';
             $_SESSION['userEmail'] = $email;
             if ($service === "driver") {
+                $_SESSION['currUserEmail'] = $email; 
                 header("Location: ./index1.php?page=driver");
             } else {
                 header("Location: ./index1.php?page=passenger");
@@ -32,11 +33,13 @@
 
     function loginDriver($email, $pword)
     {
-        $sql = "SELECT password FROM driver WHERE email = '$email'";
+        $sql = "SELECT password, driverID FROM driver WHERE email = '$email'";
         
         $result = $GLOBALS['conn']->query($sql);
         if($result) {
-            $hash = mysqli_fetch_row($result)[0];
+            $row = mysqli_fetch_row($result);
+            $hash = $row[0];
+            $_SESSION['currUserID'] = $row[1];
             return password_verify($pword, $hash);
         }
         return false;
