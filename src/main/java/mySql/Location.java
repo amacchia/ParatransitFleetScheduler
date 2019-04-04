@@ -11,18 +11,29 @@ import java.io.*;
  */
 public class Location
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
 	//doubles to hold the coordinates and keep precision.
 	private double latitude;
 	private double longitude;
 	private int id;
+	private int dbID;
 	public boolean isOrigin;
+	private String address;
 	
 	
-	//Constructor
+	//Constructor with address
+	public Location(int id, int dbID, double latitude, double longitude,
+					String address, boolean isOrigin)
+	{
+		this.id = id;
+		this.dbID = dbID;
+		this.latitude = latitude;
+		this.longitude = longitude;
+		this.isOrigin = isOrigin;
+		this.address = address;
+	}
+	
+	//Constructor no address
 	public Location(int id, double latitude, double longitude, boolean isOrigin)
 	{
 		this.id = id;
@@ -31,6 +42,7 @@ public class Location
 		this.isOrigin = isOrigin;
 	}
 	
+	//Constructor only lat/long
 	public Location(double latitude, double longitude)
 	{
 		this.latitude = latitude;
@@ -73,8 +85,13 @@ public class Location
 		return longitude;
 	}
 	
+	public String getAddress()
+	{
+		return address;
+	}
+	
 	public String toString()
 	{
-		return "id: " + id + " lat: " + latitude + " long: " + longitude;
+		return "id: " + dbID + " Address: " + address;
 	}
 }

@@ -1,4 +1,5 @@
 package mySql;
+import java.sql.Timestamp;
 import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
@@ -44,6 +45,18 @@ public class LocationTester
 	 * routeArray[x][0] --> route_id
 	 * routeArray[x][1] --> driver_email
 	 * routeArray[x][2] --> location_id
+	 * 
+	 * mergeArray[x][0] --> rideID
+	 * mergeArray[x][1] --> rideDate
+	 * mergeArray[x][2] --> Location origin ID
+	 * mergeArray[x][3] --> ride origin Lat
+	 * mergeArray[x][4] --> ride origin Long
+	 * mergeArray[x][5] --> ride origin Address
+	 * mergeArray[x][6] --> Location destination ID
+	 * mergeArray[x][7] --> ride destination Lat
+	 * mergeArray[x][8] --> ride destination Long
+	 * mergeArray[x][9] --> ride destination Address
+	 * 
 	 */
 	//static String[][] locationArray;
 	//static String[][] rideArray;
@@ -77,9 +90,9 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(6, rides);
-      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(6, rides);
-      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(6, rides);
+      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(3, rides);
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -100,7 +113,7 @@ public class LocationTester
       }
 		for(int i = 0; i < bestclusters.size(); i++)
 		{
-			System.out.println("Cluster Number: " + i+1);
+			System.out.println("Cluster Number: " + i);
 			for(int j = 0; j < bestclusters.get(i).size(); j++)
 			{
 				System.out.println(bestclusters.get(i).get(j) +"\n");
@@ -109,7 +122,7 @@ public class LocationTester
 		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(bestclusters);
 		for(int i = 0; i < bestLocations.size(); i++)
 		{
-			Methods.pathfind(new Location(-1, 0, 0, true), bestLocations.get(i), new ArrayList<Location>(),
+			Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
 					new ArrayList<Location>(), 2, 0);
 		}
 	}
@@ -119,14 +132,15 @@ public class LocationTester
 		ArrayList<Ride> rideList = new ArrayList<Ride>();
 		for(int i = 0; i < mergeArray.length; i++)
 		{
-			rideList.add(new Ride(Integer.parseInt(mergeArray[i][0]),
-					new Location(i+1, getOrigLat(i), getOrigLong(i), true),
-					new Location(i+1, getDestLat(i), getDestLong(i), false),
-					null));
+			rideList.add(new Ride(getRideID(i),
+					new Location(i+1, getOrigID(i), getOrigLat(i), getOrigLong(i), getOrigAddress(i), true),
+					new Location(i+1, getDestID(i), getDestLat(i), getDestLong(i), getDestAddress(i), false),
+					getRideTime(i)));
 					
 		}
 		return rideList;
 	}	
+	
    
    public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<Ride>> rideClusters){
       ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
@@ -142,29 +156,68 @@ public class LocationTester
       return locationClusters;
    }
    
+   //Get the ID of the Ride
+   private static int getRideID(int i)
+   {
+	   return Integer.parseInt(mergeArray[i][0]);
+   }
+   
+   private static Timestamp getRideTime(int i)
+   {
+	   return Timestamp.valueOf(mergeArray[i][1]);
+   }
+   
+    //get the Location ID of the Origin.  (Not the ride ID)
+	//Using connectMerge()
+	private static int getOrigID(int i)
+	{
+		return Integer.parseInt(mergeArray[i][2]);
+	}
 	//using connectMerge()
 	private static double getOrigLat(int i)
 	{
-		return Double.parseDouble(mergeArray[i][2]);
+		return Double.parseDouble(mergeArray[i][3]);
 	}
 	
 	//using connectMerge()
 	private static double getOrigLong(int i)
 	{
-		return Double.parseDouble(mergeArray[i][3]);
+		return Double.parseDouble(mergeArray[i][4]);
+	}
+	
+	//Get String address of the origin.
+	//using connectMerge()
+	private static String getOrigAddress(int i)
+	{
+		return mergeArray[i][5];
+	}
+	
+	//get the Location ID of the Origin.  (Not the ride ID)
+	//Using connectMerge()
+	public static int getDestID(int i)
+	{
+		return Integer.parseInt(mergeArray[i][6]);
 	}
 	
 	//using connectMerge().
 	private static double getDestLat(int i)
 	{
-		return Double.parseDouble(mergeArray[i][5]);
+		return Double.parseDouble(mergeArray[i][7]);
 	}
 	
 	//using connectMerge().
 	private static double getDestLong(int i)
 	{
-		return Double.parseDouble(mergeArray[i][6]);
+		return Double.parseDouble(mergeArray[i][8]);
 	}
+	
+	//Get String address of the destination.
+	//Using connectMerge()
+	private static String getDestAddress(int i)
+	{
+		return mergeArray[i][9];
+	}
+	
 	
 //	//Makes an ArrayList of rides. Using connect()
 //	public static ArrayList<Ride> populateRides() 
