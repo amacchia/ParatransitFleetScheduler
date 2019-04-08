@@ -1,5 +1,6 @@
 package mySql;
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 //import org.apache.commons.lang3.time.DateUtils;
@@ -32,9 +33,10 @@ public class MysqlConnection
 	String[][] rideArray;
 	String[][] routeArray;
 	String[][] mergeArray;
+	String[][] array;
 	
 	//Constructor
-	public MysqlConnection(String url, String db, String driver,
+	public MysqlConnection(String input, String url, String db, String driver,
 							String userName, String password)
 	{
 		this.url = url;
@@ -42,18 +44,66 @@ public class MysqlConnection
 		this.driver = driver;
 		this.userName = userName;
 		this.password = password;
+		this.input = input;
+	}	
+
+	
+	public int routeID()
+	{
+		System.out.println("Establishing Connection with " + input + " in " + db
+				+ "\n--------------------------------\n");
+		int max = 0;
+		try
+		{	//Establish Connection
+			Class.forName(driver);
+			con = DriverManager.getConnection(url+db, userName, password);
+			stmt = con.createStatement();
+			rs = stmt.executeQuery("SELECT MAX(routeID) from " + input);
+			while(rs.next())
+			{
+				max = rs.getInt("MAX(routeID)");
+			}
+			rs.close();
+			con.close();
+			return max;
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return max;
+	}
+	
+	public void writeRouteToDB(int routeID, int requestID, int driverID,
+								int locationID, int orderInRoute)
+	{
 		
-		System.out.println("Which dataset would you like to connect to? (case sensitive)");
-		Scanner sc = new Scanner(System.in);  // Reading from System.in
-		input = sc.next();
-		
-		//connect(); //on instantiation automatically connect to database.
-		connectMerge(); //test connection to merged table.
+		try
+		{	//Establish Connection
+			Class.forName(driver);
+			con = DriverManager.getConnection(url+db, userName, password);
+			String query = "INSERT INTO route (routeID, requestID, driverID, locationID, orderInRoute)" +
+					" VALUES (?, ?, ?, ?, ?)";
+			PreparedStatement preparedStmt = con.prepareStatement(query);
+			preparedStmt.setInt(1, routeID);
+			preparedStmt.setInt(2, requestID);
+			preparedStmt.setInt(3, driverID);
+			preparedStmt.setInt(4, locationID);
+			preparedStmt.setInt(5, orderInRoute);
+			
+			preparedStmt.execute();
+			con.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+			
 	}
 	
 
 	
-	private void connectMerge()
+	public void connect()
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
 				+ "\n--------------------------------\n");
@@ -88,7 +138,7 @@ public class MysqlConnection
 //			}
 			
 			//Give mergeArray the correct amount of rows/columns.
-			mergeArray = new String[rows][col];
+			array = new String[rows][col];
 //			rs.beforeFirst(); //Go to start of ResultSet.
 			
 			//add data into mergeArray if meets conditions.
@@ -99,7 +149,7 @@ public class MysqlConnection
 //				{
 					for(int j = 0; j < col; j++)
 					{
-						mergeArray[i][j] = rs.getString(j+1);
+						array[i][j] = rs.getString(j+1);
 					}
 					i++;
 //				}
@@ -111,6 +161,29 @@ public class MysqlConnection
 			System.out.println(e);  
 		}
 			
+	}
+	
+//	public void writeRouteTable(ArrayList<Location> loc, ArrayList<Integer> driverID)
+//	{
+//		String query = " INSERT INTO Route (RouteID, locationID, requestID, orderInRoute, driverID)"
+//		        + " values (?, ?, ?, ?, ?)";
+//		try 
+//		{
+//			
+//			PreparedStatement prepStmt = con.prepareStatement(query);
+//			prepStmt.setInt(1, x);
+//			prepStmt.setInt(2, x);
+//			prepStmt.setInt(3, x);
+//			prepStmt.setInt(4, x);
+//			prepStmt.setInt(5, x);
+//		}
+//		
+//	}
+	
+	
+	public String[][] getArray()
+	{
+		return array;
 	}
 	
 	//access information in locationArrayy[][]
