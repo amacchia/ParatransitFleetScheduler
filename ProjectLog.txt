@@ -18,4 +18,5 @@
 3/8/19: Weekly Team Meeting
 3/10/19: Created Metric class - Ant
 3/25/19: Wes- Created and implemented k-means clustering algorithm
+4/6/19: Ant- Give driver's a link to directions for their route after logging in
 4/7/19: Wes- Implemented exhaustive BFS algorithm
