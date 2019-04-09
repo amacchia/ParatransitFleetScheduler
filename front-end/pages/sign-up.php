@@ -49,7 +49,7 @@ function insert_driver($first_name, $last_name, $email, $pword, $service)
     
     $result = $GLOBALS['conn']->query($sql);
 	if ($result) {
-		echo "New record created successfully";
+		header('Location: index1.php?page=login');
 	} else {
 		echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
 	}
@@ -68,7 +68,7 @@ function insert_passenger($first_name, $last_name, $email, $pword, $service)
 
     $result = $GLOBALS['conn']->query($sql);
 	if ($result) {
-		echo "New record created successfully";
+		header('Location: index1.php?page=login');
 	} else {
 		echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
 	}

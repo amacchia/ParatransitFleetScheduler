@@ -47,10 +47,12 @@
 
     function loginPassenger($email, $pword)
     {
-        $sql = "SELECT password FROM user WHERE email = '$email'";
+        $sql = "SELECT password, userID FROM user WHERE email = '$email'";
         $result = $GLOBALS['conn']->query($sql);
         if ($result) {
-            $hash = mysqli_fetch_row($result)[0];
+            $row = mysqli_fetch_row($result);
+            $hash = $row[0];
+            $_SESSION['currUserID'] = $row[1];
             return password_verify($pword, $hash);
         }
         return false;

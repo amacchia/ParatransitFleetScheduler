@@ -85,8 +85,15 @@
                 $destLocationId = 
                     insert_location($destLat, $destLong, $destAddr, $destCity, $destState, $destZip);
 
-                $rideInserted = insert_ride(6, $originLocationId, $destLocationId);
-                var_dump($rideInserted);
+                $passengerId = $_SESSION['currUserID'];
+                if ($originLocationId != -1 && $destLocationId != -1) {
+                    $rideInserted = insert_ride($passengerId, $originLocationId, $destLocationId);
+                    if ($rideInserted){
+                        echo 'Your ride has been scheduled!';
+                    }
+                } else {
+                    echo 'Error inserting request';
+                }
             } else {
                 echo $errMsg;
             }
@@ -132,11 +139,12 @@
             $sql = "SELECT * FROM location WHERE latitude = '$lat' AND longitude = '$long' LIMIT 1";
             $result = $GLOBALS['conn']->query($sql);
             $locationId = -1;
+         
             if ($result->num_rows > 0) {
                 $locationId = (int) $result->fetch_row()[0];
             } else {
                 $insertLoc = "INSERT INTO 
-                                location (latitude, longitude, street_address, city, state, zipcode) 
+                                location (latitude, longitude, streetAddress, city, state, zipcode) 
                             VALUES
                                 ('$lat', '$long', '$addr', '$city', '$state', '$zip')";
                 $insertResult = $GLOBALS['conn']->query($insertLoc);
@@ -145,7 +153,6 @@
                     $locationId = (int) $insertedRow->fetch_row()[0];
                 }
             }
-
             return $locationId;            
         }
 
@@ -164,7 +171,7 @@
 
 
 <!-- Ride Request Form -->
-<form action="passenger.php" method="post" id="passenger-request-form">
+<form action="./index1.php?page=passenger" method="post" id="passenger-request-form">
     Pick-up Address: <input type="text" name="origin-addr"> 
     Pick-up: City: <input type="text" name="origin-city">
     Pick-up: Zip: <input type="text" name="origin-zip">
