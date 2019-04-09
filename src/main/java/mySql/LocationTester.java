@@ -57,19 +57,28 @@ public class LocationTester
 	 */
 	static String[][] routeArray;
 	static String[][] reqDetArray;
-	static String[][] mergeArray;	
+	static String[][] mergeArray;
+	static int[] driversToday;
 	static int routeID = -1; 		//start at -1 so if there is an error, it can be easily spotted in the database.
 	public static void main(String[] args)
 	{
 		MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
-		routeID = con.routeID() + 1;
-		System.out.println(routeID +"\n");
+		routeID = con.routeID() + 1;		//This connection is to find the max value routeID currently
+											//in the database, so when we write to the database later,
+											//we do not have two routes with the same ID.
 		
 		con = new MysqlConnection("morris_requestdetails", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
 		con.connect();
-		reqDetArray = con.getArray();
+		reqDetArray = con.getArray();		//This connection is to get the information for all the requests
+											//and their information that have been put into the database.
+		
+		con = new MysqlConnection("driverschedule", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
+				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
+		driversToday = con.getDrivers();	//This connection is to see which drivers are available 
+													//today so they can be assigned routes after they've 
+													//been generated.
 		
 		
 		//populate an ArrayList of rides.
@@ -78,9 +87,9 @@ public class LocationTester
 			System.out.println(rides.get(i));
 		}
 		
-      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(3, rides);
-      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(3, rides);
-      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(3, rides);
+      ArrayList<ArrayList<Ride>> clusters1 = Cluster.kmeans(driversToday.length, rides);
+      ArrayList<ArrayList<Ride>> clusters2 = Cluster.kmeans(driversToday.length, rides);
+      ArrayList<ArrayList<Ride>> clusters3 = Cluster.kmeans(driversToday.length, rides);
       double score1 = Metric.computeScore(toLocationArray(clusters1));
       double score2 =  Metric.computeScore(toLocationArray(clusters2));
       double score3 =  Metric.computeScore(toLocationArray(clusters3));
@@ -112,7 +121,7 @@ public class LocationTester
 		{
 			ArrayList<Location> route = Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
 					new ArrayList<Location>(), 2, 0);
-			iterRoutes(route);
+			iterRoutes(route, driversToday[i]);
 		}
 		System.out.println("Write to Route table completed.");
 	}
@@ -151,7 +160,7 @@ public class LocationTester
     * While iterating through, write to the route table 
     * in the database.
     */
-   private static void iterRoutes(ArrayList<Location> routes)
+   private static void iterRoutes(ArrayList<Location> routes, int driverID)
    {
 	   MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
@@ -160,7 +169,7 @@ public class LocationTester
 	   while (iterate.hasNext())
 		{
 		   Location temp = iterate.next();
-		   con.writeRouteToDB(routeID, temp.getReqID(), 1, temp.getDbID(), index);
+		   con.writeRouteToDB(routeID, temp.getReqID(), driverID, temp.getDbID(), index);
 		   index++;
 		}
 	   routeID++;
