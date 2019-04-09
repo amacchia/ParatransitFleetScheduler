@@ -30,7 +30,17 @@ public class Metric {
 			Location secondLocation = route.get(i + 1);
 			distanceSum += firstLocation.compareTo(secondLocation);
 		}
-		System.out.println("Dist Sum: " + distanceSum);
+		//System.out.println("Dist Sum: " + distanceSum);
 		return distanceSum / (route.size() - 1); // Minus 1 becasue there are N Locations and N-1 Distances
 	}
+   
+   public static double pathDistance(ArrayList<Location> route){
+      double distanceSum = 0;
+		for (int i = 0; i < route.size() - 1; i++) {
+			Location firstLocation = route.get(i);
+			Location secondLocation = route.get(i + 1);
+			distanceSum += firstLocation.compareTo(secondLocation);
+		}
+      return distanceSum;
+   }
 }

@@ -15,73 +15,61 @@ public class LocationTester
 	/*
 	 * Layout for the arrays are as follow:
 	 * 
-	 * locationArray[x][0] --> location_id
-	 * locationArray[x][1] --> address
-	 * locationArray[x][2] --> latitude
-	 * locationArray[x][3] --> longitude
-	 * locationArray[x][4] --> street_address
-	 * locationArray[x][5] --> city
-	 * locationArray[x][6] --> state
-	 * locationArray[x][7] --> zipcode
+	 * locationArray[x][0] --> locationID
+	 * locationArray[x][1] --> latitude
+	 * locationArray[x][2] --> longitude
+	 * locationArray[x][3] --> streetAddress
+	 * locationArray[x][4] --> city
+	 * locationArray[x][5] --> state
+	 * locationArray[x][6] --> zipcode
 	 * 
-	 * passengerArray[x][0] --> email
-	 * passengerArray[x][1] --> first_name
-	 * passengerArray[x][2] --> last_name
-	 * passengerArray[x][3] --> password
-	 * passengerArray[x][4] --> isDriver
-	 * passengerArray[x][5] --> passenger_id
+	 * driverArray[x][0] --> driveID
+	 * driverArray[x][1] --> email
+	 * driverArray[x][2] --> firstName
+	 * driverArray[x][3] --> lastName
+	 * driverArray[x][4] --> password
 	 * 
-	 * driverArray[x][0] --> email
-	 * driverArray[x][1] --> first_name
-	 * driverArray[x][2] --> last_name
-	 * driverArray[x][3] --> password
+	 * requestArray[x][0] --> requestID 
+	 * requestArray[x][1] --> userID
+	 * requestArray[x][2] --> originID
+	 * requestArray[x][3] --> destinationID
+	 * requestArray[x][4] --> requestDate
+	 * requestArray[x][5] --> requestTimestamp
 	 * 
-	 * rideArray[x][0] --> ride_id  
-	 * rideArray[x][1] --> passenger_id
-	 * rideArray[x][2] --> pickup_id
-	 * rideArray[x][3] --> dropoff_id
-	 * rideArray[x][4] --> pick_up_time
+	 * routeArray[x][0] --> routeID
+	 * routeArray[x][1] --> requestID
+	 * routeArray[x][2] --> driverID
+	 * routeArray[x][3] --> locationID
+	 * routeArray[x][4] --> orderInRoute
 	 * 
-	 * routeArray[x][0] --> route_id
-	 * routeArray[x][1] --> driver_email
-	 * routeArray[x][2] --> location_id
-	 * 
-	 * mergeArray[x][0] --> rideID
-	 * mergeArray[x][1] --> rideDate
-	 * mergeArray[x][2] --> Location origin ID
-	 * mergeArray[x][3] --> ride origin Lat
-	 * mergeArray[x][4] --> ride origin Long
-	 * mergeArray[x][5] --> ride origin Address
-	 * mergeArray[x][6] --> Location destination ID
-	 * mergeArray[x][7] --> ride destination Lat
-	 * mergeArray[x][8] --> ride destination Long
-	 * mergeArray[x][9] --> ride destination Address
+	 * reqDetArray[x][0] --> requestID
+	 * reqDetArray[x][1] --> userID
+	 * reqDetArray[x][2] --> originID
+	 * reqDetArray[x][3] --> destinationID
+	 * reqDetArray[x][4] --> requestID
+	 * reqDetArray[x][5] --> originLatitude
+	 * reqDetArray[x][6] --> originLongitude
+	 * reqDetArray[x][7] --> originAddress
+	 * reqDetArray[x][8] --> destinationLatitude
+	 * reqDetArray[x][9] --> destinationLongitude
+	 * reqDetArray[x][0] --> destinationAddress
 	 * 
 	 */
-	//static String[][] locationArray;
-	//static String[][] rideArray;
-	static String[][] mergeArray;
-	
-
+	static String[][] routeArray;
+	static String[][] reqDetArray;
+	static String[][] mergeArray;	
+	static int routeID = -1; 		//start at -1 so if there is an error, it can be easily spotted in the database.
 	public static void main(String[] args)
 	{
-		//Make connection to database and the location dataset.
-//		MysqlConnection locationCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
-//				"com.mysql.cj.jdbc.Driver", "root", "root");
+		MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
+				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
+		routeID = con.routeID() + 1;
+		System.out.println(routeID +"\n");
 		
-		//create locationArray from information gathered from connection.
-//		locationArray = locationCon.getLocationArray();
-		
-		// Connect to database again, but go to ride dataset
-//		MysqlConnection rideCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
-//				"com.mysql.cj.jdbc.Driver", "root", "root");
-		//create rideArray from information gathered from connection.
-//		rideArray = rideCon.getRideArray();
-		
-				
-		MysqlConnection mergeCon = new MysqlConnection("jdbc:mysql://localhost:3306/", "rideshare",
-				"com.mysql.cj.jdbc.Driver", "root", "root");
-		mergeArray = mergeCon.getMergeArray();
+		con = new MysqlConnection("morris_requestdetails", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
+				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
+		con.connect();
+		reqDetArray = con.getArray();
 		
 		
 		//populate an ArrayList of rides.
@@ -122,20 +110,22 @@ public class LocationTester
 		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(bestclusters);
 		for(int i = 0; i < bestLocations.size(); i++)
 		{
-			Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
+			ArrayList<Location> route = Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
 					new ArrayList<Location>(), 2, 0);
+			iterRoutes(route);
 		}
+		System.out.println("Write to Route table completed.");
 	}
 	
 	public static ArrayList <Ride> populateRides()
 	{
 		ArrayList<Ride> rideList = new ArrayList<Ride>();
-		for(int i = 0; i < mergeArray.length; i++)
+		for(int i = 0; i < reqDetArray.length; i++)
 		{
-			rideList.add(new Ride(getRideID(i),
-					new Location(i+1, getOrigID(i), getOrigLat(i), getOrigLong(i), getOrigAddress(i), true),
-					new Location(i+1, getDestID(i), getDestLat(i), getDestLong(i), getDestAddress(i), false),
-					getRideTime(i)));
+			rideList.add(new Ride(getReqID(i),
+					new Location(getReqID(i), getOrigID(i), getOrigLat(i), getOrigLong(i), getOrigAddress(i), true),
+					new Location(getReqID(i), getDestID(i), getDestLat(i), getDestLong(i), getDestAddress(i), false),
+					getReqDate(i)));
 					
 		}
 		return rideList;
@@ -156,118 +146,92 @@ public class LocationTester
       return locationClusters;
    }
    
-   //Get the ID of the Ride
-   private static int getRideID(int i)
+   /*
+    * Iterate through the routes from pathfind.
+    * While iterating through, write to the route table 
+    * in the database.
+    */
+   private static void iterRoutes(ArrayList<Location> routes)
    {
-	   return Integer.parseInt(mergeArray[i][0]);
+	   MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
+				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
+	   int index = 1;
+	   Iterator<Location> iterate = routes.iterator();
+	   while (iterate.hasNext())
+		{
+		   Location temp = iterate.next();
+		   con.writeRouteToDB(routeID, temp.getReqID(), 1, temp.getDbID(), index);
+		   index++;
+		}
+	   routeID++;
    }
    
-   private static Timestamp getRideTime(int i)
+   
+   //Get the ID of the Ride
+   private static int getReqID(int i)
    {
-	   return Timestamp.valueOf(mergeArray[i][1]);
+	   return Integer.parseInt(reqDetArray[i][0]);
+   }
+   //
+   private static int getUserID(int i)
+   {
+	   return Integer.parseInt(reqDetArray[i][1]);
    }
    
     //get the Location ID of the Origin.  (Not the ride ID)
 	//Using connectMerge()
 	private static int getOrigID(int i)
 	{
-		return Integer.parseInt(mergeArray[i][2]);
+		return Integer.parseInt(reqDetArray[i][2]);
 	}
 	//using connectMerge()
-	private static double getOrigLat(int i)
+	private static int getDestID(int i)
 	{
-		return Double.parseDouble(mergeArray[i][3]);
+		return Integer.parseInt(reqDetArray[i][3]);
 	}
 	
 	//using connectMerge()
-	private static double getOrigLong(int i)
+	private static Timestamp getReqDate(int i)
 	{
-		return Double.parseDouble(mergeArray[i][4]);
+		return Timestamp.valueOf(reqDetArray[i][4]);
 	}
 	
 	//Get String address of the origin.
 	//using connectMerge()
-	private static String getOrigAddress(int i)
+	private static double getOrigLat(int i)
 	{
-		return mergeArray[i][5];
+		return Double.parseDouble(reqDetArray[i][5]);
 	}
 	
 	//get the Location ID of the Origin.  (Not the ride ID)
 	//Using connectMerge()
-	public static int getDestID(int i)
+	public static double getOrigLong(int i)
 	{
-		return Integer.parseInt(mergeArray[i][6]);
+		return Double.parseDouble(reqDetArray[i][6]);
+	}
+	
+	//using connectMerge().
+	private static String getOrigAddress(int i)
+	{
+		return reqDetArray[i][7];
 	}
 	
 	//using connectMerge().
 	private static double getDestLat(int i)
 	{
-		return Double.parseDouble(mergeArray[i][7]);
-	}
-	
-	//using connectMerge().
-	private static double getDestLong(int i)
-	{
-		return Double.parseDouble(mergeArray[i][8]);
+		return Double.parseDouble(reqDetArray[i][8]);
 	}
 	
 	//Get String address of the destination.
 	//Using connectMerge()
-	private static String getDestAddress(int i)
+	private static double getDestLong(int i)
 	{
-		return mergeArray[i][9];
+		return Double.parseDouble(reqDetArray[i][9]);
 	}
 	
-	
-//	//Makes an ArrayList of rides. Using connect()
-//	public static ArrayList<Ride> populateRides() 
-//	{
-//		ArrayList<Ride> rideList = new ArrayList<Ride>();
-//		for(int i = 0; i < rideArray.length; i++)
-//		{
-//			rideList.add(new Ride(Integer.parseInt(rideArray[i][0]),
-//						new Location(i+1, getOrigLat(i), getOrigLong(i), true),
-//						new Location(i+1, getDestLat(i), getDestLong(i), false),
-//						null));
-//		}
-//		return rideList;
-//	}
-	
-	   /*
-	    * Uses indices from rideArray and locationArray to return
-	    * the Latitude of the origin.
-	    * 
-	    */
-//		private static double getOrigLat(int i)
-//		{
-//			return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][2]);
-//		}	
-	
-	/*
-	 * Uses indices from rideArray and locationArray to return
-     * the Longitude of the origin.
-	 */
-//	private static double getOrigLong(int i)
-//	{
-//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][2])-1][3]);
-//	}
-	
-	/*
-	 * Uses indices from rideArray and locationArray to return
-     * the Latitude of the destination.
-	 */
-//	private static double getDestLat(int i)
-//	{
-//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][2]);
-//	}
-//	
-//	/*
-//	 * Uses indices from rideArray and locationArray to return
-//     * the Longitude of the destination.
-//	 */
-//	private static double getDestLong(int i)
-//	{
-//		return Double.parseDouble(locationArray[Integer.parseInt(rideArray[i][3])-1][3]);
-//	}
+	private static String getDestAddress(int i)
+	{
+		return reqDetArray[i][10];
+	}
 	
 }

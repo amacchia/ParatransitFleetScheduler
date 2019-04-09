@@ -1,15 +1,17 @@
 package pathfinder;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Properties;
+
 import mySql.Location;
 import java.io.*;
 import java.lang.Math;
 
-public class Methods {
+public class Methods{
 	
 
 
-	public static void pathfind(Location starter, ArrayList<Location> points, ArrayList<Location> route, 
+	public static ArrayList<Location> pathfind(Location starter, ArrayList<Location> points, ArrayList<Location> route, 
 			 ArrayList<Location> reserves, int cap, int pass)
 	{
 			
@@ -17,7 +19,7 @@ public class Methods {
 				{
 					String result = printroute(route);										//has no new points to go to, time to print the route.
 					System.out.println(result);
-					return;
+					return route;
 				}
 			ArrayList<Location> rte = route;							//Stores route as it's being developed, array for easy printing later
 			ArrayList<Location> pts = points;							//Stores available locations for next in route, linked for easy removal
@@ -27,7 +29,7 @@ public class Methods {
 	//		{	
 	//			maths.add(iterator.next());								//conversion of pts into maths.
 	//		}
-			ArrayList<Location> reserve = reserves;					//Reserve list of destinations not able to be gone to. like destinations before thier corresponding origin has been met, or origins while the car is full
+			ArrayList<Location> reserve = reserves;					//Reserve list of destinations not able to be gone to. like destinations before their corresponding origin has been met, or origins while the car is full
 			Location next = minDistance(starter, pts);
 			int idx = pts.indexOf(next);								//index of the next potential destination in the route
 
@@ -44,18 +46,18 @@ public class Methods {
 
 					while (iterate.hasNext())
 					{
-							pts.add(iterate.next());			//re-adds previously removed points back into avaiable points.
+							pts.add(iterate.next());			//re-adds previously removed points back into available points.
 					}
 					reserve = new ArrayList<Location>();		//clears out reserves after they are added
 					pathfind(next, pts, rte, reserve, cap, pass);		//Recursively calls method now with added passenger, and one less point available
-					return;
+					return route;
 				}
 				else											//Car is at capacity, can't go to this location
 				{
 					reserve.add(next);							//adds current point to reserve list, to be added after destination is reached
 					pts.remove(idx);							//removes point from current pool of valid next destinations
 					pathfind(next, pts, rte, reserve, cap, pass);
-					return;
+					return route;
 				}
 			}
 			else
@@ -65,12 +67,12 @@ public class Methods {
 				while (iterates.hasNext())
 					{
 						Location test = iterates.next();
-						if((test.getID() == next.getID()) && test.isOrigin)			//getname on both to match them as origin-dest pair, is origin on next to see if it's not the destination
+						if((test.getDbID() == next.getDbID()) && test.isOrigin)			//getname on both to match them as origin-dest pair, is origin on next to see if it's not the destination
 						{
 							reserve.add(next);							//adds current point to reserve list, to be added after destination is reached
 							pts.remove(idx);							//removes point from current pool of valid next destinations
 							pathfind(next, pts, rte, reserve, cap, pass);
-							return;
+							return route;
 						}						
 					}
 				rte.add(next);								//if above pathfind wasn't hit, the destination is valid to go to
@@ -84,7 +86,7 @@ public class Methods {
 				reserve = new ArrayList<Location>();		//clears out reserves after they are added
 				pass--;
 				pathfind(next, pts, rte, reserve, cap, pass);
-				return;
+				return route;
 			}
 
 
@@ -100,10 +102,13 @@ public class Methods {
 			Location test = iterate.next();
 			if(test.isOrigin)
 			{
-				result = result + ", "+ test.getID() + "O";
+				result = result + ", "+ test.getDbID() + "o";
 			}
-			else
-				result = result + ", "+ test.getID() + "D";
+			else {
+				result = result + ", "+ test.getDbID() + "D";
+			}	
+			
+			
 		}
 
 		return result;
@@ -146,4 +151,5 @@ public class Methods {
 		distance = Math.sqrt(Math.pow(x, 2)+ Math.pow(y, 2));
 		return distance;
 	}
+
 }

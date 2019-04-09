@@ -15,17 +15,17 @@ public class Location
 	//doubles to hold the coordinates and keep precision.
 	private double latitude;
 	private double longitude;
-	private int id;
+	private int reqID;
 	private int dbID;
 	public boolean isOrigin;
 	private String address;
 	
 	
 	//Constructor with address
-	public Location(int id, int dbID, double latitude, double longitude,
+	public Location(int reqID, int dbID, double latitude, double longitude,
 					String address, boolean isOrigin)
 	{
-		this.id = id;
+		this.reqID = reqID;
 		this.dbID = dbID;
 		this.latitude = latitude;
 		this.longitude = longitude;
@@ -34,9 +34,9 @@ public class Location
 	}
 	
 	//Constructor no address
-	public Location(int id, double latitude, double longitude, boolean isOrigin)
+	public Location(int reqID, double latitude, double longitude, boolean isOrigin)
 	{
-		this.id = id;
+		this.reqID = reqID;
 		this.latitude = latitude;
 		this.longitude = longitude;
 		this.isOrigin = isOrigin;
@@ -70,9 +70,14 @@ public class Location
 		return distance(longitude, latitude, coords.longitude, coords.latitude);
 	}
 	
-	public int getID()
+	public int getReqID()
 	{
-		return id;
+		return reqID;
+	}
+	
+	public int getDbID()
+	{
+		return dbID;
 	}
 	
 	public double getLat()
