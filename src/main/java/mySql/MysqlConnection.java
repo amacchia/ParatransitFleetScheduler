@@ -1,7 +1,10 @@
 package mySql;
 import java.sql.*;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Scanner;
+import java.util.Date;
 
 //import org.apache.commons.lang3.time.DateUtils;
 //import java.util.Calendar;
@@ -34,6 +37,7 @@ public class MysqlConnection
 	String[][] routeArray;
 	String[][] mergeArray;
 	String[][] array;
+	int[] driversToday;
 	
 	//Constructor
 	public MysqlConnection(String input, String url, String db, String driver,
@@ -101,6 +105,66 @@ public class MysqlConnection
 			
 	}
 	
+	public int howManyDrivers(ResultSet rs, String day)
+	{
+		int rows = 0;
+		try {
+			while(rs.next())
+			{
+				if( (rs.getString(2)).equalsIgnoreCase(day) && (rs.getString(2).equalsIgnoreCase(day)))
+				{
+					rows++;  //increment rows each time it finds time within range.
+				}
+			}
+			rs.beforeFirst();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return rows;
+		
+	}
+	
+	public int[] getDrivers()
+	{
+		Date now = new Date();
+		SimpleDateFormat simpleDateformat = new SimpleDateFormat("EEEE");
+		String day = simpleDateformat.format(now);
+		
+		System.out.println("Establishing Connection with " + input + " in " + db
+				+ "\n--------------------------------\n");
+		try
+		{	//Establish Connection
+			Class.forName(driver);
+			con = DriverManager.getConnection(url+db, userName, password);
+			stmt = con.createStatement();
+			rs = stmt.executeQuery("select * from " + input);
+			
+			driversToday = new int[howManyDrivers(rs, day)];
+			
+			int i = 0;
+			while(rs.next())
+			{
+				if(day.equalsIgnoreCase(rs.getString(2)))
+				{
+					int driverID = rs.getInt(1);
+					System.out.println(driverID);
+					driversToday[i] = driverID;
+					i++;
+					System.out.println("Match Found");
+				}
+			}
+			con.close();
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return driversToday;
+		
+	}
+	
 
 	
 	public void connect()
@@ -162,23 +226,6 @@ public class MysqlConnection
 		}
 			
 	}
-	
-//	public void writeRouteTable(ArrayList<Location> loc, ArrayList<Integer> driverID)
-//	{
-//		String query = " INSERT INTO Route (RouteID, locationID, requestID, orderInRoute, driverID)"
-//		        + " values (?, ?, ?, ?, ?)";
-//		try 
-//		{
-//			
-//			PreparedStatement prepStmt = con.prepareStatement(query);
-//			prepStmt.setInt(1, x);
-//			prepStmt.setInt(2, x);
-//			prepStmt.setInt(3, x);
-//			prepStmt.setInt(4, x);
-//			prepStmt.setInt(5, x);
-//		}
-//		
-//	}
 	
 	
 	public String[][] getArray()
