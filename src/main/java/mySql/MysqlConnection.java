@@ -1,14 +1,8 @@
 package mySql;
 import java.sql.*;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Scanner;
 import java.util.Date;
-
 //import org.apache.commons.lang3.time.DateUtils;
-//import java.util.Calendar;
-//import java.util.Date;
 
 
 /*
@@ -30,12 +24,6 @@ public class MysqlConnection
     private Connection con;
 	private Statement stmt;
 	private ResultSet rs;
-	String[][] locationArray;
-	String[][] passengerArray;
-	String[][] driverArray;
-	String[][] rideArray;
-	String[][] routeArray;
-	String[][] mergeArray;
 	String[][] array;
 	int[] driversToday;
 	
@@ -50,8 +38,14 @@ public class MysqlConnection
 		this.password = password;
 		this.input = input;
 	}	
-
 	
+
+	/*
+	 * Finds the max value of the routeID in the database.
+	 * We do not want it writing routeID's with the same number to the database.
+	 * We must find the highest value and then increment by 1 before we write
+	 * into the database.
+	 */
 	public int routeID()
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
@@ -78,6 +72,10 @@ public class MysqlConnection
 		return max;
 	}
 	
+	
+	/*
+	 * Write to the route table in the database.
+	 */
 	public void writeRouteToDB(int routeID, int requestID, int driverID,
 								int locationID, int orderInRoute)
 	{
@@ -105,7 +103,17 @@ public class MysqlConnection
 			
 	}
 	
-	public int howManyDrivers(ResultSet rs, String day)
+	
+	/*
+	 * Method uses a ResultSet and a String of the current day.
+	 * Checks the ResultSet to find matches of the current day.
+	 * If a match is found, the amount of rows in incremented.
+	 * 
+	 * The purpose of this method is to keep the the int[] of 
+	 * drivers to a specific and exact size.  The size of the array 
+	 * will be used later.
+	 */
+	private int howManyDrivers(ResultSet rs, String day)
 	{
 		int rows = 0;
 		try {
@@ -116,7 +124,7 @@ public class MysqlConnection
 					rows++;  //increment rows each time it finds time within range.
 				}
 			}
-			rs.beforeFirst();
+			rs.beforeFirst();		//set the ResultSet back to the start.
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -125,6 +133,12 @@ public class MysqlConnection
 		
 	}
 	
+	
+	/*
+	 * This method connects to the driverschedule table to find
+	 * today's available drivers.  It will return an int[] of
+	 * driver ID's.  These drivers will be assigned routes.
+	 */
 	public int[] getDrivers()
 	{
 		Date now = new Date();
@@ -141,7 +155,7 @@ public class MysqlConnection
 			rs = stmt.executeQuery("select * from " + input);
 			
 			driversToday = new int[howManyDrivers(rs, day)];
-			
+			System.out.println("Todays (" + day + ")  Drivers (ID's):");
 			int i = 0;
 			while(rs.next())
 			{
@@ -151,7 +165,6 @@ public class MysqlConnection
 					System.out.println(driverID);
 					driversToday[i] = driverID;
 					i++;
-					System.out.println("Match Found");
 				}
 			}
 			con.close();
@@ -166,7 +179,9 @@ public class MysqlConnection
 	}
 	
 
-	
+	/*
+	 * Can connect to an table/view in the database.
+	 */
 	public void connect()
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
@@ -179,7 +194,7 @@ public class MysqlConnection
 			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
 			
 			//Find number of columns in the table.
-			rs.last();  		//When using time frame, we can delete
+			rs.last();  			//When using time frame, we can delete
 			int rows = rs.getRow();	//These 3 Lines 
 			rs.beforeFirst();		//And uncomment the others.
 			ResultSetMetaData rsmd = rs.getMetaData();
@@ -201,11 +216,11 @@ public class MysqlConnection
 //				}
 //			}
 			
-			//Give mergeArray the correct amount of rows/columns.
+			//Give array the correct amount of rows/columns.
 			array = new String[rows][col];
 //			rs.beforeFirst(); //Go to start of ResultSet.
 			
-			//add data into mergeArray if meets conditions.
+			//add data into array if meets conditions.
 			int i = 0;
 			while(rs.next())
 			{
@@ -232,131 +247,5 @@ public class MysqlConnection
 	{
 		return array;
 	}
-	
-	//access information in locationArrayy[][]
-	public String[][] getLocationArray()
-	{
-		return locationArray;
-	}
-	
-	//access Info in mergeArray[][]
-	public String[][] getMergeArray()
-	{
-		return mergeArray;
-	}
-	
-	//access information in passengerArray[][]
-	public String[][] getPassengerArray()
-	{
-		return passengerArray;
-	}
-	
-	//access information in driverArray[][]
-	public String[][] getDriverArray()
-	{
-		return driverArray;
-	}
-	
-	//access information in rideArray[][]
-	public String[][] getRideArray()
-	{
-		return rideArray;
-	}
-	
-	//access information in routeArray[][]
-	public String[][] getRouteArray()
-	{
-		return routeArray;
-	}
-	
-	//Connect to database and get information
-//	private void connect()
-//	{
-//		System.out.println("Establishing Connection with " + input + " in " + db
-//							+ "\n--------------------------------\n");
-//		try
-//		{	//Establish Connection
-//			Class.forName(driver);
-//			con = DriverManager.getConnection(url+db, userName, password);
-//			stmt = con.createStatement();
-//			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
-//			rs.last();				//sets rs to last row.
-//			int rows = rs.getRow(); //reads current row, to instantiate correct size for 2D Arrays.
-//			rs.beforeFirst();
-//			ResultSetMetaData rsmd = rs.getMetaData();
-//			int col = rsmd.getColumnCount();
-//			
-//			if(input.equals("location"))
-//			{
-//				locationArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						locationArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("driver"))
-//			{
-//				driverArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						driverArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("passenger"))
-//			{
-//				passengerArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						passengerArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("ride"))
-//			{
-//				rideArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						rideArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			else if(input.equals("route"))
-//			{
-//				routeArray = new String[rows][col];
-//				int i = 0;
-//				while(rs.next())
-//				{
-//					for(int j = 0; j < col; j++)
-//					{
-//						routeArray[i][j] = rs.getString(j+1);
-//					}
-//					i++;
-//				}
-//			}
-//			con.close();
-//		}
-//		catch(Exception e)
-//		{
-//			System.out.println(e);  
-//		}
-//	}
 	
 }
