@@ -62,3 +62,4 @@
 4/7/19: Wes- implemented exhaustive BFS algorithm
 
 4/8/19: Implemented writing to the route table in the database. -Kieran
+4/12/29: Added capabilty test suite. -Kieran
