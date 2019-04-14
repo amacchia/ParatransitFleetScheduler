@@ -3,11 +3,11 @@
     
     function create_connection()
     {
-        $servername = "localhost";
-        $password = "root";
-        // $servername = "http://ec2-3-81-8-187.compute-1.amazonaws.com/";
+        // $servername = "localhost";
+        // $password = "root";
+        $servername = "3.81.8.187";
         $username = "root";
-        // $password = "senproj19";
+        $password = "senproj19";
         $dbname = "rideshare";
     
         // Create connection

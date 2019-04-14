@@ -103,3 +103,13 @@ a:link {
 a:visited {
     color: #FFCC00;
 }
+
+.route-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.route-display {
+    display: inline-block;
+}

@@ -57,12 +57,14 @@
                 $errMsg .= "Please enter a pickup date\n";
             } else {
                 $date = clean_input($_POST["date"]);
+                echo $date.'<br>';
             }
 
             if (empty($_POST["time"])) {
                 $errMsg .= "Please enter a pickup time\n";
             } else {
                 $time = clean_input($_POST["time"]);
+                echo $time.'<br>';
             }
 
             if ($errMsg == "") {
@@ -289,6 +291,15 @@
     </select> <br>
 
     Date: <input type="date" name="date"><br>
-    Time: <input type="time" name="time"><br>
+    Time: <select name="time" form="passenger-request-form">
+        <option value="9">9:00am - 10:00am</option>
+        <option value="10">10:00am - 11:00am</option>
+        <option value="11">11:00am - 12:00pm</option>	
+        <option value="12">12:00pm - 1:00pm</option>
+        <option value="13">1:00pm - 2:00pm</option>
+        <option value="14">2:00pm - 3:00pm</option>
+        <option value="15">3:00pm - 4:00pm</option>
+        <option value="16">4:00pm - 5:00pm</option>
+    </select> <br>
     <input type="submit">
 </form>
