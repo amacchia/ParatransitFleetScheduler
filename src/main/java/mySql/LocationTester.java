@@ -3,6 +3,7 @@ import java.sql.Timestamp;
 import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
+import pathfinder.DepthFirstSearch;
 import pathfinder.Methods;
 import mySql.Cluster;
 import metric.Metric;
@@ -119,10 +120,13 @@ public class LocationTester
 			}
 		}
 		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(bestclusters);
+		ArrayList<Location> route;
+		int CAPACITY = 3;
 		for(int i = 0; i < bestLocations.size(); i++)
 		{
-			ArrayList<Location> route = Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
-					new ArrayList<Location>(), 2, 0);
+			/*ArrayList<Location> route = Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
+					new ArrayList<Location>(), 2, 0);*/
+			route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i));
 			iterRoutes(route, driversToday[i]);  	//write the routes that were just generated 
 													//into the route table in the database
 		}
