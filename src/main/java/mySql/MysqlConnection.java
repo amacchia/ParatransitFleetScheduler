@@ -48,6 +48,7 @@ public class MysqlConnection
 	 */
 	public int routeID()
 	{
+		
 		System.out.println("Establishing Connection with " + input + " in " + db
 				+ "\n--------------------------------\n");
 		int max = 0;
@@ -248,4 +249,32 @@ public class MysqlConnection
 		return array;
 	}
 	
-}
+	
+	public String getDriver() {
+		return this.driver;
+	}
+	
+	public String getInput() {
+		return this.input;
+	}
+	
+	public String getUrl()
+	{
+		return this.url;
+	}
+	
+	public String getDb()
+	{
+		return this.db;
+	}
+	
+	public String getUserName()
+	{
+		return this.userName;
+	}
+	
+	public String getPassword() {
+		return this.password;
+	}
+	
+	}
