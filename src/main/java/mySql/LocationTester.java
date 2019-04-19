@@ -58,10 +58,11 @@ public class LocationTester
 	 * reqDetArray[x][10] --> destinationAddress
 	 * 
 	 */
-	static ArrayList<ArrayList<Ride>> ridesByTime;			//Holds all of the rides, each column is an hour of the day(in order).
+	static double[] scores;
 	static String[][] reqDetArray;	//Holds details from the morris_ridedetails view
 	static int[] driversToday;		//contains to ID's of the drivers that are driving the current day.
 	static int routeID = -1; 		//start at -1 so if there is an error, it can be easily spotted in the database.
+	static ArrayList<ArrayList<ArrayList<Ride>>> best_clusters;
 	public static void main(String[] args) throws ParseException
 	{
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -90,10 +91,9 @@ public class LocationTester
 		System.out.println("");				//today so they can be assigned routes after they've 
 											//been generated.
 		
-		
 		//populate an ArrayList of rides.
 		ArrayList<Ride> rides = populateRides();
-		ridesByTime = timeSort(rides);
+		ArrayList<ArrayList<Ride>> ridesByTime = timeSort(rides);
 		System.out.println("List of Rides:");
 		for(int i = 0; i < ridesByTime.size(); i++) 
 		{
@@ -107,76 +107,38 @@ public class LocationTester
 		}		
 		System.out.println(""); 		//Separate for cleaner console prints.
 		
-		
 		int numRepeat = 3;				//Repeats making the same clusters for each time to find the best one.
-		ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters = makeClusterArray(ridesByTime, numRepeat);
-		System.out.println("Cluster: " + clusters.size());
+		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime, numRepeat);
 		int p = 1;
-		for(int i = 0; i < clusters.size(); i++)
+		for(int i = 0; i < best_clusters.size(); i++)
 		{
-			for(int j = 0; j < clusters.get(i).size(); j++)
+			for(int j = 0; j < best_clusters.get(i).size(); j++)
 			{
-				System.out.println("\nCluster " + p + " size: " + clusters.get(i).get(j).size());
-				for(int k = 0; k < clusters.get(i).get(j).size(); k++)
+				for(int k = 0; k < best_clusters.get(i).get(j).size(); k++)
 				{
-					for(int x = 0; x < clusters.get(i).get(j).get(k).size(); x++)
-					{
-						System.out.println("Cluster " + p + ": " + clusters.get(i).get(j).get(k).get(x).getID());
-					}
+					System.out.println("Cluster " + p + ": " + best_clusters.get(i).get(j).get(k).getID());
 				}
 			}
 			p++;
 		}
 		
-		double[][] scores = makeScoreArray(clusters); //double[row][col] column is a time slot, row contains recalculated scored for that time slot.
-		System.out.println("scores[0].length: " + scores[0].length);
-		System.out.println("scoreslength: " + scores.length);
-		for(int i = 0; i < scores[0].length; i++)
+		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(best_clusters);
+		for(int i = 0; i < bestLocations.size(); i++)
 		{
-			for (int j = 0; j < scores.length;j++)
+			for(int j = 0; j < bestLocations.get(i).size(); j++)
 			{
-				System.out.println(scores[j][i]);
-			}
-			
-		}
-		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = bestClusters(scores, clusters);
-		
-		
-
-		
-//      System.out.println("Score1, Score2, and Score3 for the clusters: "+ score1 + " " + score2 + " " + score3 +"\n");
-//      ArrayList<ArrayList<Ride>> bestclusters;
-//      if(score1 > score2){
-//         if(score1 > score3){
-//            bestclusters = clusters1;
-//         }else{
-//            bestclusters = clusters3;
-//         }
-//      }else{
-//         if(score2 > score3){
-//            bestclusters = clusters2;
-//         }else{
-//            bestclusters = clusters3;
-//         }
-//      }
-		for(int i = 0; i < best_clusters.size(); i++)
-		{
-			System.out.println("Cluster Number: " + (i+1));
-			for(int j = 0; j < best_clusters.get(i).size(); j++)
-			{
-				System.out.println(best_clusters.get(i).get(j) +"\n");
+				System.out.println("Best Location IDs: " + bestLocations.get(i).get(j).getDbID());
 			}
 		}
-//		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(bestclusters);
-//		for(int i = 0; i < bestLocations.size(); i++)
-//		{
-//			ArrayList<Location> route = Methods.pathfind(new Location(-1, -1, 0, 0, null, true), bestLocations.get(i), new ArrayList<Location>(),
-//					new ArrayList<Location>(), 2, 0);
-//			iterRoutes(route, driversToday[i]);  	//write the routes that were just generated 
-//													//into the route table in the database
-//		}
-//		System.out.println("Write to Route table completed."); 	//Print statement to know when all routes
-																//have been written to the database.
+		
+		ArrayList<Location> route;
+		int CAPACITY = 3;
+		for(int i = 0; i < bestLocations.size(); i++)
+		{
+			route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i));
+			iterRoutes(route, driversToday[i]);
+		}
+		System.out.println("Write to Route table completed.");
 	}
 	
 	
@@ -222,87 +184,55 @@ public class LocationTester
 	 * 
 	 */
 	
-	public static ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> makeClusterArray(ArrayList<ArrayList<Ride>> allRides, int numRepeat)
+	public static ArrayList<ArrayList<ArrayList<Ride>>> makeClusterArray(ArrayList<ArrayList<Ride>> allRides, int numRepeat)
 	{
 		ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters = new ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>>();
-		for(int i = 0; i < allRides.size(); i++)
+		for(int i = 0; i < numRepeat; i++)
 		{
 			clusters.add(new ArrayList<ArrayList<ArrayList<Ride>>>());
-			for(int j = 0; j < numRepeat; j++)
+			for(int j = 0; j < allRides.size(); j++)
 			{
-				clusters.get(i).add(Cluster.kmeans(driversToday.length, allRides.get(i)));
+				clusters.get(i).add(Cluster.kmeans(driversToday.length, allRides.get(j)));
 			}
+			
+			
 		}
-		return clusters;
+		scores = makeScoreArray(clusters);
+		best_clusters = bestClusters(scores, clusters);
+		return best_clusters;
 	}
 	
 	
 	/*
 	 * computes the scores of the clusters.
 	 */
-	public static double[][] makeScoreArray(ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters)
+	public static double[] makeScoreArray(ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters)
 	{
-		double[][] scores = new double[clusters.get(0).size()][clusters.size()];
-		for(int i = 0; i < clusters.get(0).size(); i++)
+		double[] scores = new double[clusters.size()];
+		for(int i = 0; i < clusters.size(); i++)
 		{
-			for(int j = 0; j<clusters.size(); j++)
-			{
-				scores[i][j] = Metric.computeScore(toLocationArray(clusters.get(j)));
-			}
-		}
+			scores[i] = Metric.computeScore(toLocationArray(clusters.get(i)));
+		}		
 		return scores;
 	}
 	
 	/*
 	 * Compares the scores of each cluster
 	 */
-	public static ArrayList<ArrayList<ArrayList<Ride>>> bestClusters(double[][] scores,
+	public static ArrayList<ArrayList<ArrayList<Ride>>> bestClusters(double[] scores2,
 										ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters)
-	{
-		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = new ArrayList<ArrayList<ArrayList<Ride>>>();		
-		for(int i = 0; i<scores[0].length; i++)
+	{	
+		double max = scores2[0];
+		int maxIndex = 0;
+		for(int i = 1; i<scores2.length; i++)
 		{
-			double max = 0;
-			int maxIndexi = 0;
-			int maxIndexj =0;
-			for(int j = 0; j < scores.length; j++)
+			if(scores2[i] > max)
 			{
-				if(j != scores.length-1)
-				{
-					
-					double x = scores[j][i];
-					double y = scores[j+1][i];
-					if( (x > y) && (x > max) )
-					{
-						max = x;
-						maxIndexi = i;
-						maxIndexj = j;
-					}
-					if( (y > x) && (y > max) )
-					{
-						max = (y);
-						maxIndexi = i;
-						maxIndexj= j;
-					}
-					if( x == y)
-					{
-						if(x >= max)
-						{
-							max = x;
-							maxIndexi = i;
-							maxIndexj = j;
-						}
-					}
-				}
+				max = scores2[i];
+				maxIndex = i;	
 			}
-			System.out.println("Max: " + max);
-			best_clusters.add(clusters.get(maxIndexi).get(maxIndexj));
-			max = 0;
-			maxIndexi = 0;
-			maxIndexj = 0;
-			
 		}
-		return best_clusters;
+		return clusters.get(maxIndex);
 	}
 	
 	/*
@@ -326,13 +256,6 @@ public class LocationTester
    
    public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<ArrayList<Ride>>> rideClusters){
       ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
-//      for(int i = 0; i < rideClusters.size(); i++){
-//         locationClusters.add(new ArrayList<Location>());
-//         for(int j = 0; j < rideClusters.get(i).size(); j++){
-//        	 locationClusters.get(i).add(rideClusters.get(i).get(j).getOrig());
-//        	 locationClusters.get(i).add(rideClusters.get(i).get(j).getDest());
-//         }
-//      }
       
       for(int i = 0; i < rideClusters.size(); i++)
       {
@@ -347,14 +270,6 @@ public class LocationTester
     		  }
     	  }
     	  
-      }
-      for(int x = 0; x < locationClusters.size();x++)
-      {
-    	  System.out.println("New index****");
-    	  for(int y=0; y< locationClusters.get(x).size();y++)
-    	  {
-    		  System.out.println(locationClusters.get(x).get(y).getDbID());
-    	  }
       }
       return locationClusters;
    }
