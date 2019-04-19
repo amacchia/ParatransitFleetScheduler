@@ -6,6 +6,7 @@ import java.io.PrintWriter;
 import java.util.*;
 import mySql.MysqlConnection;
 import java.sql.*;
+import java.sql.Date;
 
 public class csvGenerator {
 	
@@ -60,14 +61,16 @@ public class csvGenerator {
 			System.out.println(e);
 		}
 		
-		//Get all of the nessesary input
+		//Get all of the necessary input
 		Scanner sc = new Scanner(System.in);
 		System.out.println("How many requests would you like to generate?");
 		int numOfRequests = Integer.parseInt(sc.nextLine());
 		
+		
 		//Date either current day or parameter
 		System.out.println("What is the date for the requests? (yyyy-mm-dd)");
 		String date = sc.nextLine();
+		
 		
 		//Instantiate and populate a list of specified request times between 9am and 5pm.
 		ArrayList<String> requestTimes = new ArrayList<String>();
@@ -92,7 +95,13 @@ public class csvGenerator {
 		
 		//May just be hardcoded in the final design on the webserver.
 		System.out.println("Choose a name for the output file. Example: C:/Users/raypi/test.csv");
-		String fileName = sc.nextLine();
+		String fileName = "BadFileName.txt";
+		try {
+			fileName = sc.nextLine();
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
 		sc.close();
 		
 		//Will be used to make sure that a route dosen't go from a point to the same point
