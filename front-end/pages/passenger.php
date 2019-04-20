@@ -57,14 +57,12 @@
                 $errMsg .= "Please enter a pickup date\n";
             } else {
                 $date = clean_input($_POST["date"]);
-                echo $date.'<br>';
             }
 
             if (empty($_POST["time"])) {
                 $errMsg .= "Please enter a pickup time\n";
             } else {
                 $time = clean_input($_POST["time"]);
-                echo $time.'<br>';
             }
 
             if ($errMsg == "") {
@@ -89,7 +87,8 @@
 
                 $passengerId = $_SESSION['currUserID'];
                 if ($originLocationId != -1 && $destLocationId != -1) {
-                    $rideInserted = insert_ride($passengerId, $originLocationId, $destLocationId);
+                    $datetime = $date." ".$time;
+                    $rideInserted = insert_ride($passengerId, $originLocationId, $destLocationId, $datetime);
                     if ($rideInserted){
                         echo 'Your ride has been scheduled!';
                     }
@@ -158,9 +157,9 @@
             return $locationId;            
         }
 
-        function insert_ride($userId, $originId, $destId) {
-            $sql = "INSERT INTO ride (userID, originID, destinationID) 
-                    VALUES ('$userId', '$originId', '$destId')";
+        function insert_ride($userId, $originId, $destId, $date) {
+            $sql = "INSERT INTO request (userID, originID, destinationID, requestDate) 
+                    VALUES ('$userId', '$originId', '$destId', '$date')";
             $result = $GLOBALS['conn']->query($sql);
             if ($result) {
                 return true;
@@ -292,14 +291,14 @@
 
     Date: <input type="date" name="date"><br>
     Time: <select name="time" form="passenger-request-form">
-        <option value="9">9:00am - 10:00am</option>
-        <option value="10">10:00am - 11:00am</option>
-        <option value="11">11:00am - 12:00pm</option>	
-        <option value="12">12:00pm - 1:00pm</option>
-        <option value="13">1:00pm - 2:00pm</option>
-        <option value="14">2:00pm - 3:00pm</option>
-        <option value="15">3:00pm - 4:00pm</option>
-        <option value="16">4:00pm - 5:00pm</option>
+        <option value="09:00:00">9:00am - 10:00am</option>
+        <option value="10:00:00">10:00am - 11:00am</option>
+        <option value="11:00:00">11:00am - 12:00pm</option>	
+        <option value="12:00:00">12:00pm - 1:00pm</option>
+        <option value="13:00:00">1:00pm - 2:00pm</option>
+        <option value="14:00:00">2:00pm - 3:00pm</option>
+        <option value="15:00:00">3:00pm - 4:00pm</option>
+        <option value="16:00:00">4:00pm - 5:00pm</option>
     </select> <br>
     <input type="submit">
 </form>
