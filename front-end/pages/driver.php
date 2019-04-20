@@ -52,103 +52,103 @@
         $noRouteMsg = "You do not have any routes today!";
     }
 
-    // Update driver schedules
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $startTime = "08:00:00";
-        $endTime = "17:00:00";
-        $mon = $tue = $wed = $thr = $fri = $sat = $sun = FALSE;
-        if (!empty($_POST["mon"])) {
-            $mon = TRUE;
-        }
+    // // Update driver schedules
+    // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    //     $startTime = "08:00:00";
+    //     $endTime = "17:00:00";
+    //     $mon = $tue = $wed = $thr = $fri = $sat = $sun = FALSE;
+    //     if (!empty($_POST["mon"])) {
+    //         $mon = TRUE;
+    //     }
 
-        if (!empty($_POST["tue"])) {
-            $tue = TRUE;
-        }
+    //     if (!empty($_POST["tue"])) {
+    //         $tue = TRUE;
+    //     }
 
-        if (!empty($_POST["wed"])) {
-            $wed = TRUE;
-        }
+    //     if (!empty($_POST["wed"])) {
+    //         $wed = TRUE;
+    //     }
 
-        if (!empty($_POST["thr"])) {
-            $thr = TRUE;
-        }
+    //     if (!empty($_POST["thr"])) {
+    //         $thr = TRUE;
+    //     }
 
-        if (!empty($_POST["fri"])) {
-            $fri = TRUE;
-        }
+    //     if (!empty($_POST["fri"])) {
+    //         $fri = TRUE;
+    //     }
 
-        if (!empty($_POST["sat"])) {
-            $sat = TRUE;
-        }
+    //     if (!empty($_POST["sat"])) {
+    //         $sat = TRUE;
+    //     }
 
-        if (!empty($_POST["sun"])) {
-            $sun = TRUE;
-        }
+    //     if (!empty($_POST["sun"])) {
+    //         $sun = TRUE;
+    //     }
 
-        // Delete old schedule
-        $deleteSQL = "DELETE FROM driverschedule WHERE driverID = '$driverID'";
-        $deleteResult = $GLOBALS['conn']->query($deleteSQL);
-        if (!$deleteResult) {
-            echo 'Error removing old schedule';
-        }
+    //     // Delete old schedule
+    //     $deleteSQL = "DELETE FROM driverschedule WHERE driverID = '$driverID'";
+    //     $deleteResult = $GLOBALS['conn']->query($deleteSQL);
+    //     if (!$deleteResult) {
+    //         echo 'Error removing old schedule';
+    //     }
 
-        $insertSQL = "";
-        if ($mon) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'MONDAY', '$startTime', '$endTime')";
-            $monResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $monResult = TRUE;
-        }
+    //     $insertSQL = "";
+    //     if ($mon) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'MONDAY', '$startTime', '$endTime')";
+    //         $monResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $monResult = TRUE;
+    //     }
 
-        if ($tue) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'TUESDAY', '$startTime', '$endTime')";
-            $tueResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $tueResult = TRUE;
-        }
+    //     if ($tue) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'TUESDAY', '$startTime', '$endTime')";
+    //         $tueResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $tueResult = TRUE;
+    //     }
 
-        if ($wed) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'WEDNESDAY', '$startTime', '$endTime')";
-            $wedResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $wedResult = TRUE;
-        }
+    //     if ($wed) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'WEDNESDAY', '$startTime', '$endTime')";
+    //         $wedResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $wedResult = TRUE;
+    //     }
 
-        if ($thr) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'THURSDAY', '$startTime', '$endTime')";
-            $thrResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $thrResult = TRUE;
-        }
+    //     if ($thr) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'THURSDAY', '$startTime', '$endTime')";
+    //         $thrResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $thrResult = TRUE;
+    //     }
 
-        if ($fri) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'FRIDAY', '$startTime', '$endTime')";
-            $friResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $friResult = TRUE;
-        }
+    //     if ($fri) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'FRIDAY', '$startTime', '$endTime')";
+    //         $friResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $friResult = TRUE;
+    //     }
 
-        if ($sat) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'SATURDAY', '$startTime', '$endTime')";
-            $satResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $satResult = TRUE;
-        }
+    //     if ($sat) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'SATURDAY', '$startTime', '$endTime')";
+    //         $satResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $satResult = TRUE;
+    //     }
 
-        if ($sun) {
-            $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
-                        VALUES ('$driverID', 'SUNDAY', '$startTime', '$endTime')";
-            $sunResult = $GLOBALS['conn']->query($insertSQL);
-        } else {
-            $sunResult = TRUE;
-        }
-    }
+    //     if ($sun) {
+    //         $insertSQL = "INSERT INTO driverschedule (driverID, dayOfWeek, startTime, endTime)
+    //                     VALUES ('$driverID', 'SUNDAY', '$startTime', '$endTime')";
+    //         $sunResult = $GLOBALS['conn']->query($insertSQL);
+    //     } else {
+    //         $sunResult = TRUE;
+    //     }
+    // }
 ?>
 
 <div class="route-container">
@@ -170,8 +170,8 @@
 ?>
 </div>
 
-<div class="sch-form">
-<h3> Driver Shcedule: </h3>
+<!-- <div class="sch-form">
+<h3> Update Driver Shcedule: </h3>
 <form action="./index1.php?page=driver" method="post" id="driver-sch-form">
 
     <input type="checkbox" name="mon" id="mon" value="MONDAY">
@@ -207,4 +207,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } 
 }
 ?>
-</div>
+</div> -->

@@ -65,13 +65,6 @@ body {
     flex-direction: column;
 }
 
-header,
-footer {
-    height: 8%;
-    background: #424242;
-    color: #f1f1f1;
-}
-
 main {
     flex: 1;
 }
@@ -79,16 +72,10 @@ main {
 footer {
     text-align: center;
     vertical-align: center;
-    border-top: 3px #E0E0E0 solid;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    overflow: hidden;
+    justify-content: center;
 }
 
 header {
-    text-align: left;
     border-bottom: 3px #E0E0E0 solid;
 }
 
@@ -112,4 +99,35 @@ a:visited {
 
 .route-display {
     display: inline-block;
+}
+
+#header, #footer {
+    color: #E0E0E0; 
+}
+
+#sign-up-form {
+    color: #FAFAFA; 
+}
+
+.form-row {
+    margin-bottom: 10px;
+}
+
+#request-form {
+    background-color: #EEEEEE;
+    padding: 2%;
+}
+
+.success-msg {
+    display: flex;
+    justify-content: center;
+}
+
+.sch-form {
+    display: block;
+    background-color: #EEEEEE;
+}
+
+.nav-actions {
+    justify-content: space-around;
 }

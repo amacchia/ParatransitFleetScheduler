@@ -1,4 +1,8 @@
 <?php
+    if (isset($_SESSION["currUserID"])) {
+        $_SESSION["currUserID"] = -1;
+    }
+    
     // define variables and set to empty values
     $email = $pword = $service = $errMsg = "";
 
