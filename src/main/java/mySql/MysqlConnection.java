@@ -1,8 +1,9 @@
 package mySql;
 import java.sql.*;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
-//import org.apache.commons.lang3.time.DateUtils;
 
 
 /*
@@ -21,11 +22,17 @@ public class MysqlConnection
 	private String userName;
     private String password;
     private String input;
+    
+    
     private Connection con;
 	private Statement stmt;
 	private ResultSet rs;
 	String[][] array;
 	int[] driversToday;
+	
+	Calendar cal = Calendar.getInstance();
+	SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
+	SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE");
 	
 	//Constructor
 	public MysqlConnection(String input, String url, String db, String driver,
@@ -48,6 +55,7 @@ public class MysqlConnection
 	 */
 	public int routeID()
 	{
+		
 		System.out.println("Establishing Connection with " + input + " in " + db
 				+ "\n--------------------------------\n");
 		int max = 0;
@@ -56,7 +64,7 @@ public class MysqlConnection
 			Class.forName(driver);
 			con = DriverManager.getConnection(url+db, userName, password);
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("SELECT MAX(routeID) from " + input);
+			rs = stmt.executeQuery("SELECT MAX(routeID) FROM " + input);
 			while(rs.next())
 			{
 				max = rs.getInt("MAX(routeID)");
@@ -116,7 +124,9 @@ public class MysqlConnection
 	private int howManyDrivers(ResultSet rs, String day)
 	{
 		int rows = 0;
-		try {
+		
+		try 
+		{
 			while(rs.next())
 			{
 				if( (rs.getString(2)).equalsIgnoreCase(day) && (rs.getString(2).equalsIgnoreCase(day)))
@@ -125,8 +135,9 @@ public class MysqlConnection
 				}
 			}
 			rs.beforeFirst();		//set the ResultSet back to the start.
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+		} 
+		catch (SQLException e) 
+		{
 			e.printStackTrace();
 		}
 		return rows;
@@ -136,14 +147,13 @@ public class MysqlConnection
 	
 	/*
 	 * This method connects to the driverschedule table to find
-	 * today's available drivers.  It will return an int[] of
+	 * the selected days available drivers.  It will return an int[] of
 	 * driver ID's.  These drivers will be assigned routes.
 	 */
-	public int[] getDrivers()
+	public int[] getDrivers(String date) throws ParseException
 	{
-		Date now = new Date();
-		SimpleDateFormat simpleDateformat = new SimpleDateFormat("EEEE");
-		String day = simpleDateformat.format(now);
+		Date date1 = inputFormat.parse(date);
+		String day = dayFormat.format(date1);
 		
 		System.out.println("Establishing Connection with " + input + " in " + db
 				+ "\n--------------------------------\n");
@@ -152,7 +162,7 @@ public class MysqlConnection
 			Class.forName(driver);
 			con = DriverManager.getConnection(url+db, userName, password);
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from " + input);
+			rs = stmt.executeQuery("SELECT * FROM " + input);
 			
 			driversToday = new int[howManyDrivers(rs, day)];
 			System.out.println("Todays (" + day + ")  Drivers (ID's):");
@@ -182,7 +192,7 @@ public class MysqlConnection
 	/*
 	 * Can connect to an table/view in the database.
 	 */
-	public void connect()
+	public void connect(String date)
 	{
 		System.out.println("Establishing Connection with " + input + " in " + db
 				+ "\n--------------------------------\n");
@@ -191,55 +201,49 @@ public class MysqlConnection
 			Class.forName(driver);
 			con = DriverManager.getConnection(url+db, userName, password);
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select * from " + input);	//selects which dataset to query.
+			rs = stmt.executeQuery("SELECT * FROM " + input + " ORDER BY requestDate");	//selects which dataset to query.
 			
 			//Find number of columns in the table.
-			rs.last();  			//When using time frame, we can delete
-			int rows = rs.getRow();	//These 3 Lines 
-			rs.beforeFirst();		//And uncomment the others.
 			ResultSetMetaData rsmd = rs.getMetaData();
 			int col = rsmd.getColumnCount();
 			
-//			//Add dates to range in query
-//		    Date now = new Date();
-//		    Calendar cl = Calendar. getInstance();
-//		    cl.add(Calendar.HOUR, 2);
-//			Date limit = DateUtils.addHours(now, 2); //add two hours
-			
 			//Find the amount of rows that are within time range.
-//			int rows = 0;
-//			while(rs.next())
-//			{
-//				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
-//				{
-//					rows++;  //increment rows each time it finds time within range.
-//				}
-//			}
+			int rows = 0;
+			while(rs.next())
+			{
+				Date dbDate = rs.getDate(5, cal);
+				String dbDateStr = inputFormat.format(dbDate);
+				if( dbDateStr.equals(date) )
+				{
+					rows++;  //increment rows each time it finds time within range.
+				}
+			}
 			
 			//Give array the correct amount of rows/columns.
 			array = new String[rows][col];
-//			rs.beforeFirst(); //Go to start of ResultSet.
+			rs.beforeFirst(); //Go to start of ResultSet.
 			
 			//add data into array if meets conditions.
 			int i = 0;
 			while(rs.next())
 			{
-//				if( (rs.getTimestamp(2)).before(limit) && (rs.getTimestamp(2).after(now)) )
-//				{
+				Date dbDate = rs.getDate(5, cal);
+				String dbDateStr = inputFormat.format(dbDate);
+				if( dbDateStr.equals(date) )
+				{
 					for(int j = 0; j < col; j++)
 					{
 						array[i][j] = rs.getString(j+1);
 					}
 					i++;
-//				}
+				}
 			}
 		con.close();
 		}
 		catch(Exception e)
 		{
 			System.out.println(e);  
-		}
-			
+		}		
 	}
 	
 	
@@ -248,4 +252,32 @@ public class MysqlConnection
 		return array;
 	}
 	
-}
+	
+	public String getDriver() {
+		return this.driver;
+	}
+	
+	public String getInput() {
+		return this.input;
+	}
+	
+	public String getUrl()
+	{
+		return this.url;
+	}
+	
+	public String getDb()
+	{
+		return this.db;
+	}
+	
+	public String getUserName()
+	{
+		return this.userName;
+	}
+	
+	public String getPassword() {
+		return this.password;
+	}
+	
+	}
