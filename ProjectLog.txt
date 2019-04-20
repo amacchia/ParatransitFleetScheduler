@@ -21,3 +21,5 @@
 4/6/19: Ant- Give driver's a link to directions for their route after logging in
 4/7/19: Wes- Implemented exhaustive BFS algorithm
 4/14/19: Ant - Added code to get around restricition of Bing Api limit and only allow passengers to select a time slice
+4/19/19: Ant - Added times for ride requests
+4/20/19: Ant - Added driver schedules to front-end
