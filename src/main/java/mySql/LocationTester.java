@@ -109,35 +109,15 @@ public class LocationTester
 		System.out.println(""); 		//Separate for cleaner console prints.
 		
 		int numRepeat = 3;				//Repeats making the same clusters for each time to find the best one.
-		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime, numRepeat);
-		int p = 1;
-		for(int i = 0; i < best_clusters.size(); i++)
-		{
-			for(int j = 0; j < best_clusters.get(i).size(); j++)
-			{
-				for(int k = 0; k < best_clusters.get(i).get(j).size(); k++)
-				{
-					System.out.println("Cluster " + p + ": " + best_clusters.get(i).get(j).get(k).getID());
-				}
-			}
-			p++;
-		}
-		
+		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime, numRepeat);		
 		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(best_clusters);
-		for(int i = 0; i < bestLocations.size(); i++)
-		{
-			System.out.println("New Index");
-			for(int j = 0; j < bestLocations.get(i).size(); j++)
-			{
-				System.out.println("Best Location IDs: " + bestLocations.get(i).get(j).getDbID());
-			}
-		}
 		ArrayList<Location> route;
 		int CAPACITY = 3;
 		for(int i = 0; i <bestLocations.size();i++)
 		{
 			route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i));
 			iterRoutes(route, driversToday[i]);
+			System.out.println("Route " + (i+1) + " written to database");
 		}
 		System.out.println("Write to route table complete.");
 	}
@@ -289,10 +269,6 @@ public class LocationTester
 	   while (iterate.hasNext())
 		{
 		   Location temp = iterate.next();
-		   System.out.println("RouteID: " + routeID);
-		   System.out.println("ReqID: " + temp.getReqID());
-		   System.out.println("driver ID: " + driverID);
-		   System.out.println("DB ID: " + temp.getDbID());
 		   con.writeRouteToDB(routeID, temp.getReqID(), driverID, temp.getDbID(), orderInRoute); //write to the database route table.
 		   orderInRoute++;					//increase ride order.
 		}
