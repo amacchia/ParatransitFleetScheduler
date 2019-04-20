@@ -23,3 +23,4 @@
 4/14/19: Ant - Added code to get around restricition of Bing Api limit and only allow passengers to select a time slice
 4/19/19: Ant - Added times for ride requests
 4/20/19: Ant - Added driver schedules to front-end
+4/20/19: Ant - Added driver shedule page, redesigned passenger page, and added sign out button
