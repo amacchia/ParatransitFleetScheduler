@@ -42,3 +42,4 @@
 4/19/19: Ant - Added times for ride requests
 4/20/19: Ant - Added driver schedules to front-end
 4/20/19: Ant - Added driver shedule page, redesigned passenger page, and added sign out button
+4/21/19: Ant - Only get routes for a driver for current day on front-end
