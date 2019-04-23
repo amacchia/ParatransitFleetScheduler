@@ -116,8 +116,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         ?>
     </div>
-    <h3> Update Driver Shcedule: </h3>
-    <form action="./index1.php?page=driver-sch" method="post" id="driver-sch-form">
+    <h3> Update Driver Schedule: </h3>
+    <form action="./index.php?page=driver-sch" method="post" id="driver-sch-form">
 
         <input type="checkbox" name="mon" id="mon" value="MONDAY">
             <label for="mon"> Monday </label>

@@ -172,7 +172,7 @@
     <h2> Ride Request Form </h2>
     <div id="request-form">
         <!-- Ride Request Form -->
-        <form action="./index1.php?page=passenger" method="post" id="passenger-request-form">
+        <form action="./index.php?page=passenger" method="post" id="passenger-request-form">
             <div class="row, form-row">
                 <div class="col">
                     Pick-up Address: <input type="text" name="origin-addr">
@@ -341,9 +341,11 @@
 
     <div class="success-msg">
         <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if ($rideInserted){
                 echo 'Your ride has been scheduled!';
             }
+        }
         ?>
     </div>
 
