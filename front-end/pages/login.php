@@ -1,4 +1,8 @@
 <?php
+    if (isset($_SESSION["currUserID"])) {
+        $_SESSION["currUserID"] = -1;
+    }
+    
     // define variables and set to empty values
     $email = $pword = $service = $errMsg = "";
 
@@ -21,9 +25,9 @@
             $_SESSION['userEmail'] = $email;
             if ($service === "driver") {
                 $_SESSION['currUserEmail'] = $email; 
-                header("Location: ./index1.php?page=driver");
+                header("Location: ./index.php?page=driver");
             } else {
-                header("Location: ./index1.php?page=passenger");
+                header("Location: ./index.php?page=passenger");
             }
         } else {
             $errMsg = 'User Not Found';
@@ -68,7 +72,7 @@
 
 <h1 id="sign-up-form-title">Login</h1>
 <div id="sign-up-form">
-    <form method="POST" action="./index1.php?page=login">
+    <form method="POST" action="./index.php?page=login">
         <label for="email" class="input-label">Email</label>
         <input type="email" name="email" class="form-input"><br>
 
@@ -82,7 +86,7 @@
         </div>
 
         <input type="submit" value="Login" id="sub-btn">
-        <p>Not a user? <a href="./index1.php?page=sign-up">Sign Up</a></p>
+        <p>Not a user? <a href="./index.php?page=sign-up">Sign Up</a></p>
     </form>
 </div>
 

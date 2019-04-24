@@ -57,14 +57,12 @@
                 $errMsg .= "Please enter a pickup date\n";
             } else {
                 $date = clean_input($_POST["date"]);
-                echo $date.'<br>';
             }
 
             if (empty($_POST["time"])) {
                 $errMsg .= "Please enter a pickup time\n";
             } else {
                 $time = clean_input($_POST["time"]);
-                echo $time.'<br>';
             }
 
             if ($errMsg == "") {
@@ -89,10 +87,8 @@
 
                 $passengerId = $_SESSION['currUserID'];
                 if ($originLocationId != -1 && $destLocationId != -1) {
-                    $rideInserted = insert_ride($passengerId, $originLocationId, $destLocationId);
-                    if ($rideInserted){
-                        echo 'Your ride has been scheduled!';
-                    }
+                    $datetime = $date." ".$time;
+                    $rideInserted = insert_ride($passengerId, $originLocationId, $destLocationId, $datetime);
                 } else {
                     echo 'Error inserting request';
                 }
@@ -158,9 +154,9 @@
             return $locationId;            
         }
 
-        function insert_ride($userId, $originId, $destId) {
-            $sql = "INSERT INTO ride (userID, originID, destinationID) 
-                    VALUES ('$userId', '$originId', '$destId')";
+        function insert_ride($userId, $originId, $destId, $date) {
+            $sql = "INSERT INTO request (userID, originID, destinationID, requestDate) 
+                    VALUES ('$userId', '$originId', '$destId', '$date')";
             $result = $GLOBALS['conn']->query($sql);
             if ($result) {
                 return true;
@@ -172,134 +168,185 @@
     ?>
 
 
-<!-- Ride Request Form -->
-<form action="./index1.php?page=passenger" method="post" id="passenger-request-form">
-    Pick-up Address: <input type="text" name="origin-addr"> 
-    Pick-up: City: <input type="text" name="origin-city">
-    Pick-up: Zip: <input type="text" name="origin-zip">
-    Pick-up: State: 
-    <select name="origin-state" form="passenger-request-form">
-        <option value="AL">AL</option>
-        <option value="AK">AK</option>
-        <option value="AR">AR</option>	
-        <option value="AZ">AZ</option>
-        <option value="CA">CA</option>
-        <option value="CO">CO</option>
-        <option value="CT">CT</option>
-        <option value="DC">DC</option>
-        <option value="DE">DE</option>
-        <option value="FL">FL</option>
-        <option value="GA">GA</option>
-        <option value="HI">HI</option>
-        <option value="IA">IA</option>	
-        <option value="ID">ID</option>
-        <option value="IL">IL</option>
-        <option value="IN">IN</option>
-        <option value="KS">KS</option>
-        <option value="KY">KY</option>
-        <option value="LA">LA</option>
-        <option value="MA">MA</option>
-        <option value="MD">MD</option>
-        <option value="ME">ME</option>
-        <option value="MI">MI</option>
-        <option value="MN">MN</option>
-        <option value="MO">MO</option>	
-        <option value="MS">MS</option>
-        <option value="MT">MT</option>
-        <option value="NC">NC</option>	
-        <option value="NE">NE</option>
-        <option value="NH">NH</option>
-        <option value="NJ" selected>NJ</option>
-        <option value="NM">NM</option>			
-        <option value="NV">NV</option>
-        <option value="NY">NY</option>
-        <option value="ND">ND</option>
-        <option value="OH">OH</option>
-        <option value="OK">OK</option>
-        <option value="OR">OR</option>
-        <option value="PA">PA</option>
-        <option value="RI">RI</option>
-        <option value="SC">SC</option>
-        <option value="SD">SD</option>
-        <option value="TN">TN</option>
-        <option value="TX">TX</option>
-        <option value="UT">UT</option>
-        <option value="VT">VT</option>
-        <option value="VA">VA</option>
-        <option value="WA">WA</option>
-        <option value="WI">WI</option>	
-        <option value="WV">WV</option>
-        <option value="WY">WY</option>
-    </select> <br>
+<div class="container">
+    <h2> Ride Request Form </h2>
+    <div id="request-form">
+        <!-- Ride Request Form -->
+        <form action="./index.php?page=passenger" method="post" id="passenger-request-form">
+            <div class="row, form-row">
+                <div class="col">
+                    Pick-up Address: <input type="text" name="origin-addr">
+                </div>
+                <div class="col">
+                    Pick-up: City: <input type="text" name="origin-city">
+                </div>
+                <div class="col">
+                    Pick-up: Zip: <input type="text" name="origin-zip">
+                </div>
+                <div class="col">
+                    <br>
+                    Pick-up: State: 
+                    <select name="origin-state" form="passenger-request-form">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>	
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>	
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>	
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>	
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ" selected>NJ</option>
+                        <option value="NM">NM</option>			
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>	
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+                </div>
+            </div>
 
-    Destination Address: <input type="text" name="destination-addr">
-    Destination City: <input type="text" name="destination-city">
-    Destination Zip: <input type="text" name="destination-zip">
-    Destination State: 
-    <select name="destination-state" form="passenger-request-form">
-        <option value="AL">AL</option>
-        <option value="AK">AK</option>
-        <option value="AR">AR</option>	
-        <option value="AZ">AZ</option>
-        <option value="CA">CA</option>
-        <option value="CO">CO</option>
-        <option value="CT">CT</option>
-        <option value="DC">DC</option>
-        <option value="DE">DE</option>
-        <option value="FL">FL</option>
-        <option value="GA">GA</option>
-        <option value="HI">HI</option>
-        <option value="IA">IA</option>	
-        <option value="ID">ID</option>
-        <option value="IL">IL</option>
-        <option value="IN">IN</option>
-        <option value="KS">KS</option>
-        <option value="KY">KY</option>
-        <option value="LA">LA</option>
-        <option value="MA">MA</option>
-        <option value="MD">MD</option>
-        <option value="ME">ME</option>
-        <option value="MI">MI</option>
-        <option value="MN">MN</option>
-        <option value="MO">MO</option>	
-        <option value="MS">MS</option>
-        <option value="MT">MT</option>
-        <option value="NC">NC</option>	
-        <option value="NE">NE</option>
-        <option value="NH">NH</option>
-        <option value="NJ" selected>NJ</option>
-        <option value="NM">NM</option>			
-        <option value="NV">NV</option>
-        <option value="NY">NY</option>
-        <option value="ND">ND</option>
-        <option value="OH">OH</option>
-        <option value="OK">OK</option>
-        <option value="OR">OR</option>
-        <option value="PA">PA</option>
-        <option value="RI">RI</option>
-        <option value="SC">SC</option>
-        <option value="SD">SD</option>
-        <option value="TN">TN</option>
-        <option value="TX">TX</option>
-        <option value="UT">UT</option>
-        <option value="VT">VT</option>
-        <option value="VA">VA</option>
-        <option value="WA">WA</option>
-        <option value="WI">WI</option>	
-        <option value="WV">WV</option>
-        <option value="WY">WY</option>
-    </select> <br>
+            <div class="row, form-row">
+                <div class="col">
+                    Destination Address: <input type="text" name="destination-addr">
+                </div>
+                <div class="col">
+                    Destination City: <input type="text" name="destination-city">
+                </div>
+                <div class="col">
+                    Destination Zip: <input type="text" name="destination-zip">
+                </div>
+                <div class="col">
+                    <br>
+                    Destination State: 
+                    <select name="destination-state" form="passenger-request-form">
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>	
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>	
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>	
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>	
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ" selected>NJ</option>
+                        <option value="NM">NM</option>			
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>	
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+                </div>
+            </div>
 
-    Date: <input type="date" name="date"><br>
-    Time: <select name="time" form="passenger-request-form">
-        <option value="9">9:00am - 10:00am</option>
-        <option value="10">10:00am - 11:00am</option>
-        <option value="11">11:00am - 12:00pm</option>	
-        <option value="12">12:00pm - 1:00pm</option>
-        <option value="13">1:00pm - 2:00pm</option>
-        <option value="14">2:00pm - 3:00pm</option>
-        <option value="15">3:00pm - 4:00pm</option>
-        <option value="16">4:00pm - 5:00pm</option>
-    </select> <br>
-    <input type="submit">
-</form>
+            <div class="row justify-content-start, form-row">
+                <div class="col-2">
+                    Date: <input type="date" name="date">
+                </div>
+
+                <div class="col-2">
+                    Time: <select name="time" form="passenger-request-form">
+                        <option value="09:00:00">9:00am - 10:00am</option>
+                        <option value="10:00:00">10:00am - 11:00am</option>
+                        <option value="11:00:00">11:00am - 12:00pm</option>	
+                        <option value="12:00:00">12:00pm - 1:00pm</option>
+                        <option value="13:00:00">1:00pm - 2:00pm</option>
+                        <option value="14:00:00">2:00pm - 3:00pm</option>
+                        <option value="15:00:00">3:00pm - 4:00pm</option>
+                        <option value="16:00:00">4:00pm - 5:00pm</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <input type="submit">
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="success-msg">
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            if ($rideInserted){
+                echo 'Your ride has been scheduled!';
+            }
+        }
+        ?>
+    </div>
+
+</div>

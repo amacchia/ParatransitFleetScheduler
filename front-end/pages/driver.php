@@ -1,23 +1,33 @@
 <?php
     create_connection();
-
+    $currDate = date("Y-m-d")."%";
     $driverID = $_SESSION['currUserID'];
-    //TODO: Only get dates in the future
-    $sqlLocations = "SELECT 
-                        streetAddress, city, latitude, longitude 
-                    FROM 
-                            route r 
-                        JOIN 
-                            location l on r.locationID = l.locationID
-                    WHERE 
-                        driverID = '$driverID'";
-    $result = $GLOBALS['conn']->query($sqlLocations);
-    if($result) {
+    
+    $sqlLocations = 
+    "SELECT 
+        l.streetAddress, l.city, l.latitude, l.longitude
+    FROM
+        route r
+            JOIN
+        location l ON r.locationID = l.locationID
+		    JOIN
+        request req ON r.requestID = req.requestID
+    WHERE
+        driverID = '$driverID'
+		    AND req.requestDate LIKE '$currDate'
+    ORDER BY r.orderInRoute";
 
+    $result = $GLOBALS['conn']->query($sqlLocations);
+    $noRouteMsg = "";
+    if($result) {
         $numberOfBatches = ceil(mysqli_num_rows($result) / 25);
         $counter = 0;
         $routeUrls = array();
         $imgUrls = array();
+
+        if (mysqli_num_rows($result) < 1) {
+            $noRouteMsg = 'You do not have any routes today!';
+        }
 
         for ($i = 0; $i < $numberOfBatches; $i++) {
             $waypointCounter = 1;
@@ -45,7 +55,7 @@
             $imgUrls[] = $imgUrl;
         }
     } else {
-        $currentRoute = "None";
+        $noRouteMsg = "You do not have any routes today!";
     }
 ?>
 
@@ -60,6 +70,10 @@
         echo "<img src=\"".$imgUrls[$i]."\" width=\"350\" height=\"350\">".PHP_EOL;
         echo '</div>'.PHP_EOL;
         echo '</div>'.PHP_EOL;
+    }
+
+    if ($noRouteMsg != "") {
+        echo $noRouteMsg;
     }
 ?>
 </div>

@@ -49,7 +49,7 @@ function insert_driver($first_name, $last_name, $email, $pword, $service)
     
     $result = $GLOBALS['conn']->query($sql);
 	if ($result) {
-		header('Location: index1.php?page=login');
+		header('Location: index.php?page=login');
 	} else {
 		echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
 	}
@@ -68,7 +68,7 @@ function insert_passenger($first_name, $last_name, $email, $pword, $service)
 
     $result = $GLOBALS['conn']->query($sql);
 	if ($result) {
-		header('Location: index1.php?page=login');
+		header('Location: index.php?page=login');
 	} else {
 		echo "Error: " . $sql . "<br>" . $GLOBALS['conn']->error;
 	}
@@ -88,7 +88,7 @@ function clean_input($data)
 
 <h1 id="sign-up-form-title">Sign Up</h1>
 <div id="sign-up-form">
-    <form method="POST" action="./index1.php?page=sign-up">
+    <form method="POST" action="./index.php?page=sign-up">
         <label for="fname" class="input-label">First Name</label>
         <input type="text" name="fname" class="form-input"><br>
 
@@ -108,7 +108,7 @@ function clean_input($data)
         </div>
 
         <input type="submit" value="Sign Up" id="sub-btn">
-        <p>Already a user? <a href="./index1.php?page=login">Login</a></p>
+        <p>Already a user? <a href="./index.php?page=login">Login</a></p>
     </form>
 </div>
 

@@ -17,7 +17,29 @@
 3/5/19: Wes, Dan, Raymond- met and worked on a bulk of the design document
 3/8/19: Weekly Team Meeting
 3/10/19: Created Metric class - Ant
+3/11/19: Made changes to how we connect and take info from the database.
+         Fixed indices of arrayList that were getting wrong information
+         from Location Table.  Also added boolean flag to Location (isOrigin). - Kieran
+3/21/19: Changed MysqlConnection.java to more efficiently read from database.  -Kieran
+3/23/19: Created passenger webpage - Ant
+3/24/19: Added connection to the new view (ridedetails).
+         Only read rides from the database within a certain time range. -Kieran
 3/25/19: Wes- Created and implemented k-means clustering algorithm
+3/31/19: Added header and footer and further worked on sign-up and login process - Ant
+4/1/19:  Added Serialization, but decided not to use it.(Keeping code incase of change). -Kieran
+4/3/19: Added another parameter to Location.java to keep track of the correct LocationID. -Kieran
+4/4/19: Added code to display the current route a driver has - Ant
+4/5/19: Wes- met with Dr. H to discuss pathfinding algorithm
 4/6/19: Ant- Give driver's a link to directions for their route after logging in
+4/6/19: Ant- Created Initial draft of Manual document
 4/7/19: Wes- Implemented exhaustive BFS algorithm
+4/8/19: Implemented writing to the route table in the database. -Kieran
+4/12/19: Added capabilty test suite. -Kieran
 4/14/19: Ant - Added code to get around restricition of Bing Api limit and only allow passengers to select a time slice
+4/19/19: Kieran-  Read from the Database’s Schedule table to determine the amount of drivers for the given day.
+4/19/19: Kieran -Pull in Requests from the database in time chunks for a given day, and unite their paths together after calculation.
+4/19/19: Kieran- Reconfigured methods in LocationTester to work the above changes.
+4/19/19: Ant - Added times for ride requests
+4/20/19: Ant - Added driver schedules to front-end
+4/20/19: Ant - Added driver shedule page, redesigned passenger page, and added sign out button
+4/21/19: Ant - Only get routes for a driver for current day on front-end
