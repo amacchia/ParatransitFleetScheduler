@@ -60,7 +60,7 @@ public class DepthFirstSearch {
 			}
 		}
 		ArrayList<Location> optimalPath = new ArrayList<Location>(points.size() + 1);
-		optimalPath.add(origin);
+		//optimalPath.add(origin);
 		for(int i = 0; i < bestPath.length; i++) {
 			optimalPath.add(points.get(bestPath[i]));
 		}

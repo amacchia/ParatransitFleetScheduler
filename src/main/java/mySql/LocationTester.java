@@ -13,9 +13,6 @@ import metric.Metric;
 
 public class LocationTester 
 {
-	//Test Class methods. (Not just Location.java, despite the name).
-	//Initialize Location as Location(int id, double Latitude, double Longitude)
-	//Initialize  Ride as Ride(int id, int pickUpID, int dropOffID, Timestamp pickUpTime)
 	/*
 	 * Layout for the arrays are as follow:
 	 * 
@@ -25,20 +22,7 @@ public class LocationTester
 	 * locationArray[x][3] --> streetAddress
 	 * locationArray[x][4] --> city
 	 * locationArray[x][5] --> state
-	 * locationArray[x][6] --> zipcode
-	 * 
-	 * driverArray[x][0] --> driveID
-	 * driverArray[x][1] --> email
-	 * driverArray[x][2] --> firstName
-	 * driverArray[x][3] --> lastName
-	 * driverArray[x][4] --> password
-	 * 
-	 * requestArray[x][0] --> requestID 
-	 * requestArray[x][1] --> userID
-	 * requestArray[x][2] --> originID
-	 * requestArray[x][3] --> destinationID
-	 * requestArray[x][4] --> requestDate
-	 * requestArray[x][5] --> requestTimestamp
+	 * locationArray[x][6] --> zipcode	 * 
 	 * 
 	 * routeArray[x][0] --> routeID
 	 * routeArray[x][1] --> requestID
@@ -46,20 +30,20 @@ public class LocationTester
 	 * routeArray[x][3] --> locationID
 	 * routeArray[x][4] --> orderInRoute
 	 * 
-	 * reqDetArray[x][0] --> requestID
-	 * reqDetArray[x][1] --> userID
-	 * reqDetArray[x][2] --> originID
-	 * reqDetArray[x][3] --> destinationID
-	 * reqDetArray[x][4] --> requestDate
-	 * reqDetArray[x][5] --> originLatitude
-	 * reqDetArray[x][6] --> originLongitude
-	 * reqDetArray[x][7] --> originAddress
-	 * reqDetArray[x][8] --> destinationLatitude
-	 * reqDetArray[x][9] --> destinationLongitude
-	 * reqDetArray[x][10] --> destinationAddress
+	 * requestArray[x][0] --> requestID
+	 * requestArray[x][1] --> userID
+	 * requestArray[x][2] --> originID
+	 * requestArray[x][3] --> destinationID
+	 * requestArray[x][4] --> requestDate
+	 * requestArray[x][5] --> originLatitude
+	 * requestArray[x][6] --> originLongitude
+	 * requestArray[x][7] --> originAddress
+	 * requestArray[x][8] --> destinationLatitude
+	 * requestArray[x][9] --> destinationLongitude
+	 * requestArray[x][10] --> destinationAddress
 	 * 
 	 */
-	static double[] scores;
+	static double[][] scores;
 	static String[][] reqDetArray;	//Holds details from the morris_ridedetails view
 	static int[] driversToday;		//contains to ID's of the drivers that are driving the current day.
 	static int routeID = -1; 		//start at -1 so if there is an error, it can be easily spotted in the database.
@@ -80,7 +64,7 @@ public class LocationTester
 											//in the database, so when we write to the database later,
 											//we do not have two routes with the same ID.
 		
-		con = new MysqlConnection("morris_requestdetails", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
+		con = new MysqlConnection("requestdetails", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
 		con.connect(Stringdate);
 		reqDetArray = con.getArray();		//This connection is to get the information for all the requests
@@ -89,37 +73,47 @@ public class LocationTester
 		con = new MysqlConnection("driverschedule", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
 		driversToday = con.getDrivers(Stringdate);	//This connection is to see which drivers are available 
+		ArrayList<Driver> drivers = new ArrayList<Driver>();
+		for(int i = 0; i < driversToday.length;i++)
+		{
+			Driver temp = new Driver(driversToday[i], new ArrayList<Location>());
+			drivers.add(temp);
+		}
+		
 		System.out.println("");				//today so they can be assigned routes after they've 
 											//been generated.
 		
 		//populate an ArrayList of rides.
 		ArrayList<Ride> rides = populateRides();
-		ArrayList<ArrayList<Ride>> ridesByTime = timeSort(rides);
-		System.out.println("List of Rides:");
-		for(int i = 0; i < ridesByTime.size(); i++) 
-		{
-			String time = ridesByTime.get(i).get(0).getTime().toString();
-			time = time.substring(11, time.length());
-			System.out.println("Rides for " + time);
-			for(int j = 0; j < ridesByTime.get(i).size(); j++)
-			{
-				System.out.println(ridesByTime.get(i).get(j).toString());
-			}
-		}		
-		System.out.println(""); 		//Separate for cleaner console prints.
+		ArrayList<ArrayList<Ride>> ridesByTime = timeSort(rides);		
+		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime);	
+
 		
-		int numRepeat = 3;				//Repeats making the same clusters for each time to find the best one.
-		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime, numRepeat);		
-		ArrayList<ArrayList<Location>> bestLocations = toLocationArray(best_clusters);
+		ArrayList<ArrayList<ArrayList<Location>>> bestLocations = toLocationArray(best_clusters);
+		int index = 0;
 		ArrayList<Location> route;
 		int CAPACITY = 3;
 		for(int i = 0; i <bestLocations.size();i++)
 		{
-			route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i));
-			iterRoutes(route, driversToday[i]);
-			System.out.println("Route " + (i+1) + " written to database");
+			for(int j = 0; j < bestLocations.get(i).size();j++)
+			{
+				route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i).get(j));
+				if(index == drivers.size())
+				{
+					index = 0;
+				}
+				iterRoutes(route, drivers.get(index));
+				index++;
+			}
 		}
-		System.out.println("Write to route table complete.");
+		
+		for(int i=0; i < drivers.size();i++)
+		{
+			writeRoutes(drivers.get(i));
+			System.out.println("Route " + routeID + " Written to Database");
+			routeID++;
+		}
+		System.out.println("All Routes in database.");
 	}
 	
 	
@@ -165,56 +159,18 @@ public class LocationTester
 	 * 
 	 */
 	
-	public static ArrayList<ArrayList<ArrayList<Ride>>> makeClusterArray(ArrayList<ArrayList<Ride>> allRides, int numRepeat)
+	public static ArrayList<ArrayList<ArrayList<Ride>>> makeClusterArray(ArrayList<ArrayList<Ride>> allRides)
 	{
-		ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters = new ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>>();
-		for(int i = 0; i < numRepeat; i++)
+		//Make the clusters
+		ArrayList<ArrayList<ArrayList<Ride>>> clusters = new ArrayList<ArrayList<ArrayList<Ride>>>();
+		clusters.add(new ArrayList<ArrayList<Ride>>());
+		for(int j = 0; j < allRides.size(); j++)
 		{
-			clusters.add(new ArrayList<ArrayList<ArrayList<Ride>>>());
-			for(int j = 0; j < allRides.size(); j++)
-			{
-				clusters.get(i).add(Cluster.kmeans(driversToday.length, allRides.get(j)));
-			}
-			
-			
+			clusters.add(Cluster.kmeans(driversToday.length, allRides.get(j)));
 		}
-		scores = makeScoreArray(clusters);
-		best_clusters = bestClusters(scores, clusters);
-		return best_clusters;
+		return clusters;
 	}
 	
-	
-	/*
-	 * computes the scores of the clusters.
-	 */
-	public static double[] makeScoreArray(ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters)
-	{
-		double[] scores = new double[clusters.size()];
-		for(int i = 0; i < clusters.size(); i++)
-		{
-			scores[i] = Metric.computeScore(toLocationArray(clusters.get(i)));
-		}		
-		return scores;
-	}
-	
-	/*
-	 * Compares the scores of each cluster
-	 */
-	public static ArrayList<ArrayList<ArrayList<Ride>>> bestClusters(double[] scores2,
-										ArrayList<ArrayList<ArrayList<ArrayList<Ride>>>> clusters)
-	{	
-		double max = scores2[0];
-		int maxIndex = 0;
-		for(int i = 1; i<scores2.length; i++)
-		{
-			if(scores2[i] > max)
-			{
-				max = scores2[i];
-				maxIndex = i;	
-			}
-		}
-		return clusters.get(maxIndex);
-	}
 	
 	/*
 	 * Uses information that was read from the database,
@@ -235,18 +191,19 @@ public class LocationTester
 		return rideList;
 	}	
    
-   public static ArrayList<ArrayList<Location>> toLocationArray(ArrayList<ArrayList<ArrayList<Ride>>> rideClusters){
-      ArrayList<ArrayList<Location>> locationClusters = new ArrayList<ArrayList<Location>>();
-      
+   public static ArrayList<ArrayList<ArrayList<Location>>> toLocationArray(ArrayList<ArrayList<ArrayList<Ride>>> rideClusters){
+	   
+      ArrayList<ArrayList<ArrayList<Location>>> locationClusters = new ArrayList<ArrayList<ArrayList<Location>>>();
       for(int i = 0; i < rideClusters.size(); i++)
       {
-    	  locationClusters.add(new ArrayList<>());
+    	  locationClusters.add(new ArrayList<ArrayList<Location>>());
     	  for(int j = 0; j < rideClusters.get(i).size(); j++)
     	  {
+    		  locationClusters.get(i).add(new ArrayList<Location>());
     		  for(int k = 0; k < rideClusters.get(i).get(j).size(); k++)
-    		  {
-    			  locationClusters.get(i).add(rideClusters.get(i).get(j).get(k).getOrig());
-    			  locationClusters.get(i).add(rideClusters.get(i).get(j).get(k).getDest());
+    		  {    			 
+    			  locationClusters.get(i).get(j).add(rideClusters.get(i).get(j).get(k).getOrig());
+    			  locationClusters.get(i).get(j).add(rideClusters.get(i).get(j).get(k).getDest());
     			  
     		  }
     	  }
@@ -260,19 +217,35 @@ public class LocationTester
     * While iterating through, write to the route table 
     * in the database.
     */
-   private static void iterRoutes(ArrayList<Location> routes, int driverID)
+   private static void iterRoutes(ArrayList<Location> routes, Driver drivers)
+   {
+//	   int len = drivers.size();
+//	   int index = 0;
+//	   for(int i = 0; i < routes.size();i++)
+//	   {
+//		   if(index == len)
+//		   {
+//			   index=0;
+//		   }
+//		   drivers.get(index).updateRoute(routes);
+//		   index++;
+//	   }
+	   drivers.updateRoute(routes);
+   }
+   
+   private static void writeRoutes(Driver driver)
    {
 	   MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
-	   int orderInRoute = 1;  			//keeps track of the order of rides.
+	   ArrayList<Location> routes = driver.getRoute();
 	   Iterator<Location> iterate = routes.iterator();
+	   int orderInRoute = 1;
 	   while (iterate.hasNext())
-		{
+	   {
 		   Location temp = iterate.next();
-		   con.writeRouteToDB(routeID, temp.getReqID(), driverID, temp.getDbID(), orderInRoute); //write to the database route table.
-		   orderInRoute++;					//increase ride order.
-		}
-	   routeID++;  //When method is over, increase the routeID for next time it is run.
+		   con.writeRouteToDB(routeID, temp.getReqID(), driver.getID(), temp.getDbID(), orderInRoute);
+		   orderInRoute++;
+	   }
    }
    
    
