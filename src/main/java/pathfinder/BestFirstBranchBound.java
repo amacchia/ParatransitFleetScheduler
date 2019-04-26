@@ -66,6 +66,8 @@ public class BestFirstBranchBound {
 				branch_array = current_branches.toArray(branch_array);
 				//Store elements best-first onto the stack
 				for(int i = branch_array.length - 1; i >= 0; i--) {
+					System.out.println(i);
+					System.out.println(branch_array[i]);
 					branch_stack.push(branch_array[i]);
 				}
 			}

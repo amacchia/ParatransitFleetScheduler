@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
+import pathfinder.BestFirstBranchBound;
 import pathfinder.DepthFirstSearch;
 import pathfinder.Methods;
 import mySql.Cluster;
@@ -97,7 +98,8 @@ public class LocationTester
 		{
 			for(int j = 0; j < bestLocations.get(i).size();j++)
 			{
-				route = DepthFirstSearch.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
+				route = BestFirstBranchBound.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
+				//route = DepthFirstSearch.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
 				if(index == drivers.size())
 				{
 					index = 0;
