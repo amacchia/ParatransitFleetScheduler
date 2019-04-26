@@ -1,13 +1,12 @@
 package pathfinder;
 import mySql.Location;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Stack;
 import java.util.PriorityQueue;
 
 public class BestFirstBranchBound {
 	
-	private static final double performanceRatio = 0.01;
+	private static final double performanceRatio = 1;
 	
 	public static ArrayList<Location> DFsearch(int capacity, Location origin, ArrayList<Location> points){
 		Stack<Branch> branch_stack = new Stack<Branch>();

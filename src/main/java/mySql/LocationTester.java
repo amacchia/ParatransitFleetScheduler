@@ -1,49 +1,14 @@
 package mySql;
-import java.sql.Time;
 import java.sql.Timestamp;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
-import org.springframework.boot.origin.Origin;
 import mySql.MysqlConnection;
 import pathfinder.BestFirstBranchBound;
-import pathfinder.DepthFirstSearch;
-import pathfinder.Methods;
 import mySql.Cluster;
-import metric.Metric;
 
 public class LocationTester 
 {
-	/*
-	 * Layout for the arrays are as follow:
-	 * 
-	 * locationArray[x][0] --> locationID
-	 * locationArray[x][1] --> latitude
-	 * locationArray[x][2] --> longitude
-	 * locationArray[x][3] --> streetAddress
-	 * locationArray[x][4] --> city
-	 * locationArray[x][5] --> state
-	 * locationArray[x][6] --> zipcode	 * 
-	 * 
-	 * routeArray[x][0] --> routeID
-	 * routeArray[x][1] --> requestID
-	 * routeArray[x][2] --> driverID
-	 * routeArray[x][3] --> locationID
-	 * routeArray[x][4] --> orderInRoute
-	 * 
-	 * requestArray[x][0] --> requestID
-	 * requestArray[x][1] --> userID
-	 * requestArray[x][2] --> originID
-	 * requestArray[x][3] --> destinationID
-	 * requestArray[x][4] --> requestDate
-	 * requestArray[x][5] --> originLatitude
-	 * requestArray[x][6] --> originLongitude
-	 * requestArray[x][7] --> originAddress
-	 * requestArray[x][8] --> destinationLatitude
-	 * requestArray[x][9] --> destinationLongitude
-	 * requestArray[x][10] --> destinationAddress
-	 * 
-	 */
 	static double[][] scores;
 	static String[][] reqDetArray;	//Holds details from the morris_ridedetails view
 	static int[] driversToday;		//contains to ID's of the drivers that are driving the current day.
@@ -51,13 +16,12 @@ public class LocationTester
 	static ArrayList<ArrayList<ArrayList<Ride>>> best_clusters;
 	public static void main(String[] args) throws ParseException
 	{
-		String startTime = new Date().toString();;
+		String startTime = new Date().toString();
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
 		String Stringdate = inputFormat.format(new Date());
 		if(args.length>0)
 		{
 			Stringdate = args[0];
-
 		}
 		
 		MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
@@ -100,7 +64,6 @@ public class LocationTester
 			for(int j = 0; j < bestLocations.get(i).size();j++)
 			{
 				route = BestFirstBranchBound.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
-				//route = DepthFirstSearch.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
 				if(index == drivers.size())
 				{
 					index = 0;
@@ -227,17 +190,6 @@ public class LocationTester
     */
    private static void iterRoutes(ArrayList<Location> routes, Driver drivers)
    {
-//	   int len = drivers.size();
-//	   int index = 0;
-//	   for(int i = 0; i < routes.size();i++)
-//	   {
-//		   if(index == len)
-//		   {
-//			   index=0;
-//		   }
-//		   drivers.get(index).updateRoute(routes);
-//		   index++;
-//	   }
 	   drivers.updateRoute(routes);
    }
    
@@ -261,12 +213,6 @@ public class LocationTester
    private static int getReqID(int i)
    {
 	   return Integer.parseInt(reqDetArray[i][0]);
-   }
-   
-   //Get ID of the User that requested the ride.
-   private static int getUserID(int i)
-   {
-	   return Integer.parseInt(reqDetArray[i][1]);
    }
    
     //get the Location ID of the Origin. (Not the ride ID)
