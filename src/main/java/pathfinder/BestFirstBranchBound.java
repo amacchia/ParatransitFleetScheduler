@@ -50,7 +50,7 @@ public class BestFirstBranchBound {
 				//Consider all remaining origins, as long as we still have capacity
 				if(current_branch.capacity < capacity) {
 					for(int i = 0; i < remaining.length; i += 2) {
-						if((remaining[i] == 0) && (((current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1]))) / (path.length+1)) * points.size()) < bestDistance) {//TODO update distance using distance matrix
+						if((remaining[i] == 0) && (((current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1]))) / (path.length+1)) * points.size()) < bestDistance*performanceRatio) {//TODO update distance using distance matrix
 							current_branches.add(new Branch((byte) (current_branch.capacity + ((byte) 1)), current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1])),
 									path, i, remaining));
 						}
@@ -58,7 +58,7 @@ public class BestFirstBranchBound {
 				}
 				//Drop off at destinations only if we've visited the origins
 				for(int i = 1; i < remaining.length; i += 2) {
-					if((remaining[i] == 0) && (remaining[i-1] == 1) && (((current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1]))) / (path.length+1)) * points.size()) < bestDistance) {//TODO update distance using distance matrix
+					if((remaining[i] == 0) && (remaining[i-1] == 1) && (((current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1]))) / (path.length+1)) * points.size()) < bestDistance*performanceRatio) {//TODO update distance using distance matrix
 						current_branches.add(new Branch((byte) (current_branch.capacity - ((byte) 1)), current_branch.distance + points.get(i).compareTo(points.get(path[path.length-1])),
 								path, i, remaining));
 					}
