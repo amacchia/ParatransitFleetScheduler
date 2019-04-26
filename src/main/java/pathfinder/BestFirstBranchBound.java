@@ -7,10 +7,9 @@ import java.util.PriorityQueue;
 
 public class BestFirstBranchBound {
 	
-	private static final double performanceRatio = 1;
+	private static final double performanceRatio = 0.01;
 	
 	public static ArrayList<Location> DFsearch(int capacity, Location origin, ArrayList<Location> points){
-	
 		Stack<Branch> branch_stack = new Stack<Branch>();
 		short[] path = {};
 		short[] remaining = new short[points.size()];

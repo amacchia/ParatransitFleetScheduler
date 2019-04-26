@@ -51,6 +51,7 @@ public class LocationTester
 	static ArrayList<ArrayList<ArrayList<Ride>>> best_clusters;
 	public static void main(String[] args) throws ParseException
 	{
+		String startTime = new Date().toString();;
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
 		String Stringdate = inputFormat.format(new Date());
 		if(args.length>0)
@@ -93,7 +94,7 @@ public class LocationTester
 		ArrayList<ArrayList<ArrayList<Location>>> bestLocations = toLocationArray(best_clusters);
 		int index = 0;
 		ArrayList<Location> route;
-		int CAPACITY = 3;
+		int CAPACITY = 10;
 		for(int i = 0; i <bestLocations.size();i++)
 		{
 			for(int j = 0; j < bestLocations.get(i).size();j++)
@@ -116,6 +117,11 @@ public class LocationTester
 			routeID++;
 		}
 		System.out.println("All Routes in database.");
+		
+		
+		String endTime = new Date().toString();
+		System.out.println("Start time: " + startTime);
+		System.out.println("End Time: " + endTime);		
 	}
 	
 	
