@@ -110,7 +110,7 @@ public class LocationTester
 		for(int i=0; i < drivers.size();i++)
 		{
 			writeRoutes(drivers.get(i));
-			System.out.println("Route " + routeID + " Written to Database");
+			System.out.println("Route " + routeID + " Written to Database (Number of rides: " + (drivers.get(i).getRoute().size()/2) + ")");
 			routeID++;
 		}
 		System.out.println("All Routes in database.");

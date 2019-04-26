@@ -24,10 +24,13 @@ public class Driver
 	
 	public void updateRoute(ArrayList<Location> newRoute)
 	{
+		//System.out.println("Driver " + this.id + " adding:");
 		for(int i = 0; i < newRoute.size(); i++)
 		{
 			route.add(newRoute.get(i));
+			//System.out.println(newRoute.get(i));
 		}
+		//System.out.println("");
 	}
 	
 
