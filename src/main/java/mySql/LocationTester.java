@@ -97,7 +97,7 @@ public class LocationTester
 		{
 			for(int j = 0; j < bestLocations.get(i).size();j++)
 			{
-				route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i).get(j));
+				route = DepthFirstSearch.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
 				if(index == drivers.size())
 				{
 					index = 0;
