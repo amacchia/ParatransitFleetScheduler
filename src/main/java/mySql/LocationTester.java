@@ -97,7 +97,7 @@ public class LocationTester
 		{
 			for(int j = 0; j < bestLocations.get(i).size();j++)
 			{
-				route = DepthFirstSearch.DFsearch(CAPACITY, new Location(-1, -1, 0, 0, null, true), bestLocations.get(i).get(j));
+				route = DepthFirstSearch.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
 				if(index == drivers.size())
 				{
 					index = 0;
@@ -110,7 +110,7 @@ public class LocationTester
 		for(int i=0; i < drivers.size();i++)
 		{
 			writeRoutes(drivers.get(i));
-			System.out.println("Route " + routeID + " Written to Database");
+			System.out.println("Route " + routeID + " Written to Database (Number of rides: " + (drivers.get(i).getRoute().size()/2) + ")");
 			routeID++;
 		}
 		System.out.println("All Routes in database.");
