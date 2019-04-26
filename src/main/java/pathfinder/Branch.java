@@ -3,7 +3,7 @@ import mySql.Location;
 import java.util.ArrayList;
 
 
-public class Branch {
+public class Branch implements Comparable<Branch> {
 	public final byte capacity;
 	public final double distance;
 	private short[] path;
@@ -30,5 +30,9 @@ public class Branch {
 	
 	public short[] getRemaining() {
 		return remaining;
+	}
+	
+	public int compareTo(Branch other) {
+		return ((Double) this.distance).compareTo((Double) other.distance);
 	}
 }
