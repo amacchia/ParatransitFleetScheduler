@@ -9,6 +9,10 @@
             echo '<a href="./index.php?page=driver-sch" class="btn btn-secondary btn-lg active" role="button">Update Schedule</a> &nbsp;';
         }
 
+        if ($pg === 'driver-sch') {
+          echo '<a href="./index.php?page=driver" class="btn btn-secondary btn-lg active" role="button">Driver Dashboard</a> &nbsp;';
+        }
+
         if ($pg === 'driver' || $pg === 'passenger' || $pg === 'driver-sch') {
             echo '<a href="./index.php?page=login" class="btn btn-secondary btn-lg active" role="button">Sign-Out</a>';
         }

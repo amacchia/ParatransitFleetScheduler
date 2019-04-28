@@ -92,8 +92,9 @@ a:visited {
 }
 
 .route-container {
-    display: inline-flex;
+    display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -126,6 +127,7 @@ a:visited {
 .sch-form {
     display: block;
     background-color: #EEEEEE;
+    padding: 3%;
 }
 
 .nav-actions {

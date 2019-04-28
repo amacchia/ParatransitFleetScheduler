@@ -1,6 +1,7 @@
 <?php
     create_connection();
-    $currDate = date("Y-m-d")."%";
+    // $currDate = date("Y-m-d")."%";
+    $currDate = '2019-03-08%';
     $driverID = $_SESSION['currUserID'];
     
     $sqlLocations = 
@@ -24,7 +25,7 @@
         $counter = 0;
         $routeUrls = array();
         $imgUrls = array();
-
+        
         if (mysqli_num_rows($result) < 1) {
             $noRouteMsg = 'You do not have any routes today!';
         }
@@ -58,22 +59,24 @@
         $noRouteMsg = "You do not have any routes today!";
     }
 ?>
+<div class="container">
+    <h3>Hello, <?php echo $_SESSION['fname']; ?></h3>
+    <div class="route-container">
+    <?php 
+        for ($i = 0; $i < count($routeUrls); $i++) {
+            $routeNum = $i + 1;
+            echo '<div class="route_display">'.PHP_EOL;
+            echo "<p>Route ". $routeNum .": <a target=\"_blank\" href=\"".$routeUrls[$i]."\">Click for directions</a></p>".PHP_EOL;
 
-<div class="route-container">
-<?php 
-    for ($i = 0; $i < count($routeUrls); $i++) {
-        $routeNum = $i + 1;
-        echo '<div class="route_display">'.PHP_EOL;
-        echo "<p>Route ". $routeNum .": <a target=\"_blank\" href=\"".$routeUrls[$i]."\">Click for directions</a></p>".PHP_EOL;
+            echo '<div>'.PHP_EOL;
+            echo "<img src=\"".$imgUrls[$i]."\" width=\"350\" height=\"350\">".PHP_EOL;
+            echo '</div>'.PHP_EOL;
+            echo '</div>'.PHP_EOL;
+        }
 
-        echo '<div>'.PHP_EOL;
-        echo "<img src=\"".$imgUrls[$i]."\" width=\"350\" height=\"350\">".PHP_EOL;
-        echo '</div>'.PHP_EOL;
-        echo '</div>'.PHP_EOL;
-    }
-
-    if ($noRouteMsg != "") {
-        echo $noRouteMsg;
-    }
-?>
+        if ($noRouteMsg != "") {
+            echo $noRouteMsg;
+        }
+    ?>
+    </div>
 </div>

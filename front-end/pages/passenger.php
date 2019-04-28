@@ -169,8 +169,9 @@
 
 
 <div class="container">
-    <h2> Ride Request Form </h2>
+    <h3>Hello, <?php echo $_SESSION['fname']; ?></h3>
     <div id="request-form">
+        <h2> Ride Request Form </h2>
         <!-- Ride Request Form -->
         <form action="./index.php?page=passenger" method="post" id="passenger-request-form">
             <div class="row, form-row">
