@@ -46,3 +46,4 @@
 4/24/19: Kieran and Wes- Added capability to process and merge time slices across a day
 4/26/19: Wes- implemented best-first sorting on possible branches before pushing to the stack
 4/28/19: Ant - User interface improvements
+5/2/19: Ant - Further user interface improvements

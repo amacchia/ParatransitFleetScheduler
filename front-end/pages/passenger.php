@@ -312,27 +312,38 @@
                 </div>
             </div>
 
-            <div class="row justify-content-start, form-row">
-                <div class="col-2">
-                    Date: <input type="date" name="date">
+            <div class="row, form-row">
+                <div class="col">
+                    Date: <br><input type="date" name="date">
                 </div>
 
-                <div class="col-2">
-                    Time: <select name="time" form="passenger-request-form">
-                        <option value="09:00:00">9:00am - 10:00am</option>
-                        <option value="10:00:00">10:00am - 11:00am</option>
-                        <option value="11:00:00">11:00am - 12:00pm</option>	
-                        <option value="12:00:00">12:00pm - 1:00pm</option>
-                        <option value="13:00:00">1:00pm - 2:00pm</option>
-                        <option value="14:00:00">2:00pm - 3:00pm</option>
-                        <option value="15:00:00">3:00pm - 4:00pm</option>
-                        <option value="16:00:00">4:00pm - 5:00pm</option>
+                <div class="col">
+                    Time: <br><select name="time" form="passenger-request-form">
+                        <option value="09:00:00">9:00am - 9:30am</option>
+			<option value="09:30:00">9:30am - 10:00am</option>
+                        <option value="10:00:00">10:00am - 10:30am</option>
+			<option value="10:30:00">10:30am - 11:00am</option>
+			<option value="11:00:00">11:00am - 11:30am</option>
+			<option value="11:30:00">11:30am - 12:00pm</option>	
+                        <option value="12:00:00">12:00pm - 12:30pm</option>
+			<option value="12:30:00">12:30pm - 1:00pm</option>
+                        <option value="13:00:00">1:00pm - 1:30pm</option>
+			<option value="13:30:00">1:30pm - 2:00pm</option>
+                        <option value="14:00:00">2:00pm - 2:30pm</option>
+			<option value="14:30:00">2:30pm - 3:00pm</option>
+                        <option value="15:00:00">3:00pm - 3:30pm</option>
+			<option value="15:30:00">3:30pm - 4:00pm</option>
+                        <option value="16:00:00">4:00pm - 4:30pm</option>
+			<option value="16:30:00">4:30pm - 5:00pm</option>
                     </select>
                 </div>
+
+                <div class="col"></div>
+                <div class="col"></div>
             </div>
 
             <div class="row">
-                <div class="col">
+                <div class="col-2">
                     <input type="submit">
                 </div>
             </div>
