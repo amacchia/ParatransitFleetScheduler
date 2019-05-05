@@ -3,7 +3,7 @@
     
     function create_connection()
     {
-        // $servername = "localhost";
+        //$servername = "localhost";
         // $password = "root";
         $servername = "3.81.8.187";
         $username = "root";

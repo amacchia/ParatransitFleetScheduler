@@ -1,6 +1,6 @@
 <?php
     if (isset($_SESSION["currUserID"])) {
-        $_SESSION["currUserID"] = -1;
+        session_unset();
     }
     
     // define variables and set to empty values
@@ -37,13 +37,14 @@
 
     function loginDriver($email, $pword)
     {
-        $sql = "SELECT password, driverID FROM driver WHERE email = '$email'";
+        $sql = "SELECT password, driverID, firstName FROM driver WHERE email = '$email'";
         
         $result = $GLOBALS['conn']->query($sql);
         if($result) {
             $row = mysqli_fetch_row($result);
             $hash = $row[0];
             $_SESSION['currUserID'] = $row[1];
+            $_SESSION['fname'] = $row[2];
             return password_verify($pword, $hash);
         }
         return false;
@@ -51,12 +52,13 @@
 
     function loginPassenger($email, $pword)
     {
-        $sql = "SELECT password, userID FROM user WHERE email = '$email'";
+        $sql = "SELECT password, userID, firstName FROM user WHERE email = '$email'";
         $result = $GLOBALS['conn']->query($sql);
         if ($result) {
             $row = mysqli_fetch_row($result);
             $hash = $row[0];
             $_SESSION['currUserID'] = $row[1];
+            $_SESSION['fname'] = $row[2];
             return password_verify($pword, $hash);
         }
         return false;

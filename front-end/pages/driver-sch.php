@@ -106,51 +106,58 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="container">
     <div class="sch-form">
-    <div>
-        <?php
-            if ($currResult) {
-                echo 'Your current work days: ';
-                while ($row = $currResult->fetch_assoc()) {
-                    echo $row['dayOfWeek'].' '; 
+        <div>
+            <?php
+                if ($currResult) {
+                    echo 'Your current work days: ';
+                    while ($row = $currResult->fetch_assoc()) {
+                        echo $row['dayOfWeek'].' '; 
+                    }
                 }
-            }
-        ?>
-    </div>
-    <h3> Update Driver Schedule: </h3>
-    <form action="./index.php?page=driver-sch" method="post" id="driver-sch-form">
+            ?>
+        </div>
+        <h3> Update Driver Schedule: </h3>
+        <form action="./index.php?page=driver-sch" method="post" id="driver-sch-form">
 
-        <input type="checkbox" name="mon" id="mon" value="MONDAY">
             <label for="mon"> Monday </label>
-    
-        <input type="checkbox" name="tue" id="tue" value="TUESDAY">
+            <input type="checkbox" name="mon" id="mon" value="MONDAY">
+            <br>
+
             <label for="tue"> Tuesday </label>
+            <input type="checkbox" name="tue" id="tue" value="TUESDAY">
+            <br>
 
-        <input type="checkbox" name="wed" id="wed" value="WEDNESDAY">
             <label for="wed"> Wednesday </label>
+            <input type="checkbox" name="wed" id="wed" value="WEDNESDAY">
+            <br>
 
-        <input type="checkbox" name="thr" id="thr" value="THURSDAY">
             <label for="thr"> Thursday </label>
+            <input type="checkbox" name="thr" id="thr" value="THURSDAY">
+            <br>   
 
-        <input type="checkbox" name="fri" id="fri" value="FRIDAY">
             <label for="fri"> Friday </label>
+            <input type="checkbox" name="fri" id="fri" value="FRIDAY">
+            <br>   
 
-        <input type="checkbox" name="sat" id="sat" value="SATURDAY">
             <label for="sat"> Saturday </label>
+            <input type="checkbox" name="sat" id="sat" value="SATURDAY">
+            <br>  
 
-        <input type="checkbox" name="sun" id="sun" value="SUNDAY">
             <label for="sunn"> Sunday </label>
-        
-        <input type="submit">
-    </form>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if ($monResult && $tueResult && $wedResult && $thrResult && $friResult && $satResult && $sunResult) {
-            echo 'Your schedule has been updated!';
-        } else {
-            echo 'Error updating schedule.';
-            echo $GLOBALS['conn']->error;
-        } 
-    }
-    ?>
+            <input type="checkbox" name="sun" id="sun" value="SUNDAY">
+            <br>
+            
+            <input type="submit">
+        </form>
+        <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if ($monResult && $tueResult && $wedResult && $thrResult && $friResult && $satResult && $sunResult) {
+                echo 'Your schedule has been updated!';
+            } else {
+                echo 'Error updating schedule.';
+                echo $GLOBALS['conn']->error;
+            } 
+        }
+        ?>
     </div>
 </div>
