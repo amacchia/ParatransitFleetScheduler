@@ -165,14 +165,12 @@ public class MysqlConnection
 			rs = stmt.executeQuery("SELECT * FROM " + input);
 			
 			driversToday = new int[howManyDrivers(rs, day)];
-			System.out.println("Todays (" + day + ")  Drivers (ID's):");
 			int i = 0;
 			while(rs.next())
 			{
 				if(day.equalsIgnoreCase(rs.getString(2)))
 				{
 					int driverID = rs.getInt(1);
-					System.out.println(driverID);
 					driversToday[i] = driverID;
 					i++;
 				}

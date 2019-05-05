@@ -9,19 +9,18 @@ import mySql.Cluster;
 
 public class LocationTester 
 {
-	static double[][] scores;
 	static String[][] reqDetArray;	//Holds details from the morris_ridedetails view
 	static int[] driversToday;		//contains to ID's of the drivers that are driving the current day.
-	static int routeID = -1; 		//start at -1 so if there is an error, it can be easily spotted in the database.
+	static int routeID; 			//Used when writing routes to the database.
 	static ArrayList<ArrayList<ArrayList<Ride>>> best_clusters;
 	public static void main(String[] args) throws ParseException
 	{
-		String startTime = new Date().toString();
+		//String startTime = new Date().toString();	//Used to print runtime of application
 		SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd");
-		String Stringdate = inputFormat.format(new Date());
+		String Stringdate = inputFormat.format(new Date());	//create String for todays date.
 		if(args.length>0)
 		{
-			Stringdate = args[0];
+			Stringdate = args[0];	//if there is a parameter, use that date instead of current date.
 		}
 		
 		MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
@@ -29,6 +28,8 @@ public class LocationTester
 		routeID = con.routeID() + 1;		//This connection is to find the max value routeID currently
 											//in the database, so when we write to the database later,
 											//we do not have two routes with the same ID.
+		
+		System.out.println("Check routeID: " + routeID);	//Here for testing.
 		
 		con = new MysqlConnection("requestdetails", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
@@ -39,52 +40,136 @@ public class LocationTester
 		con = new MysqlConnection("driverschedule", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
 				"com.mysql.cj.jdbc.Driver", "root", "senproj19");
 		driversToday = con.getDrivers(Stringdate);	//This connection is to see which drivers are available 
-		ArrayList<Driver> drivers = new ArrayList<Driver>();
+		
+		
+		System.out.println(driversToday.length + " Drivers Today");	//Here for testing.
+		for(int i = 0; i < driversToday.length; i++)		//Here for testing.
+		{													//Here for testing.
+			System.out.println("ID: " + driversToday[i]);			//Here for testing.
+		}													//Here for testing.
+		System.out.println(""); 							//Here for testing.
+		
+		
+		ArrayList<Driver> drivers = new ArrayList<Driver>();	//create an ArrayList to store the available drivers.
 		for(int i = 0; i < driversToday.length;i++)
 		{
-			Driver temp = new Driver(driversToday[i], new ArrayList<Location>());
-			drivers.add(temp);
+			Driver temp = new Driver(driversToday[i], new ArrayList<Location>());	//create instances for the drivers
+			drivers.add(temp);	//add those drivers into the ArrayList<Driver> drivers
 		}
 		
-		System.out.println("");				//today so they can be assigned routes after they've 
-											//been generated.
+		ArrayList<Ride> rides = populateRides();	//make an ArrayList of all rides for chosen day.
 		
-		//populate an ArrayList of rides.
-		ArrayList<Ride> rides = populateRides();
-		ArrayList<ArrayList<Ride>> ridesByTime = timeSort(rides);		
-		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime);	
+		System.out.println("Number of rides in ArrayList<Rides> rides: " + rides.size());	//Here for testing.
+		for(int i = 0; i < rides.size(); i++)												//Here for testing.
+		{																					//Here for testing.
+			System.out.println(rides.get(i));												//Here for testing.
+		}																					//Here for testing.
+		System.out.println(""); 															//Here for testing.
+		
+		ArrayList<ArrayList<Ride>> ridesByTime = timeSort(rides);	//Index rides by their request time.
+		
+		int total = 0;
+		System.out.println("\nMake sure rides are in proper Time Slots:");		//Here for testing.
+		for(int i = 0; i < ridesByTime.size(); i++)								//Here for testing.
+		{																		//Here for testing.
+			System.out.println("****Time: " + ridesByTime.get(i).get(0).getTime());	//Here for testing.
+			for(int j = 0; j < ridesByTime.get(i).size(); j++)					//Here for testing.
+			{																	//Here for testing.
+				total++;														//Here for testing.
+				System.out.print("ID: " + ridesByTime.get(i).get(j).getID());	//Here for testing.
+				System.out.println("	" + ridesByTime.get(i).get(j).getTime());//Here for testing.
+			}																	//Here for testing.
+		}																		//Here for testing.
+		System.out.println("Total Time Slotted Rides: " + total); 				//Here for testing.
+		total = 0;																//Here for testing.
+		
+		
+		//Contains all the rides after being clustered with kmeans.
+		ArrayList<ArrayList<ArrayList<Ride>>> best_clusters = makeClusterArray(ridesByTime);
+		for(int i = 0; i < best_clusters.size(); i++)		//remove any empty index that was created.
+		{
+			for(int j = best_clusters.get(i).size()-1; j >=0; j--)
+			{
+				if(best_clusters.get(i).get(j).isEmpty())
+				{
+					best_clusters.get(i).remove(j);
+				}
+			}
+		}
+		
+		
+		System.out.println("\nClusters:"); 									//Here for testing.
+		for(int i = 0; i < best_clusters.size(); i ++)						//Here for testing.
+		{																	//Here for testing.
+			for(int j = 0; j < best_clusters.get(i).size();j++)				//Here for testing.
+			{																//Here for testing.
+				for(int k = 0; k < best_clusters.get(i).get(j).size();k++)	//Here for testing.
+				{															//Here for testing.
+					System.out.println("Ride ID: " + best_clusters.get(i).get(j).get(k).getID());
+					total++;												//Here for testing.
+				}															//Here for testing.
+			}																//Here for testing.
+		}																	//Here for testing.
+		System.out.println("Rides in Clusters: " + total); 					//Here for testing.
+		total =0;															//Here for testing.
 
-		
+		//Converts the clusters of rides to Location objects (origins and destinations).
 		ArrayList<ArrayList<ArrayList<Location>>> bestLocations = toLocationArray(best_clusters);
+		
+		
+		System.out.println("\nLocations:"); 								//Here for testing.
+		for(int i = 0; i < bestLocations.size(); i ++)						//Here for testing.
+		{																	//Here for testing.
+			for(int j = 0; j < bestLocations.get(i).size();j++)				//Here for testing.
+			{																//Here for testing.
+				for(int k = 0; k < bestLocations.get(i).get(j).size();k++)	//Here for testing.
+				{															//Here for testing.
+					System.out.println("Location ID: " + bestLocations.get(i).get(j).get(k).getDbID());
+					total++;												//Here for testing.
+				}															//Here for testing.
+			}																//Here for testing.
+		}																	//Here for testing.
+		System.out.println("Locations in Clusters: " + total + "\n"); 		//Here for testing.
+		total = 0;															//Here for testing.
+		
+		
 		int index = 0;
 		ArrayList<Location> route;
-		int CAPACITY = 10;
+		int CAPACITY = 10;	//car passenger capacity.
 		for(int i = 0; i <bestLocations.size();i++)
 		{
 			for(int j = 0; j < bestLocations.get(i).size();j++)
 			{
-				route = BestFirstBranchBound.DFsearch(CAPACITY, drivers.get(j).getCurLocation(), bestLocations.get(i).get(j));
 				if(index == drivers.size())
 				{
+					//created routes get assigned to drivers, one after the other
+					//once all drivers have been used, reset the index back to
+					//the beginning.
 					index = 0;
 				}
+				route = BestFirstBranchBound.DFsearch(CAPACITY, drivers.get(index).getCurLocation(), bestLocations.get(i).get(j));
+				
+				//add generated route to the drivers route ArrayList<Location>
 				iterRoutes(route, drivers.get(index));
-				index++;
+				index++;	//use next driver.
 			}
 		}
 		
+		
 		for(int i=0; i < drivers.size();i++)
 		{
-			writeRoutes(drivers.get(i));
-			System.out.println("Route " + routeID + " Written to Database (Number of rides: " + (drivers.get(i).getRoute().size()/2) + ")");
-			routeID++;
+			System.out.println("Driver " + drivers.get(i).getID() + " has " + drivers.get(i).getRoute().size() + " locations");	//Here for testing.
+			total = total + drivers.get(i).getRoute().size();		//Here for testing.
+			writeRoutes(drivers.get(i));	//write to database
+			routeID++;	//increase routeID for the next route.
 		}
-		System.out.println("All Routes in database.");
+		System.out.println(total/2 + " Rides were written to the database");	//Here for testing.
+		System.out.println("All Routes in database.");	//Print statement to know the application has ended.
 		
 		
-		String endTime = new Date().toString();
-		System.out.println("Start time: " + startTime);
-		System.out.println("End Time: " + endTime);		
+//		String endTime = new Date().toString();
+//		System.out.println("Start time: " + startTime);
+//		System.out.println("End Time: " + endTime);		
 	}
 	
 	
@@ -92,15 +177,17 @@ public class LocationTester
 	/*
 	 * Takes the ArrayList of rides and Sorts them into an ArrayList of
 	 * an ArrayList of Rides based on time.  
-	 * Ex: all 8am rides will be in the same index, all 8:15 rides will be in
-	 * the same index, etc.
+	 * 
 	 */
 	public static ArrayList<ArrayList<Ride>> timeSort(ArrayList<Ride> rides)
 	{
 		ArrayList<ArrayList<Ride>> timeSlot = new ArrayList<ArrayList<Ride>>();
 		int index = 0;
+		
+		//For all rides in ArrayList<Ride> rides
 		for(Ride r: rides)
 		{
+			//if empty add an index and the first ride
 			if(timeSlot.size() == 0)
 			{
 				ArrayList<Ride> temp = new ArrayList<Ride>();
@@ -109,11 +196,15 @@ public class LocationTester
 				index++;
 			}
 			
+			//check if the request time is not equal to the last input,
+			//add a new index and add the ride into the new time slot.
 			else if( !(r.getTime()).equals((timeSlot.get(timeSlot.size()-1).get(index-1).getTime())) )
 			{
 				timeSlot.add(new ArrayList<Ride>());
 				timeSlot.get(timeSlot.size()-1).add(r);
 			}
+			
+			//add the ride to the current time slot, as it has the same time.
 			else
 			{
 				timeSlot.get(timeSlot.size()-1).add(r);
@@ -124,17 +215,13 @@ public class LocationTester
 	
 	/*
 	 * Stores the clusters into an ArrayList<ArrayList<ArrayList<Ride>>>.
-	 * The clusters are based on the times of rides.  
-	 * This way be only cluster rides that have a the same pick up time.  
-	 * We wouldn't want an 8AM ride getting clustered with a 5PM ride.
+	 * The clusters are based on the times of rides and uses kmeans.
 	 * 
 	 */
 	
 	public static ArrayList<ArrayList<ArrayList<Ride>>> makeClusterArray(ArrayList<ArrayList<Ride>> allRides)
 	{
-		//Make the clusters
 		ArrayList<ArrayList<ArrayList<Ride>>> clusters = new ArrayList<ArrayList<ArrayList<Ride>>>();
-		clusters.add(new ArrayList<ArrayList<Ride>>());
 		for(int j = 0; j < allRides.size(); j++)
 		{
 			clusters.add(Cluster.kmeans(driversToday.length, allRides.get(j)));
@@ -162,6 +249,12 @@ public class LocationTester
 		return rideList;
 	}	
    
+	/*
+	 * Gets the rides from the ride clusters that were created, and
+	 * puts them into an ArrayList<ArrayList<ArrayList<Location>>>
+	 * This way we have the origin and destinations objects to put into 
+	 * the pathfind method.
+	 */
    public static ArrayList<ArrayList<ArrayList<Location>>> toLocationArray(ArrayList<ArrayList<ArrayList<Ride>>> rideClusters){
 	   
       ArrayList<ArrayList<ArrayList<Location>>> locationClusters = new ArrayList<ArrayList<ArrayList<Location>>>();
@@ -172,7 +265,8 @@ public class LocationTester
     	  {
     		  locationClusters.get(i).add(new ArrayList<Location>());
     		  for(int k = 0; k < rideClusters.get(i).get(j).size(); k++)
-    		  {    			 
+    		  {
+    			  //get the origin and destination.
     			  locationClusters.get(i).get(j).add(rideClusters.get(i).get(j).get(k).getOrig());
     			  locationClusters.get(i).get(j).add(rideClusters.get(i).get(j).get(k).getDest());
     			  
@@ -185,14 +279,16 @@ public class LocationTester
    
    /*
     * Iterate through the routes from pathfind.
-    * While iterating through, write to the route table 
-    * in the database.
+    * add the route to the Drivers ArrayList<Location> routes.
     */
    private static void iterRoutes(ArrayList<Location> routes, Driver drivers)
    {
 	   drivers.updateRoute(routes);
    }
    
+   /*
+    * connects to the database and writes to the Route table.
+    */
    private static void writeRoutes(Driver driver)
    {
 	   MysqlConnection con = new MysqlConnection("route", "jdbc:mysql://3.81.8.187:3306/", "rideshare",
