@@ -1,7 +1,7 @@
 <?php
     create_connection();
-    //$currDate = date("Y-m-d")."%";
-    $currDate = '2019-04-29%';
+    $currDate = date("Y-m-d")."%";
+    //$currDate = '2019-04-29%';
     $driverID = $_SESSION['currUserID'];
     
     $sqlLocations = 
